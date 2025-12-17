@@ -1,0 +1,904 @@
+[
+  {
+    "name": "ssh-slave",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "Deprecated image for Jenkins SSH agents. Check https://hub.docker.com/r/jenkins/ssh-agent instead.",
+    "is_private": false,
+    "star_count": 40,
+    "pull_count": 3249939,
+    "last_updated": "2022-11-21T18:45:09.779156Z",
+    "last_modified": "2025-04-09T12:44:43.544581Z",
+    "date_registered": "2017-03-31T14:01:50.23357Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 3856101840,
+    "source": null
+  },
+  {
+    "name": "jnlp-slave",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "a Jenkins agent which can connect to Jenkins using JNLP4 or Websocket protocols",
+    "is_private": false,
+    "star_count": 156,
+    "pull_count": 111496282,
+    "last_updated": "2022-09-25T15:05:53.785145Z",
+    "last_modified": "2025-04-09T13:47:21.065348Z",
+    "date_registered": "2017-03-31T14:04:00.165464Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 11949239250,
+    "source": null
+  },
+  {
+    "name": "slave",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "base image for a Jenkins Agent, which includes Java runtime and the Jenkins agent (slave.jar)",
+    "is_private": false,
+    "star_count": 56,
+    "pull_count": 20907247,
+    "last_updated": "2022-09-25T07:07:27.669851Z",
+    "last_modified": "2025-04-09T13:48:29.077946Z",
+    "date_registered": "2017-03-31T14:07:15.587574Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 23584935007,
+    "source": null
+  },
+  {
+    "name": "jenkins",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The leading open source automation server",
+    "is_private": false,
+    "star_count": 4199,
+    "pull_count": 4917446933,
+    "last_updated": "2025-12-02T13:10:08.571637Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-06-23T07:30:49.425728Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 3523073092031,
+    "source": null
+  },
+  {
+    "name": "agent",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "This is a base image, which provides the Jenkins agent executable (agent.jar)",
+    "is_private": false,
+    "star_count": 77,
+    "pull_count": 12417795,
+    "last_updated": "2025-12-02T06:28:37.579737Z",
+    "last_modified": "2025-12-02T06:04:04.907355Z",
+    "date_registered": "2017-08-29T16:24:08.079856Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 2891424964056,
+    "source": null
+  },
+  {
+    "name": "evergreen",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "An automatically self-updating Jenkins distribution ",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 18971,
+    "last_updated": "2020-01-14T21:29:29.384843Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-15T17:19:52.20794Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 49243391239,
+    "source": null
+  },
+  {
+    "name": "pct",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Plugin Compat Tester - no longer published as a docker image",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 314318,
+    "last_updated": "2023-02-28T17:00:09.254956Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-04-13T14:26:54.168241Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 176703837206,
+    "source": null
+  },
+  {
+    "name": "ath",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Jenkins Acceptance Test Harness",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 240688,
+    "last_updated": "2025-12-03T04:31:45.378803Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-05-02T09:13:52.226927Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.buildkit.cacheconfig.v0",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 998113608462,
+    "source": null
+  },
+  {
+    "name": "jenkins-experimental",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Experimental images of Jenkins. These images are automatically built from jenkinsci/jenkins branches",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 68102,
+    "last_updated": "2018-12-10T11:24:01.007889Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-06-12T20:48:32.858643Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 7842849872,
+    "source": null
+  },
+  {
+    "name": "remoting-kafka-agent",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Remoting Kafka Agent",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 35970,
+    "last_updated": "2019-08-08T21:09:06.41792Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-07-16T04:22:57.101629Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Message queues",
+        "slug": "message-queues"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 6783693561,
+    "source": null
+  },
+  {
+    "name": "custom-war-packager",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Custom WAR Packager\n",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 17630,
+    "last_updated": "2019-06-14T16:28:11.437628Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-10-30T12:33:45.223762Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 360393107,
+    "source": null
+  },
+  {
+    "name": "core-pr-tester",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Docker image for testing pull-requests sent to https://github.com/jenkinsci/jenkins ",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 48196,
+    "last_updated": "2024-08-20T00:29:57.945965Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-01-25T16:03:05.139667Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 215382504502,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-maven",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A JNLP-based agent with Maven 3 built in",
+    "is_private": false,
+    "star_count": 10,
+    "pull_count": 119434050,
+    "last_updated": "2025-12-02T09:26:32.511649Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-03-10T04:38:49.278947Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 213440525403,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-node",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 955259,
+    "last_updated": "2025-12-02T06:19:01.171936Z",
+    "last_modified": "2025-12-02T06:19:18.383974Z",
+    "date_registered": "2019-03-10T06:23:45.511684Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 156203624796,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-docker",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 12,
+    "pull_count": 3591292,
+    "last_updated": "2025-10-28T09:19:32.060642Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-03-10T06:25:47.622872Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 69807449151,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-ruby",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 3954153,
+    "last_updated": "2025-12-02T09:18:19.533606Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-03-10T16:34:23.820972Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 126623652428,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-alpine",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 95581,
+    "last_updated": "2025-12-02T09:19:20.018934Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-03-10T17:07:19.691875Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 15570943136,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-terraform",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 47653,
+    "last_updated": "2025-12-02T09:17:40.915287Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-18T17:55:50.440208Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 114401292290,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-python",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A JNLP-based agent with Python built in",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 568584,
+    "last_updated": "2021-01-20T16:46:51.677336Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-09-23T08:05:28.663197Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 29504851073,
+    "source": null
+  },
+  {
+    "name": "core-changelog-generator",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Tool for generating Jenkins core changelogs",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 15113,
+    "last_updated": "2020-01-07T17:07:39.226269Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-11-21T13:24:02.641931Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 1005704557,
+    "source": null
+  },
+  {
+    "name": "inbound-agent",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "This is an image for Jenkins agents using TCP or WebSockets to establish inbound connection to the J",
+    "is_private": false,
+    "star_count": 147,
+    "pull_count": 445633026,
+    "last_updated": "2025-12-02T06:28:41.510272Z",
+    "last_modified": "2025-12-02T06:04:05.46978Z",
+    "date_registered": "2020-04-12T21:39:01.748742Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1333794376612,
+    "source": null
+  },
+  {
+    "name": "ssh-agent",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Docker image for Jenkins agents connected over SSH",
+    "is_private": false,
+    "star_count": 66,
+    "pull_count": 58485929,
+    "last_updated": "2025-11-18T06:08:05.25954Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-04-13T20:59:05.099224Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 922024704184,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-coreruntime",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Inbound agent with .NET Core installed",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 30333,
+    "last_updated": "2025-10-15T09:21:59.889017Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-19T16:59:27.839757Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 307139761571,
+    "source": null
+  },
+  {
+    "name": "jenkinsfile-runner",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Jenkinsfile Runner packages",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 46986,
+    "last_updated": "2022-07-29T11:06:40.251998Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-24T17:39:16.759235Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 350919511615,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-coresdk",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 82550,
+    "last_updated": "2025-10-15T09:20:34.403947Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-30T17:48:34.662357Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 211602121348,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-golang",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 14824,
+    "last_updated": "2025-10-28T09:19:19.501762Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-12-02T13:29:37.803774Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 95720723588,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-powershell",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 12764,
+    "last_updated": "2025-12-02T09:19:15.405472Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-12-10T21:53:08.247104Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 95280271613,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-jdk8",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 14084,
+    "last_updated": "2025-12-02T09:19:45.702412Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-04-19T16:27:17.933182Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 63433855423,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-jdk11",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 48531,
+    "last_updated": "2025-07-12T09:20:54.496811Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-04-19T16:51:33.400578Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 60255767590,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-python3",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 43697,
+    "last_updated": "2025-12-02T09:18:55.490666Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-04-19T17:36:45.285765Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 95829111100,
+    "source": null
+  },
+  {
+    "name": "jnlp-agent-python2",
+    "namespace": "jenkins",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 12589,
+    "last_updated": "2025-12-02T09:18:38.533361Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-04-19T17:57:01.674851Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 97668094144,
+    "source": null
+  }
+]

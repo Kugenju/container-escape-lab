@@ -1,0 +1,763 @@
+[
+  {
+    "name": "nginx",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Nginx, a high-performance reverse proxy & web server. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 133,
+    "pull_count": 12707718,
+    "last_updated": "2025-11-24T14:10:35.636681Z",
+    "last_modified": "2025-06-20T02:39:20.366334Z",
+    "date_registered": "2020-11-23T13:21:13.865485Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 71221860850,
+    "source": null
+  },
+  {
+    "name": "redis",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Redis, an open source key-value store. Long-term versions maintained by Canonical.",
+    "is_private": false,
+    "star_count": 24,
+    "pull_count": 488417,
+    "last_updated": "2025-03-04T09:13:26.598833Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-11-23T13:24:41.257639Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 15776887245,
+    "source": null
+  },
+  {
+    "name": "memcached",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Memcached, in-memory keyvalue store for small data chunks. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 6,
+    "pull_count": 116253,
+    "last_updated": "2025-10-17T13:03:54.458083Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-11-23T13:25:49.056596Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 43681468838,
+    "source": null
+  },
+  {
+    "name": "apache2",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apache, a secure & extensible open-source HTTP server. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 98,
+    "pull_count": 2136805,
+    "last_updated": "2025-11-24T14:10:06.063133Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-11-23T13:26:03.981905Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 90515974006,
+    "source": null
+  },
+  {
+    "name": "mysql",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "MySQL open source fast, stable, multi-thread SQL database. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 72,
+    "pull_count": 1040454,
+    "last_updated": "2025-12-01T12:36:30.31262Z",
+    "last_modified": "2025-12-01T12:39:42.542251Z",
+    "date_registered": "2020-11-23T13:28:14.356617Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 79680829979,
+    "source": null
+  },
+  {
+    "name": "telegraf",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Telegraf collects, processes, aggregates & writes metrics. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 19124,
+    "last_updated": "2022-04-22T18:13:45.572555Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-11-23T13:35:59.998221Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 10404565721,
+    "source": null
+  },
+  {
+    "name": "postgres",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "PostgreSQL is an open source object-relational database. Long-term versions maintained by Canonical.",
+    "is_private": false,
+    "star_count": 42,
+    "pull_count": 781961,
+    "last_updated": "2025-09-16T14:28:34.437171Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-11-23T13:41:15.577853Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 75701390458,
+    "source": null
+  },
+  {
+    "name": "grafana",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Grafana, a feature rich metrics dashboard & graph editor. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 12,
+    "pull_count": 163509,
+    "last_updated": "2025-11-30T03:10:38.632411Z",
+    "last_modified": "2025-11-30T03:12:07.361316Z",
+    "date_registered": "2020-11-23T13:44:59.770606Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 25742075084,
+    "source": null
+  },
+  {
+    "name": "prometheus",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Prometheus is a systems and service monitoring system. Long-term versions maintained by Canonical.",
+    "is_private": false,
+    "star_count": 76,
+    "pull_count": 1966416,
+    "last_updated": "2025-10-26T02:50:08.077373Z",
+    "last_modified": "2025-10-26T02:51:46.734628Z",
+    "date_registered": "2020-11-23T13:56:54.681921Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 28329996569,
+    "source": null
+  },
+  {
+    "name": "cortex",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Cortex provides storage for Prometheus. Long-term versions maintained by Canonical.",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 4254076,
+    "last_updated": "2023-01-16T22:31:36.430348Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-11-23T14:02:51.298575Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 12388977733,
+    "source": null
+  },
+  {
+    "name": "prometheus-alertmanager",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Alertmanager handles client alerts from Prometheus server. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 10,
+    "pull_count": 89091,
+    "last_updated": "2023-02-15T00:02:32.581782Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-11-23T20:08:00.004188Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 7191014149,
+    "source": null
+  },
+  {
+    "name": "cassandra",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Cassandra, an open source NoSQL distributed database. Long-term versions maintained by Canonical.",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 53598,
+    "last_updated": "2024-01-02T15:09:12.417206Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-06-11T14:00:56.124991Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 22212931428,
+    "source": null
+  },
+  {
+    "name": "squid",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Squid is a caching proxy for the Web. Long-term versions maintained by Canonical.",
+    "is_private": false,
+    "star_count": 121,
+    "pull_count": 35288183,
+    "last_updated": "2025-11-24T14:09:36.784529Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-09-14T10:51:56.354948Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 53234641522,
+    "source": null
+  },
+  {
+    "name": "bind9",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "BIND 9 is a very flexible, full-featured DNS system. Long-term versions maintained by Canonical.",
+    "is_private": false,
+    "star_count": 117,
+    "pull_count": 3170950,
+    "last_updated": "2025-11-24T14:11:02.108821Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-09-24T13:15:33.095309Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 45528430699,
+    "source": null
+  },
+  {
+    "name": "loki",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Grafana Loki, a log aggregation system like Prometheus. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 23875,
+    "last_updated": "2025-11-27T09:53:44.857726Z",
+    "last_modified": "2025-11-27T09:54:48.649571Z",
+    "date_registered": "2022-04-19T10:12:43.025819Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 13300035219,
+    "source": null
+  },
+  {
+    "name": "kafka",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apache Kafka, a distributed event streaming platform. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 57,
+    "pull_count": 2668542,
+    "last_updated": "2025-11-30T02:58:44.431506Z",
+    "last_modified": "2025-11-30T02:59:47.648257Z",
+    "date_registered": "2022-04-19T10:13:27.465592Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Message queues",
+        "slug": "message-queues"
+      }
+    ],
+    "storage_size": 22191036336,
+    "source": null
+  },
+  {
+    "name": "zookeeper",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "ZooKeeper maintains configuration information centrally. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 14,
+    "pull_count": 1769446,
+    "last_updated": "2024-08-13T16:06:33.033605Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-04-20T14:19:09.172134Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 12759530830,
+    "source": null
+  },
+  {
+    "name": "dotnet-runtime",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Chiselled Ubuntu runtime image for .NET apps. Long-term tracks maintained by Canonical. ",
+    "is_private": false,
+    "star_count": 23,
+    "pull_count": 96278,
+    "last_updated": "2025-11-30T03:01:46.21718Z",
+    "last_modified": "2025-11-30T03:03:14.974417Z",
+    "date_registered": "2022-08-09T10:02:58.251805Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 24357239495,
+    "source": null
+  },
+  {
+    "name": "dotnet-deps",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Chiselled Ubuntu for self-contained .NET & ASP.NET apps. Long-term tracks maintained by Canonical. ",
+    "is_private": false,
+    "star_count": 16,
+    "pull_count": 105182,
+    "last_updated": "2025-11-30T02:59:29.790876Z",
+    "last_modified": "2025-11-30T03:00:51.336218Z",
+    "date_registered": "2022-08-09T10:03:13.510808Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 5449441493,
+    "source": null
+  },
+  {
+    "name": "dotnet-aspnet",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Chiselled Ubuntu runtime image for ASP.NET apps. Long-term tracks maintained by Canonical. ",
+    "is_private": false,
+    "star_count": 26,
+    "pull_count": 379294,
+    "last_updated": "2025-11-30T03:01:18.256805Z",
+    "last_modified": "2025-11-30T03:02:41.395042Z",
+    "date_registered": "2022-08-09T10:03:25.558221Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 29298520937,
+    "source": null
+  },
+  {
+    "name": "mlflow",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "MLFlow: for managing the machine learning lifecycle. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 6,
+    "pull_count": 41991,
+    "last_updated": "2023-10-02T14:04:51.668741Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-03-13T14:56:56.029272Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Machine learning & AI",
+        "slug": "machine-learning-and-ai"
+      }
+    ],
+    "storage_size": 11847182011,
+    "source": null
+  },
+  {
+    "name": "jre",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Chiseled Java runtime based on Ubuntu. Long-term tracks maintained by Canonical.",
+    "is_private": false,
+    "star_count": 23,
+    "pull_count": 363827,
+    "last_updated": "2025-11-30T02:56:35.337958Z",
+    "last_modified": "2025-11-30T02:57:47.623124Z",
+    "date_registered": "2023-06-19T09:23:41.569801Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 20518346575,
+    "source": null
+  },
+  {
+    "name": "mimir",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Ubuntu ROCK for Mimir, a horizontally scalable, highly available, multi-tenant TSDB for Prometheus.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 11654,
+    "last_updated": "2025-11-30T03:08:37.733389Z",
+    "last_modified": "2025-11-30T03:09:48.731574Z",
+    "date_registered": "2023-08-17T12:28:22.420972Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 9406416932,
+    "source": null
+  },
+  {
+    "name": "python",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A chiselled Ubuntu rock with the Python runtime",
+    "is_private": false,
+    "star_count": 29,
+    "pull_count": 174527,
+    "last_updated": "2025-11-02T02:49:09.497834Z",
+    "last_modified": "2025-11-02T02:50:15.156925Z",
+    "date_registered": "2024-02-12T14:27:26.026597Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 3818931812,
+    "source": null
+  },
+  {
+    "name": "tempo",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Tempo is a distributed tracing backend by Grafana.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 10222,
+    "last_updated": "2025-11-12T09:11:09.51806Z",
+    "last_modified": "2025-11-12T09:12:15.548425Z",
+    "date_registered": "2024-05-03T07:04:17.486357Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1575354714,
+    "source": null
+  },
+  {
+    "name": "opentelemetry-collector",
+    "namespace": "ubuntu",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "This is a rock for the OpenTelemetry Collector.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 20032,
+    "last_updated": "2025-11-30T03:07:19.524138Z",
+    "last_modified": "2025-11-30T03:08:29.969634Z",
+    "date_registered": "2025-02-11T15:44:43.448491Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 5875891778,
+    "source": null
+  }
+]

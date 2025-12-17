@@ -1,0 +1,26 @@
+[
+  {
+    "name": "elasticsearch-kuromoji-5.6.1",
+    "namespace": "rust",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 13353,
+    "last_updated": "2020-09-18T10:58:33.678103Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-18T10:28:33.547979Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 108025136,
+    "source": null
+  }
+]

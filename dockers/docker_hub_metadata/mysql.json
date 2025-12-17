@@ -1,0 +1,100 @@
+[
+  {
+    "name": "mysql-server",
+    "namespace": "mysql",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Optimized MySQL Server Docker images. Created, maintained and supported by the MySQL team at Oracle",
+    "is_private": false,
+    "star_count": 1033,
+    "pull_count": 168818639,
+    "last_updated": "2023-01-18T06:08:58.278163Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-03-11T07:23:59.11725Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 33065801976,
+    "source": null
+  },
+  {
+    "name": "mysql-cluster",
+    "namespace": "mysql",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Experimental MySQL Cluster Docker images. Created by the MySQL team at Oracle",
+    "is_private": false,
+    "star_count": 100,
+    "pull_count": 7717769,
+    "last_updated": "2023-01-18T07:44:28.955573Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-05-11T13:18:12.344813Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 8039182526,
+    "source": null
+  },
+  {
+    "name": "mysql-router",
+    "namespace": "mysql",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "MySQL Router provides transparent routing between your application and back-end MySQL Servers.",
+    "is_private": false,
+    "star_count": 28,
+    "pull_count": 9808136,
+    "last_updated": "2023-01-18T06:13:52.879294Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-02-28T13:17:16.881461Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2357090351,
+    "source": null
+  },
+  {
+    "name": "mysql-operator",
+    "namespace": "mysql",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "MySQL Operator for Kubernetes",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 555020,
+    "last_updated": "2023-01-17T07:34:18.478421Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-05-28T16:47:27.147916Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 892855616,
+    "source": null
+  }
+]

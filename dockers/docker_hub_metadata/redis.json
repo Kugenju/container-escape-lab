@@ -1,0 +1,289 @@
+[
+  {
+    "name": "redis-stack",
+    "namespace": "redis",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "redis-stack installs a Redis server with additional database capabilities and the RedisInsight.",
+    "is_private": false,
+    "star_count": 157,
+    "pull_count": 15311555,
+    "last_updated": "2025-11-03T13:49:52.133698Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-03-07T08:16:38.16134Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Message queues",
+        "slug": "message-queues"
+      }
+    ],
+    "storage_size": 291761513524,
+    "source": null
+  },
+  {
+    "name": "redis-stack-server",
+    "namespace": "redis",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "redis-stack-server installs a Redis server with additional database capabilities",
+    "is_private": false,
+    "star_count": 99,
+    "pull_count": 22958742,
+    "last_updated": "2025-11-03T13:49:53.94028Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-03-07T08:17:03.011155Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 203971641597,
+    "source": null
+  },
+  {
+    "name": "redisinsight",
+    "namespace": "redis",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Redis Insight - our best official GUI for Redis",
+    "is_private": false,
+    "star_count": 43,
+    "pull_count": 2359981,
+    "last_updated": "2025-07-11T14:05:23.322111Z",
+    "last_modified": "2025-04-02T12:29:51.448155Z",
+    "date_registered": "2023-11-22T12:00:52.303115Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 1649314199,
+    "source": null
+  },
+  {
+    "name": "rdi-collector-initializer",
+    "namespace": "redis",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": " Init container for RDI Collector",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 15875,
+    "last_updated": "2025-11-27T12:51:56.458725Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-07-08T10:54:12.187867Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 1867927298,
+    "source": null
+  },
+  {
+    "name": "rdi-processor",
+    "namespace": "redis",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 14902,
+    "last_updated": "2025-11-27T12:52:12.460336Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-08-13T08:20:16.638266Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 30531614863,
+    "source": null
+  },
+  {
+    "name": "rdi-operator",
+    "namespace": "redis",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 21345,
+    "last_updated": "2025-11-27T12:52:21.121248Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-08-13T08:21:42.443817Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 18683277593,
+    "source": null
+  },
+  {
+    "name": "rdi-monitor",
+    "namespace": "redis",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 24316,
+    "last_updated": "2025-11-27T12:52:22.163126Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-08-13T08:22:42.349784Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 16226128888,
+    "source": null
+  },
+  {
+    "name": "rdi-api",
+    "namespace": "redis",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 25553,
+    "last_updated": "2025-11-27T12:52:14.420559Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-08-13T08:24:28.892047Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 18364039194,
+    "source": null
+  },
+  {
+    "name": "rdi-cli",
+    "namespace": "redis",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 10665,
+    "last_updated": "2025-11-27T12:52:21.441637Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-08-25T13:13:14.542979Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 98490057806,
+    "source": null
+  },
+  {
+    "name": "rdi-collector-api",
+    "namespace": "redis",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 18083,
+    "last_updated": "2025-11-27T12:52:23.78458Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-09-26T09:54:45.000467Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 32933495619,
+    "source": null
+  }
+]

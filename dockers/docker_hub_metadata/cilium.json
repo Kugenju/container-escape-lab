@@ -1,0 +1,1381 @@
+[
+  {
+    "name": "cilium",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "BPF & XDP for containers",
+    "is_private": false,
+    "star_count": 16,
+    "pull_count": 130133216,
+    "last_updated": "2025-12-01T14:37:53.754457Z",
+    "last_modified": "2025-03-17T17:48:53.895015Z",
+    "date_registered": "2016-08-16T15:01:35.449273Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 874643422560,
+    "source": null
+  },
+  {
+    "name": "starwars",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Deathstar as a Service",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 997353,
+    "last_updated": "2025-05-08T20:40:24.403038Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-03-25T08:32:26.164945Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 409550942,
+    "source": null
+  },
+  {
+    "name": "demo-client",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Base demo image with various client tools",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 831429,
+    "last_updated": "2020-11-19T13:53:29.828784Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-03-25T16:54:22.839187Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 338234314,
+    "source": null
+  },
+  {
+    "name": "demo-httpd",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 1711640,
+    "last_updated": "2020-11-19T09:39:58.245165Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-03-27T18:30:26.946811Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 67284167,
+    "source": null
+  },
+  {
+    "name": "kafkaclient2",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 27377,
+    "last_updated": "2020-11-19T11:00:36.856795Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-10-15T02:22:28.40683Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 119304588,
+    "source": null
+  },
+  {
+    "name": "kafkaclient",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 863182,
+    "last_updated": "2020-11-19T11:45:37.939253Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-10-27T22:37:34.91891Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 119345505,
+    "source": null
+  },
+  {
+    "name": "docs-builder",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "container for building cilium documentation locally",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 57070,
+    "last_updated": "2023-03-02T01:44:09.624158Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-01T14:24:52.497324Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 5198358963,
+    "source": null
+  },
+  {
+    "name": "cilium-builder",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "[DEPRECATED] Cilium build image with pre-built Bazel dependencies.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 11010,
+    "last_updated": "2018-10-31T04:42:17.072503Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-12-14T00:00:56.950069Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 11594769904,
+    "source": null
+  },
+  {
+    "name": "microscope",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "microscope shows what happens to network traffic as shown by cilium nodes in your cluster",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 30975,
+    "last_updated": "2019-02-04T12:42:36.860885Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-02-06T09:32:24.954362Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 665439210,
+    "source": null
+  },
+  {
+    "name": "istio_proxy",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 1243615,
+    "last_updated": "2021-08-06T06:15:03.213297Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-07T11:04:24.450386Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 4499533607,
+    "source": null
+  },
+  {
+    "name": "istio_proxy_debug",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 19138,
+    "last_updated": "2018-10-16T19:04:02.513752Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-08T00:38:20.943351Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2833999164,
+    "source": null
+  },
+  {
+    "name": "demo-httpd-health",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 45617,
+    "last_updated": "2018-03-27T23:57:17.355558Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-27T23:57:17.04604Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 67285218,
+    "source": null
+  },
+  {
+    "name": "istio_pilot",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 164559,
+    "last_updated": "2021-08-05T18:33:52.83768Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-30T05:44:51.433783Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2108934754,
+    "source": null
+  },
+  {
+    "name": "esclient",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "esclient for elastic search demo",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 13674,
+    "last_updated": "2018-06-05T18:00:05.016472Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-05-18T23:03:50.303806Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 116235946,
+    "source": null
+  },
+  {
+    "name": "json-mock",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "---===DEPRECATED REPOSITORY===---\n\nUse quay.io/cilium/json-mock instead",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 7597708,
+    "last_updated": "2023-10-05T14:25:13.176378Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-06-22T15:18:42.858259Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 4097234294,
+    "source": null
+  },
+  {
+    "name": "nightly",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Cilium nightly image repository",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 11700,
+    "last_updated": "2020-04-29T23:10:03.705056Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-07-04T10:46:21.332202Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 34863620111,
+    "source": null
+  },
+  {
+    "name": "chaos-test-base",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 27722,
+    "last_updated": "2019-01-11T20:37:09.974758Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-07-28T20:33:17.783105Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 360863487,
+    "source": null
+  },
+  {
+    "name": "cc-grpc-demo",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "grpc-demo",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 392275,
+    "last_updated": "2020-07-20T10:19:47.35619Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-08-21T13:40:50.05612Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 426400047,
+    "source": null
+  },
+  {
+    "name": "cilium-dev",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Repository for Cilium development images.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 6133006,
+    "last_updated": "2021-02-18T10:55:42.916837Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-08-30T07:35:14.196992Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 198882134543,
+    "source": null
+  },
+  {
+    "name": "cilium-etcd-operator",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Operator to manage the Cilium etcd cluster",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 382464,
+    "last_updated": "2019-09-18T15:24:12.166567Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-10-11T14:02:27.960286Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 578537088,
+    "source": null
+  },
+  {
+    "name": "cilium-init",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Repository for the init container of Cilium",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 2575874,
+    "last_updated": "2019-04-05T15:57:43.926597Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-10-11T18:11:57.420929Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 742207,
+    "source": null
+  },
+  {
+    "name": "operator",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Cilium operator",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 12636569,
+    "last_updated": "2025-12-01T14:38:01.914042Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-11-07T18:47:49.985777Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 118843438368,
+    "source": null
+  },
+  {
+    "name": "docker-bind",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "docker-bind repo",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 386509,
+    "last_updated": "2019-01-04T11:29:50.770429Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-11-26T16:15:06.716231Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 278301065,
+    "source": null
+  },
+  {
+    "name": "docker-plugin",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Repository for the docker libnetwork plugin",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 31429,
+    "last_updated": "2025-12-01T14:32:29.936574Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-12-04T14:40:12.238854Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 39293185821,
+    "source": null
+  },
+  {
+    "name": "dnssec-client",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 254503,
+    "last_updated": "2020-07-21T14:01:19.487222Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-01-04T11:05:14.99631Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 408717489,
+    "source": null
+  },
+  {
+    "name": "netperf",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Misc tools: netperf, *_netperf, iperf3, curl, wrk, iproute2",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 398215,
+    "last_updated": "2021-05-04T14:56:47.7815Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-02-04T12:54:11.49063Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 39068739,
+    "source": null
+  },
+  {
+    "name": "python-bmemcached",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 18149,
+    "last_updated": "2020-07-21T12:13:00.774272Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-02-11T15:45:44.812617Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 393724139,
+    "source": null
+  },
+  {
+    "name": "operator-dev",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 63941,
+    "last_updated": "2021-02-18T11:06:29.805311Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-05T13:29:41.522511Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 157520588676,
+    "source": null
+  },
+  {
+    "name": "migrate-svc-test",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 388084,
+    "last_updated": "2020-11-12T12:35:24.216024Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-18T17:03:37.588061Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 11767819,
+    "source": null
+  },
+  {
+    "name": "startup-script",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 4410981,
+    "last_updated": "2021-02-02T21:34:51.170495Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-11-28T14:47:43.546206Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 99904731,
+    "source": null
+  },
+  {
+    "name": "echoserver",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "k8s.gcr.io/echoserver listening on 80 port",
+    "is_private": false,
+    "star_count": 8,
+    "pull_count": 623801,
+    "last_updated": "2021-09-07T20:14:40.201767Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-12-10T12:48:26.120854Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 46308797,
+    "source": null
+  },
+  {
+    "name": "echoserver-udp",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 116084,
+    "last_updated": "2025-11-11T15:25:53.591366Z",
+    "last_modified": "2025-11-11T15:26:05.045799Z",
+    "date_registered": "2020-01-30T09:57:20.425807Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 34202063,
+    "source": null
+  },
+  {
+    "name": "log-gatherer",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 252533,
+    "last_updated": "2023-04-21T10:04:35.74157Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-02-11T13:37:52.693699Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 586439527,
+    "source": null
+  },
+  {
+    "name": "hubble-relay",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 482660,
+    "last_updated": "2025-12-01T14:33:44.08927Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-04-29T07:44:16.345723Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 39531769523,
+    "source": null
+  },
+  {
+    "name": "coccicheck",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Image used for the coccicheck Github action in Cilium",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 115803,
+    "last_updated": "2023-03-17T14:22:35.458325Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-05-04T08:13:34.574323Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 329412575,
+    "source": null
+  },
+  {
+    "name": "operator-aws",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "operator-aws is a docker image dedicated for clusters running on AWS",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 201002,
+    "last_updated": "2025-12-01T14:36:22.26188Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-05-26T09:19:23.90874Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 52391662228,
+    "source": null
+  },
+  {
+    "name": "operator-azure",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "operator-azure is a docker image dedicated for clusters running on Azure",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 46213,
+    "last_updated": "2025-12-01T14:36:19.158965Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-05-26T09:50:33.891163Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 48296393214,
+    "source": null
+  },
+  {
+    "name": "operator-generic",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 4120835,
+    "last_updated": "2025-12-01T14:35:20.22772Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-05-26T09:53:37.969548Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 46674299513,
+    "source": null
+  },
+  {
+    "name": "cilium-bpftool",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Dockerfiles for these images are created from https://github.com/cilium/image-tools",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 15756,
+    "last_updated": "2021-01-30T18:02:31.925575Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-05-26T10:41:54.724216Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 732590609,
+    "source": null
+  },
+  {
+    "name": "image-maker",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Dockerfiles for these images are created from https://github.com/cilium/image-tools",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 16507,
+    "last_updated": "2021-02-02T18:33:37.907151Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-05-26T14:00:00.377618Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2290037783,
+    "source": null
+  },
+  {
+    "name": "ca-certificates",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Dockerfiles for these images are created from https://github.com/cilium/image-tools",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 13352,
+    "last_updated": "2021-02-02T21:34:56.279158Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-06-12T12:52:35.175899Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 669371,
+    "source": null
+  },
+  {
+    "name": "cilium-builder-dev",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 13123,
+    "last_updated": "2021-02-27T06:23:58.081542Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-06-15T14:22:39.269519Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3337892336,
+    "source": null
+  },
+  {
+    "name": "cilium-runtime-dev",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 10683,
+    "last_updated": "2022-07-15T15:37:44.085878Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-06-15T14:22:48.255365Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 5859333443,
+    "source": null
+  },
+  {
+    "name": "hubble-relay-dev",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 39766,
+    "last_updated": "2021-02-18T11:06:59.633388Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-07T11:10:04.101951Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 27467593058,
+    "source": null
+  },
+  {
+    "name": "hubble-proto",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 33372,
+    "last_updated": "2021-07-20T00:01:21.911599Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-08-18T16:43:18.47305Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 613750510,
+    "source": null
+  },
+  {
+    "name": "cilium-test-dev",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 25502,
+    "last_updated": "2021-02-18T11:03:56.442146Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-08-25T16:23:05.034649Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 507608262841,
+    "source": null
+  },
+  {
+    "name": "kubenetbench",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 38188,
+    "last_updated": "2020-12-07T15:16:38.423166Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-24T10:03:59.197929Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 109453186,
+    "source": null
+  },
+  {
+    "name": "kubenetbench-monitor",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 588433,
+    "last_updated": "2020-12-07T15:17:06.061974Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-24T10:04:40.063287Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 25037035,
+    "source": null
+  },
+  {
+    "name": "hubble-ui",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 93318,
+    "last_updated": "2025-09-03T09:25:41.914741Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-29T08:03:12.991629Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 851779500,
+    "source": null
+  },
+  {
+    "name": "hubble-ui-backend",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 92930,
+    "last_updated": "2025-09-03T09:26:23.240442Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-29T08:05:14.742797Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1059519311,
+    "source": null
+  },
+  {
+    "name": "certgen",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 47207,
+    "last_updated": "2025-11-20T08:02:42.351945Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-07T11:41:03.901135Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1441191153,
+    "source": null
+  },
+  {
+    "name": "clustermesh-apiserver",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 45334,
+    "last_updated": "2025-12-01T14:34:00.979871Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-11-02T19:02:33.83213Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 23945778539,
+    "source": null
+  },
+  {
+    "name": "kafkaproxy",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Fork of spotify/kafkaproxy with stable tag",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 289476,
+    "last_updated": "2020-11-19T17:46:50.337141Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-11-19T14:30:43.513183Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 212807431,
+    "source": null
+  },
+  {
+    "name": "operator-alibabacloud",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "operator-aws is a docker image dedicated for clusters running on Alibaba Cloud",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 26031,
+    "last_updated": "2025-12-01T14:36:03.922156Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-04-28T02:05:16.686299Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 11886599088,
+    "source": null
+  },
+  {
+    "name": "graceful-termination-test-apps",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 18946,
+    "last_updated": "2021-12-09T21:51:34.465252Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-11-05T22:14:11.30385Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 67639692,
+    "source": null
+  },
+  {
+    "name": "pwru",
+    "namespace": "cilium",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 25145,
+    "last_updated": "2025-08-14T10:05:27.8457Z",
+    "last_modified": "2025-06-20T13:22:18.072266Z",
+    "date_registered": "2022-08-11T16:19:46.259194Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1069901448,
+    "source": null
+  }
+]

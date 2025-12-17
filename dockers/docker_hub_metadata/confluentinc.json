@@ -1,0 +1,1248 @@
+[
+  {
+    "name": "cp-base",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Base Image for Official Confluent Docker Images",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 992706,
+    "last_updated": "2022-04-08T02:43:11.513136Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-07-22T00:59:55.423855Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 15233807988,
+    "source": null
+  },
+  {
+    "name": "cp-zookeeper",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Docker Image for Zookeeper",
+    "is_private": false,
+    "star_count": 190,
+    "pull_count": 189658279,
+    "last_updated": "2025-11-28T15:21:01.60915Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-07-22T01:00:19.20062Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 179588926680,
+    "source": null
+  },
+  {
+    "name": "cp-kafka",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Docker Image for Kafka (Community Version)",
+    "is_private": false,
+    "star_count": 519,
+    "pull_count": 307208566,
+    "last_updated": "2025-11-28T15:21:02.597907Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-07-22T01:00:57.665431Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 183315132225,
+    "source": null
+  },
+  {
+    "name": "cp-kafka-rest",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Docker Image for the REST Proxy",
+    "is_private": false,
+    "star_count": 77,
+    "pull_count": 72278809,
+    "last_updated": "2025-11-28T15:19:35.849351Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-07-22T01:01:13.506102Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 523739518264,
+    "source": null
+  },
+  {
+    "name": "cp-schema-registry",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Docker Images for Schema Registry",
+    "is_private": false,
+    "star_count": 98,
+    "pull_count": 145499708,
+    "last_updated": "2025-11-28T15:19:54.435524Z",
+    "last_modified": "2025-06-16T19:37:22.473828Z",
+    "date_registered": "2016-07-22T01:01:31.750955Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 562013996153,
+    "source": null
+  },
+  {
+    "name": "cp-kafka-connect",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Docker Base Image for Kafka Connect",
+    "is_private": false,
+    "star_count": 155,
+    "pull_count": 72102094,
+    "last_updated": "2025-11-28T15:21:01.056778Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-07-22T01:01:56.283525Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 476467968522,
+    "source": null
+  },
+  {
+    "name": "cp-control-center",
+    "namespace": "confluentinc",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "(Deprecated) Official Confluent Docker Image for Confluent Control Center",
+    "is_private": false,
+    "star_count": 15,
+    "pull_count": 525313,
+    "last_updated": "2016-10-18T20:33:25.900383Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-07-22T01:02:26.200588Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1551452206,
+    "source": null
+  },
+  {
+    "name": "cp-kafkacat",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 29,
+    "pull_count": 30788984,
+    "last_updated": "2025-03-21T08:47:12.031296Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-09-06T23:39:08.687304Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 59109752397,
+    "source": null
+  },
+  {
+    "name": "cp-kafka-connect-base",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Docker Base Image for Kafka Connect",
+    "is_private": false,
+    "star_count": 19,
+    "pull_count": 9135876,
+    "last_updated": "2025-11-28T15:21:03.520846Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-11-09T16:53:53.159578Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 448583677832,
+    "source": null
+  },
+  {
+    "name": "cp-enterprise-control-center",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Docker Image for Control Center",
+    "is_private": false,
+    "star_count": 23,
+    "pull_count": 25704809,
+    "last_updated": "2025-11-28T15:19:19.299968Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-11-09T16:54:46.901808Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 334224599887,
+    "source": null
+  },
+  {
+    "name": "cp-enterprise-replicator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Docker Image for Replicator",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 3178004,
+    "last_updated": "2025-11-28T15:25:57.444394Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-11-09T16:55:42.654832Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 813805554033,
+    "source": null
+  },
+  {
+    "name": "cp-enterprise-kafka",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "[Deprecated] Official Confluent Docker Images for Confluent's Enterprise Kafka Distribution",
+    "is_private": false,
+    "star_count": 17,
+    "pull_count": 20627212,
+    "last_updated": "2025-11-28T15:21:03.549101Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-11-09T16:56:01.207655Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 229072223239,
+    "source": null
+  },
+  {
+    "name": "cp-kafka-streams-examples",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "CP Kafka Streams examples in https://github.com/confluentinc/examples/tree/master/kafka-streams",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 46213,
+    "last_updated": "2017-07-31T20:45:09.011973Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-05-03T17:21:32.206535Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2655920809,
+    "source": null
+  },
+  {
+    "name": "docker-demo-base",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "https://github.com/confluentinc/docker-demo-base",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 12668,
+    "last_updated": "2017-11-15T01:09:19.247664Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-08-23T20:35:23.461173Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1366636351,
+    "source": null
+  },
+  {
+    "name": "kafka-streams-examples",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "CP Kafka Streams examples in https://github.com/confluentinc/kafka-streams-examples/tree/master",
+    "is_private": false,
+    "star_count": 8,
+    "pull_count": 1478286,
+    "last_updated": "2025-11-28T15:19:18.543436Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-08-29T22:17:05.679141Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 169632696969,
+    "source": null
+  },
+  {
+    "name": "cp-enterprise-replicator-executable",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Docker Image for Replicator Executable",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 1670075,
+    "last_updated": "2025-11-28T15:25:52.856228Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-07-24T19:33:01.079336Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 802577233179,
+    "source": null
+  },
+  {
+    "name": "cp-kafka-mqtt",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Docker Image for Kafka MQTT Proxy",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 1519508,
+    "last_updated": "2025-11-28T15:19:08.079544Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-08-02T18:13:51.365108Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 155490286314,
+    "source": null
+  },
+  {
+    "name": "cp-base-new",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 1971903,
+    "last_updated": "2025-11-28T15:15:23.911121Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-03-29T00:47:22.948708Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 130513376436,
+    "source": null
+  },
+  {
+    "name": "cp-server",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 18,
+    "pull_count": 20180259,
+    "last_updated": "2025-11-28T15:21:02.861595Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-19T16:01:32.738196Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 478656662344,
+    "source": null
+  },
+  {
+    "name": "cp-server-connect-base",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 1722999,
+    "last_updated": "2025-11-28T15:21:02.297459Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-19T16:04:42.766237Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 712093109325,
+    "source": null
+  },
+  {
+    "name": "cp-server-connect",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 3759601,
+    "last_updated": "2025-11-28T15:21:01.966382Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-19T16:34:46.322437Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 726104600635,
+    "source": null
+  },
+  {
+    "name": "cp-server-connect-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 477575,
+    "last_updated": "2022-06-28T15:24:07.885295Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-25T21:31:12.048172Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 56967752949,
+    "source": null
+  },
+  {
+    "name": "cp-enterprise-control-center-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 1195728,
+    "last_updated": "2022-06-28T15:24:34.471131Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-25T21:39:30.30069Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 28831835526,
+    "source": null
+  },
+  {
+    "name": "cp-server-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 1369527,
+    "last_updated": "2022-06-28T15:24:46.132102Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-25T21:43:32.838926Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 38818148728,
+    "source": null
+  },
+  {
+    "name": "cp-ksql-server-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 57486,
+    "last_updated": "2020-06-01T18:44:01.839213Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-25T21:44:18.021192Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3477759640,
+    "source": null
+  },
+  {
+    "name": "cp-enterprise-replicator-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 261954,
+    "last_updated": "2022-06-28T15:25:34.479522Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-25T21:46:46.624871Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 60292797254,
+    "source": null
+  },
+  {
+    "name": "cp-schema-registry-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 398683,
+    "last_updated": "2022-06-28T15:26:19.02178Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-25T21:50:31.983412Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 43330279590,
+    "source": null
+  },
+  {
+    "name": "cp-zookeeper-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 1334331,
+    "last_updated": "2022-06-28T15:26:33.418766Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-25T21:52:07.987304Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 16773929504,
+    "source": null
+  },
+  {
+    "name": "cp-init-container-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 1560842,
+    "last_updated": "2022-06-28T15:26:43.658372Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-25T21:52:22.162182Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 9659198486,
+    "source": null
+  },
+  {
+    "name": "cp-operator-service",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 2041673,
+    "last_updated": "2021-07-21T01:16:34.074063Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-26T16:30:23.5705Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 693322050,
+    "source": null
+  },
+  {
+    "name": "cp-manager",
+    "namespace": "confluentinc",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 156098,
+    "last_updated": "2019-07-26T16:30:46.707681Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-26T16:30:46.447775Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 14727241,
+    "source": null
+  },
+  {
+    "name": "ksqldb-server",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The server image for ksqlDB.",
+    "is_private": false,
+    "star_count": 30,
+    "pull_count": 27247860,
+    "last_updated": "2025-01-24T00:02:06.045715Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-11-19T16:28:30.580807Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 10764465769,
+    "source": null
+  },
+  {
+    "name": "ksqldb-cli",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The CLI image for ksqlDB",
+    "is_private": false,
+    "star_count": 11,
+    "pull_count": 1234822,
+    "last_updated": "2025-01-24T00:02:02.402845Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-11-19T16:29:00.559744Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 10766049477,
+    "source": null
+  },
+  {
+    "name": "cp-ksqldb-server",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "This is the production ready Confluent docker image for KSQL-DB Server.",
+    "is_private": false,
+    "star_count": 15,
+    "pull_count": 10780271,
+    "last_updated": "2025-11-28T15:25:17.431054Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-03-30T19:11:35.049128Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 324984045993,
+    "source": null
+  },
+  {
+    "name": "cp-ksqldb-cli",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "This is the production ready Confluent docker image for the KSQL-DB CLI.",
+    "is_private": false,
+    "star_count": 6,
+    "pull_count": 3604373,
+    "last_updated": "2025-11-28T15:25:16.043744Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-03-30T19:13:08.398051Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 178172958684,
+    "source": null
+  },
+  {
+    "name": "ksqldb-examples",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 1916222,
+    "last_updated": "2025-11-28T15:25:12.737195Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-04-22T20:39:51.626138Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 212574610674,
+    "source": null
+  },
+  {
+    "name": "cp-ksqldb-server-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 210697,
+    "last_updated": "2022-06-28T15:25:15.027579Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-04-23T02:37:05.953108Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 28692380372,
+    "source": null
+  },
+  {
+    "name": "ccloud-cli",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Confluent Cloud CLI on Alpine base image.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 259695,
+    "last_updated": "2023-05-16T22:01:58.531151Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-12-14T19:25:32.356648Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1745436901,
+    "source": null
+  },
+  {
+    "name": "confluent-cli",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Confluent CLI on Alpine base image.",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 409666,
+    "last_updated": "2025-11-21T23:53:27.273575Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-01-03T22:02:19.958161Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 14300355232,
+    "source": null
+  },
+  {
+    "name": "confluent-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 5161075,
+    "last_updated": "2025-10-16T02:01:19.054338Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-05-11T01:05:13.573842Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 7244207518,
+    "source": null
+  },
+  {
+    "name": "confluent-init-container",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 3175680,
+    "last_updated": "2025-10-16T02:04:40.320691Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-06-08T21:30:40.295303Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 38511066240,
+    "source": null
+  },
+  {
+    "name": "cp-kcat",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 195572,
+    "last_updated": "2025-11-28T15:18:54.656455Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-07-07T01:36:13.536419Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 53019114982,
+    "source": null
+  },
+  {
+    "name": "cpc-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Confluent Private Cloud(CPC) Operator ",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 74034,
+    "last_updated": "2025-06-13T13:23:06.918552Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-10-14T20:23:49.809256Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 949148632,
+    "source": null
+  },
+  {
+    "name": "confluent-local",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 9,
+    "pull_count": 4193704,
+    "last_updated": "2025-11-28T15:21:02.996165Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-05-17T17:22:42.228115Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 47736159295,
+    "source": null
+  },
+  {
+    "name": "cp-flink-kubernetes-operator",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 26465,
+    "last_updated": "2025-10-24T09:10:52.541078Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-05-27T21:52:44.292688Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2228817077,
+    "source": null
+  },
+  {
+    "name": "cp-flink",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 99212,
+    "last_updated": "2025-10-27T13:31:05.675554Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-05-27T21:53:01.397601Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 54379906578,
+    "source": null
+  },
+  {
+    "name": "cp-cmf",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Docker image Confluent Manager for Apache Flink® (C̨MF)",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 16261,
+    "last_updated": "2025-11-27T16:06:50.127198Z",
+    "last_modified": "2024-12-04T23:00:35.673507Z",
+    "date_registered": "2024-08-27T11:54:54.135206Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 10832957805,
+    "source": null
+  },
+  {
+    "name": "cp-enterprise-alertmanager",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Dockers image for Alert Manager required by Control Center",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 20848,
+    "last_updated": "2025-11-14T09:14:40.274474Z",
+    "last_modified": "2025-06-05T15:50:48.598009Z",
+    "date_registered": "2025-05-08T18:13:23.364992Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 458824124,
+    "source": null
+  },
+  {
+    "name": "cp-enterprise-prometheus",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Dockers image for Prometheus required by Control Center",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 21457,
+    "last_updated": "2025-11-14T09:14:41.5984Z",
+    "last_modified": "2025-06-05T15:51:10.216298Z",
+    "date_registered": "2025-05-08T18:13:26.968882Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1056213229,
+    "source": null
+  },
+  {
+    "name": "cp-enterprise-control-center-next-gen",
+    "namespace": "confluentinc",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Confluent Docker Image for Confluent Control Center",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 32498,
+    "last_updated": "2025-11-14T09:14:41.152946Z",
+    "last_modified": "2025-06-05T15:51:36.186431Z",
+    "date_registered": "2025-05-08T18:14:15.546592Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 13748502757,
+    "source": null
+  }
+]

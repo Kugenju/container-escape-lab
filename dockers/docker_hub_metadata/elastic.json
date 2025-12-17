@@ -1,0 +1,413 @@
+[
+  {
+    "name": "elasticsearch",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Elasticsearch Docker image maintained by Elastic.",
+    "is_private": false,
+    "star_count": 101,
+    "pull_count": 22867190,
+    "last_updated": "2025-12-02T14:14:46.781346Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-10-14T11:47:15.243303Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 216213829720,
+    "source": null
+  },
+  {
+    "name": "kibana",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Kibana docker images maintained by Elastic!",
+    "is_private": false,
+    "star_count": 50,
+    "pull_count": 4440945,
+    "last_updated": "2025-12-02T14:15:29.560137Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-10-14T11:49:11.671261Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 141211072364,
+    "source": null
+  },
+  {
+    "name": "logstash",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Logstash docker images maintained by Elastic!\n",
+    "is_private": false,
+    "star_count": 30,
+    "pull_count": 4122411,
+    "last_updated": "2025-12-02T14:13:48.050259Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-10T09:35:30.95531Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 192276975360,
+    "source": null
+  },
+  {
+    "name": "filebeat",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Filebeat docker images maintained by Elastic!\n",
+    "is_private": false,
+    "star_count": 92,
+    "pull_count": 65195925,
+    "last_updated": "2025-12-02T14:26:49.067409Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-16T08:40:39.261447Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 34717800503,
+    "source": null
+  },
+  {
+    "name": "packetbeat",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Packetbeat docker images maintained by Elastic!\n",
+    "is_private": false,
+    "star_count": 9,
+    "pull_count": 1010848,
+    "last_updated": "2025-12-02T14:30:05.299755Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-16T08:40:59.162611Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 34896489336,
+    "source": null
+  },
+  {
+    "name": "heartbeat",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Heartbeat docker images maintained by Elastic!\n",
+    "is_private": false,
+    "star_count": 8,
+    "pull_count": 1096143,
+    "last_updated": "2025-12-02T14:29:44.778791Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-16T08:41:27.547831Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 216193476485,
+    "source": null
+  },
+  {
+    "name": "auditbeat",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Auditbeat docker images maintained by Elastic!\n",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 1409872,
+    "last_updated": "2025-12-02T14:26:38.709214Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-16T08:41:41.420118Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 29055286477,
+    "source": null
+  },
+  {
+    "name": "metricbeat",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Metricbeat docker images maintained by Elastic!\n",
+    "is_private": false,
+    "star_count": 17,
+    "pull_count": 5110596,
+    "last_updated": "2025-12-02T14:29:56.159455Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-16T08:41:56.704489Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 37722553141,
+    "source": null
+  },
+  {
+    "name": "apm-server",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The APM Server docker images maintained by Elastic!",
+    "is_private": false,
+    "star_count": 20,
+    "pull_count": 2007061,
+    "last_updated": "2025-12-02T14:13:23.937134Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-16T08:42:17.027945Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 20824129526,
+    "source": null
+  },
+  {
+    "name": "journalbeat",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 929660,
+    "last_updated": "2022-01-13T15:48:37.790297Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-02-11T14:48:37.673205Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 4422160661,
+    "source": null
+  },
+  {
+    "name": "rally",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 6,
+    "pull_count": 546967,
+    "last_updated": "2025-04-01T06:57:35.714476Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-06-05T07:17:15.011086Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 9849911275,
+    "source": null
+  },
+  {
+    "name": "elastic-logging-plugin",
+    "namespace": "elastic",
+    "repository_type": "plugin",
+    "status": 1,
+    "status_description": "active",
+    "description": "Docker plugin that sends container logs to Elastic stack",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 74261,
+    "last_updated": "2025-12-02T14:10:23.936301Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-02-11T15:18:33.26079Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.plugin.v1+json"
+    ],
+    "content_types": [
+      "plugin"
+    ],
+    "categories": [],
+    "storage_size": 2739035070,
+    "source": null
+  },
+  {
+    "name": "elastic-agent",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Elastic Agent Docker image maintained by Elastic. ",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 3587305,
+    "last_updated": "2025-12-02T14:19:17.626549Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-06-18T13:11:28.015548Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 162186133856,
+    "source": null
+  },
+  {
+    "name": "eck-operator",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The official Elasticsearch Operator from the creators of Elasticsearch",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 500130,
+    "last_updated": "2025-10-30T08:44:43.594553Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-10-25T15:18:43.617778Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 8340251846,
+    "source": null
+  },
+  {
+    "name": "elastic-agent-complete",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 43667,
+    "last_updated": "2025-12-02T14:21:43.540871Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-04-11T15:50:18.167361Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 280460060207,
+    "source": null
+  },
+  {
+    "name": "enterprise-search",
+    "namespace": "elastic",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 12635,
+    "last_updated": "2025-12-02T14:04:45.474209Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-03-26T09:01:06.724007Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 95226674858,
+    "source": null
+  }
+]

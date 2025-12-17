@@ -1,0 +1,192 @@
+[
+  {
+    "name": "fluentd",
+    "namespace": "fluent",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Fluentd Docker image by fluent project: http://www.fluentd.org/",
+    "is_private": false,
+    "star_count": 373,
+    "pull_count": 144833612,
+    "last_updated": "2025-11-21T02:52:41.41945Z",
+    "last_modified": "2025-11-10T05:47:41.425953Z",
+    "date_registered": "2015-06-04T12:30:10.509644Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 179167167826,
+    "source": null
+  },
+  {
+    "name": "fluent-bit",
+    "namespace": "fluent",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Fluent Bit, lightweight logs and metrics collector and forwarder",
+    "is_private": false,
+    "star_count": 125,
+    "pull_count": 15091125963,
+    "last_updated": "2025-11-12T00:13:28.555343Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-02-10T02:52:58.27397Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Internet of things",
+        "slug": "internet-of-things"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 183094351523,
+    "source": null
+  },
+  {
+    "name": "fluentd-kubernetes-daemonset",
+    "namespace": "fluent",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Fluentd Daemonset for Kubernetes",
+    "is_private": false,
+    "star_count": 67,
+    "pull_count": 972045416,
+    "last_updated": "2025-11-27T01:04:53.723085Z",
+    "last_modified": "2025-09-12T06:14:22.811315Z",
+    "date_registered": "2017-03-23T21:02:55.623946Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 176703169677,
+    "source": null
+  },
+  {
+    "name": "fluent-bit-kubernetes-daemonset",
+    "namespace": "fluent",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Fluent Bit DaemonSet for Kubernetes. Lightweight log shipper with API Server metadata support.",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 213022,
+    "last_updated": "2017-11-02T22:16:46.320183Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-03-30T07:37:03.256418Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 909655841,
+    "source": null
+  },
+  {
+    "name": "fluent-bit-kafka-dev",
+    "namespace": "fluent",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 14204,
+    "last_updated": "2017-12-22T19:26:35.130686Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-10T23:31:22.515128Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 255504493,
+    "source": null
+  },
+  {
+    "name": "fluentd-aggregator",
+    "namespace": "fluent",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 253352,
+    "last_updated": "2023-02-09T17:39:05.33142Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-11-01T12:36:37.938628Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 7073698071,
+    "source": null
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "name": "whoami",
+    "namespace": "traefik",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Tiny Go webserver that prints OS information and HTTP request to output",
+    "is_private": false,
+    "star_count": 67,
+    "pull_count": 32089588,
+    "last_updated": "2025-03-13T14:27:32.539622Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-16T07:52:09.504276Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 144513205,
+    "source": null
+  },
+  {
+    "name": "whoamitcp",
+    "namespace": "traefik",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Tiny Go TCP server that prints OS information and request to output",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 483438,
+    "last_updated": "2023-03-16T09:04:29.04201Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-16T07:52:34.527674Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 36870033,
+    "source": null
+  },
+  {
+    "name": "whoamiudp",
+    "namespace": "traefik",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Tiny Go UDP server that prints OS information and request to output",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 68541,
+    "last_updated": "2023-03-15T15:43:58.449707Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-16T07:53:00.780507Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 25111095,
+    "source": null
+  },
+  {
+    "name": "traefik",
+    "namespace": "traefik",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Traefik unofficial image (please use official image instead https://hub.docker.com/_/traefik)",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 26330,
+    "last_updated": "2025-12-02T09:45:46.499589Z",
+    "last_modified": "2025-01-13T08:26:06.792691Z",
+    "date_registered": "2020-09-16T09:35:37.383584Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 121347952053,
+    "source": null
+  },
+  {
+    "name": "mesh",
+    "namespace": "traefik",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Simpler Service Mesh",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 144554,
+    "last_updated": "2022-08-19T09:05:50.1971Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-16T09:38:18.487186Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 419994631,
+    "source": null
+  },
+  {
+    "name": "traefikee",
+    "namespace": "traefik",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 910598,
+    "last_updated": "2025-08-06T15:35:32.1422Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-05T13:51:53.35866Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 40613128841,
+    "source": null
+  },
+  {
+    "name": "jobs",
+    "namespace": "traefik",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 229658,
+    "last_updated": "2025-11-25T10:50:32.966122Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-15T13:56:17.77554Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 173806028,
+    "source": null
+  },
+  {
+    "name": "traefikee-webapp-demo",
+    "namespace": "traefik",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 745214,
+    "last_updated": "2022-09-26T08:42:56.050158Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-11-03T18:05:22.546033Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 13213248,
+    "source": null
+  }
+]
