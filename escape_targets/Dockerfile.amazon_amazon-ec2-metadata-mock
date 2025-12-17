@@ -1,0 +1,17 @@
+# Escape target container (for research only)
+# Based on: amazon/amazon-ec2-metadata-mock
+# Description: The Amazon EC2 Metadata Mock is a tool to simulate Amazon EC2 instance metadata for local testing.
+
+FROM alpine:latest
+
+LABEL org.security.dataset="container-escape-target"
+LABEL source.image="amazon/amazon-ec2-metadata-mock"
+
+RUN apk add --no-cache socat curl wget netcat-openbsd strace procps iproute2 lsof findutils bash less
+
+# Add non-root user (but root remains default)
+RUN adduser -D -s /bin/sh attacker 2>/dev/null || true
+
+EXPOSE 8080
+
+CMD ["sh", "-c", "while true; do echo 'HTTP/1.1 200 OK\r\n\r\nEscape Target Active' | nc -l -p 8080 -s 0.0.0.0 2>/dev/null; done"]
