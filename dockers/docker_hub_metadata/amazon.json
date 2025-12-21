@@ -1,0 +1,2242 @@
+[
+  {
+    "name": "amazon-ecs-agent",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Amazon Elastic Container Service Agent",
+    "is_private": false,
+    "star_count": 108,
+    "pull_count": 1252587732,
+    "last_updated": "2025-11-22T01:51:01.747163Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-12-12T00:40:49.227212Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [],
+    "storage_size": 6883739838,
+    "source": null
+  },
+  {
+    "name": "amazon-ecs-sample",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "A sample PHP app running under Amazon Linux 2, used as a demo application for Amazon ECS",
+    "is_private": false,
+    "star_count": 34,
+    "pull_count": 184967009,
+    "last_updated": "2019-07-02T18:27:57.466955Z",
+    "last_modified": "2025-01-16T23:51:13.545698Z",
+    "date_registered": "2015-03-06T23:15:06.126964Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 268106018,
+    "source": null
+  },
+  {
+    "name": "aws-codebuild-local",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "AWS CodeBuild Local Builds",
+    "is_private": false,
+    "star_count": 59,
+    "pull_count": 928852,
+    "last_updated": "2024-06-19T20:02:52.898951Z",
+    "last_modified": "2025-03-27T06:38:20.773262Z",
+    "date_registered": "2018-05-04T17:18:43.897336Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 7424355672,
+    "source": null
+  },
+  {
+    "name": "dynamodb-local",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DynamoDB local",
+    "is_private": false,
+    "star_count": 483,
+    "pull_count": 379987043,
+    "last_updated": "2025-09-12T17:47:58.387825Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-08-22T16:11:22.894588Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 15792458762,
+    "source": null
+  },
+  {
+    "name": "aws-ebs-csi-driver",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "Amazon Elastic Block Store CSI Driver",
+    "is_private": false,
+    "star_count": 6,
+    "pull_count": 52295380,
+    "last_updated": "2022-05-20T21:44:54.831296Z",
+    "last_modified": "2025-03-15T02:13:08.798931Z",
+    "date_registered": "2018-10-29T23:27:00.653703Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 146434690404,
+    "source": null
+  },
+  {
+    "name": "aws-xray-daemon",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The AWS X-Ray daemon gathers raw segment data and relays it to the AWS X-Ray API.",
+    "is_private": false,
+    "star_count": 35,
+    "pull_count": 1447314711,
+    "last_updated": "2025-11-25T23:59:40.764951Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-11-24T03:52:25.230245Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 5196205026,
+    "source": null
+  },
+  {
+    "name": "aws-alb-ingress-controller",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "AWS ALB Ingress Controller",
+    "is_private": false,
+    "star_count": 6,
+    "pull_count": 163081549,
+    "last_updated": "2022-11-12T01:32:26.879458Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-12-07T21:49:11.649715Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 2104020437,
+    "source": null
+  },
+  {
+    "name": "aws-stepfunctions-local",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "AWS Step Functions Local",
+    "is_private": false,
+    "star_count": 63,
+    "pull_count": 6917607,
+    "last_updated": "2024-05-18T00:53:12.533516Z",
+    "last_modified": "2025-03-27T08:00:31.36707Z",
+    "date_registered": "2019-02-04T18:19:30.261588Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 24858226395,
+    "source": null
+  },
+  {
+    "name": "aws-efs-csi-driver",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "Amazon Elastic Filesystem CSI Driver",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 1187915409,
+    "last_updated": "2025-02-26T00:02:16.214468Z",
+    "last_modified": "2025-04-10T22:00:06.802244Z",
+    "date_registered": "2019-02-19T01:01:46.611824Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 222004880406,
+    "source": null
+  },
+  {
+    "name": "aws-iot-greengrass",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "Docker Image to run AWS IoT Greengrass inside container",
+    "is_private": false,
+    "star_count": 28,
+    "pull_count": 777408,
+    "last_updated": "2023-07-20T19:39:29.844537Z",
+    "last_modified": "2025-03-21T04:43:47.014773Z",
+    "date_registered": "2019-03-07T18:39:29.937783Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 15780679439,
+    "source": null
+  },
+  {
+    "name": "opendistro-for-elasticsearch",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "The Docker image for Open Distro",
+    "is_private": false,
+    "star_count": 107,
+    "pull_count": 51606295,
+    "last_updated": "2021-12-11T20:09:16.47837Z",
+    "last_modified": "2025-01-24T20:25:41.290274Z",
+    "date_registered": "2019-03-11T14:01:06.003214Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 12919077107,
+    "source": null
+  },
+  {
+    "name": "opendistro-for-elasticsearch-kibana",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "The Docker image for Open Distro Kibana",
+    "is_private": false,
+    "star_count": 61,
+    "pull_count": 8836552,
+    "last_updated": "2021-04-07T18:53:22.555031Z",
+    "last_modified": "2025-01-24T20:25:46.351763Z",
+    "date_registered": "2019-03-11T14:02:37.844419Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 5834313921,
+    "source": null
+  },
+  {
+    "name": "aws-fsx-csi-driver",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "Amazon FSx for Lustre CSI Driver",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 17379606,
+    "last_updated": "2022-12-09T20:35:21.283161Z",
+    "last_modified": "2025-03-15T05:37:50.571168Z",
+    "date_registered": "2019-03-12T16:47:50.823602Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 40015040485,
+    "source": null
+  },
+  {
+    "name": "amazon-ecs-local-container-endpoints",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "ECS Local Container Endpoints helps test applications locally before deploying to Fargate & ECS.",
+    "is_private": false,
+    "star_count": 13,
+    "pull_count": 1187629,
+    "last_updated": "2023-03-08T19:09:42.401728Z",
+    "last_modified": "2025-03-21T01:22:28.073939Z",
+    "date_registered": "2019-03-26T21:08:32.457723Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 760319650,
+    "source": null
+  },
+  {
+    "name": "cloudwatch-agent",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Amazon CloudWatch Agent",
+    "is_private": false,
+    "star_count": 39,
+    "pull_count": 1804228582,
+    "last_updated": "2025-11-20T20:09:31.395808Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-05-15T17:17:22.684516Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 8431118334,
+    "source": null
+  },
+  {
+    "name": "aws-for-fluent-bit",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Fluent Bit image with plugins for AWS",
+    "is_private": false,
+    "star_count": 30,
+    "pull_count": 3022566774,
+    "last_updated": "2025-11-22T00:19:01.414381Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-09T21:44:37.024186Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 113103260734,
+    "source": null
+  },
+  {
+    "name": "lambda-build-node10.x",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "AWS Lambda Build Environment for Node.js 10",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 945526,
+    "last_updated": "2019-08-13T22:40:38.432374Z",
+    "last_modified": "2025-03-24T19:48:48.52754Z",
+    "date_registered": "2019-08-13T22:23:48.959769Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 338386358,
+    "source": null
+  },
+  {
+    "name": "aws-node-termination-handler",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "A Kubernetes DaemonSet to gracefully handle EC2 Spot Instance interruptions. ",
+    "is_private": false,
+    "star_count": 10,
+    "pull_count": 169443729,
+    "last_updated": "2022-02-23T21:44:57.595422Z",
+    "last_modified": "2025-03-11T22:30:24.414334Z",
+    "date_registered": "2019-11-01T18:14:54.553827Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 2541182638,
+    "source": null
+  },
+  {
+    "name": "aws-virtual-gpu-device-plugin",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 611870,
+    "last_updated": "2020-03-25T17:47:53.141254Z",
+    "last_modified": "2025-02-10T17:41:30.175031Z",
+    "date_registered": "2020-03-16T22:47:44.656328Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Machine learning & AI",
+        "slug": "machine-learning-and-ai"
+      }
+    ],
+    "storage_size": 92449682,
+    "source": null
+  },
+  {
+    "name": "aws-cli",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Universal Command Line Interface for Amazon Web Services",
+    "is_private": false,
+    "star_count": 322,
+    "pull_count": 1268608833,
+    "last_updated": "2025-12-02T17:05:02.046997Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-03-27T01:12:58.649817Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 110272839023,
+    "source": null
+  },
+  {
+    "name": "aws-sagemaker-kfp-components",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "SageMaker Components for Kubeflow Pipelines",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 2284928,
+    "last_updated": "2021-02-24T02:26:28.964344Z",
+    "last_modified": "2025-03-24T19:46:03.622417Z",
+    "date_registered": "2020-04-03T17:55:20.904444Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Machine learning & AI",
+        "slug": "machine-learning-and-ai"
+      }
+    ],
+    "storage_size": 4598833891,
+    "source": null
+  },
+  {
+    "name": "amazon-ec2-metadata-mock",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "The Amazon EC2 Metadata Mock is a tool to simulate Amazon EC2 instance metadata for local testing.",
+    "is_private": false,
+    "star_count": 8,
+    "pull_count": 134811,
+    "last_updated": "2021-08-27T00:09:10.271856Z",
+    "last_modified": "2025-03-11T22:21:04.298282Z",
+    "date_registered": "2020-04-28T17:19:09.338451Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 1007139182,
+    "source": null
+  },
+  {
+    "name": "aws-secrets-manager-secret-sidecar",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "Fetches a secret from AWS Secrets Manager",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 3716445,
+    "last_updated": "2021-03-11T18:06:19.321962Z",
+    "last_modified": "2025-02-10T17:53:29.364003Z",
+    "date_registered": "2020-06-11T19:10:04.637693Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 268385693,
+    "source": null
+  },
+  {
+    "name": "aws-secrets-manager-secret-adm-controller",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "A Kubernetes mutating webhook that injects an init container into a pod",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 56842,
+    "last_updated": "2021-03-23T21:37:45.132832Z",
+    "last_modified": "2025-02-10T17:54:24.030723Z",
+    "date_registered": "2020-06-11T19:10:38.969164Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 272037394,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-nodejs12.x",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 2017608,
+    "last_updated": "2024-10-04T17:57:07.388909Z",
+    "last_modified": "2025-03-21T07:03:32.071024Z",
+    "date_registered": "2020-06-11T21:31:11.297721Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 37029527745,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-python3.8",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 1192983,
+    "last_updated": "2025-03-20T11:58:26.873379Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-06-11T21:31:58.261966Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 55318873135,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-ruby2.7",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 35504,
+    "last_updated": "2024-10-04T18:28:21.832486Z",
+    "last_modified": "2025-03-21T06:08:02.191423Z",
+    "date_registered": "2020-06-11T21:32:29.351049Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 40674913051,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-go1.x",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 73087,
+    "last_updated": "2024-10-04T19:39:11.78459Z",
+    "last_modified": "2025-03-21T06:01:35.268313Z",
+    "date_registered": "2020-06-11T21:32:58.100323Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 27151946778,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-java11",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 104487,
+    "last_updated": "2025-11-23T15:08:11.549043Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-06-11T21:35:46.923293Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 67169276208,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-dotnetcore3.1",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 38083,
+    "last_updated": "2024-10-07T12:52:19.009028Z",
+    "last_modified": "2025-03-19T03:47:58.41914Z",
+    "date_registered": "2020-06-11T21:36:14.046801Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 41881158861,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-nodejs10.x",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 148956,
+    "last_updated": "2024-10-04T17:49:13.158885Z",
+    "last_modified": "2025-03-21T07:05:44.14624Z",
+    "date_registered": "2020-06-11T21:36:38.11194Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 22498377464,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-python3.7",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 755891,
+    "last_updated": "2024-10-04T18:49:01.577464Z",
+    "last_modified": "2025-03-21T06:06:31.667376Z",
+    "date_registered": "2020-06-11T21:37:53.302316Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 45895754853,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-python3.6",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 218236,
+    "last_updated": "2024-10-07T12:10:37.710051Z",
+    "last_modified": "2025-03-19T03:48:31.313897Z",
+    "date_registered": "2020-06-11T21:38:18.90094Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 41819267813,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-ruby2.5",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 21158,
+    "last_updated": "2024-10-04T18:14:31.736791Z",
+    "last_modified": "2025-03-21T06:08:26.651205Z",
+    "date_registered": "2020-06-11T21:38:49.754574Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 50281587867,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-java8",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 80639,
+    "last_updated": "2024-10-04T19:00:56.814326Z",
+    "last_modified": "2025-03-21T06:05:17.141103Z",
+    "date_registered": "2020-06-11T21:39:12.012984Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 29394939216,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-dotnetcore2.1",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 24734,
+    "last_updated": "2024-10-04T19:06:19.590541Z",
+    "last_modified": "2025-03-21T06:02:21.755802Z",
+    "date_registered": "2020-06-11T21:39:36.223763Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 58427257783,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-provided",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 34116,
+    "last_updated": "2024-10-04T17:33:29.340647Z",
+    "last_modified": "2025-03-21T07:06:25.369532Z",
+    "date_registered": "2020-06-11T21:40:04.288918Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 27419240998,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-nodejs12.x",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 8,
+    "pull_count": 1098705,
+    "last_updated": "2023-09-12T18:38:53.917296Z",
+    "last_modified": "2025-03-27T08:03:03.761405Z",
+    "date_registered": "2020-06-11T21:40:36.411078Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 23045146787,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-python3.8",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 11,
+    "pull_count": 3609136,
+    "last_updated": "2023-09-12T18:19:56.18206Z",
+    "last_modified": "2025-03-21T04:47:44.330775Z",
+    "date_registered": "2020-06-11T21:41:02.076633Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 23804129320,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-ruby2.7",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 76559,
+    "last_updated": "2023-09-12T18:26:32.604591Z",
+    "last_modified": "2025-03-21T04:51:11.502803Z",
+    "date_registered": "2020-06-11T21:41:26.942562Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 23369344651,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-java11",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 93946,
+    "last_updated": "2023-09-12T18:36:27.059413Z",
+    "last_modified": "2025-03-27T07:59:21.689256Z",
+    "date_registered": "2020-06-11T21:42:21.380281Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 26691884973,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-nodejs10.x",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 92048,
+    "last_updated": "2021-12-24T00:17:38.416099Z",
+    "last_modified": "2025-02-10T17:44:43.517594Z",
+    "date_registered": "2020-06-11T21:44:34.295598Z",
+    "affiliation": "",
+    "media_types": [],
+    "content_types": [],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 18778894629,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-python3.7",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 6,
+    "pull_count": 1933904,
+    "last_updated": "2023-09-12T18:17:25.541407Z",
+    "last_modified": "2025-03-21T04:46:56.799884Z",
+    "date_registered": "2020-06-11T21:45:04.301328Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 16078160839,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-python3.6",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 538230,
+    "last_updated": "2023-09-12T18:13:38.422488Z",
+    "last_modified": "2025-03-21T04:45:01.782324Z",
+    "date_registered": "2020-06-11T21:46:15.103638Z",
+    "affiliation": "",
+    "media_types": [],
+    "content_types": [],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 15008005508,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-ruby2.5",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 37794,
+    "last_updated": "2021-12-23T23:57:04.608209Z",
+    "last_modified": "2025-02-10T17:44:34.928338Z",
+    "date_registered": "2020-06-11T21:46:45.917498Z",
+    "affiliation": "",
+    "media_types": [],
+    "content_types": [],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 13058706587,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-java8",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 91479,
+    "last_updated": "2023-09-12T18:29:41.082958Z",
+    "last_modified": "2025-03-21T04:54:52.209171Z",
+    "date_registered": "2020-06-11T21:47:05.043619Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 20500009397,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-provided",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 22134,
+    "last_updated": "2023-09-12T18:57:15.600034Z",
+    "last_modified": "2025-03-27T08:01:10.951757Z",
+    "date_registered": "2020-06-11T21:47:53.708375Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 15891321577,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-python2.7",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 35993,
+    "last_updated": "2024-10-04T18:56:03.320141Z",
+    "last_modified": "2025-03-21T06:05:38.021114Z",
+    "date_registered": "2020-06-22T21:23:09.718998Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 29479727656,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-python2.7",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 85440,
+    "last_updated": "2021-12-23T23:39:37.726256Z",
+    "last_modified": "2025-02-10T17:44:11.951897Z",
+    "date_registered": "2020-06-22T21:23:38.386587Z",
+    "affiliation": "",
+    "media_types": [],
+    "content_types": [],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 11356813798,
+    "source": null
+  },
+  {
+    "name": "aws-glue-libs",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Docker container image for AWS Glue ETL",
+    "is_private": false,
+    "star_count": 70,
+    "pull_count": 2675228,
+    "last_updated": "2025-11-25T00:58:55.347428Z",
+    "last_modified": "2025-04-14T02:02:43.876976Z",
+    "date_registered": "2020-07-20T20:06:40.32036Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 163723272370,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-java8.al2",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 43783,
+    "last_updated": "2025-11-23T14:57:17.007044Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-08-12T16:56:29.786415Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 55936155805,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-provided.al2",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 19285,
+    "last_updated": "2025-11-23T13:52:21.89089Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-08-12T16:59:59.69328Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 19920868570,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-java8.al2",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 25766,
+    "last_updated": "2023-09-12T18:34:08.168607Z",
+    "last_modified": "2025-03-21T04:55:20.927105Z",
+    "date_registered": "2020-08-12T17:02:08.764166Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 29737441476,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-provided.al2",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 11365,
+    "last_updated": "2023-09-12T18:59:47.291117Z",
+    "last_modified": "2025-03-27T06:41:59.815932Z",
+    "date_registered": "2020-08-12T17:02:38.178739Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 21343780265,
+    "source": null
+  },
+  {
+    "name": "amazon-eks-pod-identity-webhook",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A Kubernetes webhook for pods that need AWS IAM access",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 9875833,
+    "last_updated": "2025-05-01T17:32:17.714947Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-24T00:41:19.590177Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 1879201969,
+    "source": null
+  },
+  {
+    "name": "aws-otel-collector",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "AWS Distro for OpenTelemetry Collector is a AWS supported version of OpenTelemetry Collector.",
+    "is_private": false,
+    "star_count": 13,
+    "pull_count": 239963041,
+    "last_updated": "2025-10-10T18:08:13.870637Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-20T21:34:39.018836Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 4655209228,
+    "source": null
+  },
+  {
+    "name": "amazon-lightsail",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 98611,
+    "last_updated": "2020-11-23T18:56:18.834981Z",
+    "last_modified": "2025-02-10T20:42:36.23813Z",
+    "date_registered": "2020-11-20T00:37:57.518485Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 185579731,
+    "source": null
+  },
+  {
+    "name": "aws-lambda-dotnet",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "AWS Lambda base images for .NET",
+    "is_private": false,
+    "star_count": 20,
+    "pull_count": 1014352,
+    "last_updated": "2025-11-23T15:10:01.894729Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-12-01T16:55:26.258588Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 143553840648,
+    "source": null
+  },
+  {
+    "name": "aws-lambda-go",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "AWS Lambda base images for Go",
+    "is_private": false,
+    "star_count": 15,
+    "pull_count": 338385,
+    "last_updated": "2024-10-04T19:47:51.577141Z",
+    "last_modified": "2025-03-21T05:01:16.429723Z",
+    "date_registered": "2020-12-01T16:56:07.536786Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 26445311368,
+    "source": null
+  },
+  {
+    "name": "aws-lambda-java",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "AWS Lambda base images for Java",
+    "is_private": false,
+    "star_count": 15,
+    "pull_count": 2032738,
+    "last_updated": "2025-11-23T15:04:22.658375Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-12-01T16:56:37.502627Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 232899350989,
+    "source": null
+  },
+  {
+    "name": "aws-lambda-nodejs",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "AWS Lambda base images for NodeJS",
+    "is_private": false,
+    "star_count": 53,
+    "pull_count": 7705323,
+    "last_updated": "2025-11-23T13:37:19.733327Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-12-01T16:57:04.544234Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 305751116035,
+    "source": null
+  },
+  {
+    "name": "aws-lambda-provided",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "AWS Lambda base images for custom runtimes",
+    "is_private": false,
+    "star_count": 28,
+    "pull_count": 2068677,
+    "last_updated": "2025-11-23T13:36:29.514707Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-12-01T16:58:14.960861Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 56659222638,
+    "source": null
+  },
+  {
+    "name": "aws-lambda-python",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "AWS Lambda base images for Python",
+    "is_private": false,
+    "star_count": 105,
+    "pull_count": 3448101,
+    "last_updated": "2025-11-23T14:33:02.510281Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-12-01T16:58:43.690428Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Machine learning & AI",
+        "slug": "machine-learning-and-ai"
+      }
+    ],
+    "storage_size": 590043096082,
+    "source": null
+  },
+  {
+    "name": "aws-lambda-ruby",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "AWS Lambda base images for Ruby",
+    "is_private": false,
+    "star_count": 6,
+    "pull_count": 108703,
+    "last_updated": "2025-11-23T14:13:08.638451Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-12-01T16:59:05.352875Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 338458614363,
+    "source": null
+  },
+  {
+    "name": "amazon-ecs-network-sidecar",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "Network sidecar container with SSH access and network troubleshooting tools for ECS.",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 22977,
+    "last_updated": "2022-12-23T11:05:13.658501Z",
+    "last_modified": "2025-03-21T01:28:46.865191Z",
+    "date_registered": "2020-12-09T20:53:38.410948Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1038045926,
+    "source": null
+  },
+  {
+    "name": "opendistro-for-elasticsearch-data-prepper",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "The Docker image for the Open Distribution for Elasticsearch Data Prepper",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 447516,
+    "last_updated": "2021-12-21T00:28:55.139656Z",
+    "last_modified": "2025-01-24T20:25:35.550807Z",
+    "date_registered": "2020-12-16T19:26:28.366445Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1481578133,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-nodejs14.x",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 867843,
+    "last_updated": "2024-10-04T17:56:17.589358Z",
+    "last_modified": "2025-03-21T07:04:51.133264Z",
+    "date_registered": "2021-02-03T17:03:48.271472Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 35166475000,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-nodejs14.x",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 643516,
+    "last_updated": "2023-09-12T18:40:29.705928Z",
+    "last_modified": "2025-03-27T08:02:26.632386Z",
+    "date_registered": "2021-02-03T17:04:20.813672Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 16587646630,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-emulation-image-python3.9",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 39667,
+    "last_updated": "2025-03-25T19:08:54.035418Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-06-28T17:17:20.449644Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 42079812875,
+    "source": null
+  },
+  {
+    "name": "aws-sam-cli-build-image-python3.9",
+    "namespace": "amazon",
+    "repository_type": "image",
+    "status": 6,
+    "status_description": "archived",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 152471,
+    "last_updated": "2023-09-12T18:22:08.988703Z",
+    "last_modified": "2025-03-21T04:48:30.393544Z",
+    "date_registered": "2021-06-28T17:18:07.864177Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3998883358,
+    "source": null
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "name": "apache",
+    "namespace": "fedora",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 34,
+    "pull_count": 3196953,
+    "last_updated": "2017-02-08T23:43:38.822076Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-05-14T21:45:54Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1692431769,
+    "source": null
+  },
+  {
+    "name": "couchdb",
+    "namespace": "fedora",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 33,
+    "pull_count": 60529,
+    "last_updated": "2016-02-19T17:47:25.177048Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-05-14T22:24:13Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 353921597,
+    "source": null
+  },
+  {
+    "name": "firefox",
+    "namespace": "fedora",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 24,
+    "pull_count": 53244,
+    "last_updated": "2017-02-08T23:56:38.193337Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-05-18T22:38:13Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 4966294815,
+    "source": null
+  },
+  {
+    "name": "mariadb",
+    "namespace": "fedora",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 23,
+    "pull_count": 62248,
+    "last_updated": "2016-06-17T13:02:51.948166Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-05-18T22:39:07Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 956406863,
+    "source": null
+  },
+  {
+    "name": "memcached",
+    "namespace": "fedora",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 19,
+    "pull_count": 67027,
+    "last_updated": "2016-02-19T17:43:03.045462Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-05-18T22:40:06Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 270670618,
+    "source": null
+  },
+  {
+    "name": "nginx",
+    "namespace": "fedora",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 19,
+    "pull_count": 371580,
+    "last_updated": "2016-02-19T17:51:49.791011Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-05-18T22:40:49Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 337974735,
+    "source": null
+  },
+  {
+    "name": "qpid",
+    "namespace": "fedora",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 20,
+    "pull_count": 12876,
+    "last_updated": "2016-02-19T18:32:45.561769Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-05-18T22:42:23Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 401972550,
+    "source": null
+  },
+  {
+    "name": "rabbitmq",
+    "namespace": "fedora",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 18,
+    "pull_count": 38904,
+    "last_updated": "2016-02-19T18:08:57.031397Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-05-18T22:42:47Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 344662216,
+    "source": null
+  },
+  {
+    "name": "ssh",
+    "namespace": "fedora",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 22,
+    "pull_count": 179240,
+    "last_updated": "2017-02-08T23:47:42.735328Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-05-18T22:55:53Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1520026903,
+    "source": null
+  },
+  {
+    "name": "systemd-systemd",
+    "namespace": "fedora",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 25,
+    "pull_count": 42569,
+    "last_updated": "2016-02-19T17:59:57.199336Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-05-18T22:57:17Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 411849871,
+    "source": null
+  },
+  {
+    "name": "cockpitws",
+    "namespace": "fedora",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 60483,
+    "last_updated": "2017-02-09T00:36:11.654326Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-05-14T00:54:43.865796Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 6700170632,
+    "source": null
+  },
+  {
+    "name": "tools",
+    "namespace": "fedora",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Docker image that has systems administration tools used on a Fedora Atomic host.",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 70450,
+    "last_updated": "2017-02-09T00:53:05.352289Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-09-03T13:12:14.949078Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 15513687648,
+    "source": null
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "name": "eol",
+    "namespace": "debian",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "End of Life Debian versions (pointing at archive.debian.org)",
+    "is_private": false,
+    "star_count": 13,
+    "pull_count": 659733,
+    "last_updated": "2025-06-25T19:12:19.841448Z",
+    "last_modified": "2025-06-25T18:34:38.08637Z",
+    "date_registered": "2016-03-29T16:35:41.762283Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 6746051508,
+    "source": null
+  },
+  {
+    "name": "buildd",
+    "namespace": "debian",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "https://hub.docker.com/_/debian/ but --variant=buildd",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 129530,
+    "last_updated": "2023-12-26T08:24:42.744029Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-27T22:20:06.348924Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 132775508048,
+    "source": null
+  },
+  {
+    "name": "snapshot",
+    "namespace": "debian",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "\"debian\", but with sources.list pointing to the venerable http://snapshot.debian.org/",
+    "is_private": false,
+    "star_count": 9,
+    "pull_count": 487710,
+    "last_updated": "2023-12-26T21:44:40.985607Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-07-16T14:12:45.348191Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 37827342079,
+    "source": null
+  }
+]

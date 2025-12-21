@@ -1,0 +1,1513 @@
+[
+  {
+    "name": "mysql",
+    "namespace": "google",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "MySQL server for Google Compute Engine",
+    "is_private": false,
+    "star_count": 26,
+    "pull_count": 175272,
+    "last_updated": "2015-11-13T01:19:13.644721Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-01-24T02:14:36Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 96720497,
+    "source": null
+  },
+  {
+    "name": "cloud-sdk",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Google Cloud SDKbundle with all components and dependencies ",
+    "is_private": false,
+    "star_count": 448,
+    "pull_count": 400831189,
+    "last_updated": "2025-11-18T16:36:32.606755Z",
+    "last_modified": "2025-09-05T19:43:55.761432Z",
+    "date_registered": "2014-02-28T05:58:25Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 3189628824784,
+    "source": null
+  },
+  {
+    "name": "guestbook-python-redis",
+    "namespace": "google",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "A simple guestbook example written in Python.  It works against a redis backend.",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 2345800,
+    "last_updated": "2015-11-13T01:44:24.018035Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-05-20T21:33:53Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 147228043,
+    "source": null
+  },
+  {
+    "name": "cadvisor",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED: New images will NOT be pushed.\n\nPlease use gcr.io/cadvisor/cadvisor instead.",
+    "is_private": false,
+    "star_count": 551,
+    "pull_count": 1985753686,
+    "last_updated": "2021-08-16T02:57:04.047192Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-06-10T17:06:34Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 395361410549,
+    "source": null
+  },
+  {
+    "name": "ipython-predictions",
+    "namespace": "google",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 12946,
+    "last_updated": "2015-11-15T20:02:33.111357Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-07-11T16:45:54Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 704883443,
+    "source": null
+  },
+  {
+    "name": "pause",
+    "namespace": "google",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 6,
+    "pull_count": 7422221,
+    "last_updated": "2015-10-20T04:38:21.532898Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-07-19T07:01:44.54243Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 90123,
+    "source": null
+  },
+  {
+    "name": "docker-registry-gcs",
+    "namespace": "google",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 12117,
+    "last_updated": "2015-11-14T02:13:49.275797Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-11-13T00:25:22.937071Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 161146736,
+    "source": null
+  },
+  {
+    "name": "docker-registry",
+    "namespace": "google",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "Docker Registry w/ Google Cloud Storage driver.",
+    "is_private": false,
+    "star_count": 58,
+    "pull_count": 11579470,
+    "last_updated": "2015-11-14T08:53:45.020336Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-11-13T01:55:29.700215Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 161146730,
+    "source": null
+  },
+  {
+    "name": "dart-test-runner",
+    "namespace": "google",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "Discontinued: please use the \"dart\" Docker Official Image.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 12655,
+    "last_updated": "2016-03-21T17:07:52.245888Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-01-15T09:48:13.978705Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 881648053,
+    "source": null
+  },
+  {
+    "name": "fluentd-bigquery-sample",
+    "namespace": "google",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "sample nginx with fluentd and BigQuery Connector",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 13113,
+    "last_updated": "2015-11-14T05:48:41.987001Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-01-17T05:53:12.419015Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 188160722,
+    "source": null
+  },
+  {
+    "name": "dart-hello",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Discontinued: please use the \"dart\" Docker Official Image.",
+    "is_private": false,
+    "star_count": 16,
+    "pull_count": 58503,
+    "last_updated": "2022-01-05T19:08:17.596561Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-02-23T09:11:32.554078Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 100533575276,
+    "source": null
+  },
+  {
+    "name": "dart-runtime-base",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Discontinued: please use the \"dart\" Docker Official Image.",
+    "is_private": false,
+    "star_count": 14,
+    "pull_count": 60736,
+    "last_updated": "2022-01-05T19:08:04.326504Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-02-23T09:25:40.605041Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 101354523371,
+    "source": null
+  },
+  {
+    "name": "dart-runtime",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Discontinued: please use the \"dart\" Docker Official Image.",
+    "is_private": false,
+    "star_count": 32,
+    "pull_count": 109831,
+    "last_updated": "2022-01-05T19:08:10.508813Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-02-23T10:45:21.750046Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 100736067243,
+    "source": null
+  },
+  {
+    "name": "dart",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Discontinued: please use the \"dart\" Docker Official Image.",
+    "is_private": false,
+    "star_count": 88,
+    "pull_count": 2578727,
+    "last_updated": "2022-01-05T19:07:57.371373Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-02-23T11:29:39.773461Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 101780333861,
+    "source": null
+  },
+  {
+    "name": "webfundamentals",
+    "namespace": "google",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 11979,
+    "last_updated": "2015-10-29T14:41:03.313885Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-04-06T11:10:02.01313Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 190221443127,
+    "source": null
+  },
+  {
+    "name": "cadvisor-canary",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Analyzes resource usage and performance characteristics of running containers.",
+    "is_private": false,
+    "star_count": 24,
+    "pull_count": 160636,
+    "last_updated": "2019-01-16T18:35:59.647231Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-06-27T00:43:13.545677Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 37666391557,
+    "source": null
+  },
+  {
+    "name": "edash-packager",
+    "namespace": "google",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "A MPEG-DASH packaging SDK and application with Common Encryption support",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 11884,
+    "last_updated": "2016-05-13T20:18:57.628196Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-03-11T19:50:24.119268Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 29221944410,
+    "source": null
+  },
+  {
+    "name": "shaka-packager",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A media packaging and development framework for VOD and Live DASH and HLS applications.",
+    "is_private": false,
+    "star_count": 19,
+    "pull_count": 4008836,
+    "last_updated": "2025-01-17T22:31:33.031271Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-05-24T23:30:12.759929Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 476563120550,
+    "source": null
+  },
+  {
+    "name": "apparmor-loader",
+    "namespace": "google",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 11961688,
+    "last_updated": "2016-09-02T00:23:13.696155Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-09-02T00:22:47.654663Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 11962046,
+    "source": null
+  },
+  {
+    "name": "apigee-cassandra-client",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apigee cassandra client container images",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 24182,
+    "last_updated": "2019-05-31T02:20:46.822258Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-09T21:40:19.259092Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 110875890,
+    "source": null
+  },
+  {
+    "name": "apigee-cassandra-backup-utility",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apigee cassandra backup utility container images",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 110504,
+    "last_updated": "2022-05-28T01:05:32.211626Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-09T21:40:28.571002Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 5933376006,
+    "source": null
+  },
+  {
+    "name": "apigee-udca",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apigee udca container images",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 100586,
+    "last_updated": "2022-05-28T01:04:11.606107Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-09T21:42:07.987655Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Web analytics",
+        "slug": "web-analytics"
+      }
+    ],
+    "storage_size": 1432024895,
+    "source": null
+  },
+  {
+    "name": "apigee-synchronizer",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apigee synchronizer Container Images",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 112680,
+    "last_updated": "2022-04-21T23:59:43.376176Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-19T18:15:35.690896Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 5235404461,
+    "source": null
+  },
+  {
+    "name": "apigee-runtime",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apigee Runtime Container Images",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 260661,
+    "last_updated": "2022-04-21T23:59:35.38604Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-19T18:15:55.33125Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 8609813063,
+    "source": null
+  },
+  {
+    "name": "apigee-mart-server",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apigee Mart Server Container Images",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 142371,
+    "last_updated": "2022-05-07T01:30:31.325562Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-19T18:16:11.341244Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 6961230656,
+    "source": null
+  },
+  {
+    "name": "apigee-authn-authz",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apigee Authn-Authz Container Images",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 91660,
+    "last_updated": "2022-04-22T00:00:20.349514Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-19T18:16:33.571443Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 61019487,
+    "source": null
+  },
+  {
+    "name": "deepvariant",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 21,
+    "pull_count": 1154265,
+    "last_updated": "2025-10-09T17:27:40.770461Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-22T18:09:21.495755Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Machine learning & AI",
+        "slug": "machine-learning-and-ai"
+      }
+    ],
+    "storage_size": 1291672176831,
+    "source": null
+  },
+  {
+    "name": "apigee-istio-kubectl",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 84702,
+    "last_updated": "2020-03-11T20:34:36.166906Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-30T19:04:35.502235Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 547875492,
+    "source": null
+  },
+  {
+    "name": "apigee-istio-galley",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 18596,
+    "last_updated": "2020-03-11T20:35:09.171831Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-30T19:04:52.824081Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 529094463,
+    "source": null
+  },
+  {
+    "name": "apigee-istio-proxyv2",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 150840,
+    "last_updated": "2020-09-25T22:10:20.427461Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-30T19:05:12.096122Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 629432475,
+    "source": null
+  },
+  {
+    "name": "apigee-istio-pilot",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 36704,
+    "last_updated": "2020-03-11T20:36:52.993287Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-30T19:05:27.716572Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 519890039,
+    "source": null
+  },
+  {
+    "name": "apigee-istio-citadel",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 35718,
+    "last_updated": "2020-03-11T20:36:19.667339Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-30T19:05:47.201268Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 218850806,
+    "source": null
+  },
+  {
+    "name": "apigee-stackdriver-logging-agent",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 360416,
+    "last_updated": "2022-04-08T17:58:50.681006Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-30T19:06:04.531583Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 317735245,
+    "source": null
+  },
+  {
+    "name": "apigee-stackdriver-prometheus-sidecar",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 66250,
+    "last_updated": "2021-08-02T18:31:03.013357Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-30T19:06:21.599583Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 118021702,
+    "source": null
+  },
+  {
+    "name": "apigee-prom-prometheus",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 24737,
+    "last_updated": "2022-04-08T00:57:55.613253Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-05-03T04:23:47.903644Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 194858020,
+    "source": null
+  },
+  {
+    "name": "apigee-istio-node-agent-k8s",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 65785,
+    "last_updated": "2020-03-11T20:34:26.567583Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-11T16:14:54.747984Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 285233780,
+    "source": null
+  },
+  {
+    "name": "apigee-istio-sidecar-injector",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 16879,
+    "last_updated": "2020-03-11T20:32:10.448116Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-11T16:15:14.983006Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 192441878,
+    "source": null
+  },
+  {
+    "name": "apigee-cert-manager-controller",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 24441,
+    "last_updated": "2020-01-24T22:40:56.138271Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-08-09T22:38:16.805198Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 40956214,
+    "source": null
+  },
+  {
+    "name": "apigee-connect-agent",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 415416,
+    "last_updated": "2022-09-27T22:59:13.472022Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-11-12T00:09:39.114224Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 55983969,
+    "source": null
+  },
+  {
+    "name": "apigee-hybrid-cassandra",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 79788,
+    "last_updated": "2022-09-27T23:01:58.653693Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-11-15T21:42:32.193866Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 5359505720,
+    "source": null
+  },
+  {
+    "name": "apigee-hybrid-cassandra-client",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 381808,
+    "last_updated": "2022-09-27T23:02:33.889134Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-11-15T21:42:53.331837Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3715494379,
+    "source": null
+  },
+  {
+    "name": "apigee-istio-mixer",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "apigee-istio-mixer",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 62475,
+    "last_updated": "2020-03-11T20:33:51.900072Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-11-15T22:24:37.502945Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 97979655,
+    "source": null
+  },
+  {
+    "name": "apigee-cert-manager-cainjector",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 22769,
+    "last_updated": "2020-01-24T22:41:17.781544Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-12-16T20:14:59.445306Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 11091400,
+    "source": null
+  },
+  {
+    "name": "apigee-cert-manager-webhook",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 16774,
+    "last_updated": "2020-01-24T22:40:29.850971Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-12-16T20:15:27.287347Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 8573412,
+    "source": null
+  },
+  {
+    "name": "apigee-operators",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 64986,
+    "last_updated": "2022-09-27T23:02:54.18202Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-03-10T21:56:34.827449Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 793588413,
+    "source": null
+  },
+  {
+    "name": "apigee-kube-rbac-proxy",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 23989,
+    "last_updated": "2022-09-28T15:21:14.688959Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-03-19T19:34:36.053024Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 81168567,
+    "source": null
+  },
+  {
+    "name": "apigee-watcher",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 58584,
+    "last_updated": "2022-09-27T23:03:50.356451Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-04-06T18:38:40.783406Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 408221130,
+    "source": null
+  },
+  {
+    "name": "apigee-installer",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 800169,
+    "last_updated": "2022-09-27T23:03:40.871484Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-15T20:25:31.831225Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 12000768429,
+    "source": null
+  },
+  {
+    "name": "apigee-envoy-adapter",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apigee-managed API gateway that uses Envoy to proxy API traffic",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 148340,
+    "last_updated": "2025-02-14T17:32:56.379821Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-28T17:35:45.786116Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 1992881686,
+    "source": null
+  },
+  {
+    "name": "tf-serving-scann",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "TF Serving linked to the ScaNN nearest neighbor search ops",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 320541,
+    "last_updated": "2022-12-08T17:47:57.509094Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-02-05T19:56:48.372132Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Machine learning & AI",
+        "slug": "machine-learning-and-ai"
+      }
+    ],
+    "storage_size": 35714830410,
+    "source": null
+  },
+  {
+    "name": "deepsomatic",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 35951,
+    "last_updated": "2025-06-02T22:27:29.076535Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-10-13T13:18:12.993944Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 264349159024,
+    "source": null
+  },
+  {
+    "name": "alloydbomni",
+    "namespace": "google",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Run AlloyDB in your data center, on your laptop, at the edge, and in any cloud.",
+    "is_private": false,
+    "star_count": 9,
+    "pull_count": 498192,
+    "last_updated": "2025-08-07T13:42:29.620562Z",
+    "last_modified": "2025-08-20T07:11:43.640185Z",
+    "date_registered": "2024-03-19T18:56:54.895137Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 35148108095,
+    "source": null
+  }
+]

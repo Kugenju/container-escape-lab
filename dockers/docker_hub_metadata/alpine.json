@@ -1,0 +1,1033 @@
+[
+  {
+    "name": "httpie",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Auto-trigger docker build for `httpie` when new release is announced",
+    "is_private": false,
+    "star_count": 21,
+    "pull_count": 17526053,
+    "last_updated": "2025-12-03T05:28:35.495478Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-04-08T10:49:15.615514Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 25547964695,
+    "source": null
+  },
+  {
+    "name": "socat",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Run socat command in alpine container",
+    "is_private": false,
+    "star_count": 115,
+    "pull_count": 66007461,
+    "last_updated": "2025-12-03T05:24:49.272864Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-05-05T02:21:59.473875Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1990860939,
+    "source": null
+  },
+  {
+    "name": "git",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A  simple git container running in alpine linux, especially for tiny linux distro.",
+    "is_private": false,
+    "star_count": 247,
+    "pull_count": 414688048,
+    "last_updated": "2025-11-30T04:35:27.684022Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-05-10T00:44:02.081898Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 23960313363,
+    "source": null
+  },
+  {
+    "name": "flake8",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Auto-trigger docker build for fake8 via ci cronjob",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 1958224,
+    "last_updated": "2025-12-03T05:26:12.638921Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-01T02:28:25.200431Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 9317805397,
+    "source": null
+  },
+  {
+    "name": "bombardier",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Auto-trigger docker build for bombardier when new release is announced",
+    "is_private": false,
+    "star_count": 28,
+    "pull_count": 16934271,
+    "last_updated": "2025-02-22T03:44:20.65059Z",
+    "last_modified": "2024-12-07T10:58:58.281294Z",
+    "date_registered": "2018-03-03T07:27:18.278461Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2942545847,
+    "source": null
+  },
+  {
+    "name": "landscape",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Auto-trigger docker build for terraform-landscape when new release is announced",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 22657,
+    "last_updated": "2021-01-07T17:41:10.983212Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-22T19:55:53.482745Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 276339026,
+    "source": null
+  },
+  {
+    "name": "node",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 43211,
+    "last_updated": "2018-05-21T02:26:31.990552Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-05-21T02:26:31.723797Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 25837362,
+    "source": null
+  },
+  {
+    "name": "bundle",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "This repository has been archived by the owner on Jun 30, 2023. It is now read-only.",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 135975,
+    "last_updated": "2022-04-14T00:30:41.261083Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-06-23T12:12:45.64749Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 9044950908,
+    "source": null
+  },
+  {
+    "name": "bundle-terraform-awspec",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "This is a special version to build a docker image for terraform awspect testing.",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 12535,
+    "last_updated": "2019-08-08T06:36:36.835991Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-06-24T00:54:58.336842Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1049059880,
+    "source": null
+  },
+  {
+    "name": "helm",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Auto-trigger docker build for kubernetes helm when new release is announced",
+    "is_private": false,
+    "star_count": 69,
+    "pull_count": 60559587,
+    "last_updated": "2025-11-25T05:02:51.798033Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-07-03T10:39:11.375865Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 15162906446,
+    "source": null
+  },
+  {
+    "name": "make",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "a simple container to run make command directly",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 43831,
+    "last_updated": "2018-08-01T02:39:41.313208Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-07-31T03:43:53.816076Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3500906,
+    "source": null
+  },
+  {
+    "name": "semver",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Docker tool for semantic versioning",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 385394,
+    "last_updated": "2023-10-21T03:19:16.896313Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-08-01T02:09:30.77375Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 7113156628,
+    "source": null
+  },
+  {
+    "name": "terragrunt",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Auto-trigger docker build for terragrunt when new terraform version released",
+    "is_private": false,
+    "star_count": 18,
+    "pull_count": 15168411,
+    "last_updated": "2025-11-30T05:14:00.324156Z",
+    "last_modified": "2024-10-29T04:27:14.497518Z",
+    "date_registered": "2019-02-08T03:03:17.829963Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 38926915374,
+    "source": null
+  },
+  {
+    "name": "awslogs",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "container to run awslogs cli",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 10883,
+    "last_updated": "2019-07-20T11:39:49.521625Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-07-20T11:17:11.264812Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 73705010,
+    "source": null
+  },
+  {
+    "name": "html2text",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 10598,
+    "last_updated": "2019-08-25T09:44:40.453859Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-08-25T09:40:01.70297Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3345522,
+    "source": null
+  },
+  {
+    "name": "k8s",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Kubernetes toolbox for EKS (kubectl, helm, iam-authenticator, eksctl, etc)",
+    "is_private": false,
+    "star_count": 64,
+    "pull_count": 48677169,
+    "last_updated": "2025-09-25T02:16:32.151739Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-09-23T08:54:42.158139Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 235935937834,
+    "source": null
+  },
+  {
+    "name": "nikto",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Nikto is sponsored by Netsparker, a dead accurate and easy to use web application security solution.",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 20238,
+    "last_updated": "2020-02-03T12:40:57.986237Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-02-03T12:28:24.49119Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 23158853,
+    "source": null
+  },
+  {
+    "name": "xml",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "several xml tools to work on xml file as jq to json. ",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 185676,
+    "last_updated": "2025-12-03T05:27:27.680938Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-02-21T11:10:17.535223Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1870708066,
+    "source": null
+  },
+  {
+    "name": "cfn-nag",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Auto-trigger docker build for cfn-nag when new release is announced",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 139204,
+    "last_updated": "2021-12-30T09:41:16.051956Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-04-01T07:33:50.161082Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1349663142,
+    "source": null
+  },
+  {
+    "name": "gcloud",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Auto-trigger docker build for gcloud (google cloud command line) when new release is announced",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 137707,
+    "last_updated": "2020-09-16T05:20:34.129853Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-04-29T03:36:40.119134Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 29228651679,
+    "source": null
+  },
+  {
+    "name": "dfimage",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "reverse Docker images into Dockerfiles",
+    "is_private": false,
+    "star_count": 70,
+    "pull_count": 71606,
+    "last_updated": "2025-02-15T03:18:52.427109Z",
+    "last_modified": "2024-12-07T11:00:15.397279Z",
+    "date_registered": "2020-06-26T00:47:00.588076Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1936805423,
+    "source": null
+  },
+  {
+    "name": "jmeter",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "run jmeter in Docker",
+    "is_private": false,
+    "star_count": 9,
+    "pull_count": 454728,
+    "last_updated": "2025-11-29T03:06:39.911604Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-02T07:50:55.102742Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 94818721812,
+    "source": null
+  },
+  {
+    "name": "openssl",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "openssl",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 8168073,
+    "last_updated": "2025-12-03T05:24:52.401225Z",
+    "last_modified": "2024-12-07T11:01:35.882934Z",
+    "date_registered": "2020-07-16T05:36:27.156516Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 1359320031,
+    "source": null
+  },
+  {
+    "name": "cfn-lint",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 53861,
+    "last_updated": "2021-02-24T04:41:02.770686Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-01-06T04:53:25.135585Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 105611992,
+    "source": null
+  },
+  {
+    "name": "ansible",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "run ansible and ansible-playbook in docker",
+    "is_private": false,
+    "star_count": 30,
+    "pull_count": 539779,
+    "last_updated": "2025-12-03T05:27:05.220687Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-04-14T13:49:02.096314Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 109233350618,
+    "source": null
+  },
+  {
+    "name": "doctl",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DigitalOcean command line with kubernetes and helm",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 59017,
+    "last_updated": "2025-11-13T02:05:25.128652Z",
+    "last_modified": "2025-06-26T05:52:42.408525Z",
+    "date_registered": "2021-07-30T13:45:41.00821Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 8624666588,
+    "source": null
+  },
+  {
+    "name": "curl",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 11,
+    "pull_count": 58826577,
+    "last_updated": "2025-12-03T05:24:47.027445Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-12-05T22:51:51.727977Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3174200472,
+    "source": null
+  },
+  {
+    "name": "mysql",
+    "namespace": "alpine",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "mysql client",
+    "is_private": false,
+    "star_count": 6,
+    "pull_count": 166398,
+    "last_updated": "2025-12-03T05:24:57.740392Z",
+    "last_modified": "2025-01-18T12:06:56.00116Z",
+    "date_registered": "2023-06-30T11:47:36.083779Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 20544067141,
+    "source": null
+  },
+  {
+    "name": "psql",
+    "namespace": "alpine",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "psql — The PostgreSQL Command-Line Client\n\n",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 1069664,
+    "last_updated": "2025-12-03T05:24:50.881875Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-06-30T12:54:39.819863Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 3072730118,
+    "source": null
+  },
+  {
+    "name": "trivy",
+    "namespace": "alpine",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 12994,
+    "last_updated": "2024-09-28T03:58:04.799106Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-07-01T01:38:36.721897Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 7930938881,
+    "source": null
+  },
+  {
+    "name": "mongosh",
+    "namespace": "alpine",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "mongosh - MongoDB Command Line Database Tools",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 195725,
+    "last_updated": "2024-09-28T03:58:10.570386Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-07-02T11:18:58.256616Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 8086719947,
+    "source": null
+  },
+  {
+    "name": "azure_cli",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A quick build to add terraform in it.",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 11150,
+    "last_updated": "2023-09-07T02:13:13.998229Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-09-03T14:01:13.634549Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 474778925,
+    "source": null
+  },
+  {
+    "name": "sqlite",
+    "namespace": "alpine",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 38919,
+    "last_updated": "2025-12-03T05:24:49.691579Z",
+    "last_modified": "2024-12-07T11:00:46.256164Z",
+    "date_registered": "2023-10-16T13:13:36.80078Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1657331249,
+    "source": null
+  },
+  {
+    "name": "pwgen",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "password generator",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 11995,
+    "last_updated": "2023-10-19T02:01:37.546452Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-10-18T11:21:13.470862Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 22910315,
+    "source": null
+  },
+  {
+    "name": "crane",
+    "namespace": "alpine",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 104852,
+    "last_updated": "2025-11-30T02:03:27.735211Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-11-19T11:39:07.659712Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 625708235,
+    "source": null
+  },
+  {
+    "name": "java",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Repo containing the build scripts to produce the official eclipse-temurin java containers",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 268098,
+    "last_updated": "2024-08-10T03:13:58.033354Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-01-13T12:15:41.058766Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 61569033696,
+    "source": null
+  },
+  {
+    "name": "bruno",
+    "namespace": "alpine",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "Bruno - Git-Friendly Opensource API client with collections version control",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 39820,
+    "last_updated": "2024-09-28T03:58:00.43619Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-06-05T14:23:26.07181Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 6601331616,
+    "source": null
+  },
+  {
+    "name": "mkcert",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "mkcert - a simple zero-config tool to make locally trusted certificates with any names you'd like.",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 19552,
+    "last_updated": "2024-09-23T12:09:09.973282Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-09-23T12:06:14.819007Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 19821820,
+    "source": null
+  },
+  {
+    "name": "ollama",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Minimal CPU-only Ollama Docker Image",
+    "is_private": false,
+    "star_count": 10,
+    "pull_count": 34693,
+    "last_updated": "2025-11-09T05:18:58.634581Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-10-15T13:20:24.732141Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 28747949151,
+    "source": null
+  },
+  {
+    "name": "kubectl",
+    "namespace": "alpine",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Kubernetes command-line tool for managing clusters",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 1538474,
+    "last_updated": "2025-12-03T05:24:56.79261Z",
+    "last_modified": "2025-08-01T07:23:20.028571Z",
+    "date_registered": "2024-11-02T06:39:33.402471Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 3417530184,
+    "source": null
+  }
+]

@@ -1,0 +1,5462 @@
+[
+  {
+    "name": "centos",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; The official build of CentOS.",
+    "is_private": false,
+    "star_count": 7780,
+    "pull_count": 1178726992,
+    "last_updated": "2022-12-09T19:13:54.287062Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2013-04-30T20:54:08Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 25907042872,
+    "source": null
+  },
+  {
+    "name": "busybox",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Busybox base image.",
+    "is_private": false,
+    "star_count": 3464,
+    "pull_count": 12257156522,
+    "last_updated": "2025-11-26T00:58:02.766355Z",
+    "last_modified": "2025-11-25T20:10:47.675857Z",
+    "date_registered": "2013-04-30T20:54:42Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 3909670676,
+    "source": null
+  },
+  {
+    "name": "ubuntu",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Ubuntu is a Debian-based Linux operating system based on free software.",
+    "is_private": false,
+    "star_count": 17742,
+    "pull_count": 9748177443,
+    "last_updated": "2025-12-03T06:04:32.267496Z",
+    "last_modified": "2025-12-02T22:12:50.468353Z",
+    "date_registered": "2013-04-30T20:54:50Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 94786046979,
+    "source": null
+  },
+  {
+    "name": "scratch",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "an explicitly empty image, especially for building images \"FROM scratch\"",
+    "is_private": false,
+    "star_count": 1039,
+    "pull_count": 268577,
+    "last_updated": "2013-06-25T00:07:08Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2013-06-25T00:07:08Z",
+    "affiliation": "",
+    "media_types": [],
+    "content_types": [],
+    "categories": [],
+    "storage_size": null,
+    "source": null
+  },
+  {
+    "name": "fedora",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Docker builds of Fedora",
+    "is_private": false,
+    "star_count": 1259,
+    "pull_count": 129078346,
+    "last_updated": "2025-10-13T22:05:32.438786Z",
+    "last_modified": "2025-10-13T18:13:19.79516Z",
+    "date_registered": "2014-01-03T18:37:05Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 80107571351,
+    "source": null
+  },
+  {
+    "name": "registry",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Distribution implementation for storing and distributing of container images and artifacts",
+    "is_private": false,
+    "star_count": 4168,
+    "pull_count": 1724507317,
+    "last_updated": "2025-10-10T21:38:25.027012Z",
+    "last_modified": "2025-07-10T17:11:13.807417Z",
+    "date_registered": "2014-01-03T18:46:40Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 13370140939,
+    "source": null
+  },
+  {
+    "name": "hipache",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED (upstream); use \"traefik\", \"nginx\", \"haproxy\", \"httpd\" instead",
+    "is_private": false,
+    "star_count": 84,
+    "pull_count": 447106,
+    "last_updated": "2016-06-01T23:19:03.96624Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-01-03T18:58:41Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [],
+    "storage_size": 2901406133,
+    "source": null
+  },
+  {
+    "name": "docker-dev",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use https://github.com/moby/moby/blob/master/Dockerfile",
+    "is_private": false,
+    "star_count": 106,
+    "pull_count": 2606622,
+    "last_updated": "2016-03-29T23:38:26.378586Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-01-03T19:09:06Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 20220097764,
+    "source": null
+  },
+  {
+    "name": "debian",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Debian is a Linux distribution that's composed entirely of free and open-source software.",
+    "is_private": false,
+    "star_count": 5262,
+    "pull_count": 1523517998,
+    "last_updated": "2025-11-19T16:24:23.121493Z",
+    "last_modified": "2025-11-18T01:11:38.374282Z",
+    "date_registered": "2014-01-03T19:39:02Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 655020672551,
+    "source": null
+  },
+  {
+    "name": "cirros",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "CirrOS is a Tiny OS that specializes in running on a cloud.",
+    "is_private": false,
+    "star_count": 79,
+    "pull_count": 6867430,
+    "last_updated": "2024-09-27T11:56:21.095965Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-02-03T15:57:45Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 324846199,
+    "source": null
+  },
+  {
+    "name": "crux",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; lacking active maintainer",
+    "is_private": false,
+    "star_count": 40,
+    "pull_count": 882949,
+    "last_updated": "2020-09-16T19:22:24.585172Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-02-03T16:47:15Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1836922139,
+    "source": null
+  },
+  {
+    "name": "ubuntu-upstart",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED, as is Upstart (find other process supervisor!)",
+    "is_private": false,
+    "star_count": 116,
+    "pull_count": 1836041,
+    "last_updated": "2016-04-04T21:21:19.946273Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-02-11T04:15:47Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3581954942,
+    "source": null
+  },
+  {
+    "name": "buildpack-deps",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A collection of common build dependencies used for installing various modules, e.g., gems.",
+    "is_private": false,
+    "star_count": 685,
+    "pull_count": 247574605,
+    "last_updated": "2025-12-03T02:20:57.230112Z",
+    "last_modified": "2025-11-14T01:11:21.765948Z",
+    "date_registered": "2014-05-31T01:41:12Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 2182556894474,
+    "source": null
+  },
+  {
+    "name": "nginx",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official build of Nginx.",
+    "is_private": false,
+    "star_count": 21095,
+    "pull_count": 12640721669,
+    "last_updated": "2025-11-19T00:52:26.820981Z",
+    "last_modified": "2025-10-28T22:11:40.546096Z",
+    "date_registered": "2014-06-05T19:14:45Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 213199495250,
+    "source": null
+  },
+  {
+    "name": "node",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Node.js is a JavaScript-based platform for server-side and networking applications.",
+    "is_private": false,
+    "star_count": 14065,
+    "pull_count": 6054592907,
+    "last_updated": "2025-11-25T19:43:03.451777Z",
+    "last_modified": "2025-11-25T17:11:52.908065Z",
+    "date_registered": "2014-06-05T19:19:53Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 1494451041654,
+    "source": null
+  },
+  {
+    "name": "mysql",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "MySQL is a widely used, open-source relational database management system (RDBMS).",
+    "is_private": false,
+    "star_count": 16006,
+    "pull_count": 4777258187,
+    "last_updated": "2025-12-03T01:03:35.169906Z",
+    "last_modified": "2025-10-22T00:12:21.414586Z",
+    "date_registered": "2014-06-05T19:41:56Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 136414698592,
+    "source": null
+  },
+  {
+    "name": "wordpress",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The WordPress rich content management system can utilize plugins, widgets, and themes.",
+    "is_private": false,
+    "star_count": 5847,
+    "pull_count": 1439824682,
+    "last_updated": "2025-12-02T14:16:30.569599Z",
+    "last_modified": "2025-12-02T01:14:18.905325Z",
+    "date_registered": "2014-06-05T19:59:25Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 2099075074547,
+    "source": null
+  },
+  {
+    "name": "postgres",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The PostgreSQL object-relational database system provides reliability and data integrity.",
+    "is_private": false,
+    "star_count": 14672,
+    "pull_count": 10038633800,
+    "last_updated": "2025-11-19T21:08:07.144138Z",
+    "last_modified": "2025-11-14T20:12:04.574741Z",
+    "date_registered": "2014-06-05T20:01:35Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 1539441575138,
+    "source": null
+  },
+  {
+    "name": "redis",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Redis is the world’s fastest data platform for caching, vector search, and NoSQL databases.",
+    "is_private": false,
+    "star_count": 13473,
+    "pull_count": 10130960541,
+    "last_updated": "2025-11-20T20:07:09.841597Z",
+    "last_modified": "2025-11-18T20:13:17.192415Z",
+    "date_registered": "2014-06-05T20:04:50Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 119866280046,
+    "source": null
+  },
+  {
+    "name": "java",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use \"openjdk\" (or other JDK implementations) instead",
+    "is_private": false,
+    "star_count": 2005,
+    "pull_count": 142966417,
+    "last_updated": "2017-03-23T17:58:27.550146Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-06-06T18:28:17Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 48004621139,
+    "source": null
+  },
+  {
+    "name": "mongo",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "MongoDB document databases provide high availability and easy scalability.",
+    "is_private": false,
+    "star_count": 10672,
+    "pull_count": 4665966660,
+    "last_updated": "2025-11-20T05:07:58.350854Z",
+    "last_modified": "2025-11-20T00:12:01.210726Z",
+    "date_registered": "2014-06-06T21:51:06Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 1476614096370,
+    "source": null
+  },
+  {
+    "name": "rails",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use \"ruby\" instead",
+    "is_private": false,
+    "star_count": 907,
+    "pull_count": 8986712,
+    "last_updated": "2017-01-06T19:07:44.686101Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-06-06T22:49:43Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [],
+    "storage_size": 15028257812,
+    "source": null
+  },
+  {
+    "name": "ruby",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source programming language.",
+    "is_private": false,
+    "star_count": 2397,
+    "pull_count": 1517281582,
+    "last_updated": "2025-11-24T18:57:54.224255Z",
+    "last_modified": "2025-11-20T00:12:20.390819Z",
+    "date_registered": "2014-06-06T22:54:28Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 1423417495054,
+    "source": null
+  },
+  {
+    "name": "python",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Python is an interpreted, interactive, object-oriented, open-source programming language.",
+    "is_private": false,
+    "star_count": 10309,
+    "pull_count": 8373766997,
+    "last_updated": "2025-12-03T04:15:06.071753Z",
+    "last_modified": "2025-12-03T01:12:23.85138Z",
+    "date_registered": "2014-06-24T09:53:24Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 1658501968564,
+    "source": null
+  },
+  {
+    "name": "ubuntu-debootstrap",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use \"ubuntu\" instead",
+    "is_private": false,
+    "star_count": 52,
+    "pull_count": 8958236,
+    "last_updated": "2016-04-04T21:20:04.94269Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-06-27T09:46:59Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1944300649,
+    "source": null
+  },
+  {
+    "name": "perl",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Perl is a high-level, general-purpose, interpreted, dynamic programming language.",
+    "is_private": false,
+    "star_count": 472,
+    "pull_count": 250000907,
+    "last_updated": "2025-11-25T23:40:21.573686Z",
+    "last_modified": "2025-11-25T17:11:56.264432Z",
+    "date_registered": "2014-07-08T22:08:41Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 1179685205488,
+    "source": null
+  },
+  {
+    "name": "hello-world",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Hello World! (an example of minimal Dockerization)",
+    "is_private": false,
+    "star_count": 2518,
+    "pull_count": 3229719371,
+    "last_updated": "2025-11-11T20:41:22.136217Z",
+    "last_modified": "2025-08-13T23:11:04.161919Z",
+    "date_registered": "2014-07-09T22:01:44Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 11575977198,
+    "source": null
+  },
+  {
+    "name": "hylang",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Hy is a Lisp dialect that translates expressions into Python's abstract syntax tree.",
+    "is_private": false,
+    "star_count": 61,
+    "pull_count": 27032561,
+    "last_updated": "2025-12-03T06:21:48.053028Z",
+    "last_modified": "2025-11-20T20:12:41.663264Z",
+    "date_registered": "2014-07-11T22:05:13Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 666162254129,
+    "source": null
+  },
+  {
+    "name": "gcc",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The GNU Compiler Collection is a compiling system that supports several languages.",
+    "is_private": false,
+    "star_count": 892,
+    "pull_count": 26087624,
+    "last_updated": "2025-11-18T16:20:18.100675Z",
+    "last_modified": "2025-08-28T19:11:06.629212Z",
+    "date_registered": "2014-07-21T10:38:35.239943Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 858605054733,
+    "source": null
+  },
+  {
+    "name": "jenkins",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use \"jenkins/jenkins:lts\" instead",
+    "is_private": false,
+    "star_count": 5702,
+    "pull_count": 149588269,
+    "last_updated": "2018-07-17T16:47:45.266614Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-07-22T21:45:39.381066Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 30233167098,
+    "source": null
+  },
+  {
+    "name": "opensuse",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; for current images by the openSUSE Project see opensuse/leap and opensuse/tumbleweed.",
+    "is_private": false,
+    "star_count": 332,
+    "pull_count": 9409708,
+    "last_updated": "2019-05-30T20:47:55.862703Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-07-31T01:13:13.752666Z",
+    "affiliation": "",
+    "media_types": [],
+    "content_types": [],
+    "categories": [],
+    "storage_size": 4517366591,
+    "source": null
+  },
+  {
+    "name": "golang",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Go (golang) is a general purpose, higher-level, imperative programming language.",
+    "is_private": false,
+    "star_count": 5094,
+    "pull_count": 2432743954,
+    "last_updated": "2025-12-02T21:24:05.497804Z",
+    "last_modified": "2025-12-02T18:12:01.037906Z",
+    "date_registered": "2014-08-05T15:28:00.692549Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 1979106081857,
+    "source": null
+  },
+  {
+    "name": "neurodebian",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "NeuroDebian provides neuroscience research software for Debian, Ubuntu, and other derivatives.",
+    "is_private": false,
+    "star_count": 116,
+    "pull_count": 10037469,
+    "last_updated": "2025-11-18T08:09:37.036154Z",
+    "last_modified": "2025-09-23T18:11:55.027461Z",
+    "date_registered": "2014-08-13T15:08:16.733554Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      }
+    ],
+    "storage_size": 90410040667,
+    "source": null
+  },
+  {
+    "name": "clojure",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Clojure is a dialect of Lisp that runs on the JVM.",
+    "is_private": false,
+    "star_count": 364,
+    "pull_count": 39672743,
+    "last_updated": "2025-11-20T19:39:03.363668Z",
+    "last_modified": "2025-05-13T18:10:18.233985Z",
+    "date_registered": "2014-08-25T14:56:27.655111Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 2657602985863,
+    "source": null
+  },
+  {
+    "name": "php",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "While designed for web development, the PHP scripting language also provides general-purpose use.",
+    "is_private": false,
+    "star_count": 7815,
+    "pull_count": 1269592633,
+    "last_updated": "2025-11-24T18:01:17.10739Z",
+    "last_modified": "2025-08-12T22:11:27.413726Z",
+    "date_registered": "2014-09-04T19:15:45.540234Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 3068994199571,
+    "source": null
+  },
+  {
+    "name": "jruby",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "JRuby (http://www.jruby.org) is an implementation of Ruby (http://www.ruby-lang.org) on the JVM.",
+    "is_private": false,
+    "star_count": 118,
+    "pull_count": 51325923,
+    "last_updated": "2025-11-14T02:07:43.209413Z",
+    "last_modified": "2025-10-03T19:11:22.808009Z",
+    "date_registered": "2014-09-24T15:32:51.614863Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 330874079674,
+    "source": null
+  },
+  {
+    "name": "mageia",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Mageia base image",
+    "is_private": false,
+    "star_count": 44,
+    "pull_count": 1667644,
+    "last_updated": "2025-11-20T00:52:26.81262Z",
+    "last_modified": "2025-11-19T23:12:40.943145Z",
+    "date_registered": "2014-10-01T21:30:52.500292Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 13319439450,
+    "source": null
+  },
+  {
+    "name": "crate",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "CrateDB is an open-source, distributed SQL database empowering you to turn data into business value.",
+    "is_private": false,
+    "star_count": 228,
+    "pull_count": 19244906,
+    "last_updated": "2025-11-24T18:38:42.014597Z",
+    "last_modified": "2025-11-24T18:11:27.541319Z",
+    "date_registered": "2014-10-16T18:43:28.992842Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 129342057720,
+    "source": null
+  },
+  {
+    "name": "php-zendserver",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; Zend Server - the integrated PHP application platform for mobile and web apps.",
+    "is_private": false,
+    "star_count": 213,
+    "pull_count": 4393875,
+    "last_updated": "2023-06-02T01:58:11.064373Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-10-22T23:32:55.205791Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 108318572092,
+    "source": null
+  },
+  {
+    "name": "tomcat",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apache Tomcat is an open source implementation of the Java Servlet and JavaServer Pages technologies",
+    "is_private": false,
+    "star_count": 3759,
+    "pull_count": 803112191,
+    "last_updated": "2025-11-16T00:36:02.91702Z",
+    "last_modified": "2025-11-10T19:12:40.216911Z",
+    "date_registered": "2014-10-27T17:28:47.715247Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 1689325908797,
+    "source": null
+  },
+  {
+    "name": "mono",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; Mono is an open source implementation of Microsoft's .NET Framework",
+    "is_private": false,
+    "star_count": 522,
+    "pull_count": 43391223,
+    "last_updated": "2024-06-21T19:24:02.791615Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-10-30T20:32:30.96305Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 269996150531,
+    "source": null
+  },
+  {
+    "name": "haskell",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Haskell is an advanced purely-functional programming language.",
+    "is_private": false,
+    "star_count": 492,
+    "pull_count": 8210128,
+    "last_updated": "2025-11-18T06:50:23.277094Z",
+    "last_modified": "2025-11-10T18:13:40.200178Z",
+    "date_registered": "2014-10-31T21:09:02.219213Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 646243461892,
+    "source": null
+  },
+  {
+    "name": "glassfish",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; abandoned by the maintainer",
+    "is_private": false,
+    "star_count": 158,
+    "pull_count": 1280030,
+    "last_updated": "2016-09-24T03:45:58.969886Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-11-03T16:28:03.106382Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream"
+    ],
+    "content_types": [
+      "unrecognized"
+    ],
+    "categories": [],
+    "storage_size": 19493583232,
+    "source": null
+  },
+  {
+    "name": "maven",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apache Maven is a software project management and comprehension tool.",
+    "is_private": false,
+    "star_count": 1657,
+    "pull_count": 721194416,
+    "last_updated": "2025-12-02T06:29:10.694626Z",
+    "last_modified": "2025-11-14T01:12:04.460107Z",
+    "date_registered": "2014-11-03T17:52:01.032704Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 2621907599201,
+    "source": null
+  },
+  {
+    "name": "httpd",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Apache HTTP Server Project",
+    "is_private": false,
+    "star_count": 4910,
+    "pull_count": 4663757168,
+    "last_updated": "2025-11-18T15:53:56.08186Z",
+    "last_modified": "2025-08-12T22:11:09.154007Z",
+    "date_registered": "2014-11-03T20:13:35.098911Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 85631817860,
+    "source": null
+  },
+  {
+    "name": "sentry",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; https://develop.sentry.dev/self-hosted/",
+    "is_private": false,
+    "star_count": 663,
+    "pull_count": 123689924,
+    "last_updated": "2019-10-19T09:22:56.635131Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-11-15T08:14:25.988256Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 28142239296,
+    "source": null
+  },
+  {
+    "name": "r-base",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "R is a system for statistical computation and graphics.",
+    "is_private": false,
+    "star_count": 559,
+    "pull_count": 10755541,
+    "last_updated": "2025-11-19T10:13:18.82992Z",
+    "last_modified": "2025-10-31T23:11:57.759318Z",
+    "date_registered": "2014-11-21T03:30:44.70044Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 176499429982,
+    "source": null
+  },
+  {
+    "name": "mariadb",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "MariaDB Server is a high performing open source relational database, forked from MySQL.",
+    "is_private": false,
+    "star_count": 6060,
+    "pull_count": 3016561261,
+    "last_updated": "2025-12-02T04:37:14.297772Z",
+    "last_modified": "2025-11-21T22:11:35.643045Z",
+    "date_registered": "2014-11-25T23:08:03.441528Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 433630872888,
+    "source": null
+  },
+  {
+    "name": "thrift",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; lacking active maintainer",
+    "is_private": false,
+    "star_count": 121,
+    "pull_count": 3033603,
+    "last_updated": "2021-10-01T07:17:20.409086Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-12-05T21:47:17.78478Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 4259251265,
+    "source": null
+  },
+  {
+    "name": "pypy",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "PyPy is a fast, compliant alternative implementation of the Python language.",
+    "is_private": false,
+    "star_count": 400,
+    "pull_count": 40994501,
+    "last_updated": "2025-11-18T16:42:14.851714Z",
+    "last_modified": "2025-08-19T17:12:11.250366Z",
+    "date_registered": "2014-12-20T00:04:17.922613Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 515963831152,
+    "source": null
+  },
+  {
+    "name": "django",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use \"python\" instead",
+    "is_private": false,
+    "star_count": 1233,
+    "pull_count": 23109999,
+    "last_updated": "2017-01-06T17:59:53.097137Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2014-12-27T05:33:20.984257Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 23690831736,
+    "source": null
+  },
+  {
+    "name": "haproxy",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "HAProxy - The Reliable, High Performance TCP/HTTP Load Balancer",
+    "is_private": false,
+    "star_count": 2009,
+    "pull_count": 1107259251,
+    "last_updated": "2025-12-01T19:58:32.752423Z",
+    "last_modified": "2025-12-01T18:11:24.601507Z",
+    "date_registered": "2014-12-29T23:15:01.619972Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 196004819485,
+    "source": null
+  },
+  {
+    "name": "memcached",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Free & open source, high-performance, distributed memory object caching system.",
+    "is_private": false,
+    "star_count": 2420,
+    "pull_count": 12994682257,
+    "last_updated": "2025-11-18T16:35:45.314214Z",
+    "last_modified": "2025-08-13T21:11:33.840187Z",
+    "date_registered": "2015-01-01T01:13:49.166092Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 35063559560,
+    "source": null
+  },
+  {
+    "name": "rabbitmq",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "RabbitMQ is an open source multi-protocol messaging broker.",
+    "is_private": false,
+    "star_count": 5326,
+    "pull_count": 3731723900,
+    "last_updated": "2025-12-02T19:53:31.168966Z",
+    "last_modified": "2025-12-02T01:13:34.645757Z",
+    "date_registered": "2015-01-01T01:17:57.453727Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Message queues",
+        "slug": "message-queues"
+      }
+    ],
+    "storage_size": 568409582361,
+    "source": null
+  },
+  {
+    "name": "oraclelinux",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Docker builds of Oracle Linux.",
+    "is_private": false,
+    "star_count": 1107,
+    "pull_count": 40673606,
+    "last_updated": "2025-12-02T22:36:30.273257Z",
+    "last_modified": "2025-12-02T22:12:14.334201Z",
+    "date_registered": "2015-01-02T00:28:42.700254Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 110819635229,
+    "source": null
+  },
+  {
+    "name": "odoo",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Odoo (formerly known as OpenERP) is a suite of open-source business apps.",
+    "is_private": false,
+    "star_count": 1487,
+    "pull_count": 46833040,
+    "last_updated": "2025-11-21T20:12:57.487995Z",
+    "last_modified": "2025-11-21T19:12:24.773854Z",
+    "date_registered": "2015-01-06T22:01:34.747953Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 594691208181,
+    "source": null
+  },
+  {
+    "name": "rethinkdb",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "RethinkDB is an open-source, document database that makes it easy to build and scale realtime apps.",
+    "is_private": false,
+    "star_count": 638,
+    "pull_count": 76581895,
+    "last_updated": "2025-11-18T08:04:26.734373Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-01-13T20:14:11.543629Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 27246831089,
+    "source": null
+  },
+  {
+    "name": "iojs",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use \"node\" instead",
+    "is_private": false,
+    "star_count": 143,
+    "pull_count": 17410207,
+    "last_updated": "2017-03-23T21:40:20.37399Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-01-19T22:13:40.424169Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 12214048815,
+    "source": null
+  },
+  {
+    "name": "websphere-liberty",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "WebSphere Liberty multi-architecture images based on Ubuntu",
+    "is_private": false,
+    "star_count": 301,
+    "pull_count": 24535436,
+    "last_updated": "2025-12-02T07:20:48.377569Z",
+    "last_modified": "2025-11-10T18:14:47.329535Z",
+    "date_registered": "2015-01-22T23:30:28.017783Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 1714017767997,
+    "source": null
+  },
+  {
+    "name": "irssi",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "irssi - The IRC client of the future",
+    "is_private": false,
+    "star_count": 180,
+    "pull_count": 8616877,
+    "last_updated": "2025-11-18T18:00:32.616885Z",
+    "last_modified": "2025-08-13T00:11:30.354854Z",
+    "date_registered": "2015-01-23T19:40:07.147313Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 69920283585,
+    "source": null
+  },
+  {
+    "name": "swarm",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use \"docker swarm init\" instead",
+    "is_private": false,
+    "star_count": 1123,
+    "pull_count": 83259284,
+    "last_updated": "2020-09-16T20:31:01.272132Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-02-04T23:52:14.40155Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 237619116,
+    "source": null
+  },
+  {
+    "name": "elasticsearch",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Elasticsearch is a powerful open source search and analytics engine that makes data easy to explore.",
+    "is_private": false,
+    "star_count": 6570,
+    "pull_count": 930885737,
+    "last_updated": "2025-12-02T19:25:33.979966Z",
+    "last_modified": "2025-12-02T19:11:37.796863Z",
+    "date_registered": "2015-02-06T18:31:40.822107Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 288302992963,
+    "source": null
+  },
+  {
+    "name": "jetty",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Jetty provides a Web server and javax.servlet container.",
+    "is_private": false,
+    "star_count": 412,
+    "pull_count": 42194882,
+    "last_updated": "2025-11-21T00:17:12.953168Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-02-09T20:10:40.435907Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 708174920430,
+    "source": null
+  },
+  {
+    "name": "ghost",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Publish by web and email newsletter, with member signups and subscription payments.",
+    "is_private": false,
+    "star_count": 1800,
+    "pull_count": 372409020,
+    "last_updated": "2025-12-02T01:46:40.990403Z",
+    "last_modified": "2025-12-02T01:13:01.743096Z",
+    "date_registered": "2015-02-23T20:54:08.964251Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 907419369348,
+    "source": null
+  },
+  {
+    "name": "celery",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use \"python\" instead",
+    "is_private": false,
+    "star_count": 318,
+    "pull_count": 3569702,
+    "last_updated": "2017-06-20T03:17:04.117669Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-02-23T21:44:20.87101Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3532465249,
+    "source": null
+  },
+  {
+    "name": "percona",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Percona Server is a fork of the MySQL relational database management system created by Percona.",
+    "is_private": false,
+    "star_count": 645,
+    "pull_count": 214046700,
+    "last_updated": "2025-12-02T03:11:56.808917Z",
+    "last_modified": "2025-12-01T20:12:24.930693Z",
+    "date_registered": "2015-02-23T23:00:36.787103Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 126076837744,
+    "source": null
+  },
+  {
+    "name": "aerospike",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Aerospike – the reliable, high performance, distributed database optimized for flash and RAM.",
+    "is_private": false,
+    "star_count": 146,
+    "pull_count": 18962883,
+    "last_updated": "2025-11-14T03:25:36.594573Z",
+    "last_modified": "2025-09-16T17:10:49.115773Z",
+    "date_registered": "2015-02-27T22:51:33.407943Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 45910389557,
+    "source": null
+  },
+  {
+    "name": "logstash",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Logstash is a tool for managing events and logs.",
+    "is_private": false,
+    "star_count": 2265,
+    "pull_count": 199588386,
+    "last_updated": "2025-12-02T19:53:34.930531Z",
+    "last_modified": "2025-12-02T19:11:55.992132Z",
+    "date_registered": "2015-03-05T00:12:38.875879Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 286852414225,
+    "source": null
+  },
+  {
+    "name": "julia",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Julia is a high-level, high-performance dynamic programming language for technical computing.",
+    "is_private": false,
+    "star_count": 342,
+    "pull_count": 16029563,
+    "last_updated": "2025-12-02T21:03:26.59854Z",
+    "last_modified": "2025-12-02T19:11:53.082367Z",
+    "date_registered": "2015-03-09T22:18:32.534908Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 706950732744,
+    "source": null
+  },
+  {
+    "name": "alpine",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size!",
+    "is_private": false,
+    "star_count": 11426,
+    "pull_count": 11516960407,
+    "last_updated": "2025-10-09T00:24:56.462838Z",
+    "last_modified": "2025-10-08T21:11:20.364188Z",
+    "date_registered": "2015-03-17T23:16:05.407728Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 4340231213,
+    "source": null
+  },
+  {
+    "name": "rakudo-star",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Rakudo is a compiler for the Raku programming language.",
+    "is_private": false,
+    "star_count": 60,
+    "pull_count": 2527621,
+    "last_updated": "2025-11-18T11:34:24.59375Z",
+    "last_modified": "2025-10-23T22:13:13.842393Z",
+    "date_registered": "2015-04-03T21:39:27.253214Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 53440361799,
+    "source": null
+  },
+  {
+    "name": "drupal",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+    "is_private": false,
+    "star_count": 1079,
+    "pull_count": 202596318,
+    "last_updated": "2025-11-26T08:56:54.409971Z",
+    "last_modified": "2025-08-13T22:10:55.807319Z",
+    "date_registered": "2015-04-28T23:45:55.880243Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 2201233985241,
+    "source": null
+  },
+  {
+    "name": "cassandra",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apache Cassandra is an open-source distributed storage system.",
+    "is_private": false,
+    "star_count": 1591,
+    "pull_count": 237522689,
+    "last_updated": "2025-11-14T07:39:47.941192Z",
+    "last_modified": "2025-10-30T00:10:56.787787Z",
+    "date_registered": "2015-05-01T20:03:40.503921Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 270510620692,
+    "source": null
+  },
+  {
+    "name": "sonarqube",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official images for SonarQube, code analysis tool for code quality and security",
+    "is_private": false,
+    "star_count": 2540,
+    "pull_count": 1187147420,
+    "last_updated": "2025-11-14T03:54:03.667746Z",
+    "last_modified": "2025-11-10T18:14:31.29925Z",
+    "date_registered": "2015-05-20T22:20:50.835749Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 1273301372858,
+    "source": null
+  },
+  {
+    "name": "couchbase",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Couchbase Server is a NoSQL document database with a distributed architecture.",
+    "is_private": false,
+    "star_count": 930,
+    "pull_count": 88607751,
+    "last_updated": "2025-11-14T03:35:26.848855Z",
+    "last_modified": "2025-11-10T18:13:20.629907Z",
+    "date_registered": "2015-05-29T00:26:49.137667Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 560481021384,
+    "source": null
+  },
+  {
+    "name": "ros",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Robot Operating System (ROS) is an open source project for building robot applications.",
+    "is_private": false,
+    "star_count": 706,
+    "pull_count": 30394283,
+    "last_updated": "2025-11-14T05:18:12.962558Z",
+    "last_modified": "2025-06-21T00:11:31.784508Z",
+    "date_registered": "2015-06-03T03:02:09.370435Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Machine learning & AI",
+        "slug": "machine-learning-and-ai"
+      },
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 1274990594475,
+    "source": null
+  },
+  {
+    "name": "kibana",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Kibana gives shape to any kind of data — structured and unstructured — indexed in Elasticsearch.",
+    "is_private": false,
+    "star_count": 2818,
+    "pull_count": 221427114,
+    "last_updated": "2025-12-02T21:11:37.855172Z",
+    "last_modified": "2025-12-02T19:11:54.030571Z",
+    "date_registered": "2015-06-09T20:31:08.808541Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 201877487621,
+    "source": null
+  },
+  {
+    "name": "kaazing-gateway",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; lacking active maintainer",
+    "is_private": false,
+    "star_count": 65,
+    "pull_count": 2453062,
+    "last_updated": "2021-09-29T09:16:31.878431Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-07-01T21:42:40.651409Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 18415573798,
+    "source": null
+  },
+  {
+    "name": "arangodb",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "ArangoDB - a scalable graph database system to drive value from connected data, faster.",
+    "is_private": false,
+    "star_count": 292,
+    "pull_count": 38628016,
+    "last_updated": "2025-11-11T22:13:18.788864Z",
+    "last_modified": "2025-11-11T20:11:49.783578Z",
+    "date_registered": "2015-07-14T20:30:29.392344Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 79835245694,
+    "source": null
+  },
+  {
+    "name": "owncloud",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use \"owncloud/server\" instead",
+    "is_private": false,
+    "star_count": 1392,
+    "pull_count": 57399243,
+    "last_updated": "2018-12-31T20:49:57.8066Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-07-23T23:43:48.470079Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 130633315095,
+    "source": null
+  },
+  {
+    "name": "gazebo",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Gazebo is an open source project for simulating robots, offering robust physics and rendering.",
+    "is_private": false,
+    "star_count": 148,
+    "pull_count": 4489969,
+    "last_updated": "2025-04-09T05:13:17.856817Z",
+    "last_modified": "2025-08-25T21:11:08.506683Z",
+    "date_registered": "2015-07-28T18:16:43.358162Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 305714765746,
+    "source": null
+  },
+  {
+    "name": "joomla",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Joomla! is an open source content management system.",
+    "is_private": false,
+    "star_count": 471,
+    "pull_count": 85095295,
+    "last_updated": "2025-11-26T08:44:01.642526Z",
+    "last_modified": "2025-11-25T19:13:48.093526Z",
+    "date_registered": "2015-08-04T18:39:08.087783Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 1595546120873,
+    "source": null
+  },
+  {
+    "name": "redmine",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Redmine is a flexible project management web application written using Ruby on Rails framework",
+    "is_private": false,
+    "star_count": 1253,
+    "pull_count": 71791470,
+    "last_updated": "2025-11-21T14:50:24.648367Z",
+    "last_modified": "2025-10-09T18:11:58.617664Z",
+    "date_registered": "2015-08-07T01:00:57.806136Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 1142243565691,
+    "source": null
+  },
+  {
+    "name": "nats",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "NATS is an open-source, high-performance, cloud native messaging system.",
+    "is_private": false,
+    "star_count": 513,
+    "pull_count": 221140663,
+    "last_updated": "2025-11-13T21:59:44.707696Z",
+    "last_modified": "2025-11-13T19:12:13.107193Z",
+    "date_registered": "2015-08-11T23:44:41.247743Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Message queues",
+        "slug": "message-queues"
+      }
+    ],
+    "storage_size": 45862917269,
+    "source": null
+  },
+  {
+    "name": "rocket.chat",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Complete Open Source Chat Solution",
+    "is_private": false,
+    "star_count": 848,
+    "pull_count": 75569093,
+    "last_updated": "2025-12-02T02:43:41.939448Z",
+    "last_modified": "2025-12-01T23:12:32.018866Z",
+    "date_registered": "2015-08-13T16:38:43.124501Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 248670543454,
+    "source": null
+  },
+  {
+    "name": "docker",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Docker in Docker! (commonly known as \"dind\")",
+    "is_private": false,
+    "star_count": 2723,
+    "pull_count": 3365659533,
+    "last_updated": "2025-12-02T03:09:36.725346Z",
+    "last_modified": "2025-12-02T00:12:26.300744Z",
+    "date_registered": "2015-08-21T19:51:50.302672Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 313897911234,
+    "source": null
+  },
+  {
+    "name": "tomee",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apache TomEE is an all-Apache Java EE certified stack where Apache Tomcat is top dog.",
+    "is_private": false,
+    "star_count": 119,
+    "pull_count": 25292104,
+    "last_updated": "2025-12-02T02:22:28.046545Z",
+    "last_modified": "2025-10-06T20:12:19.396558Z",
+    "date_registered": "2015-10-02T23:37:37.008853Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 731732292358,
+    "source": null
+  },
+  {
+    "name": "sourcemage",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; lacking active maintainer",
+    "is_private": false,
+    "star_count": 49,
+    "pull_count": 654649,
+    "last_updated": "2021-05-22T09:34:30.675427Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-10-14T17:55:18.359974Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1284523983,
+    "source": null
+  },
+  {
+    "name": "bonita",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Bonita is an open-source business process management and workflow suite",
+    "is_private": false,
+    "star_count": 189,
+    "pull_count": 13169820,
+    "last_updated": "2025-11-08T21:55:19.879206Z",
+    "last_modified": "2025-09-26T22:10:46.603763Z",
+    "date_registered": "2015-10-15T16:25:39.814674Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 141577389024,
+    "source": null
+  },
+  {
+    "name": "solr",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene.",
+    "is_private": false,
+    "star_count": 1009,
+    "pull_count": 349800815,
+    "last_updated": "2025-11-14T17:58:23.367331Z",
+    "last_modified": "2025-11-10T18:14:29.529724Z",
+    "date_registered": "2015-10-16T23:15:45.859085Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 1539122412260,
+    "source": null
+  },
+  {
+    "name": "neo4j",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Neo4j is a highly scalable, robust native graph database.",
+    "is_private": false,
+    "star_count": 1355,
+    "pull_count": 302835628,
+    "last_updated": "2025-12-02T03:44:28.75285Z",
+    "last_modified": "2025-11-21T19:12:22.580115Z",
+    "date_registered": "2015-10-20T21:03:16.367052Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 1790681751075,
+    "source": null
+  },
+  {
+    "name": "erlang",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Erlang is a programming language used to build massively scalable systems with high availability.",
+    "is_private": false,
+    "star_count": 377,
+    "pull_count": 63723909,
+    "last_updated": "2025-11-27T05:46:58.13131Z",
+    "last_modified": "2025-11-27T01:13:14.125663Z",
+    "date_registered": "2015-11-11T17:41:39.298973Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 2290629483189,
+    "source": null
+  },
+  {
+    "name": "nuxeo",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; contact Nuxeo for support/updates",
+    "is_private": false,
+    "star_count": 95,
+    "pull_count": 5153816,
+    "last_updated": "2021-08-18T15:43:00.931063Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-12-24T15:47:32.758214Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 280855733022,
+    "source": null
+  },
+  {
+    "name": "photon",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Photon OS is an open source minimal Linux container host.",
+    "is_private": false,
+    "star_count": 201,
+    "pull_count": 18118911,
+    "last_updated": "2025-11-18T03:33:03.124792Z",
+    "last_modified": "2025-11-18T01:12:13.042728Z",
+    "date_registered": "2016-01-15T17:07:21.545754Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 20309850004,
+    "source": null
+  },
+  {
+    "name": "couchdb",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "CouchDB is a database that uses JSON for documents, an HTTP API, & JavaScript/declarative indexing.",
+    "is_private": false,
+    "star_count": 590,
+    "pull_count": 197528802,
+    "last_updated": "2025-11-18T08:34:08.452208Z",
+    "last_modified": "2025-11-11T20:12:11.275133Z",
+    "date_registered": "2016-02-25T01:08:56.325238Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 79268937053,
+    "source": null
+  },
+  {
+    "name": "notary",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; Notary server and signer cooperatively handle signing and distribution",
+    "is_private": false,
+    "star_count": 72,
+    "pull_count": 6719669,
+    "last_updated": "2024-04-18T21:54:25.429759Z",
+    "last_modified": "2025-08-25T21:11:26.373347Z",
+    "date_registered": "2016-02-29T22:57:10.157532Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 3074127071,
+    "source": null
+  },
+  {
+    "name": "piwik",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use \"matomo\" instead",
+    "is_private": false,
+    "star_count": 193,
+    "pull_count": 20499847,
+    "last_updated": "2018-09-29T17:44:58.494866Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-03-04T17:52:03.199501Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 30223816337,
+    "source": null
+  },
+  {
+    "name": "elixir",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Elixir is a dynamic, functional language for building scalable and maintainable applications.",
+    "is_private": false,
+    "star_count": 577,
+    "pull_count": 63215680,
+    "last_updated": "2025-12-02T07:46:45.785161Z",
+    "last_modified": "2025-12-01T23:11:46.375079Z",
+    "date_registered": "2016-03-04T18:13:49.837627Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 2020021263182,
+    "source": null
+  },
+  {
+    "name": "lightstreamer",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Lightstreamer is a real-time messaging server optimized for the Internet.",
+    "is_private": false,
+    "star_count": 95,
+    "pull_count": 6275719,
+    "last_updated": "2025-11-14T04:12:23.893253Z",
+    "last_modified": "2025-06-12T18:11:02.722899Z",
+    "date_registered": "2016-04-01T22:01:08.85411Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Message queues",
+        "slug": "message-queues"
+      }
+    ],
+    "storage_size": 244802296207,
+    "source": null
+  },
+  {
+    "name": "orientdb",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "OrientDB a Multi-Model Open Source NoSQL DBMS that combines graphs and documents.",
+    "is_private": false,
+    "star_count": 189,
+    "pull_count": 15590059,
+    "last_updated": "2025-11-18T22:41:02.078995Z",
+    "last_modified": "2025-11-18T20:13:10.001393Z",
+    "date_registered": "2016-04-06T16:27:21.556557Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 163271233731,
+    "source": null
+  },
+  {
+    "name": "mongo-express",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Web-based MongoDB admin interface, written with Node.js and express",
+    "is_private": false,
+    "star_count": 1525,
+    "pull_count": 265287053,
+    "last_updated": "2024-11-21T01:29:49.929897Z",
+    "last_modified": "2025-06-04T23:11:02.201091Z",
+    "date_registered": "2016-04-06T17:44:46.039Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 19889563986,
+    "source": null
+  },
+  {
+    "name": "traefik",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Traefik, The Cloud Native Edge Router",
+    "is_private": false,
+    "star_count": 3565,
+    "pull_count": 3437059422,
+    "last_updated": "2025-11-20T22:09:54.747312Z",
+    "last_modified": "2025-11-18T20:13:45.50769Z",
+    "date_registered": "2016-04-06T18:20:12.627239Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 132249593939,
+    "source": null
+  },
+  {
+    "name": "backdrop",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The comprehensive CMS for small to medium sized businesses and non-profits.",
+    "is_private": false,
+    "star_count": 118,
+    "pull_count": 7138188,
+    "last_updated": "2025-11-20T22:27:45.685253Z",
+    "last_modified": "2025-10-08T21:11:25.587323Z",
+    "date_registered": "2016-04-13T23:38:45.311783Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 75845522971,
+    "source": null
+  },
+  {
+    "name": "consul",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Consul is a datacenter runtime that provides service discovery, configuration, and orchestration.",
+    "is_private": false,
+    "star_count": 1459,
+    "pull_count": 1050259573,
+    "last_updated": "2024-03-16T08:17:23.033366Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-04-25T22:06:35.106828Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 45201696115,
+    "source": null
+  },
+  {
+    "name": "chronograf",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Chronograf is a visualization tool for time series data in InfluxDB.",
+    "is_private": false,
+    "star_count": 368,
+    "pull_count": 156561289,
+    "last_updated": "2025-11-18T07:40:18.842172Z",
+    "last_modified": "2025-08-19T17:11:16.121327Z",
+    "date_registered": "2016-05-12T16:47:41.108981Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 68476825473,
+    "source": null
+  },
+  {
+    "name": "influxdb",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "InfluxDB is the open source time series database built for real-time analytic workloads.",
+    "is_private": false,
+    "star_count": 1984,
+    "pull_count": 1085895754,
+    "last_updated": "2025-11-21T03:20:46.468239Z",
+    "last_modified": "2025-11-21T01:11:28.294817Z",
+    "date_registered": "2016-05-12T16:48:37.189201Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Internet of things",
+        "slug": "internet-of-things"
+      }
+    ],
+    "storage_size": 176667419206,
+    "source": null
+  },
+  {
+    "name": "kapacitor",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Kapacitor is an open source framework for processing, monitoring, and alerting on time series data.",
+    "is_private": false,
+    "star_count": 265,
+    "pull_count": 60213428,
+    "last_updated": "2025-11-14T02:21:56.191187Z",
+    "last_modified": "2025-10-01T18:13:23.379759Z",
+    "date_registered": "2016-05-12T16:49:41.090806Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 54158525385,
+    "source": null
+  },
+  {
+    "name": "telegraf",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Telegraf is an agent for collecting metrics and writing them to InfluxDB or other outputs.",
+    "is_private": false,
+    "star_count": 719,
+    "pull_count": 623465618,
+    "last_updated": "2025-11-18T10:12:00.960331Z",
+    "last_modified": "2025-11-17T19:15:17.992758Z",
+    "date_registered": "2016-05-12T16:50:53.658088Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 124577875879,
+    "source": null
+  },
+  {
+    "name": "hello-seattle",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Hello from DockerCon 2016 (Seattle)!",
+    "is_private": false,
+    "star_count": 14,
+    "pull_count": 5032370,
+    "last_updated": "2019-01-03T22:42:58.502186Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-06-29T18:21:06.747232Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2458985,
+    "source": null
+  },
+  {
+    "name": "hola-mundo",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "¡Hola de DockerCon EU 2015 (Barcelona)!",
+    "is_private": false,
+    "star_count": 11,
+    "pull_count": 1469547,
+    "last_updated": "2019-01-04T16:43:25.400938Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-06-29T18:21:43.162115Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2471769,
+    "source": null
+  },
+  {
+    "name": "fsharp",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use https://hub.docker.com/_/microsoft-dotnet-sdk/",
+    "is_private": false,
+    "star_count": 86,
+    "pull_count": 2937231,
+    "last_updated": "2021-07-22T09:22:27.838134Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-07-15T23:12:28.781335Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 53842418667,
+    "source": null
+  },
+  {
+    "name": "spiped",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Spiped is a utility for creating symmetrically encrypted and authenticated pipes between sockets.",
+    "is_private": false,
+    "star_count": 65,
+    "pull_count": 3203479,
+    "last_updated": "2025-11-19T23:04:34.893325Z",
+    "last_modified": "2025-08-29T18:11:46.018919Z",
+    "date_registered": "2016-07-20T23:16:08.120082Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 38466845484,
+    "source": null
+  },
+  {
+    "name": "vault",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Vault is a tool for securely accessing secrets via a unified interface and tight access control.",
+    "is_private": false,
+    "star_count": 1165,
+    "pull_count": 549830555,
+    "last_updated": "2024-03-16T09:21:40.587196Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-07-21T20:07:02.407935Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 59945179029,
+    "source": null
+  },
+  {
+    "name": "clearlinux",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; Official docker build of Clear Linux OS for Intel Architecture",
+    "is_private": false,
+    "star_count": 182,
+    "pull_count": 6918381,
+    "last_updated": "2025-06-16T23:04:13.829185Z",
+    "last_modified": "2025-07-22T00:10:35.542601Z",
+    "date_registered": "2016-07-26T16:05:35.809516Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 22035869911,
+    "source": null
+  },
+  {
+    "name": "eggdrop",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The official Docker image of Eggdrop- IRC's oldest actively-developed bot!",
+    "is_private": false,
+    "star_count": 83,
+    "pull_count": 2855064,
+    "last_updated": "2025-10-09T02:30:41.963191Z",
+    "last_modified": "2025-06-30T18:10:52.152743Z",
+    "date_registered": "2016-08-03T23:00:36.457716Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 5921423627,
+    "source": null
+  },
+  {
+    "name": "ibmjava",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official IBM® SDK, Java™ Technology Edition Docker Image.",
+    "is_private": false,
+    "star_count": 131,
+    "pull_count": 13289514,
+    "last_updated": "2025-11-14T03:02:01.270562Z",
+    "last_modified": "2025-10-30T22:12:11.735309Z",
+    "date_registered": "2016-08-10T18:39:32.348296Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 284262884708,
+    "source": null
+  },
+  {
+    "name": "openjdk",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Pre-release / non-production builds of OpenJDK",
+    "is_private": false,
+    "star_count": 4104,
+    "pull_count": 2600849783,
+    "last_updated": "2025-12-02T22:23:52.013604Z",
+    "last_modified": "2025-12-02T01:13:26.931633Z",
+    "date_registered": "2016-08-11T22:53:09.057213Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2861348631149,
+    "source": null
+  },
+  {
+    "name": "kong",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The Cloud-Native API Gateway for APIs and Microservices",
+    "is_private": false,
+    "star_count": 829,
+    "pull_count": 345405635,
+    "last_updated": "2025-11-14T00:52:20.362323Z",
+    "last_modified": "2025-06-05T17:11:04.456182Z",
+    "date_registered": "2016-08-31T21:12:34.623235Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      }
+    ],
+    "storage_size": 85693476438,
+    "source": null
+  },
+  {
+    "name": "zookeeper",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apache ZooKeeper is an open-source server which enables highly reliable distributed coordination.",
+    "is_private": false,
+    "star_count": 1488,
+    "pull_count": 333328051,
+    "last_updated": "2025-11-14T09:59:37.055698Z",
+    "last_modified": "2025-09-08T17:12:03.100464Z",
+    "date_registered": "2016-09-12T21:02:05.855821Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 66540146808,
+    "source": null
+  },
+  {
+    "name": "nats-streaming",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; An open-source, high-performance, cloud native messaging streaming system.",
+    "is_private": false,
+    "star_count": 167,
+    "pull_count": 102606241,
+    "last_updated": "2024-06-12T19:29:11.456403Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-10-04T22:13:55.414366Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 22508720836,
+    "source": null
+  },
+  {
+    "name": "storm",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apache Storm is a free and open source distributed realtime computation system.",
+    "is_private": false,
+    "star_count": 203,
+    "pull_count": 9204427,
+    "last_updated": "2025-11-14T02:43:38.859474Z",
+    "last_modified": "2025-11-10T18:14:32.760626Z",
+    "date_registered": "2016-10-12T17:59:31.921838Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      }
+    ],
+    "storage_size": 213750511558,
+    "source": null
+  },
+  {
+    "name": "plone",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED. Plone is a free and open source content management system built on top of Zope.",
+    "is_private": false,
+    "star_count": 102,
+    "pull_count": 7182740,
+    "last_updated": "2024-09-27T14:04:20.031759Z",
+    "last_modified": "2025-10-09T19:13:59.571261Z",
+    "date_registered": "2016-10-12T19:00:47.706927Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 294184231062,
+    "source": null
+  },
+  {
+    "name": "bash",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Bash is the GNU Project's Bourne Again SHell",
+    "is_private": false,
+    "star_count": 736,
+    "pull_count": 531147640,
+    "last_updated": "2025-12-01T22:02:40.860854Z",
+    "last_modified": "2025-12-01T18:10:48.644672Z",
+    "date_registered": "2016-10-18T23:34:52.964422Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 20966779083,
+    "source": null
+  },
+  {
+    "name": "amazonlinux",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Amazon Linux provides a stable, secure, and high-performance execution environment for applications.",
+    "is_private": false,
+    "star_count": 1480,
+    "pull_count": 941698452,
+    "last_updated": "2025-11-20T21:30:57.201613Z",
+    "last_modified": "2025-11-20T20:11:58.636297Z",
+    "date_registered": "2016-11-16T00:39:06.98109Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 99710691605,
+    "source": null
+  },
+  {
+    "name": "composer",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Composer is a dependency manager written in and for PHP.",
+    "is_private": false,
+    "star_count": 1120,
+    "pull_count": 194837541,
+    "last_updated": "2025-11-24T20:13:35.962628Z",
+    "last_modified": "2025-11-20T18:12:29.515191Z",
+    "date_registered": "2016-11-24T00:03:48.522342Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 95564304355,
+    "source": null
+  },
+  {
+    "name": "known",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; lacking active maintainer",
+    "is_private": false,
+    "star_count": 46,
+    "pull_count": 1427112,
+    "last_updated": "2019-06-13T05:46:14.801719Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-12-07T19:56:58.809055Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 8320647784,
+    "source": null
+  },
+  {
+    "name": "eclipse-mosquitto",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Eclipse Mosquitto is an open source message broker which implements MQTT version 5, 3.1.1 and 3.1",
+    "is_private": false,
+    "star_count": 1359,
+    "pull_count": 648696020,
+    "last_updated": "2025-11-14T19:05:50.766437Z",
+    "last_modified": "2025-07-12T00:11:02.408521Z",
+    "date_registered": "2016-12-13T21:14:20.875719Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Internet of things",
+        "slug": "internet-of-things"
+      },
+      {
+        "name": "Message queues",
+        "slug": "message-queues"
+      }
+    ],
+    "storage_size": 3013647507,
+    "source": null
+  },
+  {
+    "name": "nextcloud",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Nextcloud manual docker image",
+    "is_private": false,
+    "star_count": 4409,
+    "pull_count": 996997676,
+    "last_updated": "2025-11-23T15:49:51.888205Z",
+    "last_modified": "2025-11-21T01:11:42.449285Z",
+    "date_registered": "2016-12-30T18:54:29.826116Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 3859757185228,
+    "source": null
+  },
+  {
+    "name": "silverpeas",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Silverpeas is a turnkey and open-source Collaborative and Social-Networking Portal.",
+    "is_private": false,
+    "star_count": 47,
+    "pull_count": 1964892,
+    "last_updated": "2025-11-14T02:09:34.74595Z",
+    "last_modified": "2025-08-07T17:11:46.694769Z",
+    "date_registered": "2017-01-20T00:37:17.247503Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 246150888459,
+    "source": null
+  },
+  {
+    "name": "swift",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Swift is a high-performance system programming language, to learn more about Swift visit swift.org.",
+    "is_private": false,
+    "star_count": 731,
+    "pull_count": 29352310,
+    "last_updated": "2025-12-02T02:49:19.858034Z",
+    "last_modified": "2025-11-10T18:14:33.490842Z",
+    "date_registered": "2017-01-21T16:49:27.613593Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 2200453537112,
+    "source": null
+  },
+  {
+    "name": "haxe",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Haxe is a modern, high level, static typed programming language with multiple compilation targets.",
+    "is_private": false,
+    "star_count": 63,
+    "pull_count": 24924342,
+    "last_updated": "2025-11-18T13:25:13.188829Z",
+    "last_modified": "2025-08-19T17:11:47.225698Z",
+    "date_registered": "2017-01-23T19:31:18.863383Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 314848466924,
+    "source": null
+  },
+  {
+    "name": "rapidoid",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; lacking active maintainer",
+    "is_private": false,
+    "star_count": 27,
+    "pull_count": 2703105,
+    "last_updated": "2021-09-29T10:51:38.518892Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-01-23T22:56:00.607949Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 11980299124,
+    "source": null
+  },
+  {
+    "name": "adminer",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Database management in a single PHP file.",
+    "is_private": false,
+    "star_count": 970,
+    "pull_count": 388567702,
+    "last_updated": "2025-11-23T07:49:12.138105Z",
+    "last_modified": "2025-10-15T18:11:00.297848Z",
+    "date_registered": "2017-01-27T21:45:14.651335Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 75017420665,
+    "source": null
+  },
+  {
+    "name": "geonetwork",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "GeoNetwork is a FOSS catalog for spatially referenced resources.",
+    "is_private": false,
+    "star_count": 91,
+    "pull_count": 5680891,
+    "last_updated": "2025-11-14T16:12:31.76285Z",
+    "last_modified": "2025-10-08T18:11:20.350898Z",
+    "date_registered": "2017-01-31T18:25:42.258644Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      }
+    ],
+    "storage_size": 510994357346,
+    "source": null
+  },
+  {
+    "name": "xwiki",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "XWiki: The Advanced Open Source Enterprise Wiki.",
+    "is_private": false,
+    "star_count": 319,
+    "pull_count": 33497868,
+    "last_updated": "2025-12-01T22:08:20.853896Z",
+    "last_modified": "2025-12-01T20:13:21.427477Z",
+    "date_registered": "2017-02-08T23:29:51.480221Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 1478678202612,
+    "source": null
+  },
+  {
+    "name": "groovy",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apache Groovy is a multi-faceted language for the Java platform.",
+    "is_private": false,
+    "star_count": 160,
+    "pull_count": 77942454,
+    "last_updated": "2025-11-15T21:22:07.50759Z",
+    "last_modified": "2025-07-02T17:10:54.816429Z",
+    "date_registered": "2017-02-28T21:55:51.349829Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 691276489693,
+    "source": null
+  },
+  {
+    "name": "znc",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "ZNC - An advanced IRC bouncer",
+    "is_private": false,
+    "star_count": 119,
+    "pull_count": 28426571,
+    "last_updated": "2025-10-09T00:35:39.526359Z",
+    "last_modified": "2025-07-01T22:12:08.887435Z",
+    "date_registered": "2017-03-01T00:53:12.998584Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 28146153966,
+    "source": null
+  },
+  {
+    "name": "gradle",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Gradle is a fast, reliable, and flexible open-source build tool with an elegant, extensible DSL.",
+    "is_private": false,
+    "star_count": 622,
+    "pull_count": 278294887,
+    "last_updated": "2025-12-02T09:22:59.357024Z",
+    "last_modified": "2025-12-01T23:11:55.533505Z",
+    "date_registered": "2017-03-23T18:41:46.707682Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 3448100524356,
+    "source": null
+  },
+  {
+    "name": "convertigo",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Enterprise grade full-stack Open source Low Code & No Code Platform for web & mobile application",
+    "is_private": false,
+    "star_count": 59,
+    "pull_count": 4723332,
+    "last_updated": "2025-11-14T02:59:35.00947Z",
+    "last_modified": "2025-10-31T18:11:19.802193Z",
+    "date_registered": "2017-03-29T20:16:40.511312Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 177249158379,
+    "source": null
+  },
+  {
+    "name": "flink",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Apache Flink® is a powerful open-source distributed stream and batch processing framework.",
+    "is_private": false,
+    "star_count": 454,
+    "pull_count": 93662286,
+    "last_updated": "2025-11-14T02:03:34.995995Z",
+    "last_modified": "2025-11-10T18:13:34.171187Z",
+    "date_registered": "2017-05-09T20:28:32.125909Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      }
+    ],
+    "storage_size": 1718177902263,
+    "source": null
+  },
+  {
+    "name": "swipl",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "SWI-Prolog offers a comprehensive free Prolog environment.",
+    "is_private": false,
+    "star_count": 74,
+    "pull_count": 3144249,
+    "last_updated": "2025-11-19T21:12:20.558119Z",
+    "last_modified": "2025-11-19T19:12:52.650647Z",
+    "date_registered": "2017-08-10T21:26:48.20648Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 41452994870,
+    "source": null
+  },
+  {
+    "name": "rust",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Rust is a systems programming language focused on safety, speed, and concurrency.",
+    "is_private": false,
+    "star_count": 1115,
+    "pull_count": 106157733,
+    "last_updated": "2025-11-24T18:45:04.920547Z",
+    "last_modified": "2025-11-10T20:12:00.828332Z",
+    "date_registered": "2017-08-10T21:45:13.885626Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 1506852149285,
+    "source": null
+  },
+  {
+    "name": "mediawiki",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "MediaWiki is a free software open source wiki package written in PHP.",
+    "is_private": false,
+    "star_count": 608,
+    "pull_count": 46539741,
+    "last_updated": "2025-11-19T01:17:34.000039Z",
+    "last_modified": "2025-10-06T18:11:32.789524Z",
+    "date_registered": "2017-08-24T18:18:39.100699Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 1051175904345,
+    "source": null
+  },
+  {
+    "name": "euleros",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; lacking active maintainer",
+    "is_private": false,
+    "star_count": 34,
+    "pull_count": 721733,
+    "last_updated": "2020-09-16T19:44:28.581242Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-15T01:42:13.395571Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 445016442,
+    "source": null
+  },
+  {
+    "name": "sl",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; Official containers for Scientific Linux(SL)",
+    "is_private": false,
+    "star_count": 56,
+    "pull_count": 611614,
+    "last_updated": "2024-06-03T19:04:41.546702Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-12-29T01:16:45.092524Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 6608849593,
+    "source": null
+  },
+  {
+    "name": "open-liberty",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Open Liberty multi-architecture images based on Ubuntu",
+    "is_private": false,
+    "star_count": 69,
+    "pull_count": 13577711,
+    "last_updated": "2025-12-02T06:45:29.016249Z",
+    "last_modified": "2025-11-10T18:13:59.763767Z",
+    "date_registered": "2018-01-16T23:43:54.514408Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 1964365417530,
+    "source": null
+  },
+  {
+    "name": "clefos",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; The official build of ClefOS.",
+    "is_private": false,
+    "star_count": 23,
+    "pull_count": 840816,
+    "last_updated": "2022-01-21T19:00:21.64162Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-01-23T01:16:07.750366Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 253163024,
+    "source": null
+  },
+  {
+    "name": "teamspeak",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "TeamSpeak is software for quality voice communication via the Internet.",
+    "is_private": false,
+    "star_count": 601,
+    "pull_count": 135846066,
+    "last_updated": "2025-02-14T21:49:13.34522Z",
+    "last_modified": "2025-06-04T23:11:38.561187Z",
+    "date_registered": "2018-02-02T19:44:00.685157Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 674377532,
+    "source": null
+  },
+  {
+    "name": "matomo",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Matomo is the leading open-source analytics platform that gives you more than powerful analytics.",
+    "is_private": false,
+    "star_count": 353,
+    "pull_count": 130869823,
+    "last_updated": "2025-12-02T01:12:22.766449Z",
+    "last_modified": "2025-12-01T20:12:11.651711Z",
+    "date_registered": "2018-04-25T18:42:57.694802Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 441679751957,
+    "source": null
+  },
+  {
+    "name": "yourls",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener.",
+    "is_private": false,
+    "star_count": 319,
+    "pull_count": 22540255,
+    "last_updated": "2025-11-23T05:43:15.658441Z",
+    "last_modified": "2025-08-19T17:12:48.902257Z",
+    "date_registered": "2018-07-18T22:43:33.869349Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 295554260884,
+    "source": null
+  },
+  {
+    "name": "alt",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The official build of ALT Linux.",
+    "is_private": false,
+    "star_count": 68,
+    "pull_count": 800627,
+    "last_updated": "2025-10-08T19:07:42.107875Z",
+    "last_modified": "2025-10-08T18:10:44.263099Z",
+    "date_registered": "2018-07-30T20:42:09.637839Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 11722529224,
+    "source": null
+  },
+  {
+    "name": "amazoncorretto",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Corretto is a no-cost, production-ready distribution of the Open Java Development Kit (OpenJDK).",
+    "is_private": false,
+    "star_count": 484,
+    "pull_count": 124213365,
+    "last_updated": "2025-11-20T22:51:02.185723Z",
+    "last_modified": "2025-11-10T18:12:57.290981Z",
+    "date_registered": "2019-01-09T05:42:08.745828Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 722012082020,
+    "source": null
+  },
+  {
+    "name": "express-gateway",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; The Official Docker Image of Express Gateway, an API Gateway for APIs and Microservices",
+    "is_private": false,
+    "star_count": 76,
+    "pull_count": 2487495,
+    "last_updated": "2022-11-30T02:59:10.814396Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-01-12T00:42:21.550949Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 10742409441,
+    "source": null
+  },
+  {
+    "name": "postfixadmin",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Postfix Admin - web based administration interface for Postfix mail servers.",
+    "is_private": false,
+    "star_count": 213,
+    "pull_count": 5608069,
+    "last_updated": "2025-11-26T09:10:52.696002Z",
+    "last_modified": "2025-11-26T00:12:05.33656Z",
+    "date_registered": "2019-01-21T23:43:16.872861Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 269216854204,
+    "source": null
+  },
+  {
+    "name": "fluentd",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Fluentd is an open source data collector for unified logging layer",
+    "is_private": false,
+    "star_count": 207,
+    "pull_count": 12529174,
+    "last_updated": "2025-11-19T03:28:33.932225Z",
+    "last_modified": "2025-08-04T18:11:13.180153Z",
+    "date_registered": "2019-04-26T22:42:30.895694Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 77639982130,
+    "source": null
+  },
+  {
+    "name": "adoptopenjdk",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; use https://hub.docker.com/_/eclipse-temurin/",
+    "is_private": false,
+    "star_count": 378,
+    "pull_count": 101776850,
+    "last_updated": "2021-10-06T18:00:36.296631Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-05-24T23:42:23.763201Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 520526175724,
+    "source": null
+  },
+  {
+    "name": "sapmachine",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official SapMachine Docker Image, SAP's build of OpenJDK.",
+    "is_private": false,
+    "star_count": 55,
+    "pull_count": 23642774,
+    "last_updated": "2025-11-14T04:14:46.141622Z",
+    "last_modified": "2025-10-22T00:12:37.176378Z",
+    "date_registered": "2019-06-25T00:47:48.485642Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 531033306483,
+    "source": null
+  },
+  {
+    "name": "varnish",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Varnish is an HTTP accelerator designed for content-heavy dynamic web sites as well as APIs.",
+    "is_private": false,
+    "star_count": 181,
+    "pull_count": 20172639,
+    "last_updated": "2025-11-18T19:20:13.063816Z",
+    "last_modified": "2025-09-19T21:12:55.555977Z",
+    "date_registered": "2019-07-04T23:06:49.26155Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 189629934899,
+    "source": null
+  },
+  {
+    "name": "jobber",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; Jobber is an alternative to cron, with sophisticated status-reporting and error-handling",
+    "is_private": false,
+    "star_count": 47,
+    "pull_count": 714950,
+    "last_updated": "2024-03-16T09:07:28.534165Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-08-03T00:44:42.526543Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 173093193,
+    "source": null
+  },
+  {
+    "name": "archlinux",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Arch Linux is a simple, lightweight Linux distribution aimed for flexibility.",
+    "is_private": false,
+    "star_count": 651,
+    "pull_count": 30280290,
+    "last_updated": "2025-10-20T22:48:25.578236Z",
+    "last_modified": "2025-10-20T21:11:11.695716Z",
+    "date_registered": "2019-10-15T01:48:17.387086Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 104995300440,
+    "source": null
+  },
+  {
+    "name": "friendica",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Welcome to the free social web.",
+    "is_private": false,
+    "star_count": 125,
+    "pull_count": 5566225,
+    "last_updated": "2025-11-23T09:27:59.220662Z",
+    "last_modified": "2025-10-10T20:11:36.242294Z",
+    "date_registered": "2020-01-08T23:05:12.719891Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 750972652551,
+    "source": null
+  },
+  {
+    "name": "caddy",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go.",
+    "is_private": false,
+    "star_count": 922,
+    "pull_count": 665218092,
+    "last_updated": "2025-12-02T22:52:47.34814Z",
+    "last_modified": "2025-08-25T21:10:42.655468Z",
+    "date_registered": "2020-04-14T00:52:20.768622Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 245848477703,
+    "source": null
+  },
+  {
+    "name": "monica",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Monica – the Personal Relationship Manager.",
+    "is_private": false,
+    "star_count": 221,
+    "pull_count": 12617416,
+    "last_updated": "2025-11-24T20:05:55.165106Z",
+    "last_modified": "2025-08-19T22:11:17.279129Z",
+    "date_registered": "2020-08-26T21:37:05.890566Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 452840422604,
+    "source": null
+  },
+  {
+    "name": "phpmyadmin",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "phpMyAdmin - A web interface for MySQL and MariaDB.",
+    "is_private": false,
+    "star_count": 1130,
+    "pull_count": 79562998,
+    "last_updated": "2025-11-23T03:41:13.819907Z",
+    "last_modified": "2025-10-08T22:13:52.208948Z",
+    "date_registered": "2020-08-27T00:39:57.666261Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 275646548003,
+    "source": null
+  },
+  {
+    "name": "hitch",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Hitch is a libev-based high performance SSL/TLS proxy by Varnish Software.",
+    "is_private": false,
+    "star_count": 27,
+    "pull_count": 503127,
+    "last_updated": "2025-11-18T07:47:19.560624Z",
+    "last_modified": "2025-06-11T18:11:10.207828Z",
+    "date_registered": "2021-04-02T23:56:17.231333Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 12806341405,
+    "source": null
+  },
+  {
+    "name": "almalinux",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The official build of AlmaLinux OS.",
+    "is_private": false,
+    "star_count": 203,
+    "pull_count": 11893267,
+    "last_updated": "2025-11-25T19:34:47.565097Z",
+    "last_modified": "2025-11-25T18:11:11.180332Z",
+    "date_registered": "2021-05-14T22:18:50.735192Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 39561483197,
+    "source": null
+  },
+  {
+    "name": "dart",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Dart is a client-optimized language for fast apps on any platform.",
+    "is_private": false,
+    "star_count": 166,
+    "pull_count": 3165424,
+    "last_updated": "2025-12-02T21:53:36.831954Z",
+    "last_modified": "2025-12-02T18:11:44.921152Z",
+    "date_registered": "2021-05-17T20:28:32.327662Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 188970471776,
+    "source": null
+  },
+  {
+    "name": "eclipse-temurin",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Images for OpenJDK binaries built by Eclipse Temurin.",
+    "is_private": false,
+    "star_count": 722,
+    "pull_count": 229707644,
+    "last_updated": "2025-12-02T04:17:17.053252Z",
+    "last_modified": "2025-08-19T17:11:35.40908Z",
+    "date_registered": "2021-08-13T21:48:42.393375Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 1578375628288,
+    "source": null
+  },
+  {
+    "name": "ibm-semeru-runtimes",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "IBM Semeru Runtimes Official Images for OpenJDK and Eclipse OpenJ9 binaries.",
+    "is_private": false,
+    "star_count": 58,
+    "pull_count": 9536304,
+    "last_updated": "2025-12-02T02:45:06.073913Z",
+    "last_modified": "2025-12-01T22:11:54.3125Z",
+    "date_registered": "2021-10-21T01:44:17.938174Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      }
+    ],
+    "storage_size": 674180182862,
+    "source": null
+  },
+  {
+    "name": "rockylinux",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The official build of Rocky Linux.",
+    "is_private": false,
+    "star_count": 310,
+    "pull_count": 40024033,
+    "last_updated": "2024-05-30T05:16:49.23459Z",
+    "last_modified": "2025-06-10T21:11:06.139242Z",
+    "date_registered": "2021-12-15T19:29:35.292988Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Operating systems",
+        "slug": "operating-systems"
+      }
+    ],
+    "storage_size": 4633017863,
+    "source": null
+  },
+  {
+    "name": "api-firewall",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A light-weighted API Firewall to protect your API endpoints with API Schema validation.",
+    "is_private": false,
+    "star_count": 58,
+    "pull_count": 76268,
+    "last_updated": "2025-12-02T00:44:29.598423Z",
+    "last_modified": "2025-12-01T23:11:17.023311Z",
+    "date_registered": "2022-02-02T17:30:42.625691Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      }
+    ],
+    "storage_size": 1993460515,
+    "source": null
+  },
+  {
+    "name": "emqx",
+    "namespace": "library",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; The most scalable open-source MQTT broker for IoT, IIoT, connected vehicles, and more.",
+    "is_private": false,
+    "star_count": 108,
+    "pull_count": 4497147,
+    "last_updated": "2025-11-18T06:28:20.991378Z",
+    "last_modified": "2025-09-04T17:11:03.721012Z",
+    "date_registered": "2022-04-07T16:17:46.952696Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Message queues",
+        "slug": "message-queues"
+      }
+    ],
+    "storage_size": 47450358851,
+    "source": null
+  },
+  {
+    "name": "satosa",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "SATOSA translates between auth protocols such as SAML2, OpenID Connect, and OAuth2.",
+    "is_private": false,
+    "star_count": 16,
+    "pull_count": 459036,
+    "last_updated": "2025-12-03T05:13:50.656029Z",
+    "last_modified": "2025-07-28T17:13:15.442956Z",
+    "date_registered": "2022-07-21T01:11:37.18439Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      }
+    ],
+    "storage_size": 112595965114,
+    "source": null
+  },
+  {
+    "name": "unit",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; Official build of NGINX Unit: Universal Web App Server",
+    "is_private": false,
+    "star_count": 52,
+    "pull_count": 1016393,
+    "last_updated": "2025-10-10T05:45:47.283813Z",
+    "last_modified": "2025-10-13T23:13:20.024654Z",
+    "date_registered": "2023-04-11T23:45:22.442836Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 183038145874,
+    "source": null
+  },
+  {
+    "name": "spark",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "Apache Spark - A unified analytics engine for large-scale data processing",
+    "is_private": false,
+    "star_count": 108,
+    "pull_count": 1231395,
+    "last_updated": "2025-11-14T03:14:09.469459Z",
+    "last_modified": "2025-10-30T17:12:18.405736Z",
+    "date_registered": "2023-07-19T17:27:50.7715Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      }
+    ],
+    "storage_size": 408522192952,
+    "source": null
+  },
+  {
+    "name": "liquibase",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "DEPRECATED; Liquibase is DevOps for your database.",
+    "is_private": false,
+    "star_count": 13,
+    "pull_count": 619652,
+    "last_updated": "2025-11-14T01:39:47.199876Z",
+    "last_modified": "2025-10-24T18:11:47.696212Z",
+    "date_registered": "2024-04-12T21:39:14.34063Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 34696746300,
+    "source": null
+  },
+  {
+    "name": "clickhouse",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "ClickHouse is the fastest and most resource efficient OSS database for real-time apps and analytics.",
+    "is_private": false,
+    "star_count": 44,
+    "pull_count": 477260,
+    "last_updated": "2025-12-01T22:51:24.019093Z",
+    "last_modified": "2025-12-01T20:11:35.90217Z",
+    "date_registered": "2024-11-09T00:18:02.333262Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      }
+    ],
+    "storage_size": 40275890736,
+    "source": null
+  },
+  {
+    "name": "krakend",
+    "namespace": "library",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "KrakenD is a stateless, high-performance, enterprise-ready, open source API gateway written in Go.",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 119786,
+    "last_updated": "2025-10-27T23:12:18.494396Z",
+    "last_modified": "2025-10-27T18:11:12.002505Z",
+    "date_registered": "2025-03-26T23:14:57.585028Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      }
+    ],
+    "storage_size": 1061952660,
+    "source": null
+  }
+]

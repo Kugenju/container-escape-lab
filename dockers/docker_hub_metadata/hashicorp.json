@@ -1,0 +1,1888 @@
+[
+  {
+    "name": "middleman-hashicorp",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Minimal build image for middleman-hashicorp.",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 187547,
+    "last_updated": "2021-11-01T19:20:26.124265Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-02-09T00:26:06.907822Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      },
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 5181829129,
+    "source": null
+  },
+  {
+    "name": "web",
+    "namespace": "hashicorp",
+    "repository_type": null,
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 31985,
+    "last_updated": "2016-02-24T20:51:01.099046Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-02-24T20:51:00.739119Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 10452701,
+    "source": null
+  },
+  {
+    "name": "consul",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Automatic build of consul based on the current release. See README for more information on usage.",
+    "is_private": false,
+    "star_count": 89,
+    "pull_count": 91685926,
+    "last_updated": "2025-11-26T18:14:52.607467Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-04-20T23:49:16.501121Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 43717120840,
+    "source": null
+  },
+  {
+    "name": "packer",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Automatic build of packer from latest source. See README for more information.",
+    "is_private": false,
+    "star_count": 117,
+    "pull_count": 45977981,
+    "last_updated": "2025-11-18T15:37:49.40075Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-04-21T00:16:05.090741Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 69055917094,
+    "source": null
+  },
+  {
+    "name": "terraform",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Automatic builds of Terraform. See README for more use and info.",
+    "is_private": false,
+    "star_count": 504,
+    "pull_count": 470062872,
+    "last_updated": "2025-11-19T19:09:29.872911Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-04-21T00:36:37.547429Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 91949564538,
+    "source": null
+  },
+  {
+    "name": "vault",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official vault docker images",
+    "is_private": false,
+    "star_count": 204,
+    "pull_count": 194152176,
+    "last_updated": "2025-11-19T17:48:27.96022Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-07-05T20:56:05.088603Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 63973625824,
+    "source": null
+  },
+  {
+    "name": "http-echo",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "http-echo is an in-memory web server that echos back the arguments given to it.",
+    "is_private": false,
+    "star_count": 80,
+    "pull_count": 92485259,
+    "last_updated": "2023-10-10T21:40:34.420593Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-09-28T00:52:25.523395Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 30635361,
+    "source": null
+  },
+  {
+    "name": "consul-template",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Consul Template is a template renderer, notifier, and supervisor for HashiCorp Consul and Vault.",
+    "is_private": false,
+    "star_count": 32,
+    "pull_count": 150726801,
+    "last_updated": "2025-11-04T13:21:31.314323Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-05-25T16:34:12.115226Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 1324847565,
+    "source": null
+  },
+  {
+    "name": "envconsul",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Launch a subprocess with environment variables using data from HashiCorp Consul and Vault.",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 528557,
+    "last_updated": "2025-08-21T13:35:00.938595Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-08-02T05:05:35.4165Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 314498043,
+    "source": null
+  },
+  {
+    "name": "consul-replicate",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 1102275,
+    "last_updated": "2017-08-10T22:03:56.87015Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-08-10T22:03:06.929549Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 8956492,
+    "source": null
+  },
+  {
+    "name": "consul-k8s",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "First-class integrations between Consul and Kubernetes. ",
+    "is_private": false,
+    "star_count": 11,
+    "pull_count": 21368968,
+    "last_updated": "2021-06-22T18:55:30.88334Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-09-25T02:23:46.442564Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 2780073037,
+    "source": null
+  },
+  {
+    "name": "demo-webapp",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Sample web app used during Nomad 101 training course.",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 13719,
+    "last_updated": "2018-10-04T17:12:42.795021Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-09-28T20:44:58.262278Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 132548533,
+    "source": null
+  },
+  {
+    "name": "counting-service",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A demo service that counts each time it is accessed. Returns JSON with the new count.",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 318754,
+    "last_updated": "2023-03-15T18:42:59.529509Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-11-13T22:59:40.315754Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 16596812,
+    "source": null
+  },
+  {
+    "name": "dashboard-service",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Demo service for a class on HashiCorp Consul. Fetches a number from a backend counting service.",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 289469,
+    "last_updated": "2023-03-15T18:40:02.160962Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-11-13T22:59:56.945285Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 25173633,
+    "source": null
+  },
+  {
+    "name": "nomad-vault-demo",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Used in Nomad-Vault integration guide",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 23670,
+    "last_updated": "2018-11-14T21:25:25.654987Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-11-14T21:25:25.320619Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 5532815,
+    "source": null
+  },
+  {
+    "name": "demo-prometheus-instrumentation",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Used in Prometheus monitoring guide for Nomad",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 60003,
+    "last_updated": "2018-11-17T05:11:22.727487Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-11-17T05:11:22.360868Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 5960071,
+    "source": null
+  },
+  {
+    "name": "consul-enterprise",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Consul is a datacenter runtime that provides service discovery, configuration, and orchestration.\n",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 80606517,
+    "last_updated": "2025-11-26T18:14:37.091811Z",
+    "last_modified": "2025-09-09T17:48:37.874142Z",
+    "date_registered": "2019-03-06T02:51:59.583715Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 70811958933,
+    "source": null
+  },
+  {
+    "name": "mysql-portworx-demo",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 341021,
+    "last_updated": "2019-03-06T15:26:05.942694Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-03-06T15:26:05.607522Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 136064533,
+    "source": null
+  },
+  {
+    "name": "secrets-store-csi-driver-provider-vault",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Vault provider for the secrets store container storage interface (CSI) driver ",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 1183421,
+    "last_updated": "2021-01-20T18:03:45.582796Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-10-02T16:46:26.14133Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 85303924,
+    "source": null
+  },
+  {
+    "name": "vault-enterprise",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official vault enterprise docker images",
+    "is_private": false,
+    "star_count": 13,
+    "pull_count": 7698297,
+    "last_updated": "2025-11-20T21:25:02.68371Z",
+    "last_modified": "2025-09-09T17:49:59.095895Z",
+    "date_registered": "2019-10-02T20:16:48.548492Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 171573697430,
+    "source": null
+  },
+  {
+    "name": "demo-webapp-lb-guide",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 345547,
+    "last_updated": "2019-10-22T23:00:03.99187Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-10-22T23:00:03.663812Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 312442106,
+    "source": null
+  },
+  {
+    "name": "vault-k8s",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "First-class integrations between Vault and Kubernetes.  ",
+    "is_private": false,
+    "star_count": 20,
+    "pull_count": 72020103,
+    "last_updated": "2025-12-01T21:12:29.343262Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-12-19T15:36:24.76872Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 3617875781,
+    "source": null
+  },
+  {
+    "name": "nomad-website",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Image used to build nomad's documentation website",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 173207,
+    "last_updated": "2022-02-24T20:39:09.365748Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-02-07T01:20:35.634218Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Web servers",
+        "slug": "web-servers"
+      }
+    ],
+    "storage_size": 15149720153,
+    "source": null
+  },
+  {
+    "name": "terraform-k8s",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "First-class integrations between Terraform and Kubernetes.  ",
+    "is_private": false,
+    "star_count": 13,
+    "pull_count": 226070,
+    "last_updated": "2022-11-23T12:18:12.644554Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-02-14T14:42:38.171165Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 499871967,
+    "source": null
+  },
+  {
+    "name": "sentinel",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 1087435,
+    "last_updated": "2025-05-13T00:26:33.626072Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-03-12T23:05:42.941783Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2909160138,
+    "source": null
+  },
+  {
+    "name": "nomad-autoscaler",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Nomad Autoscaler brings autoscaling to your Nomad workloads.",
+    "is_private": false,
+    "star_count": 9,
+    "pull_count": 342807,
+    "last_updated": "2025-11-13T16:02:12.982004Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-03-23T19:47:15.808581Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 1343716868,
+    "source": null
+  },
+  {
+    "name": "consul-aws",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Sync services in an AWS CloudMap namespace to a Consul datacenter.",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 12027,
+    "last_updated": "2024-04-23T21:56:39.343376Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-04-07T11:59:33.014685Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 43488648,
+    "source": null
+  },
+  {
+    "name": "jsii-terraform",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Image for building CDK for Terraform. Includes JSII and Terraform.",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 385797,
+    "last_updated": "2025-08-13T16:34:50.477026Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-04-24T14:50:38.820052Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 172265213032,
+    "source": null
+  },
+  {
+    "name": "tfc-agent",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Terraform Cloud Agent",
+    "is_private": false,
+    "star_count": 14,
+    "pull_count": 158829752,
+    "last_updated": "2025-11-11T17:03:12.80222Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-08-11T18:21:29.384758Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 21137931624,
+    "source": null
+  },
+  {
+    "name": "waypoint",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A tool to build, deploy, and release any application on any platform.",
+    "is_private": false,
+    "star_count": 12,
+    "pull_count": 29519064,
+    "last_updated": "2023-08-09T18:39:24.567951Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-17T14:10:31.741205Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 13451275146,
+    "source": null
+  },
+  {
+    "name": "consul-terraform-sync",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 32745,
+    "last_updated": "2025-06-25T08:55:50.105968Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-09T15:57:27.713617Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 2674230902,
+    "source": null
+  },
+  {
+    "name": "nomad-autoscaler-enterprise",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 41637,
+    "last_updated": "2025-11-13T16:01:42.771934Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-28T22:59:36.777455Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 1281016534,
+    "source": null
+  },
+  {
+    "name": "boundary",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Boundary provides simple and secure access to hosts and services.\n\n",
+    "is_private": false,
+    "star_count": 18,
+    "pull_count": 21491367,
+    "last_updated": "2025-11-03T18:53:47.754438Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-29T13:53:21.051981Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 26082314236,
+    "source": null
+  },
+  {
+    "name": "levant",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Levant is an open-source templating and deployment tool for HashiCorp Nomad jobs.",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 1043100,
+    "last_updated": "2025-06-26T20:17:31.435442Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-11-16T16:01:58.706097Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 156710978,
+    "source": null
+  },
+  {
+    "name": "vault-csi-provider",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Vault CSI Provider allows Kubernetes users retrieve  and mount Vault secrets to Kubernetes pods.",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 32520953,
+    "last_updated": "2025-09-03T21:11:17.638326Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-03-18T20:49:14.205729Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 1481444541,
+    "source": null
+  },
+  {
+    "name": "consul-ecs",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "This image is used to help with the installation and operation of Consul on ECS.\n",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 9553693,
+    "last_updated": "2025-06-13T10:14:05.807682Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-05-12T12:26:16.402459Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 2614603378,
+    "source": null
+  },
+  {
+    "name": "consul-k8s-control-plane",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "First-class integrations between Consul and Kubernetes.\n",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 15882208,
+    "last_updated": "2025-12-03T06:20:27.221451Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-08-12T18:22:09.107935Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 49134519689,
+    "source": null
+  },
+  {
+    "name": "consul-esm",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 923422,
+    "last_updated": "2025-09-19T13:12:21.518435Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-09-23T22:24:39.289445Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 373381913,
+    "source": null
+  },
+  {
+    "name": "nomad-pack",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 11621,
+    "last_updated": "2025-11-13T08:57:11.789011Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-10-05T04:47:20.8772Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 607316245,
+    "source": null
+  },
+  {
+    "name": "waypoint-odr",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The image Waypoint uses for on-demand runners.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 3167672,
+    "last_updated": "2023-08-09T18:38:32.974892Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-10-13T05:19:29.842372Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 4801863493,
+    "source": null
+  },
+  {
+    "name": "consul-api-gateway",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Hashicorp Consul API Gateway Image",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 40053,
+    "last_updated": "2023-09-07T22:55:35.736177Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-10-20T10:59:01.139512Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 1169964911,
+    "source": null
+  },
+  {
+    "name": "dev-portal",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Container for running the HashiCorp developer portal and product documentation sites.",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 2039570,
+    "last_updated": "2025-12-01T19:37:21.930039Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-01-18T19:00:38.13731Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      }
+    ],
+    "storage_size": 937741420552,
+    "source": null
+  },
+  {
+    "name": "vault-enterprise-fips",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Vault Enterprise - FIPS docker images",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 212134,
+    "last_updated": "2025-11-20T21:22:30.563418Z",
+    "last_modified": "2025-09-09T17:49:10.352068Z",
+    "date_registered": "2022-05-17T17:01:32.935099Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 46211196287,
+    "source": null
+  },
+  {
+    "name": "boundary-enterprise",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Boundary provides simple and secure access to hosts and services",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 41188,
+    "last_updated": "2025-11-03T18:55:26.073782Z",
+    "last_modified": "2025-09-09T17:48:43.922615Z",
+    "date_registered": "2022-07-21T23:34:50.848694Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "API management",
+        "slug": "api-management"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 23937580101,
+    "source": null
+  },
+  {
+    "name": "consul-dataplane",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Consul dataplane connects an application to a Consul service mesh.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 17665327,
+    "last_updated": "2025-11-26T18:10:08.056945Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-09-14T15:42:21.404474Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 16610432286,
+    "source": null
+  },
+  {
+    "name": "terraform-cloud-operator",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Kubernetes Operator allows managing Terraform Cloud resources via Kubernetes Custom Resources.",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 85373,
+    "last_updated": "2024-07-09T12:00:54.940235Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-11-09T19:21:07.899016Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 476598252,
+    "source": null
+  },
+  {
+    "name": "vault-benchmark",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 82184,
+    "last_updated": "2024-05-06T16:37:41.902152Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-02-03T19:45:24.740612Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 120729485,
+    "source": null
+  },
+  {
+    "name": "vault-secrets-operator",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Automatic build of vault secrets operator based on the current release.",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 3861022,
+    "last_updated": "2025-09-26T21:47:41.597575Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-02-28T22:57:44.187574Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 1910582048,
+    "source": null
+  },
+  {
+    "name": "consul-telemetry-collector",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Consul Telemetry Collector is a lightweight OpenTelemetry collector",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 13702,
+    "last_updated": "2023-09-20T17:50:43.49527Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-04-25T17:16:42.463224Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 786244801,
+    "source": null
+  },
+  {
+    "name": "nomad",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Nomad Docker images",
+    "is_private": false,
+    "star_count": 10,
+    "pull_count": 384133,
+    "last_updated": "2025-11-11T18:11:54.618002Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-04-27T21:21:42.783172Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 17032296839,
+    "source": null
+  },
+  {
+    "name": "tfci",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Container for automating Terraform Cloud API runs and actions in CI environments.",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 4271545,
+    "last_updated": "2025-04-16T17:05:18.189057Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-05-02T20:16:09.71292Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 159193370,
+    "source": null
+  },
+  {
+    "name": "envoy",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 10578,
+    "last_updated": "2025-09-26T10:03:32.431043Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-06-02T18:30:37.155055Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1831040990,
+    "source": null
+  },
+  {
+    "name": "consul-enterprise-fips",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 14890,
+    "last_updated": "2025-11-26T18:14:37.516699Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-06-09T21:29:35.286867Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 21629605484,
+    "source": null
+  },
+  {
+    "name": "consul-dataplane-fips",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Consul dataplane connects an application to a Consul service mesh.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 5601574,
+    "last_updated": "2025-11-26T18:05:44.285894Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-06-09T23:03:57.760027Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 12348334285,
+    "source": null
+  },
+  {
+    "name": "consul-k8s-control-plane-fips",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 14265,
+    "last_updated": "2025-12-03T06:20:22.49378Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-06-10T22:20:42.884953Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 19488188679,
+    "source": null
+  },
+  {
+    "name": "envoy-fips",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 25062,
+    "last_updated": "2025-09-26T10:03:38.752121Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-06-14T16:31:11.523018Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1800093650,
+    "source": null
+  },
+  {
+    "name": "hcp-terraform-operator",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Kubernetes Operator allows managing Terraform Cloud resources via Kubernetes Custom Resources.",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 144144,
+    "last_updated": "2025-11-12T09:16:29.514357Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-07-30T09:12:14.08908Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 595844634,
+    "source": null
+  },
+  {
+    "name": "terraform-mcp-server",
+    "namespace": "hashicorp",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Automatic build of Terraform MCP Server based on the current release.",
+    "is_private": false,
+    "star_count": 10,
+    "pull_count": 240900,
+    "last_updated": "2025-11-21T21:03:42.109993Z",
+    "last_modified": "2025-05-19T15:00:18.68916Z",
+    "date_registered": "2025-05-14T19:27:04.930942Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 184067336,
+    "source": null
+  }
+]

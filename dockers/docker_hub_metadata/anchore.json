@@ -1,0 +1,686 @@
+[
+  {
+    "name": "cli",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Legacy Anchore Command Line tool. See anchore/engine-cli for the CLI tool for the Anchore Engine ",
+    "is_private": false,
+    "star_count": 8,
+    "pull_count": 543409,
+    "last_updated": "2017-11-16T17:29:50.219093Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-09-12T17:33:05.590726Z",
+    "affiliation": "",
+    "media_types": [],
+    "content_types": [],
+    "categories": [],
+    "storage_size": 315157135,
+    "source": null
+  },
+  {
+    "name": "jenkins",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Anchore Container Image Scanner for Jenkins Plugin\n",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 404025,
+    "last_updated": "2017-11-16T17:33:14.458178Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-10-26T17:01:28.860908Z",
+    "affiliation": "",
+    "media_types": [
+      "application/octet-stream",
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1893679560,
+    "source": null
+  },
+  {
+    "name": "anchore-engine",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Anchore Engine is no longer maintained. Users are advised to use Syft or Grype.",
+    "is_private": false,
+    "star_count": 42,
+    "pull_count": 24136144,
+    "last_updated": "2021-12-02T19:57:37.170612Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-08-03T01:09:06.528111Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 122121999888,
+    "source": null
+  },
+  {
+    "name": "engine-cli",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Image with the Anchore Engine CLI installed",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 3886322,
+    "last_updated": "2021-12-02T19:55:05.119795Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-01-10T19:57:38.696143Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 5846038996,
+    "source": null
+  },
+  {
+    "name": "engine-db-preload",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Replacement postgres database container image with anchore vulnerability data preloaded",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 560226,
+    "last_updated": "2022-08-02T09:22:33.7897Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-09-28T19:47:20.429408Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 815611754935,
+    "source": null
+  },
+  {
+    "name": "kubernetes-admission-controller",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "An Admission Controller for Kubernetes Dynamic Admission Webhooks",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 249641,
+    "last_updated": "2025-06-10T12:49:53.248911Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-12-07T14:51:48.651018Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 857932527,
+    "source": null
+  },
+  {
+    "name": "inline-scan",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Image for performing vulnerability analysis on local docker images, using a stateless Anchore Engine",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 2419239,
+    "last_updated": "2022-03-15T12:49:38.99467Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-02-16T00:19:50.365446Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3364266073555,
+    "source": null
+  },
+  {
+    "name": "test-infra",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "anchore test infrastructure repository",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 104993,
+    "last_updated": "2020-04-25T23:48:11.499235Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-02T20:28:51.160388Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 7213980994,
+    "source": null
+  },
+  {
+    "name": "anchore-engine-dev",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Development builds of github.com/anchore/anchore-engine tagged by commit hash",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 1734194,
+    "last_updated": "2022-06-30T05:33:24.075445Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-03T21:39:10.426984Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 270089035414,
+    "source": null
+  },
+  {
+    "name": "anchore-cli-dev",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Development builds of github.com/anchore/anchore-cli tagged by commit hash",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 653031,
+    "last_updated": "2023-02-13T01:48:49.674841Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-03T21:39:45.848083Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 62171714265,
+    "source": null
+  },
+  {
+    "name": "test-infra-minio",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Minio containers with predictable credentials ONLY FOR LOCAL TESTING",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 39489,
+    "last_updated": "2019-04-16T19:41:52.549701Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-16T19:02:51.73826Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 33019044,
+    "source": null
+  },
+  {
+    "name": "test-infra-swift",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "All-in-one Swift containers with predictable credentials ONLY FOR LOCAL TESTING",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 39447,
+    "last_updated": "2019-04-16T19:05:56.187885Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-04-16T19:05:55.846636Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 162776979,
+    "source": null
+  },
+  {
+    "name": "engine-operator",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Anchore Engine Helm based operator",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 146171,
+    "last_updated": "2021-10-08T07:44:43.745735Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-05-02T04:38:53.430882Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1346856447,
+    "source": null
+  },
+  {
+    "name": "harbor-scanner-adapter",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Scanner Adapter for integrating Anchore into a Harbor deployment",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 408184,
+    "last_updated": "2025-09-30T08:28:21.272337Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-10-19T20:13:33.184983Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 468976349,
+    "source": null
+  },
+  {
+    "name": "engine-db-preload-slim",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 18138,
+    "last_updated": "2022-08-02T09:16:50.212574Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-10-25T08:20:36.597098Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 107691440217,
+    "source": null
+  },
+  {
+    "name": "inline-scan-slim",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 130726,
+    "last_updated": "2022-03-15T12:38:53.032843Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-10-25T08:45:37.262738Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 586185701309,
+    "source": null
+  },
+  {
+    "name": "scan-pipe",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Atlassian Bitbucket pipe image, for including an Anchore scan into your Bitbucket pipeline.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 162330,
+    "last_updated": "2021-09-10T21:40:12.979255Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-03-25T17:15:29.271431Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1227384907,
+    "source": null
+  },
+  {
+    "name": "enterprise-operator",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 106410,
+    "last_updated": "2021-10-08T07:45:03.345351Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-06-10T00:51:29.306935Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 472970701,
+    "source": null
+  },
+  {
+    "name": "test_images",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Images for use in tests. Each should have known content and tags should be immutable",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 15336601,
+    "last_updated": "2025-10-29T21:58:43.89853Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-08-25T05:24:56.878144Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 149444471705,
+    "source": null
+  },
+  {
+    "name": "enterprise-gitlab-scan",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "**THIS INTEGRATION IS DEPRECATED** Anchore Enterprise GitLab integration",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 150285,
+    "last_updated": "2024-07-22T13:11:53.432748Z",
+    "last_modified": "2025-01-28T18:07:09.666044Z",
+    "date_registered": "2020-11-30T22:15:38.130294Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 362121011,
+    "source": null
+  },
+  {
+    "name": "syft",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 25,
+    "pull_count": 8775609,
+    "last_updated": "2025-11-17T17:55:41.716411Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-12-11T18:44:52.517019Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.cncf.artifacthub.config.v1+yaml",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image",
+      "unrecognized"
+    ],
+    "categories": [],
+    "storage_size": 18882168426,
+    "source": null
+  },
+  {
+    "name": "kai",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 4901082,
+    "last_updated": "2023-03-23T16:00:51.995149Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-01-26T02:08:51.353549Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 131425227,
+    "source": null
+  },
+  {
+    "name": "grype",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 26,
+    "pull_count": 6629905,
+    "last_updated": "2025-11-24T16:27:11.413069Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-03-24T17:46:41.912599Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.cncf.artifacthub.config.v1+yaml",
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "unrecognized",
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 18986641634,
+    "source": null
+  },
+  {
+    "name": "loadtest_images",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Image Repo for a controlled set of image for load testing",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 9414113,
+    "last_updated": "2021-05-11T19:59:35.612044Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-05-10T19:19:51.094555Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 34791679613,
+    "source": null
+  },
+  {
+    "name": "repo-watcher-testing",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "A repository for product testing. Not supported by Anchore.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 123101,
+    "last_updated": "2024-08-26T19:27:48.868922Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-09-16T16:30:26.249216Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 35477458,
+    "source": null
+  },
+  {
+    "name": "docker-desktop-extension",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 43880,
+    "last_updated": "2022-10-19T17:40:57.159326Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-04-05T18:20:29.864659Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1197546960,
+    "source": null
+  },
+  {
+    "name": "ecs-inventory",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Anchore agent for collecting in-use image inventory and metadata from AWS ECS clusters",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 28824,
+    "last_updated": "2025-08-08T15:27:41.962031Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-03-10T23:44:30.459248Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 219704634,
+    "source": null
+  },
+  {
+    "name": "k8s-inventory",
+    "namespace": "anchore",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "kai to k8s-inventory",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 391492,
+    "last_updated": "2025-10-01T13:24:15.871211Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-04-21T15:44:53.98497Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1042357881,
+    "source": null
+  }
+]

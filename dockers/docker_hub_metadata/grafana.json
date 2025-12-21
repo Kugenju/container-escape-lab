@@ -1,0 +1,3860 @@
+[
+  {
+    "name": "grafana",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The official Grafana docker container",
+    "is_private": false,
+    "star_count": 3462,
+    "pull_count": 5102440913,
+    "last_updated": "2025-12-03T01:29:28.018996Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2015-02-06T09:29:43.405876Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Internet of things",
+        "slug": "internet-of-things"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 22510587068580,
+    "source": null
+  },
+  {
+    "name": "fake-data-gen",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 10497,
+    "last_updated": "2025-10-17T18:08:29.441244Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2016-05-13T13:38:07.975179Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1829253181,
+    "source": null
+  },
+  {
+    "name": "metrictank",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 205027,
+    "last_updated": "2022-12-28T13:46:32.901087Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-09-30T01:04:30.750252Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 80419831891,
+    "source": null
+  },
+  {
+    "name": "worldping-gw",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 51751,
+    "last_updated": "2020-09-03T15:36:37.075735Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2017-11-23T08:44:03.42618Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 134099088,
+    "source": null
+  },
+  {
+    "name": "build-container",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Container used for building grafana. ",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 569605,
+    "last_updated": "2023-09-18T09:25:44.819147Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-02-21T12:47:27.989303Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 177878869576,
+    "source": null
+  },
+  {
+    "name": "cortex-alertmanager",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 15728,
+    "last_updated": "2019-07-11T21:55:34.496369Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-26T19:11:40.888824Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 795065178,
+    "source": null
+  },
+  {
+    "name": "cortex-ingester",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 16879,
+    "last_updated": "2019-07-11T21:54:38.801996Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-26T19:12:04.119613Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1026223334,
+    "source": null
+  },
+  {
+    "name": "cortex-lite",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 15371,
+    "last_updated": "2019-07-11T21:55:22.88308Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-26T19:12:19.882347Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1909888693,
+    "source": null
+  },
+  {
+    "name": "cortex-querier",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 27107,
+    "last_updated": "2019-07-11T21:54:51.561617Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-26T19:12:34.301562Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2680540862,
+    "source": null
+  },
+  {
+    "name": "cortex-distributor",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 17055,
+    "last_updated": "2019-07-11T21:55:09.020712Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-26T19:12:52.124156Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 759756732,
+    "source": null
+  },
+  {
+    "name": "cortex-table-manager",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 51149,
+    "last_updated": "2019-07-11T21:54:57.284644Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-26T19:13:05.375735Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 981221171,
+    "source": null
+  },
+  {
+    "name": "cortex-ruler",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 14158,
+    "last_updated": "2019-07-11T21:55:42.795749Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-26T19:13:19.113223Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1847761495,
+    "source": null
+  },
+  {
+    "name": "cortex-configs",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 15341,
+    "last_updated": "2019-07-11T21:54:44.015566Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-03-26T19:13:32.938028Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 658998213,
+    "source": null
+  },
+  {
+    "name": "grafana-dev",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 6438821,
+    "last_updated": "2025-12-03T01:05:53.602787Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-06-06T10:14:10.714946Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 40248159705403,
+    "source": null
+  },
+  {
+    "name": "cortex-query-frontend",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 14413,
+    "last_updated": "2019-07-11T21:55:02.738515Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-07-30T12:58:45.317249Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 650081601,
+    "source": null
+  },
+  {
+    "name": "jsonnet-build",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 36631,
+    "last_updated": "2021-11-18T15:17:05.112063Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-08-29T15:08:33.520775Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 321656067,
+    "source": null
+  },
+  {
+    "name": "cortex-test-exporter",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 16752,
+    "last_updated": "2020-11-03T14:46:52.604433Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-09-24T11:58:40.408917Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1204637324,
+    "source": null
+  },
+  {
+    "name": "grafana-enterprise",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Official Grafana Enterprise docker image",
+    "is_private": false,
+    "star_count": 43,
+    "pull_count": 18562135,
+    "last_updated": "2025-12-03T01:32:54.030406Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-10-16T15:29:41.191343Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 15973091927573,
+    "source": null
+  },
+  {
+    "name": "grafana-ci-deploy",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 120866,
+    "last_updated": "2022-07-20T10:19:02.54978Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-10-30T13:45:30.753532Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 8412270159,
+    "source": null
+  },
+  {
+    "name": "wix-toolset-ci",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 30746,
+    "last_updated": "2019-04-11T13:09:12.782171Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-11-05T16:01:53.300839Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 10008264647,
+    "source": null
+  },
+  {
+    "name": "logcli",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 870905,
+    "last_updated": "2025-11-27T14:18:55.498468Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-11-20T12:11:20.927302Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 304542891061,
+    "source": null
+  },
+  {
+    "name": "promtail",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 213,
+    "pull_count": 2392303561,
+    "last_updated": "2025-12-02T17:48:47.400567Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-11-20T12:11:26.074216Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 961820069204,
+    "source": null
+  },
+  {
+    "name": "loki-build-image",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 2659974,
+    "last_updated": "2025-11-25T16:11:08.957556Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-12-05T12:56:30.38521Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 84118987241,
+    "source": null
+  },
+  {
+    "name": "loki",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Loki - Cloud Native Log Aggregation by Grafana",
+    "is_private": false,
+    "star_count": 313,
+    "pull_count": 4384633079,
+    "last_updated": "2025-12-02T17:48:26.704381Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-12-05T13:04:02.646419Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 693759642348,
+    "source": null
+  },
+  {
+    "name": "devtools-github-archive-parser",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 27393,
+    "last_updated": "2021-07-09T14:06:02.907652Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-12-10T08:25:10.400318Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 316975390,
+    "source": null
+  },
+  {
+    "name": "devtools-github-event-aggregator",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 27778,
+    "last_updated": "2021-07-09T14:06:19.826193Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2018-12-12T08:27:17.475429Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 257215371,
+    "source": null
+  },
+  {
+    "name": "grafana-arm32v7-linux",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 6,
+    "pull_count": 919613,
+    "last_updated": "2021-03-18T17:02:25.136691Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-01-07T16:04:00.667852Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 303876740095,
+    "source": null
+  },
+  {
+    "name": "grafana-arm64v8-linux",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 260776,
+    "last_updated": "2021-03-18T17:02:27.731085Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-01-07T16:05:03.288809Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 297216714671,
+    "source": null
+  },
+  {
+    "name": "grafana-dev-arm32v7-linux",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 105414,
+    "last_updated": "2020-07-01T10:13:52.533703Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-01-07T16:06:23.016448Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 119458301335,
+    "source": null
+  },
+  {
+    "name": "grafana-dev-arm64v8-linux",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 104865,
+    "last_updated": "2020-07-01T10:14:12.525843Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-01-07T16:07:12.540784Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 110706706930,
+    "source": null
+  },
+  {
+    "name": "fluent-plugin-loki",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 573598,
+    "last_updated": "2025-11-27T14:18:30.710519Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-01-19T03:01:27.077252Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 8630517545,
+    "source": null
+  },
+  {
+    "name": "tns-loadgen",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 296279,
+    "last_updated": "2025-11-20T03:12:11.430939Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-02-25T18:02:09.547676Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 209748898,
+    "source": null
+  },
+  {
+    "name": "tns-app",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 210742,
+    "last_updated": "2025-11-20T03:12:05.148976Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-02-25T18:02:44.943995Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 199250112,
+    "source": null
+  },
+  {
+    "name": "tns-db",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 534723,
+    "last_updated": "2025-11-20T03:11:58.672512Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-02-25T18:03:09.54553Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 226947002,
+    "source": null
+  },
+  {
+    "name": "loki-canary",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 86570634,
+    "last_updated": "2025-12-02T17:46:10.503091Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-05-14T15:12:15.154815Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 246726709693,
+    "source": null
+  },
+  {
+    "name": "grafana-marketing-build",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 56561,
+    "last_updated": "2023-06-07T08:38:55.594023Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-06-10T11:20:49.373497Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.config.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 9009895865,
+    "source": null
+  },
+  {
+    "name": "loki-docker-driver",
+    "namespace": "grafana",
+    "repository_type": "plugin",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 86,
+    "pull_count": 4806599,
+    "last_updated": "2025-11-25T18:25:58.720105Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-06-11T14:34:41.872963Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.plugin.v1+json"
+    ],
+    "content_types": [
+      "plugin"
+    ],
+    "categories": [],
+    "storage_size": 268754658737,
+    "source": null
+  },
+  {
+    "name": "cortex-cortex",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 20881,
+    "last_updated": "2020-11-03T14:46:42.048713Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-06-12T15:45:15.702086Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3747276406,
+    "source": null
+  },
+  {
+    "name": "tanka",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 707383,
+    "last_updated": "2025-12-02T07:26:25.345446Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-08-08T12:09:06.518479Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 120943663388,
+    "source": null
+  },
+  {
+    "name": "grafana-image-renderer",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 31,
+    "pull_count": 825483046,
+    "last_updated": "2025-12-01T11:24:01.19272Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-09-09T20:44:05.572568Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 180113020365,
+    "source": null
+  },
+  {
+    "name": "fluent-bit-plugin-loki",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 10,
+    "pull_count": 352033322,
+    "last_updated": "2025-11-27T14:18:16.93583Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-09-24T21:01:07.311198Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 157333035430,
+    "source": null
+  },
+  {
+    "name": "kubernetes-diff-logger",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "This simple application is designed to watch Kubernetes objects and log diffs when they occur.",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 329599,
+    "last_updated": "2021-08-09T17:26:37.043087Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-10-23T17:54:37.407614Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 54263109,
+    "source": null
+  },
+  {
+    "name": "cortextool",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 35249,
+    "last_updated": "2024-06-14T19:48:33.137277Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-11-19T07:39:48.113018Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 425025311,
+    "source": null
+  },
+  {
+    "name": "docs-base",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Image for locally testing working with Grafana docs site",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 606888,
+    "last_updated": "2025-12-03T06:21:06.777276Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2019-12-10T09:47:00.588034Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Content management system",
+        "slug": "content-management-system"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 118602526511,
+    "source": null
+  },
+  {
+    "name": "grafana-enterprise-dev",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 7111826,
+    "last_updated": "2025-11-14T18:14:48.484228Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-01-21T14:20:43.185093Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 18105698375086,
+    "source": null
+  },
+  {
+    "name": "mt-gateway",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 12546,
+    "last_updated": "2022-12-28T13:46:36.037465Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-01-27T20:18:01.32681Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1551689452,
+    "source": null
+  },
+  {
+    "name": "grafana-enterprise-arm32v7-linux",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 22774,
+    "last_updated": "2021-03-18T17:22:46.156781Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-02-03T15:25:41.357941Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 147606125681,
+    "source": null
+  },
+  {
+    "name": "grafana-enterprise-arm64v8-linux",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 10423,
+    "last_updated": "2021-03-18T17:22:48.863037Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-02-03T15:26:20.344417Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 139243729505,
+    "source": null
+  },
+  {
+    "name": "agent",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 25,
+    "pull_count": 456979335,
+    "last_updated": "2025-11-21T22:21:43.005524Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-03-09T19:33:21.950572Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 849714424837,
+    "source": null
+  },
+  {
+    "name": "carbon-relay-ng",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 134117,
+    "last_updated": "2025-11-12T11:45:25.159497Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-04-15T20:06:39.176731Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1791475146,
+    "source": null
+  },
+  {
+    "name": "agentctl",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 316524,
+    "last_updated": "2025-11-21T22:19:15.448355Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-05-11T13:27:19.308606Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 698306393938,
+    "source": null
+  },
+  {
+    "name": "drone-grafana-docker",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Drone plugin image for building/publishing Grafana images",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 31570,
+    "last_updated": "2020-09-29T19:28:10.850568Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-06-18T14:50:58.982685Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 273212808,
+    "source": null
+  },
+  {
+    "name": "ci-e2e",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Image for e2e tests in CI",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 21542,
+    "last_updated": "2020-10-20T17:11:25.253486Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-06-18T17:01:34.964385Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 662631240,
+    "source": null
+  },
+  {
+    "name": "synthetic-monitoring-agent",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Blackbox Exporter agent which executes checks for the Grafana Cloud Synthetic Monitoring service.",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 108310077,
+    "last_updated": "2025-11-18T18:26:54.551546Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-06-30T19:00:37.600119Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 46469589522,
+    "source": null
+  },
+  {
+    "name": "grafana-image-tags",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Repository for holding per-architecture image tags",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 3957214,
+    "last_updated": "2025-12-03T01:25:18.182483Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-01T07:56:55.592101Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Internet of things",
+        "slug": "internet-of-things"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 39941138673277,
+    "source": null
+  },
+  {
+    "name": "grafana-enterprise-image-tags",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Repository for holding per-architecture image tags.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 1872944,
+    "last_updated": "2025-12-03T01:28:00.028934Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-01T07:57:27.129968Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.v1+prettyjws"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 18099703893885,
+    "source": null
+  },
+  {
+    "name": "grafana-plugin-ci",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Images for building Grafana plugins in CI",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 114280,
+    "last_updated": "2025-07-16T23:08:04.907731Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-06T17:39:38.602006Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 25231432843,
+    "source": null
+  },
+  {
+    "name": "cortex-tools",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 1862288,
+    "last_updated": "2025-03-13T11:24:34.790738Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-08T14:32:15.816014Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 518038487,
+    "source": null
+  },
+  {
+    "name": "logstash-output-loki",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Logstash plugin to send logs to Loki",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 1076956,
+    "last_updated": "2025-11-27T14:19:44.814604Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-15T21:08:25.332499Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 1463687031492,
+    "source": null
+  },
+  {
+    "name": "metrics-enterprise",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 2264218,
+    "last_updated": "2024-10-15T18:20:56.216023Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-07-24T20:18:20.679542Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 135265059894,
+    "source": null
+  },
+  {
+    "name": "grizzly",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 209143,
+    "last_updated": "2025-07-01T13:30:45.268159Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-08-24T09:03:29.482392Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 11366020765,
+    "source": null
+  },
+  {
+    "name": "drone-downstream",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Downstream trigger Drone plugin",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 182670,
+    "last_updated": "2023-10-04T11:54:12.127652Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-24T10:22:40.917639Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 37232747,
+    "source": null
+  },
+  {
+    "name": "agent-build-image",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 262878,
+    "last_updated": "2025-11-19T19:02:56.34344Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-09-29T17:02:07.127163Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 132194087323,
+    "source": null
+  },
+  {
+    "name": "grafana-plugin-ci-e2e",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 73387,
+    "last_updated": "2025-07-16T23:06:02.050362Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-16T16:16:58.78708Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 24220622011,
+    "source": null
+  },
+  {
+    "name": "cloudsql-proxy",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "https://github.com/grafana/cloudsql-proxy",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 13900,
+    "last_updated": "2020-10-20T09:55:21.44459Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-19T18:14:35.352998Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 44471393,
+    "source": null
+  },
+  {
+    "name": "tempo",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 29,
+    "pull_count": 75243512,
+    "last_updated": "2025-12-03T05:03:21.072564Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-23T07:57:30.061042Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 255494565519,
+    "source": null
+  },
+  {
+    "name": "tempo-vulture",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 396753,
+    "last_updated": "2025-12-03T05:03:29.453878Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-23T13:44:56.358994Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 108735504990,
+    "source": null
+  },
+  {
+    "name": "tempo-query",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 8477436,
+    "last_updated": "2025-12-03T05:03:22.704042Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-23T13:45:06.901976Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 73952026226,
+    "source": null
+  },
+  {
+    "name": "e2ealerting",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 28303,
+    "last_updated": "2022-08-10T07:30:43.884534Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2020-10-30T18:14:56.154236Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 58624831,
+    "source": null
+  },
+  {
+    "name": "smtprelay",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 5,
+    "pull_count": 50876,
+    "last_updated": "2025-10-30T19:26:49.575873Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-02-11T18:01:12.283472Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 406045910,
+    "source": null
+  },
+  {
+    "name": "enterprise-logs",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 2484548,
+    "last_updated": "2025-12-02T18:21:17.45856Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-02-22T18:42:48.05191Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 156825379918,
+    "source": null
+  },
+  {
+    "name": "vale",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 94386,
+    "last_updated": "2025-11-24T17:02:18.436252Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-03-16T15:55:54.90408Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 10957535105,
+    "source": null
+  },
+  {
+    "name": "drone-runner-docker",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 13021,
+    "last_updated": "2023-01-05T14:39:53.683674Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-04-07T22:46:19.772926Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 400015951,
+    "source": null
+  },
+  {
+    "name": "benchtool",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 14894,
+    "last_updated": "2023-09-06T11:44:50.942293Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-04-13T18:41:37.293969Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 90183858,
+    "source": null
+  },
+  {
+    "name": "plugin-validator-cli",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 31141,
+    "last_updated": "2025-11-26T11:20:31.521378Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-04-27T02:20:00.434528Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 55884051479,
+    "source": null
+  },
+  {
+    "name": "plugin-build-report-service",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 15637,
+    "last_updated": "2022-03-23T10:00:52.184938Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-05-05T11:48:59.000567Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1855807841,
+    "source": null
+  },
+  {
+    "name": "agent-operator",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 8059463,
+    "last_updated": "2025-11-21T22:13:19.971694Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-06-09T13:57:22.518494Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 199010649304,
+    "source": null
+  },
+  {
+    "name": "grafana-oss",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "The repo for the Grafana OSS edition  ",
+    "is_private": false,
+    "star_count": 129,
+    "pull_count": 51141722,
+    "last_updated": "2025-11-19T13:22:45.297557Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-06-24T11:39:10.94872Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Internet of things",
+        "slug": "internet-of-things"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 16900196605101,
+    "source": null
+  },
+  {
+    "name": "grafana-oss-dev",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Grafana OSS master builds",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 1595780,
+    "last_updated": "2025-08-18T14:15:30.588626Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-06-24T11:42:50.390218Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 17542149220404,
+    "source": null
+  },
+  {
+    "name": "grafana-oss-image-tags",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Repository for holding per-architecture image tags",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 1652005,
+    "last_updated": "2025-08-18T14:14:32.292549Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-07-16T13:47:45.822848Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 18301287660275,
+    "source": null
+  },
+  {
+    "name": "alertmanager-webhook-logger",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 31572,
+    "last_updated": "2021-07-16T15:10:46.25905Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-07-16T15:08:38.257552Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 6379388,
+    "source": null
+  },
+  {
+    "name": "agent-crow",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 23395,
+    "last_updated": "2022-04-19T12:38:46.128972Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-08-12T23:19:09.162757Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 5730155860,
+    "source": null
+  },
+  {
+    "name": "enterprise-traces",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 216985,
+    "last_updated": "2025-11-22T14:20:59.951914Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-10-21T14:06:57.694087Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 11010495662,
+    "source": null
+  },
+  {
+    "name": "loki-operator",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 988032,
+    "last_updated": "2025-12-02T18:21:06.297402Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2021-12-20T16:29:23.138157Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 264414594960,
+    "source": null
+  },
+  {
+    "name": "docker-puppeteer",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 130795,
+    "last_updated": "2023-10-30T13:33:18.646988Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-01-18T10:05:12.515153Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2162165344,
+    "source": null
+  },
+  {
+    "name": "mimirtool",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Tool to interact with user-facing Grafana Mimir APIs.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 10284807,
+    "last_updated": "2025-12-03T00:37:27.543055Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-01-27T13:59:35.998256Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 26780214060,
+    "source": null
+  },
+  {
+    "name": "mimir",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus.",
+    "is_private": false,
+    "star_count": 19,
+    "pull_count": 359442901,
+    "last_updated": "2025-12-03T00:37:12.957857Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-01-27T14:25:56.04692Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Databases & storage",
+        "slug": "databases-and-storage"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 34997523730,
+    "source": null
+  },
+  {
+    "name": "mimir-build-image",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Image for building Grafana Mimir.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 860696,
+    "last_updated": "2025-11-28T18:47:09.885551Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-01-27T14:26:31.848282Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 120733050773,
+    "source": null
+  },
+  {
+    "name": "k6",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 39,
+    "pull_count": 18422517,
+    "last_updated": "2025-12-02T09:21:23.895411Z",
+    "last_modified": "2025-10-20T16:17:49.322181Z",
+    "date_registered": "2022-02-04T14:25:55.715253Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 553269828418,
+    "source": null
+  },
+  {
+    "name": "alpine",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Alpine Linux with ca-certificates package installed.",
+    "is_private": false,
+    "star_count": 7,
+    "pull_count": 210815,
+    "last_updated": "2022-04-05T16:04:00.101765Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-02-09T10:22:23.052079Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 12031226,
+    "source": null
+  },
+  {
+    "name": "query-tee",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Standalone service for comparing query performance of 2+ Grafana Mimir clusters.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 42310,
+    "last_updated": "2025-12-03T00:37:41.581935Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-02-16T13:57:55.508517Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 9278464149,
+    "source": null
+  },
+  {
+    "name": "metaconvert",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Tool for converting Cortex meta.json files to Grafana Mimir equivalent.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 35204,
+    "last_updated": "2025-12-03T00:36:58.405813Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-02-17T07:50:28.226583Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 17404329426,
+    "source": null
+  },
+  {
+    "name": "rollout-operator",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Grafana Multi Availability-Zone Rollout Operator for Kubernetes",
+    "is_private": false,
+    "star_count": 2,
+    "pull_count": 20230989,
+    "last_updated": "2025-12-01T15:29:59.450983Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-03-01T17:02:25.76355Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Networking",
+        "slug": "networking"
+      }
+    ],
+    "storage_size": 6146216873,
+    "source": null
+  },
+  {
+    "name": "loki-query-tee",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 150932,
+    "last_updated": "2025-12-02T23:42:57.327218Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-03-28T17:18:08.822115Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 43373674209,
+    "source": null
+  },
+  {
+    "name": "mimir-continuous-test",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 411876,
+    "last_updated": "2025-12-01T06:14:59.446634Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-04-01T18:29:55.857773Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 25471309019,
+    "source": null
+  },
+  {
+    "name": "enterprise-metrics",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 359471,
+    "last_updated": "2025-12-03T01:45:09.340508Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-04-11T12:04:31.952343Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 200815989160,
+    "source": null
+  },
+  {
+    "name": "docker-slack-message",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 16683,
+    "last_updated": "2025-11-30T00:39:48.833182Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-05-05T15:05:32.55848Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 853551305,
+    "source": null
+  },
+  {
+    "name": "oncall",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 27205145,
+    "last_updated": "2025-11-20T16:38:04.207371Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-06-03T16:32:17.90866Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 1488867154399,
+    "source": null
+  },
+  {
+    "name": "doc-validator",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 86961,
+    "last_updated": "2025-02-11T18:33:22.980964Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-06-23T20:50:33.950923Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 32477928202,
+    "source": null
+  },
+  {
+    "name": "snyk_exporter",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 11917,
+    "last_updated": "2023-08-18T01:12:12.776583Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-08-10T18:08:16.11785Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 57298391,
+    "source": null
+  },
+  {
+    "name": "logql-analyzer",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 49508,
+    "last_updated": "2025-02-14T11:46:27.006575Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-08-12T14:43:27.351325Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 51925062908,
+    "source": null
+  },
+  {
+    "name": "enterprise-logs-provisioner",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 72885,
+    "last_updated": "2025-12-01T04:15:22.833682Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-09-13T21:22:18.620975Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 5980829696,
+    "source": null
+  },
+  {
+    "name": "loki-helm-test",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 114306,
+    "last_updated": "2024-07-24T17:35:54.949143Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-10-04T00:08:09.866336Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 91937014,
+    "source": null
+  },
+  {
+    "name": "phlare",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 253047,
+    "last_updated": "2023-07-20T12:34:24.202007Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-10-11T08:49:17.871585Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 8297833463,
+    "source": null
+  },
+  {
+    "name": "wait-for-github",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 16978,
+    "last_updated": "2025-11-24T12:53:53.815392Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2022-12-13T13:30:54.257658Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2143421616,
+    "source": null
+  },
+  {
+    "name": "drone-git",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 390053,
+    "last_updated": "2024-11-05T20:42:01.842397Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-01-12T15:59:16.612393Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 677594994,
+    "source": null
+  },
+  {
+    "name": "pdc-agent",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 6375130,
+    "last_updated": "2025-11-24T17:51:10.342454Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-01-31T14:46:28.040434Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 780880184,
+    "source": null
+  },
+  {
+    "name": "docker-desktop-extension",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 69036,
+    "last_updated": "2024-05-07T06:13:49.137556Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-02-20T10:14:01.488374Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 87927235,
+    "source": null
+  },
+  {
+    "name": "xk6",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 199655,
+    "last_updated": "2025-11-13T16:41:03.075698Z",
+    "last_modified": "2025-07-16T17:02:20.967549Z",
+    "date_registered": "2023-02-27T15:37:11.852442Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 5659525507,
+    "source": null
+  },
+  {
+    "name": "ebpf-autoinstrument",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 15787,
+    "last_updated": "2024-01-18T14:18:27.934913Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-04-20T05:21:44.098334Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 3412588285,
+    "source": null
+  },
+  {
+    "name": "grafana-build",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Code for building Grafana",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 125223,
+    "last_updated": "2025-04-07T13:24:50.515501Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-05-02T20:27:07.888825Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 86523452273,
+    "source": null
+  },
+  {
+    "name": "enterprise-logs-boringcrypto",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 62315,
+    "last_updated": "2025-12-01T04:20:39.260846Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-06-14T23:09:57.23897Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 69999604564,
+    "source": null
+  },
+  {
+    "name": "agent-boringcrypto",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 85168,
+    "last_updated": "2025-11-21T22:16:16.36471Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-07-05T17:42:44.356993Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 204353638542,
+    "source": null
+  },
+  {
+    "name": "enterprise-metrics-boringcrypto",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 101411,
+    "last_updated": "2025-12-03T01:45:35.1063Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-07-17T19:56:56.441025Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 179762934499,
+    "source": null
+  },
+  {
+    "name": "rollout-operator-boringcrypto",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 10289,
+    "last_updated": "2025-11-10T22:57:24.239217Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-07-17T19:57:13.365555Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 2990821697,
+    "source": null
+  },
+  {
+    "name": "pyroscope",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Continuous Profiling Platform. Debug performance issues down to a single line of code",
+    "is_private": false,
+    "star_count": 4,
+    "pull_count": 3161051,
+    "last_updated": "2025-12-02T17:44:56.576707Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-07-20T16:59:20.98079Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      },
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      },
+      {
+        "name": "Security",
+        "slug": "security"
+      }
+    ],
+    "storage_size": 82264959313,
+    "source": null
+  },
+  {
+    "name": "loki-canary-boringcrypto",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 547954,
+    "last_updated": "2025-12-02T17:45:50.680017Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-08-03T16:52:51.832232Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 168265520985,
+    "source": null
+  },
+  {
+    "name": "plugin-builds",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Builds of Grafana for testing plugins.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 43845,
+    "last_updated": "2025-02-05T15:20:31.745057Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-08-23T18:00:23.297016Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Languages & frameworks",
+        "slug": "languages-and-frameworks"
+      },
+      {
+        "name": "Integration & delivery",
+        "slug": "integration-and-delivery"
+      }
+    ],
+    "storage_size": 8964738476,
+    "source": null
+  },
+  {
+    "name": "beyla",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 3,
+    "pull_count": 3570490,
+    "last_updated": "2025-12-02T18:05:43.601287Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-08-30T16:16:49.313108Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 104660447745,
+    "source": null
+  },
+  {
+    "name": "celery-exporter",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 15682,
+    "last_updated": "2023-10-20T11:21:29.40928Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-10-10T18:01:30.820691Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 220401580,
+    "source": null
+  },
+  {
+    "name": "otel-lgtm",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "An OpenTelemetry backend in a Docker image.",
+    "is_private": false,
+    "star_count": 44,
+    "pull_count": 1165829,
+    "last_updated": "2025-11-28T13:56:26.066301Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-11-03T23:43:28.142944Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 41885078633,
+    "source": null
+  },
+  {
+    "name": "intro-to-mltp",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 79283,
+    "last_updated": "2025-12-03T01:30:21.339253Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2023-11-20T22:57:45.589801Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 28557551699,
+    "source": null
+  },
+  {
+    "name": "copyblocks",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 21290,
+    "last_updated": "2025-12-03T00:36:44.149608Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-01-25T17:22:13.527998Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 11073966067,
+    "source": null
+  },
+  {
+    "name": "cloudcost-exporter",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 40307,
+    "last_updated": "2025-12-02T14:40:25.954751Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-01-29T22:45:13.51575Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 33431463401,
+    "source": null
+  },
+  {
+    "name": "enterprise-traces-boringcrypto",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 15167,
+    "last_updated": "2025-11-22T14:21:33.321281Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-02-12T22:53:37.850538Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.config.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 7468761470,
+    "source": null
+  },
+  {
+    "name": "enterprise-metrics-distroless",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Mimir enterprise image based on distroless",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 27692,
+    "last_updated": "2024-08-14T05:10:54.996141Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-03-04T23:17:15.440953Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 16266799243,
+    "source": null
+  },
+  {
+    "name": "enterprise-metrics-boringcrypto-distroless",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 14211,
+    "last_updated": "2024-08-14T05:11:04.847685Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-03-04T23:17:50.037539Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 16938169746,
+    "source": null
+  },
+  {
+    "name": "alloy",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Vendor-agnostic OpenTelemetry Collector distribution with programmable pipelines",
+    "is_private": false,
+    "star_count": 16,
+    "pull_count": 110728526,
+    "last_updated": "2025-12-01T17:26:20.833615Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-03-12T20:26:54.483372Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 62889379728,
+    "source": null
+  },
+  {
+    "name": "tempo-ci-tools",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 62010,
+    "last_updated": "2025-11-26T12:18:24.419284Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-04-10T17:07:18.87635Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 301384498340,
+    "source": null
+  },
+  {
+    "name": "alloy-dev",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Pre-release builds of grafana/alloy.",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 610925,
+    "last_updated": "2025-12-02T22:10:50.775253Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-04-12T19:02:39.184368Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Monitoring & observability",
+        "slug": "monitoring-and-observability"
+      }
+    ],
+    "storage_size": 1129703607148,
+    "source": null
+  },
+  {
+    "name": "alloy-build-image",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Docker image used to create builds of grafana/alloy.",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 119456,
+    "last_updated": "2025-10-20T11:47:12.648139Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-04-12T19:03:11.991523Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [
+      {
+        "name": "Developer tools",
+        "slug": "developer-tools"
+      }
+    ],
+    "storage_size": 57195305641,
+    "source": null
+  },
+  {
+    "name": "netfilter-exporter",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "netfilter-exporter",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 98267,
+    "last_updated": "2025-10-08T15:30:53.446064Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-04-16T16:40:35.465215Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json",
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 7154995129,
+    "source": null
+  },
+  {
+    "name": "enterprise-metrics-alpine",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 36424,
+    "last_updated": "2025-04-15T13:58:18.844619Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-05-29T15:42:13.692172Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 66100812638,
+    "source": null
+  },
+  {
+    "name": "enterprise-metrics-boringcrypto-alpine",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 20541,
+    "last_updated": "2024-10-15T18:18:32.247294Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-05-29T15:43:51.645537Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 33940752268,
+    "source": null
+  },
+  {
+    "name": "mimir-alpine",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 1,
+    "pull_count": 65119,
+    "last_updated": "2025-06-05T20:18:08.905807Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-05-29T15:44:47.816139Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 8224123775,
+    "source": null
+  },
+  {
+    "name": "okta-logs-collector",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Collects system logs from Okta and sends them to stdout",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 125827,
+    "last_updated": "2024-10-07T09:10:13.657065Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-06-05T18:29:40.436766Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 61225243,
+    "source": null
+  },
+  {
+    "name": "tempo-cli",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 105830,
+    "last_updated": "2025-12-03T05:03:21.621611Z",
+    "last_modified": "2024-10-16T13:48:34.145251Z",
+    "date_registered": "2024-08-13T21:36:12.142716Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.docker.container.image.v1+json",
+      "application/vnd.docker.distribution.manifest.list.v2+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 67679266847,
+    "source": null
+  },
+  {
+    "name": "beyla-k8s-cache",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 34506,
+    "last_updated": "2025-12-02T18:20:30.156669Z",
+    "last_modified": "2024-10-17T20:50:42.831669Z",
+    "date_registered": "2024-10-17T20:50:42.832392Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 34553934609,
+    "source": null
+  },
+  {
+    "name": "mcp-grafana",
+    "namespace": "grafana",
+    "repository_type": "image",
+    "status": 1,
+    "status_description": "active",
+    "description": "Grafana MCP (Model Context Protocol) server",
+    "is_private": false,
+    "star_count": 0,
+    "pull_count": 37534,
+    "last_updated": "2025-11-14T13:43:09.315293Z",
+    "last_modified": "2025-10-10T12:19:16.558072Z",
+    "date_registered": "2025-10-10T12:19:16.558244Z",
+    "affiliation": "",
+    "media_types": [
+      "application/vnd.oci.image.index.v1+json"
+    ],
+    "content_types": [
+      "image"
+    ],
+    "categories": [],
+    "storage_size": 432324136,
+    "source": null
+  }
+]
