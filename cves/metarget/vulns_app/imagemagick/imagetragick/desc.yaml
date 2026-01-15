@@ -1,0 +1,10 @@
+name: imagemagick-imagetragick
+class: imagemagick
+hostPath: true
+type: rce
+dependencies:
+  yamls:
+    - imagetragick-web-deployment.yaml
+    - imagetragick-web-service.yaml
+links:
+  - https://github.com/vulhub/vulhub/tree/master/imagemagick/imagetragick

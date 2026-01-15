@@ -1,0 +1,547 @@
+<p align="center">
+  <img src="images/metarget-logo.svg" alt="metarget-logo" height="250" />
+</p>
+
+[中文](README-zh.md) | [English](README.md)
+
+## 1 Introduction
+
+Metarget = `meta-` + `target`, a framework providing automatic constructions of vulnerable infrastructures, used to deploy simple or complicated vulnerable cloud native targets swiftly and automatically.
+
+### 1.1 Why Metarget?
+
+During security researches, we might find that the deployment of vulnerable environment often takes much time, while the time spent on testing PoC or ExP is comparatively short. In the field of cloud native security, thanks to the complexity of cloud native systems, this issue is more terrible.
+
+There are already some excellent security projects like [Vulhub](https://github.com/vulhub/vulhub), [VulApps](https://github.com/Medicean/VulApps) in the open-source community, which pack vulnerable scenes into container images, so that researchers could utilize them and deploy scenes quickly.
+
+However, these projects mainly focus on vulnerabilities in applications. What if we need to study the vulnerabilities in the infrastructures like Docker, Kubernetes and even Linux kernel?
+
+Hence, we develop Metarget and hope to solve the deployment issue above to some extent. Furthermore, we also expect that Metarget could help to construct **multilayer** vulnerable cloud native scenes automatically.
+
+### 1.2 Install Vulnerability!
+
+In this project, we come up with concepts like *installing vulnerabilities* and *installing vulnerable scenes*. Why not install vulnerabilities just like installing softwares? We can do that, because our goals are security research and offensive security.
+
+To be exact, we expect that:
+
+- `metarget cnv install cve-2019-5736` will install Docker with CVE-2019-5736 onto the server.
+- `metarget cnv install cve-2018-1002105` will install Kubernetes with CVE-2018-1002105 onto the server.
+- `metarget cnv install kata-escape-2020` will install Kata-containers with CVE-2020-2023/2025/2026 onto the server.
+- `metarget cnv install cve-2016-5195` will install a kernel with DirtyCoW into the server.
+
+It's cool, right? No more steps. No RTFM. Execute one command and enjoy your coffee.
+
+Furthermore, we expect that:
+
+- with Metarget's help, ethical hackers are able to deploy simple or complicated cloud native targets swiftly and learn by hacking cloud native environments.
+- `metarget appv install dvwa` will install a [DVWA](https://github.com/digininja/DVWA) target onto our vulnerable infrastructure.
+- `metarget appv install thinkphp-5-0-23-rce --external` will install a ThinkPHP RCE vulnerability with `NodePort` service onto our vulnerable infrastructure.
+
+You can just run 5 commands below after installing a new Ubuntu and obtain a multi-layer vulnerable scene:
+
+```bash
+./metarget cnv install cve-2016-5195 # container escape with dirtyCoW
+./metarget cnv install cve-2019-5736 # container escape with docker
+./metarget cnv install cve-2018-1002105 # kubernetes single-node cluster with cve-2018-1002105
+./metarget cnv install privileged-container # deploy a privileged container
+./metarget appv install dvwa --external # deploy dvwa target
+```
+
+RCE, container escape, lateral movement, persistence, they are yours now.
+
+More awesome functions are coming! Stay tuned :)
+
+Note:
+
+This project aims to provide vulnerable scenes for security research. The security of scenes generated is not guaranteed. It is **NOT** recommended to deploy components or scenes with Metarget on the Internet.
+
+## 2 Installation
+
+### 2.1 Requirements
+
+- Ubuntu 16.04 or **18.04 (recommended)**
+    - for some cases (e.g. new kernel vulnerabilities) specific Ubuntu distributions are needed
+    - you can read the note for specific vulnerabilities (prompted by an asterisk (\*)) for details
+- **Python >= 3.7** (Python 2.x is unsupported!)
+- pip3
+
+### 2.2 From Source
+
+Clone the repository and install requirements:
+
+```bash
+git clone https://github.com/Metarget/metarget.git
+cd metarget/
+pip3 install -r requirements.txt
+```
+
+Begin to use Metarget and construct vulnerable scenes. For example:
+
+```bash
+./metarget cnv install cve-2019-5736
+```
+
+### 2.3 From PyPI
+
+Currently unsupported.
+
+## 3 Usage
+
+Metarget needs to be run as **root**.
+
+It is recommended to add `--verbose` option when debugging.
+
+### 3.1 Basic Usage
+
+```
+usage: metarget [-h] [-v] subcommand ...
+
+automatic constructions of vulnerable infrastructures
+
+positional arguments:
+  subcommand     description
+    gadget       cloud native gadgets (docker/k8s/...) management
+    cnv          cloud native vulnerabilities management
+    appv         application vulnerabilities management
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -v, --version  show program's version number and exit
+```
+
+Run `./metarget gadget list` to see cloud native components supported currently.
+
+### 3.2 Manage Cloud Native Components
+
+```
+usage: metarget gadget [-h] subcommand ...
+
+positional arguments:
+  subcommand  description
+    list      list supported gadgets
+    install   install gadgets
+    remove    uninstall gadgets
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
+> Run`./metarget gadget list docker/k8s/containerd/runc/kernel`to see cloud native components' supported versions currently.
+#### 3.2.1 Case: Install Docker with Specified Version
+
+Run:
+
+```bash
+./metarget gadget install docker --version 18.03.1
+```
+
+If the command above completes successfully, 18.03.1 Docker will be installed.
+
+#### 3.2.2 Case: Install Kubernetes with Specified Version
+
+Run:
+
+```bash
+./metarget gadget install k8s --version 1.16.5
+```
+
+If the command above completes successfully, 1.16.5 Kubernetes single-node cluster will be installed.
+
+Note:
+
+Usually, lots of options need to be configured in Kubernetes. As a security research project, Metarget provides some options for installation of Kubernetes:
+
+```
+  -v VERSION, --version VERSION
+                        gadget version
+  --cni-plugin CNI_PLUGIN
+                        cni plugin, flannel by default
+  --pod-network-cidr POD_NETWORK_CIDR
+                        pod network cidr, default cidr for each plugin by
+                        default
+  --taint-master        taint master node or not
+```
+
+**Metarget supports deployment of multi-node cluster. If you want to add more nodes into the cluster, you can copy `tools/install_k8s_worker.sh` script and run it on each worker nodes after the successful installation of single-node cluster.**
+
+#### 3.2.3 Case: Install Kata-containers with Specified Version
+
+Run:
+
+```bash
+./metarget gadget install kata --version 1.10.0
+```
+
+If the command above completes successfully, 1.10.0 Kata-containers will be installed.
+
+Note:
+
+You can also specify the type of kata runtime (qemu/clh/fc/...) with `--kata-runtime-type` option, which is `qemu` by default.
+
+#### 3.2.4 Case: Install Linux Kernel with Specified Version
+
+Run:
+
+```bash
+./metarget gadget install kernel --version 5.7.5
+```
+
+If the command above completes successfully, 5.7.5 kernel will be installed.
+
+Note:
+
+Currently, Metarget installs kernels in 2 ways:
+
+1. apt
+2. if apt package is not available, download \*.deb remotely from Ubuntu and try to install
+
+After successful installation of kernel, reboot of system is needed. Metarget will prompt to reboot automatically.
+
+#### 3.2.5 Case: Install containerd/runc with Specified Version
+
+Run:
+
+```bash
+./metarget gadget install containerd --version 1.2.6
+```
+
+If the command above completes successfully, 1.2.6 containerd will be installed.
+
+Run:
+
+```bash
+./metarget gadget install runc --version 1.1.6
+```
+
+If the command above completes successfully, 1.1.6 runc will be installed.
+
+
+### 3.3 Manage Vulnerable Scenes Related to Cloud Native Components
+
+```
+usage: metarget cnv [-h] subcommand ...
+
+positional arguments:
+  subcommand  description
+    list      list supported cloud native vulnerabilities
+    install   install cloud native vulnerabilities
+    remove    uninstall cloud native vulnerabilities
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
+
+Run `./metarget cnv list` to see vulnerable scenes related to cloud native components supported currently.
+
+#### 3.3.1 Case: CVE-2019-5736
+
+Run: 
+
+```bash
+./metarget cnv install cve-2019-5736
+```
+
+If the command above completes successfully, Docker with CVE-2019-5736 will be installed。
+
+#### 3.3.2 Case: CVE-2018-1002105
+
+Run: 
+
+```bash
+./metarget cnv install cve-2018-1002105
+```
+
+If the command above completes successfully, Kubernetes with CVE-2018-1002105 will be installed。
+
+#### 3.3.3 Case: Kata-containers Escape
+
+Run:
+
+```bash
+./metarget cnv install kata-escape-2020
+```
+
+If the command above completes successfully, Kata-containers with CVE-2020-2023/2025/2026 will be installed。
+
+#### 3.3.4 Case: CVE-2016-5195
+
+Run: 
+
+```bash
+./metarget cnv install cve-2016-5195
+```
+
+If the command above completes successfully, kernel with CVE-2016-5195 will be installed。
+
+### 3.4 Manage Vulnerable Scenes Related to Cloud Native Applications
+
+```
+usage: metarget appv [-h] subcommand ...
+
+positional arguments:
+  subcommand  description
+    list      list supported application vulnerabilities
+    install   install application vulnerabilities
+    remove    uninstall application vulnerabilities
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
+
+Run `./metarget appv list` to see vulnerable scenes related to cloud native applications supported currently.
+
+Note:
+
+Before deploying application vulnerable scenes, you should install Docker and Kubernetes firstly. You can use Metarget to install Docker and Kubernetes.
+
+#### 3.4.1 Case: DVWA
+
+Run:
+
+```bash
+./metarget appv install dvwa
+```
+
+If the command above completes successfully, [DVWA](https://github.com/digininja/DVWA) will be deployed as *Deployment* and *Service* resources in current Kubernetes.
+
+Note:
+
+- You can specify `--external` option, then the service will be exposed as `NodePort`, so that you can visit it by IP of the host node (By default, the type of service is `ClusterIP`).
+- You can specify `--host-net` option, then the appv will share the host network namespace.
+- You can specify `--host-pid` option, then the appv will share the host pid namespace.
+
+### 3.5 Vulnerability environment image
+Depending on the user's network environment, ubuntu version, and Docker version, one-click installation of the vulnerability environment through automated scripts still occasionally fails, so we provide the vulnerability environment image for the first time.
+
+Run the following command to build the target vulnerability environment image:
+```bash
+sudo docker build -t vuln-docker-24.0.7 -f vuln-docker-24.0.7 .
+```
+
+Run the following command to run the target vulnerability environment image:
+
+```bash
+docker run vuln-XXX
+```
+### 3.6 Manage Vulnerable Cloud Native Target Cluster
+
+Developing, currently not supported.
+
+## 4 Scene List
+
+### 4.1 Vulnerable Scenes Related to Cloud Native Components
+
+If there is an asterisk (\*) following the name of one vulnerable scene, you need to read the note related to it below the whole table for further details.
+
+|Name|Class|Type|CVSS 3.x|Writeup|ATT&CK map|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|[cve-2018-15664](vulns_cn/docker/cve-2018-15664.yaml)|docker|container_escape|[7.5](https://nvd.nist.gov/vuln/detail/CVE-2018-15664)||privilege escalation/escape to host <br> Persistence/escape to host <br> Lateral movement/escape to host <br> Defense Bypass/Build an image on the host|
+|[cve-2019-13139](vulns_cn/docker/cve-2019-13139.yaml)|docker|command_execution|[8.4](https://nvd.nist.gov/vuln/detail/CVE-2019-13139)|[link](writeups_cnv/docker-cve-2019-13139)|
+|[cve-2019-14271](vulns_cn/docker/cve-2019-14271.yaml)|docker|container_escape|[9.8](https://nvd.nist.gov/vuln/detail/CVE-2019-14271)|[link](writeups_cnv/docker-cve-2019-14271)|
+|[cve-2020-15257](vulns_cn/docker/cve-2020-15257.yaml)|docker/containerd|container_escape|[5.2](https://nvd.nist.gov/vuln/detail/CVE-2020-15257)|[link](writeups_cnv/docker-containerd-cve-2020-15257)|
+|[cve-2019-5736](vulns_cn/docker/cve-2019-5736.yaml)|docker/runc|container_escape|[8.6](https://nvd.nist.gov/vuln/detail/CVE-2019-5736)||
+|[cve-2019-16884](vulns_cn/docker/cve-2019-16884.yaml)|docker/runc|container_escape|[7.5](https://nvd.nist.gov/vuln/detail/CVE-2019-16884)||
+|[cve-2021-30465\*](vulns_cn/docker/cve-2021-30465.yaml)|docker/runc|container_escape|[7.6](https://nvd.nist.gov/vuln/detail/CVE-2021-30465)|[link](writeups_cnv/docker-runc-cve-2021-30465)|
+|[cve-2024-21626](vulns_cn/docker/cve-2024-21626.yaml)|docker/runc|container_escape|[8.6](https://nvd.nist.gov/vuln/detail/CVE-2024-21626)||
+|[cve-2017-1002101](vulns_cn/kubernetes/cve-2017-1002101.yaml)|k8s|container_escape|[9.6](https://nvd.nist.gov/vuln/detail/CVE-2017-1002101)|[link](https://github.com/brant-ruan/cloud-native-security-book/blob/main/appendix/CVE-2017-1002101：突破隔离访问宿主机文件系统.pdf)|
+|[cve-2018-1002105](vulns_cn/kubernetes/cve-2018-1002105.yaml)|k8s|privilege_escalation|[9.8](https://nvd.nist.gov/vuln/detail/CVE-2018-1002105)||
+|[cve-2018-1002100](vulns_cn/kubernetes/cve-2018-1002100.yaml)|k8s/kubectl|container_escape|[5.5](https://nvd.nist.gov/vuln/detail/CVE-2018-1002100)||
+|[cve-2019-1002101](vulns_cn/kubernetes/cve-2019-1002101.yaml)|k8s/kubectl|container_escape|[5.5](https://nvd.nist.gov/vuln/detail/CVE-2019-1002101)||
+|[cve-2019-11246](vulns_cn/kubernetes/cve-2019-11246.yaml)|k8s/kubectl|container_escape|[6.5](https://nvd.nist.gov/vuln/detail/CVE-2019-11246)||
+|[cve-2019-11249](vulns_cn/kubernetes/cve-2019-11249.yaml)|k8s/kubectl|container_escape|[6.5](https://nvd.nist.gov/vuln/detail/CVE-2019-11249)||
+|[cve-2019-11251](vulns_cn/kubernetes/cve-2019-11251.yaml)|k8s/kubectl|container_escape|[5.7](https://nvd.nist.gov/vuln/detail/CVE-2019-11251)||
+|[cve-2019-11253](vulns_cn/kubernetes/cve-2019-11253.yaml)|k8s|denial_of_service|[7.5](https://nvd.nist.gov/vuln/detail/CVE-2019-11253)||
+|[cve-2019-9512](vulns_cn/kubernetes/cve-2019-9512.yaml)|k8s|denial_of_service|[7.5](https://nvd.nist.gov/vuln/detail/CVE-2019-9512)||
+|[cve-2019-9514](vulns_cn/kubernetes/cve-2019-9514.yaml)|k8s|denial_of_service|[7.5](https://nvd.nist.gov/vuln/detail/CVE-2019-9514)||
+|[cve-2019-9946](vulns_cn/kubernetes/cve-2019-9946.yaml)|k8s|traffic_interception|[7.5](https://nvd.nist.gov/vuln/detail/CVE-2019-9946)||
+|[cve-2020-8554](vulns_cn/kubernetes/cve-2020-8554.yaml)|k8s|man_in_the_middle|[5.0](https://nvd.nist.gov/vuln/detail/CVE-2020-8554)||
+|[cve-2020-10749](vulns_cn/kubernetes/cve-2020-10749.yaml)|k8s/kubernetes-cni|man_in_the_middle|[6.0](https://nvd.nist.gov/vuln/detail/CVE-2020-10749)||
+|[cve-2020-8555](vulns_cn/kubernetes/cve-2020-8555.yaml)|k8s|server_side_request_forgery|[6.3](https://nvd.nist.gov/vuln/detail/CVE-2020-8555)||
+|[cve-2020-8557](vulns_cn/kubernetes/cve-2020-8557.yaml)|k8s|denial_of_service|[5.5](https://nvd.nist.gov/vuln/detail/CVE-2020-8557)||
+|[cve-2020-8558](vulns_cn/kubernetes/cve-2020-8558.yaml)|k8s|exposure_of_service|[8.8](https://nvd.nist.gov/vuln/detail/CVE-2020-8558)||
+|[cve-2020-8559](vulns_cn/kubernetes/cve-2020-8559.yaml)|k8s|privilege_escalation|[6.8](https://nvd.nist.gov/vuln/detail/CVE-2020-8559)||
+|[cve-2021-25741](vulns_cn/kubernetes/cve-2021-25741.yaml)|k8s|container_escape|[8.1](https://nvd.nist.gov/vuln/detail/CVE-2021-25741)||
+|[cve-2022-0811](vulns_cn/kubernetes/cve-2022-0811.yaml)|k8s|container_escape|[8.8](https://nvd.nist.gov/vuln/detail/CVE-2022-0811)|[link](writeups_cnv/kubernetes-cve-2022-0811)|
+|[cve-2016-5195](vulns_cn/kernel/cve-2016-5195.yaml)|kernel|container_escape|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2016-5195)||
+|[cve-2016-8655](vulns_cn/kernel/cve-2016-8655.yaml)|kernel|privilege_escalation|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2016-8655)||
+|[cve-2017-6074](vulns_cn/kernel/cve-2017-6074.yaml)|kernel|privilege_escalation|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2017-6074)||
+|[cve-2017-7308](vulns_cn/kernel/cve-2017-7308.yaml)|kernel|container_escape|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2017-7308)|[link](writeups_cnv/kernel-cve-2017-7308)|
+|[cve-2017-16995](vulns_cn/kernel/cve-2017-16995.yaml)|kernel|privilege_escalation|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2017-16995)||
+|[cve-2017-1000112](vulns_cn/kernel/cve-2017-1000112.yaml)|kernel|container_escape|[7.0](https://nvd.nist.gov/vuln/detail/CVE-2017-1000112)|[link](writeups_cnv/kernel-cve-2017-1000112)|
+|[cve-2018-18955](vulns_cn/kernel/cve-2018-18955.yaml)|kernel|privilege_escalation|[7.0](https://nvd.nist.gov/vuln/detail/CVE-2018-18955)||
+|[cve-2020-14386](vulns_cn/kernel/cve-2020-14386.yaml)|kernel|container_escape|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2020-14386)||
+|[cve-2021-3493](vulns_cn/kernel/cve-2021-3493.yaml)|kernel|privilege_escalation|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2021-3493)|[link](writeups_cnv/kernel-cve-2021-3493)|
+|[cve-2021-4204](vulns_cn/kernel/cve-2021-4204.yaml)|kernel|privilege_escalation|[-](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4204)||
+|[cve-2021-22555](vulns_cn/kernel/cve-2021-22555.yaml)|kernel|container_escape|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2021-22555)||
+|[cve-2022-0185](vulns_cn/kernel/cve-2022-0185.yaml)|kernel|container_escape|[8.4](https://nvd.nist.gov/vuln/detail/CVE-2022-0185)||
+|[cve-2022-0492](vulns_cn/kernel/cve-2022-0492.yaml)|kernel|container_escape|[7.8](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0492)|[link](writeups_cnv/kernel-cve-2022-0492)|
+|[cve-2022-0847](vulns_cn/kernel/cve-2022-0847.yaml)|kernel|container_escape|[7.8](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0847)|[link](writeups_cnv/kernel-cve-2022-0847)|
+|[cve-2022-0995\*](vulns_cn/kernel/cve-2022-0995.yaml)|kernel|privilege_escalation|[7.1](https://nvd.nist.gov/vuln/detail/CVE-2022-0995)||[link](writeups_cnv/kernel-cve-2022-0995)
+|[cve-2022-25636\*](vulns_cn/kernel/cve-2022-25636.yaml)|kernel|privilege_escalation|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2022-25636)||
+|[cve-2022-23222](vulns_cn/kernel/cve-2022-23222.yaml)|kernel|privilege_escalation|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2022-23222)||
+|[cve-2022-27666\*](vulns_cn/kernel/cve-2022-27666.yaml)|kernel|privilege_escalation|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2022-27666)||
+|[cve-2023-3269\*](vulns_cn/kernel/cve-2023-3269.yaml)|kernel|privilege_escalation|[7.8](https://nvd.nist.gov/vuln/detail/CVE-2023-3269)||
+|[kata-escape-2020](vulns_cn/kata-containers/kata-escape-2020.yaml)|kata-containers|container_escape|[6.3](https://nvd.nist.gov/vuln/detail/CVE-2020-2023)/[8.8](https://nvd.nist.gov/vuln/detail/CVE-2020-2025)/[8.8](https://nvd.nist.gov/vuln/detail/CVE-2020-2026)||
+|[cve-2020-27151](vulns_cn/kata-containers/cve-2020-27151.yaml)|kata-containers|container_escape|[8.8](https://nvd.nist.gov/vuln/detail/CVE-2020-27151)||
+|[cap_dac_read_search-container](vulns_cn/configs/cap_dac_read_search-container.yaml)|config|container_escape|-|[link](writeups_cnv/config-cap_dac_read_search-container)|
+|[cap_sys_admin-container](vulns_cn/configs/cap_sys_admin-container.yaml)|config|container_escape|-||
+|[cap_sys_ptrace-container](vulns_cn/configs/cap_sys_ptrace-container.yaml)|config|container_escape|-||
+|[cap_sys_module-container](vulns_cn/configs/cap_sys_module-container.yaml)|config|container_escape|-|[link](writeups_cnv/config-cap_sys_module-container)|
+|[privileged-container](vulns_cn/configs/privileged-container.yaml)|config|container_escape|-|[link](writeups_cnv/config-privileged-container)|
+|[k8s_backdoor_daemonset](vulns_cn/configs/k8s_backdoor_daemonset.yaml)|config|persistence|-|[link](writeups_cnv/config-k8s-backdoor-daemonset)|
+|[k8s_backdoor_cronjob](vulns_cn/configs/k8s_backdoor_cronjob.yaml)|config|persistence|-|[link](writeups_cnv/config-k8s-backdoor-cronjob)|
+|[k8s_shadow_apiserver](vulns_cn/configs/k8s_shadow_apiserver.yaml)|config|persistence|-|[link](writeups_cnv/config-k8s-shadow_apiserver)|
+|[k8s_node_proxy](vulns_cn/configs/k8s_node_proxy.yaml)|config|privilege_escalation|-|[link](writeups_cnv/config-k8s-node-proxy)|
+|[mount-docker-sock](vulns_cn/mounts/mount-docker-sock.yaml)|mount|container_escape|-|[link](writeups_cnv/mount-docker-sock)|
+|[mount-host-etc](vulns_cn/mounts/mount-host-etc.yaml)|mount|container_escape|-||
+|[mount-host-procfs](vulns_cn/mounts/mount-host-procfs.yaml)|mount|container_escape|-|[link](writeups_cnv/mount-host-procfs)|
+|[mount-var-log](vulns_cn/mounts/mount-var-log.yaml)|mount|container_escape|-|[link](writeups_cnv/mount-var-log)|
+
+Note:
+
+- Currently writeups are in Chinese.
+- It is recommended to add `--verbose` option when debugging.
+- You might find that some kernel vulnerabilities are marked as `privilege_escalation`, while others `container_escape`. The essential difference is the payload (get a shell with high privilege or escape first).
+    - Thanks to default security mechanisms (e.g. Seccomp, Capabilities) in containers, some kernel vulnerabilities may be hard or almost not to exploit.
+    - Hence, vulnerabilities are marked as `container_escape` if we could reproduce the whole process with Metarget, others temporarily marked as `privilege_escalation`.
+- For **cve-2021-30465**, after `cnv install cve-2021-30465` (which installs Docker),
+    - you'd better install a K8s manually, for exploitation (e.g. `cnv install cve-2018-1002105` or `gadget install k8s --version 1.16.5` with Metarget).
+- For kernel vulnerabilities below, Ubuntu 21.10 is needed to run Metarget (tested):
+    - cve-2022-0995
+    - cve-2022-25636
+    - cve-2022-27666
+
+### 4.2 Vulnerable Scenes Related to Cloud Native Applications
+
+These scenes are mainly derived from other open-source projects:
+
+- [Vulhub](https://github.com/vulhub/vulhub)
+- [DVWA](https://github.com/digininja/DVWA)
+
+We express sincere gratitude to projects above!
+
+Metarget converts scenes in projects above to *Deployments* and *Services* resources in Kubernetes (thanks to [kompose](https://github.com/kubernetes/kompose)).
+
+To list vulnerable scenes related to cloud native applications supported by Metarget, just run：
+
+```bash
+./metarget appv list
+```
+
+Note:
+
+- For the deployment of [Confluence's vulnerability CVE-2019-3396](vulns_app/confluence/CVE-2019-3396), you may refer to [Vulhub](https://github.com/vulhub/vulhub/blob/master/confluence/CVE-2019-3396/README.zh-cn.md), while the address of PostgreSQL should be `cve-2019-3396-db`, not `db` in Vulhub.
+
+## 5 DEMO
+
+[![asciicast](https://asciinema.org/a/407107.svg)](https://asciinema.org/a/407107)
+
+## 6 Development Plan
+
+- [x] deployments of basic cloud native components (docker, k8s)
+- [x] integrations of vulnerable scenes related to cloud native components
+- [x] integrations of RCE scenes in containers
+- [x] cloud native vulnerable images 
+- [x] automatic construction of multi-node cloud native target cluster
+- [ ] integration of complex cloud native application vulnerability scenarios
+- integrations of other cloud native vulnerable scenes (long term)
+
+## 7 Maintainers
+
+- [@brant-ruan](https://github.com/brant-ruan)
+- [@ListenerMoya](https://github.com/ListenerMoya)
+- [@Lvzhizheng](https://github.com/Lvzhizheng)
+
+## 8 Contribution
+
+One of Metarget's goals is to facilitate more rapid construction of vulnerable environments when vulnerabilities occur. Also, it could be used to construct all the integrated vulnerable scenes whenever you want.
+
+To keep Metarget up-to-date, the vulnerable scenes lists (both `cnv` and `appv`) will be maintained.
+
+*YAML* is used in Metarget to describe & integrate vulnerable scenes. Currently, scenes in two layers, `cnv` (in `vulns_cn/`) and `appv` (in `vulns_app/`), are supported.
+
+Maintenance from the community is appreciated and welcome. Hope that we can gather and share our knowledge and researches in the context of Metarget, and promote the development of cloud native security.
+
+Currently, you can contribute to Metarget in two ways:
+
+1. Submit YAML files of new cloud native vulnerabilities (cnv).
+2. Submit YAML files of new cloud native application vulnerabilities (appv).
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## 9 Collaboration (Contact us at lvzhizheng@nsfocus.com)
+
+We eagerly welcome collaboration with universities, research institutions, and other academic entities! Metarget is dedicated to being an ideal experimental platform for cutting-edge research in the field of cloud-native security. We believe that cloud-native security will be a forefront topic in the future of network security, and Metarget provides an ideal research environment for this.
+
+Through our robust and flexible framework, you can delve into the security challenges of cloud-native environments, discover and explore innovative solutions, and contribute your expertise and findings to the entire industry's development.
+
+**Metarget offers the following distinctive support to collaborators:**
+
+1. **Diverse experimental scenarios:** Utilize Metarget to effortlessly build various vulnerable cloud-native target environments, covering a spectrum of experiment scenarios from simple to complex, such as cloud-native e-commerce platform and cloud-native online course system.
+
+2. **cloud native vulnerable images：** Without any scripting assistance, the vulnerability environment is readily available
+
+3. **Support for multiple versions of Kernel, Kubernetes, and other cloud-native components:** Metarget consistently updates to support the latest versions of components, ensuring that you can use the latest technologies in your experiments.
+
+4. **Customization of Ubuntu versions:** We will tailor Ubuntu versions based on your experimental requirements, providing you with a more flexible experimental environment configuration.
+
+5. **Automatic generation of multi-node cloud-native clusters:** Metarget offers the functionality to automatically create multi-node cloud-native target clusters, enhancing the realism and depth of your research.
+
+6. ...
+
+Joining Metarget provides you with comprehensive technical support and abundant collaboration opportunities, allowing you to explore the forefront of cloud-native security and contribute your unique insights to the future development of network security. We look forward to your participation in collectively shaping a new chapter in cybersecurity research!
+
+## 10 About Logo
+
+It is not a Kubernetes, but a vulnerable infrastructure with three gears which could not work well (vulnerable) :)
+
+## 10 License
+
+Metarget is licensed under Apache License 2.0. See [LICENSE](LICENSE) for the full license text.
+
+## 11 Events
+
+### KCon 2021 Arsenal
+
+- URL: http://kcon.knownsec.com/2021/#/arsenal
+
+### OpenInfra Days Asia 2021
+
+- Topic: Metarget: Auto-construction of Vulnerable Cloud Native Infrastructure
+- Video: https://www.youtube.com/watch?v=43UvCHjn8wA
+- PPT: [OID-Asia-2021-Metarget.pdf](https://github.com/brant-ruan/slides-and-papers/blob/master/OID-Asia-2021-Metarget.pdf)
+
+### OpenInfra Days China 2021
+
+- Topic: Metarget：构建云原生基础设施靶场
+- PPT: [OID-China-2021-Metarget.pdf](https://github.com/brant-ruan/slides-and-papers/blob/master/OID-China-2021-Metarget.pdf)
+
+### CCF BDTC 2021
+
+- Topic: 构建云原生基础设施靶场
+
+### Reference in Paper (IEEE TPS-ISA 2021)
+
+- Paper: Security Challenges in the Container Cloud
+- PDF: [TPS21.pdf](https://github.com/brant-ruan/slides-and-papers/blob/master/TPS21.pdf)
+
+### CSDN Cloud Native Security Summit 2022
+
+- Topic: 攻方视角：从开源靶场看云原生安全
+- PPT: [CSDN云原生安全技术峰会-2022-攻方视角：从开源靶场看云原生安全.pdf](https://github.com/brant-ruan/slides-and-papers/blob/master/CSDN%E4%BA%91%E5%8E%9F%E7%94%9F%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E5%B3%B0%E4%BC%9A-2022-%E6%94%BB%E6%96%B9%E8%A7%86%E8%A7%92%EF%BC%9A%E4%BB%8E%E5%BC%80%E6%BA%90%E9%9D%B6%E5%9C%BA%E7%9C%8B%E4%BA%91%E5%8E%9F%E7%94%9F%E5%AE%89%E5%85%A8.pdf)
+
+### Reference in Paper (IC2E 2022)
+
+- Paper: PACED: Provenance-based Automated Container Escape Detection
+- PDF: [IC2E-2022.PACED.pdf](http://www.csl.sri.com/users/gehani/papers/IC2E-2022.PACED.pdf)
+
+### CIS 2022
+
+- Topic: Metarget: 云原生安全研究与自动化
+- URL: https://cis.freebuf.com
+
+### Metarget Joins CNCF Landscape
+
+- URL: https://landscape.cncf.io/?selected=metarget
+
+### KCD Shanghai 2024
+- https://community.cncf.io/events/details/cncf-kcd-shanghai-presents-kcd-shanghai-2024/
