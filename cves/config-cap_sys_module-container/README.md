@@ -1,0 +1,23 @@
+﻿# 滥用CAP_SYS_MODULE导致容器逃逸
+
+## 来源
+- 原始目录: `cves/metarget/writeups_cnv/config-cap_sys_module-container`
+- 原始文档: `cves/metarget/writeups_cnv/config-cap_sys_module-container/README.md`
+- 状态: 原始 README 有复现步骤（已脚本化重组）
+
+## 依赖
+见 `requirements.txt`。
+
+## 一键复现
+```bash
+bash run_poc.sh
+```
+
+## 清理
+```bash
+bash run_poc.sh --cleanup
+```
+
+## 说明
+- 本目录不依赖 metarget 命令，直接通过 `kubectl apply scene.yaml` 搭建场景。
+- 完整利用需要自定义恶意内核模块(.ko)并在容器中加载。
