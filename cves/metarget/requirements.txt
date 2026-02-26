@@ -1,7 +1,0 @@
-PyYaml
-docker==5.0.0
-packaging
-requests
-beautifulsoup4==4.9.3
-tqdm
-prettytable==1.0.1

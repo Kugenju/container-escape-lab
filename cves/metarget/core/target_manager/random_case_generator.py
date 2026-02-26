@@ -1,6 +1,0 @@
-"""
-
-"""
-
-class RandomCaseGenerator:
-    pass

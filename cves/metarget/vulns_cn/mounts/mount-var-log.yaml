@@ -1,6 +1,0 @@
-name: mount-var-log
-class: mount
-type: container_escape
-dependencies:
-  yamls:
-    - pods/mount-var-log.yaml
