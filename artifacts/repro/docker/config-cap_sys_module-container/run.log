@@ -1,1 +1,3 @@
-[-] Missing dependency: kubectl
+[-] Kubernetes API unreachable.
+[*] Hint: run scripts/env_labctl.sh profile k8s-kind
+[*] Verdict: BLOCKED_STAGE=k8s_api_unreachable

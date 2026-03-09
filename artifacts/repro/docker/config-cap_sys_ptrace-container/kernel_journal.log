@@ -1,3 +1,1 @@
-Mar 09 16:19:53 mypc kernel: overlayfs: failed to set xattr on upper
-Mar 09 16:19:53 mypc kernel: overlayfs: ...falling back to uuid=null.
-Mar 09 16:19:53 mypc kernel: overlayfs: try mounting with 'userxattr' option
+-- No entries --

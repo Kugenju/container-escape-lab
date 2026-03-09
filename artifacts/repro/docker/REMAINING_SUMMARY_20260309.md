@@ -15,13 +15,13 @@
 | cves/CVE-2021-3493/run_poc.sh | 0 | pass | script reported success marker |
 | cves/CVE-2022-0847/run_poc.sh | 0 | pass | script reported success marker |
 | cves/CVE-2022-0995/run_poc.sh | 0 | placeholder | script is scaffold/manual guidance |
-| cves/config-cap_dac_read_search-container/run_poc.sh | 1 | blocked-env | kubectl/k8s environment missing |
-| cves/config-cap_sys_admin-container/run_poc.sh | 1 | blocked-env | kubectl/k8s environment missing |
-| cves/config-cap_sys_module-container/run_poc.sh | 1 | blocked-env | kubectl/k8s environment missing |
-| cves/config-cap_sys_ptrace-container/run_poc.sh | 1 | blocked-env | kubectl/k8s environment missing |
-| cves/config-privileged-container/run_poc.sh | 1 | blocked-env | kubectl/k8s environment missing |
+| cves/config-cap_dac_read_search-container/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
+| cves/config-cap_sys_admin-container/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
+| cves/config-cap_sys_module-container/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
+| cves/config-cap_sys_ptrace-container/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
+| cves/config-privileged-container/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
 | cves/kata-escape-2020/run_poc.sh | 0 | placeholder | script is scaffold/manual guidance |
-| cves/mount-docker-sock/run_poc.sh | 1 | blocked-env | kubectl/k8s environment missing |
-| cves/mount-host-etc/run_poc.sh | 1 | blocked-env | kubectl/k8s environment missing |
-| cves/mount-host-procfs/run_poc.sh | 1 | blocked-env | kubectl/k8s environment missing |
-| cves/mount-var-log/run_poc.sh | 1 | blocked-env | kubectl/k8s environment missing |
+| cves/mount-docker-sock/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
+| cves/mount-host-etc/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
+| cves/mount-host-procfs/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
+| cves/mount-var-log/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |

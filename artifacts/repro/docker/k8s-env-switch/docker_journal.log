@@ -1,0 +1,1 @@
+Mar 09 16:51:25 mypc dockerd[123541]: time="2026-03-09T16:51:25.950881915+08:00" level=info msg="received image create request, name:kindest/node:v1.30.0 repo:"

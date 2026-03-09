@@ -21,3 +21,8 @@ Additional batch summaries:
 
 - Docker remaining scripts: `artifacts/repro/docker/REMAINING_SUMMARY_20260309.md`
 - iSulad remaining scripts: `artifacts/repro/isula/REMAINING_SUMMARY_20260309.md`
+
+Environment switching note (2026-03-09):
+
+- Added `scripts/env_labctl.sh` to switch `docker/isula/k8s-kind` profiles.
+- `k8s-kind` profile currently blocked by unstable pull of `kindest/node:v1.30.0` (network reset/timeout to upstream registry), so kubectl scene scripts now consistently return `BLOCKED_STAGE=k8s_api_unreachable` with explicit hint.

@@ -1,7 +1,3 @@
-[Mon Mar  9 15:48:56 2026] veth0474aa7 (unregistering): left allmulticast mode
-[Mon Mar  9 15:48:56 2026] veth0474aa7 (unregistering): left promiscuous mode
-[Mon Mar  9 15:48:56 2026] docker0: port 1(veth0474aa7) entered disabled state
-[Mon Mar  9 15:48:56 2026] docker0: port 1(vethf36457a) entered blocking state
 [Mon Mar  9 15:48:56 2026] docker0: port 1(vethf36457a) entered disabled state
 [Mon Mar  9 15:48:56 2026] vethf36457a: entered allmulticast mode
 [Mon Mar  9 15:48:56 2026] vethf36457a: entered promiscuous mode
@@ -198,3 +194,7 @@
 [Mon Mar  9 16:19:53 2026] overlayfs: failed to set xattr on upper
 [Mon Mar  9 16:19:53 2026] overlayfs: ...falling back to uuid=null.
 [Mon Mar  9 16:19:53 2026] overlayfs: try mounting with 'userxattr' option
+[Mon Mar  9 16:22:15 2026] new mount options do not match the existing superblock, will be ignored
+[Mon Mar  9 16:22:47 2026] new mount options do not match the existing superblock, will be ignored
+[Mon Mar  9 16:23:18 2026] new mount options do not match the existing superblock, will be ignored
+[Mon Mar  9 16:24:54 2026] perf: interrupt took too long (18518 > 18478), lowering kernel.perf_event_max_sample_rate to 10000
