@@ -1,0 +1,21 @@
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: disabled)
+     Active: active (running) since Mon 2026-03-09 14:42:59 CST; 2min 3s ago
+       Docs: https://docs.docker.com
+   Main PID: 13096 (dockerd)
+      Tasks: 20 (limit: 21352)
+     Memory: 38.4M ()
+     CGroup: /system.slice/docker.service
+             ├─13096 /usr/bin/dockerd --live-restore
+             └─13105 containerd --config /var/run/docker/containerd/containerd.toml --log-level info
+
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.196635888+08:00" level=info msg="subscribe ctx=context.Background.WithValue(type transport.connectionKey, val <not Stringer>).WithValue(type peer.peerKey, val <not Stringer>).WithCancel.WithValue(type metadata.mdIncomingKey, val <not Stringer>).WithValue(type grpc.streamKey, val <not Stringer>).WithValue(type grpc.rpcInfoContextKey, val <not Stringer>).WithValue(type baggage.baggageContextKeyType, val <not Stringer>).WithValue(type trace.traceContextKeyType, val <not Stringer>).WithValue(type trace.traceContextKeyType, val <not Stringer>).WithValue(type namespaces.namespaceKey, val moby).WithValue(type metadata.mdOutgoingKey, val <not Stringer>).WithValue(type ttrpc.metadataKey, val <not Stringer>).WithCancel fs=[namespace==moby,topic~=|^/tasks/|]"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.503069751+08:00" level=warning msg="Failed to cleanup netns file /var/run/docker/runtime-runc: remove /var/run/docker/runtime-runc: directory not empty"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.603060113+08:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.606158640+08:00" level=info msg="Setup IP tables begin"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.737580581+08:00" level=info msg="Setup IP tables end"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.821887722+08:00" level=info msg="Loading containers: done."
+Mar 09 14:42:59 mypc dockerd[13096]: time="2026-03-09T14:42:59.068803949+08:00" level=info msg="Docker daemon" commit=270f890 graphdriver(s)=overlay2 version=18.09.0
+Mar 09 14:42:59 mypc dockerd[13096]: time="2026-03-09T14:42:59.069020971+08:00" level=info msg="Daemon has completed initialization"
+Mar 09 14:42:59 mypc dockerd[13096]: time="2026-03-09T14:42:59.090791683+08:00" level=info msg="API listen on /var/run/docker.sock"
+Mar 09 14:42:59 mypc systemd[1]: Started Docker Application Container Engine.

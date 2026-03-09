@@ -1,0 +1,88 @@
+Mar 09 14:42:57 mypc systemd[1]: Starting Docker Application Container Engine...
+Mar 09 14:42:57 mypc (dockerd)[13096]: docker.service: Referenced but unset environment variable evaluates to an empty string: INSECURE_REGISTRY
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.034232497+08:00" level=error msg="stat dblock failed stat /var/run/docker/dblock: no such file or directory"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.035939452+08:00" level=info msg="libcontainerd: started new containerd process" pid=13105
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.036015186+08:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.036025084+08:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.036106339+08:00" level=info msg="ccResolverWrapper: sending new addresses to cc: [{unix:///var/run/docker/containerd/containerd.sock 0  <nil>}]" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.036117249+08:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.036148980+08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc00011f790, CONNECTING" module=grpc
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58+08:00" level=warning msg="containerd config version `1` has been deprecated and will be removed in containerd v2.0, please switch to version `2`, see https://github.com/containerd/containerd/blob/main/docs/PLUGINS.md#version-header"
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.090695703+08:00" level=info msg="starting containerd" revision=0fdeab0487276d925a94c57518ae31d731742462 version=1.6.22.25.oe2403sp3
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.110701873+08:00" level=info msg="loading plugin \"io.containerd.content.v1.content\"..." type=io.containerd.content.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.110942069+08:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." type=io.containerd.snapshotter.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.111000240+08:00" level=warning msg="failed to load plugin io.containerd.snapshotter.v1.devmapper" error="devmapper not configured"
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.111011942+08:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.native\"..." type=io.containerd.snapshotter.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.111164502+08:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.overlayfs\"..." type=io.containerd.snapshotter.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.111677657+08:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.aufs\"..." type=io.containerd.snapshotter.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.115117693+08:00" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not supported (modprobe aufs failed: exit status 1 \"modprobe: FATAL: Module aufs not found in directory /lib/modules/6.6.0-132.0.0.111.oe2403sp3.x86_64\\n\"): skip plugin" type=io.containerd.snapshotter.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.115168399+08:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.zfs\"..." type=io.containerd.snapshotter.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.115418244+08:00" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/lib/docker/containerd/daemon/io.containerd.snapshotter.v1.zfs must be a zfs filesystem to be used with the zfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.115482035+08:00" level=info msg="loading plugin \"io.containerd.metadata.v1.bolt\"..." type=io.containerd.metadata.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.115613565+08:00" level=warning msg="could not use snapshotter devmapper in metadata plugin" error="devmapper not configured"
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.115646517+08:00" level=info msg="metadata content store policy set" policy=shared
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.125277465+08:00" level=info msg="loading plugin \"io.containerd.differ.v1.walking\"..." type=io.containerd.differ.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.125383417+08:00" level=info msg="loading plugin \"io.containerd.event.v1.exchange\"..." type=io.containerd.event.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.125430746+08:00" level=info msg="loading plugin \"io.containerd.gc.v1.scheduler\"..." type=io.containerd.gc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.125492263+08:00" level=info msg="loading plugin \"io.containerd.runtime.v2.task\"..." type=io.containerd.runtime.v2
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.125707883+08:00" level=info msg="loading plugin \"io.containerd.runtime.v1.linux\"..." type=io.containerd.runtime.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.125885881+08:00" level=info msg="loading plugin \"io.containerd.monitor.v1.cgroups\"..." type=io.containerd.monitor.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127030391+08:00" level=info msg="loading plugin \"io.containerd.service.v1.containers-service\"..." type=io.containerd.service.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127086297+08:00" level=info msg="loading plugin \"io.containerd.service.v1.content-service\"..." type=io.containerd.service.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127104892+08:00" level=info msg="loading plugin \"io.containerd.service.v1.diff-service\"..." type=io.containerd.service.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127126123+08:00" level=info msg="loading plugin \"io.containerd.service.v1.images-service\"..." type=io.containerd.service.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127139829+08:00" level=info msg="loading plugin \"io.containerd.service.v1.introspection-service\"..." type=io.containerd.service.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127154426+08:00" level=info msg="loading plugin \"io.containerd.service.v1.leases-service\"..." type=io.containerd.service.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127522265+08:00" level=info msg="loading plugin \"io.containerd.service.v1.namespaces-service\"..." type=io.containerd.service.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127562311+08:00" level=info msg="loading plugin \"io.containerd.service.v1.snapshots-service\"..." type=io.containerd.service.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127577620+08:00" level=info msg="loading plugin \"io.containerd.service.v1.tasks-service\"..." type=io.containerd.service.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127599692+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.containers\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127695965+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.content\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127732455+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.diff\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127766309+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.events\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127781858+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.images\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127793911+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.introspection\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127805052+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.leases\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127816604+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.namespaces\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127828317+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.snapshots\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127840700+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.tasks\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127854146+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.version\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127865367+08:00" level=info msg="loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." type=io.containerd.tracing.processor.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127880987+08:00" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="no OpenTelemetry endpoint: skip plugin" type=io.containerd.tracing.processor.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.127889834+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.tracing\"..." type=io.containerd.internal.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.128210803+08:00" level=warning msg="failed to initialize a tracing processor \"otlp\"" error="no OpenTelemetry endpoint: skip plugin"
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.128315893+08:00" level=info msg="loading plugin \"io.containerd.internal.v1.restart\"..." type=io.containerd.internal.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.128369475+08:00" level=info msg="loading plugin \"io.containerd.grpc.v1.healthcheck\"..." type=io.containerd.grpc.v1
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.128648224+08:00" level=info msg=serving... address=/var/run/docker/containerd/containerd-debug.sock
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.128758805+08:00" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock.ttrpc
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.128825221+08:00" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.128841442+08:00" level=info msg="containerd successfully booted in 0.039139s"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.134946666+08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc00011f790, READY" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.154040283+08:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.154077543+08:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.154223881+08:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.154232398+08:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.154298920+08:00" level=info msg="ccResolverWrapper: sending new addresses to cc: [{unix:///var/run/docker/containerd/containerd.sock 0  <nil>}]" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.154316463+08:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.154344586+08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc00052ba10, CONNECTING" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.156141224+08:00" level=info msg="ccResolverWrapper: sending new addresses to cc: [{unix:///var/run/docker/containerd/containerd.sock 0  <nil>}]" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.156257040+08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc00052ba10, READY" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.156294305+08:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.156430223+08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc00032eb40, CONNECTING" module=grpc
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.157811928+08:00" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc00032eb40, READY" module=grpc
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.159191800+08:00" level=info msg="subscribe ctx=context.Background.WithValue(type transport.connectionKey, val <not Stringer>).WithValue(type peer.peerKey, val <not Stringer>).WithCancel.WithValue(type metadata.mdIncomingKey, val <not Stringer>).WithValue(type grpc.streamKey, val <not Stringer>).WithValue(type grpc.rpcInfoContextKey, val <not Stringer>).WithValue(type baggage.baggageContextKeyType, val <not Stringer>).WithValue(type trace.traceContextKeyType, val <not Stringer>).WithValue(type trace.traceContextKeyType, val <not Stringer>).WithValue(type namespaces.namespaceKey, val plugins.moby).WithValue(type metadata.mdOutgoingKey, val <not Stringer>).WithValue(type ttrpc.metadataKey, val <not Stringer>).WithCancel fs=[namespace==plugins.moby,topic~=|^/tasks/|]"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.193610340+08:00" level=info msg="Graph migration to content-addressability took 0.00 seconds"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.194336720+08:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.194371486+08:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.194902876+08:00" level=warning msg="mountpoint for files not found"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.195562158+08:00" level=info msg="Loading containers: start."
+Mar 09 14:42:58 mypc dockerd[13105]: time="2026-03-09T14:42:58.196635888+08:00" level=info msg="subscribe ctx=context.Background.WithValue(type transport.connectionKey, val <not Stringer>).WithValue(type peer.peerKey, val <not Stringer>).WithCancel.WithValue(type metadata.mdIncomingKey, val <not Stringer>).WithValue(type grpc.streamKey, val <not Stringer>).WithValue(type grpc.rpcInfoContextKey, val <not Stringer>).WithValue(type baggage.baggageContextKeyType, val <not Stringer>).WithValue(type trace.traceContextKeyType, val <not Stringer>).WithValue(type trace.traceContextKeyType, val <not Stringer>).WithValue(type namespaces.namespaceKey, val moby).WithValue(type metadata.mdOutgoingKey, val <not Stringer>).WithValue(type ttrpc.metadataKey, val <not Stringer>).WithCancel fs=[namespace==moby,topic~=|^/tasks/|]"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.503069751+08:00" level=warning msg="Failed to cleanup netns file /var/run/docker/runtime-runc: remove /var/run/docker/runtime-runc: directory not empty"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.603060113+08:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.606158640+08:00" level=info msg="Setup IP tables begin"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.737580581+08:00" level=info msg="Setup IP tables end"
+Mar 09 14:42:58 mypc dockerd[13096]: time="2026-03-09T14:42:58.821887722+08:00" level=info msg="Loading containers: done."
+Mar 09 14:42:59 mypc dockerd[13096]: time="2026-03-09T14:42:59.068803949+08:00" level=info msg="Docker daemon" commit=270f890 graphdriver(s)=overlay2 version=18.09.0
+Mar 09 14:42:59 mypc dockerd[13096]: time="2026-03-09T14:42:59.069020971+08:00" level=info msg="Daemon has completed initialization"
+Mar 09 14:42:59 mypc dockerd[13096]: time="2026-03-09T14:42:59.090791683+08:00" level=info msg="API listen on /var/run/docker.sock"
+Mar 09 14:42:59 mypc systemd[1]: Started Docker Application Container Engine.
