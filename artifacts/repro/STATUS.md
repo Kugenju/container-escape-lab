@@ -10,3 +10,4 @@ Baseline:
 | CVE | Docker | iSulad | Evidence |
 | --- | --- | --- | --- |
 | CVE-2019-13139 | blocked at remote git refspec parse (`invalid refspec`) | pending | `artifacts/repro/docker/CVE-2019-13139/` |
+| CVE-2019-14271 | attempted: first blocked by Docker Hub reset, then reached `docker cp` trigger with local image and path fix, but `/host_fs` not created | pending | `artifacts/repro/docker/CVE-2019-14271/` |
