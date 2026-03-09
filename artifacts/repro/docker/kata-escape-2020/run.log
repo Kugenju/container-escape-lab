@@ -1,0 +1,4 @@
+[*] Kata escape 2020 quick check
+[!] kata-runtime not found in PATH
+[*] This scene requires vulnerable Kata runtime (e.g. 1.10.0 with clh) and dedicated PoC.
+[*] See README references to continue manual reproduction in isolated lab.
