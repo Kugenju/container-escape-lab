@@ -155,6 +155,15 @@ scripts/env_labctl.sh status
 - 不要直接执行位于 `/root/...` 的二进制（`nobody` 无法遍历该路径）。
 - 先把编译产物复制到 `/tmp` 并 `chmod 0755`，再用 `su nobody` 执行。
 
+### 5.9 Docker 路径阻断但 runc 直跑可复现
+
+现象：`docker run -w /proc/self/fd/N` 路径持续报 `mkdir ... not a directory`，难以命中 `CVE-2024-21626`。  
+修复：
+
+- 增加 `runc` direct 链路复现（导出 rootfs + `runc spec` + `process.cwd=/proc/self/fd/N` 枚举）。
+- 在版本切换到明确脆弱版本（例如 `runc 1.1.7`）后执行 direct 探测，优先确认是否能命中 `fd`。
+- 同步保留当前默认版本（如 `runc 1.1.8`）对照证据，避免把“版本切换成功”误判为“默认环境可复现”。
+
 ## 6. 阻断阶段命名建议
 
 建议统一格式：`BLOCKED_STAGE=<snake_case>`

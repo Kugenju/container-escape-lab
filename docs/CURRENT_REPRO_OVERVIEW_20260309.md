@@ -37,6 +37,7 @@
 | CVE-2018-18955 | `pass`（脚本报告 success marker） |
 | CVE-2021-3493 | `pass`（脚本报告 success marker） |
 | CVE-2022-0847 | `pass`（脚本报告 success marker） |
+| CVE-2024-21626（`run_poc_runc_direct.sh`） | `pass`（在切换 `runc 1.1.7` 后命中 `fd=7`） |
 
 
 
@@ -92,7 +93,7 @@
 | CVE-2019-5736 | runc `< 1.0.0-rc6` | 不匹配 | 已切到 `runc 1.0.0-rc5` 并重跑 |
 | CVE-2016-9962 | runc `< 1.0.0-rc2` | 不匹配 | 结论补充为“当前 runc 不在脆弱范围” |
 | CVE-2021-30465 | runc `<= 1.0.0-rc94` | 不匹配 | 已切到 `runc 1.0.0-rc94` 并重跑 |
-| CVE-2024-21626 | runc `< 1.1.12` | 匹配（1.1.8） | 保持原结论 |
+| CVE-2024-21626 | runc `< 1.1.12` | 匹配（1.1.8） | 新增 direct-runc 链路：1.1.8 阻断、1.1.7 命中 |
 
 ### 7.2 版本切换重跑结果
 
@@ -103,6 +104,11 @@
   证据：`artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt2/`
 - `CVE-2021-30465` 在 `runc 1.0.0-rc5` 下复测：`BLOCKED_STAGE=race_not_hit_or_env_incompatible`。  
   证据：`artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc5-20260310/`
+- `CVE-2024-21626` 新增 `runc-direct` 复现链路：  
+  - `runc 1.1.8`：`BLOCKED_STAGE=direct_runc_fd_probe_no_hit`  
+    证据：`artifacts/repro/docker/CVE-2024-21626/runc-1.1.8-direct-20260310/`
+  - 切换 `runc 1.1.7`：命中 `fd=7`，`VULNERABLE_OR_PARTIALLY_VULNERABLE`  
+    证据：`artifacts/repro/docker/CVE-2024-21626/runc-1.1.7-direct-20260310/`
 
 ### 7.3 缺少可落地 PoC 的补齐进展
 
@@ -139,6 +145,7 @@
 - CVE-2016-9962（runc `<1.0.0-rc2`）：https://nvd.nist.gov/vuln/detail/CVE-2016-9962  
 - CVE-2021-30465（runc `<=1.0.0-rc94`）：https://github.com/opencontainers/runc/security/advisories/GHSA-c3xm-pvg7-gh7r  
 - CVE-2024-21626（runc `<1.1.12`）：https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv  
+- CVE-2024-21626 复现实操参考（runc direct）：https://github.com/NitroCao/CVE-2024-21626 、https://nitroc.org/en/posts/cve-2024-21626-illustrated/  
 - CVE-2016-5195（Linux kernel `2.x/3.x/4.x before 4.8.3`）：https://cveawg.mitre.org/api/cve/CVE-2016-5195  
 - CVE-2016-5195 官方 PoC 索引与源码：https://dirtycow.ninja/ 、https://raw.githubusercontent.com/dirtycow/dirtycow.github.io/master/dirtyc0w.c  
 - CVE-2016-8655（Linux kernel `through 4.8.12`）：https://cveawg.mitre.org/api/cve/CVE-2016-8655  
