@@ -1,17 +1,60 @@
-# Remaining PoC iSulad Verification
+# iSulad Batch Verification
 
 ## 1. Result Table
 
 | CVE | Exit | Verdict | Summary |
 | --- | --- | --- | --- |
+| CVE-2016-5195 | 1 | `BLOCKED_STAGE=kernel_not_vulnerable_or_patched` | Dirty-COW safe probe did not change read-only target content. |
+| CVE-2016-8655 | 1 | `BLOCKED_STAGE=cap_net_raw_unavailable` | AF_PACKET probe blocked by missing `CAP_NET_RAW` in unprivileged context. |
 | CVE-2016-9962 | 1 | `BLOCKED_STAGE=no_host_marker` | Trigger reached cgroup setup, but writing `/tmp/cgrp/release_agent` was denied. |
-| CVE-2017-7308 | 1 | `BLOCKED_STAGE=no_success_marker` | Probe reached early exploit stages, no `got r00t` marker. |
-| CVE-2021-30465 | 1 | `BLOCKED_STAGE=runtime_version_not_vulnerable_range_or_race_miss` | Symlink race process started, but no host artifact in target directory. |
+| CVE-2017-1000112 | 1 | `BLOCKED_STAGE=smap_mitigation_detected` | iSulad-mapped `run/cp/exec` chain ran, PoC aborted on SMAP mitigation. |
+| CVE-2017-16995 | 1 | `BLOCKED_STAGE=trigger_only_no_priv_esc_chain` | eBPF primitive reachable, but no privilege-escalation chain in safe mode. |
+| CVE-2017-6074 | 1 | `BLOCKED_STAGE=dccp_module_unavailable` | DCCP protocol/module unavailable in current kernel profile. |
+| CVE-2017-7308 | 1 | `BLOCKED_STAGE=no_success_marker` | Privileged probe reached early stages, no `got r00t` marker. |
+| CVE-2018-18955 | 0 | `pass` | Root markers detected in `subuid_shell/subshell` logs. |
+| CVE-2019-13139 | 1 | `BLOCKED_STAGE=parse_remote_refspec` | `isula-build` treats crafted URL as local path and rejects before git exec path. |
+| CVE-2019-14271 | 0 | `BLOCKED_STAGE=post_trigger_no_escape_artifact` | NSS replacement completed, but `/host_fs` escape artifact not observed. |
+| CVE-2019-5736 | 0 | `BLOCKED_STAGE=runc_exe_handle_not_observed` | build/exec variants ended in `proof_absent` (no host proof chain). |
+| CVE-2020-14386 | 1 | `BLOCKED_STAGE=cap_net_raw_unavailable` | AF_PACKET vnet probe blocked by missing `CAP_NET_RAW`. |
+| CVE-2021-30465 | 1 | `BLOCKED_STAGE=runtime_version_not_vulnerable_range_or_race_miss` | Race process started, no host artifact observed. |
+| CVE-2021-3493 | 0 | `pass` | `uid=0/root` markers observed in run output. |
+| CVE-2022-0847 | 0 | `pass` | `uid=0` + `popping root shell` markers observed. |
+| CVE-2022-0995 | 1 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` | Notification pipe creation failed; exploit chain did not start. |
+| CVE-2024-21626 | 0 | `BLOCKED_STAGE=workdir_fd_path_validation` | `apparmor=unconfined` unsupported and fd probe missed. |
 
-## 2. Evidence Index
+## 2. Backfilled This Round
 
+新增补录并完成 iSulad 同步验证的 CVE：
+
+- CVE-2016-5195
+- CVE-2016-8655
+- CVE-2017-1000112
+- CVE-2017-16995
+- CVE-2017-6074
+- CVE-2018-18955
+- CVE-2020-14386
+- CVE-2021-3493
+- CVE-2022-0847
+- CVE-2022-0995
+
+## 3. Evidence Index
+
+说明：每个目录包含 `run.log`、`exit_code.txt`、`isulad_journal.log`、`kernel_journal.log`（以及场景附加日志）。
+
+- `artifacts/repro/isula/CVE-2016-5195/`
+- `artifacts/repro/isula/CVE-2016-8655/`
 - `artifacts/repro/isula/CVE-2016-9962/`
+- `artifacts/repro/isula/CVE-2017-1000112/`
+- `artifacts/repro/isula/CVE-2017-16995/`
+- `artifacts/repro/isula/CVE-2017-6074/`
 - `artifacts/repro/isula/CVE-2017-7308/`
+- `artifacts/repro/isula/CVE-2018-18955/`
+- `artifacts/repro/isula/CVE-2019-13139/`
+- `artifacts/repro/isula/CVE-2019-14271/`
+- `artifacts/repro/isula/CVE-2019-5736/`
+- `artifacts/repro/isula/CVE-2020-14386/`
 - `artifacts/repro/isula/CVE-2021-30465/`
-
-说明：以上目录包含 `run.log`、`isulad_journal.log` 与 `kernel_journal.log`，可用于复核阻断阶段。
+- `artifacts/repro/isula/CVE-2021-3493/`
+- `artifacts/repro/isula/CVE-2022-0847/`
+- `artifacts/repro/isula/CVE-2022-0995/`
+- `artifacts/repro/isula/CVE-2024-21626/`

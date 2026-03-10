@@ -35,7 +35,7 @@
 | CVE | Comparative result | Evidence directory |
 | --- | --- | --- |
 | CVE-2021-30465 | vulnerable `runc 1.0.0-rc94` can hit; default `1.1.8` blocked | `artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc94-20260310-attempt2-race-create/`, `artifacts/repro/docker/CVE-2021-30465/runc-1.1.8-20260310-attempt2-race-create/` |
-| CVE-2019-5736 | vulnerable `runc 1.0.0-rc5` multi-attempt reruns still no host proof | `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt2/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt3/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt4/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt5/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt6-bash-trigger/` |
+| CVE-2019-5736 | vulnerable `runc 1.0.0-rc5` in high-trigger rerun hit host proof (`/tmp/CVE-2019-5736-PWNED`); default `1.1.8` remains blocked | `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt2/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt3/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt4/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt5/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt6-bash-trigger/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt8-high-trigger/` |
 | CVE-2024-21626 | direct-runc: `runc 1.1.7` hit, `1.1.8` blocked | `artifacts/repro/docker/CVE-2024-21626/runc-1.1.7-direct-20260310/`, `artifacts/repro/docker/CVE-2024-21626/runc-1.1.8-direct-20260310/` |
 
 ## 3. Evidence Index
@@ -58,5 +58,6 @@
 - `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt4/`
 - `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt5/`
 - `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt6-bash-trigger/`
+- `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt8-high-trigger/`
 - `artifacts/repro/docker/CVE-2024-21626/runc-1.1.8-direct-20260310/`
 - `artifacts/repro/docker/CVE-2024-21626/runc-1.1.7-direct-20260310/`

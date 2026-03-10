@@ -83,7 +83,8 @@ scripts/env_labctl.sh status
 
 1. `scripts/env_labctl.sh profile isula`  
 2. 对已完成 Docker 的 CVE 做等价触发（同目录单独 wrapper 或命令链）。
-3. 证据落盘到 `artifacts/repro/isula/<CVE>/`。
+3. 即使 PoC 是 runtime 无关的“本地探针”，也要在 isula profile 下同步跑一轮，形成可对照证据。
+4. 证据落盘到 `artifacts/repro/isula/<CVE>/`。
 
 ### Step D: K8s 场景
 
@@ -215,6 +216,7 @@ README 回填要求：
 - 每个 README 至少包含 2 组“结论级”日志证据：命中证据（如 `SUCCESS` / `VULNERABLE_OR_PARTIALLY_VULNERABLE`）或阻断证据（`BLOCKED_STAGE=*` + 关键报错）。
 - 若同一 CVE 有版本对照（脆弱版本与修复版本），必须同时给出两侧日志片段并说明机理差异。
 - `证据索引` 至少列出 `run.log` 与对应 runtime 日志路径（`docker_journal.log` / `isulad_journal.log` / `kernel_journal.log`）。
+- 对“Docker 已跑但 iSulad 未跑”的 CVE，README 不可留空；需补齐 iSulad 同步验证（或明确给出不可等价迁移的阻断证据和判定）。
 
 ## 8. 已验证的关键经验
 
