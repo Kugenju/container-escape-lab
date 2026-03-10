@@ -81,12 +81,12 @@
 | CVE-2018-18955 | `pass`（root marker） |
 | CVE-2019-13139 | 输入构造阶段即被阻断（构建入口不匹配） |
 | CVE-2019-14271 | 恶意 NSS 替换后未出现 `/host_fs` |
-| CVE-2019-5736 | 未生成宿主机 proof，链路未闭环 |
+| CVE-2019-5736 | 未生成宿主机 proof；`runc 1.0.0-rc5` 在 iSulad 下额外命中 runtime 兼容性阻断（cgroup namespace） |
 | CVE-2020-14386 | `BLOCKED_STAGE=cap_net_raw_unavailable`（与 Docker 同步） |
 | CVE-2024-21626 | `pass`（同步 `workdir/fd` 探针命中 `fd=8`） |
 | CVE-2016-9962 | `BLOCKED_STAGE=no_host_marker`（`release_agent` 写入被拒） |
 | CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` |
-| CVE-2021-30465 | `BLOCKED_STAGE=runtime_version_not_vulnerable_range_or_race_miss` |
+| CVE-2021-30465 | `pass`（Docker20 + `runc 1.0.0-rc94` 同步复测命中 host-root-like listing） |
 | CVE-2021-3493 | `pass`（`uid=0/root` marker） |
 | CVE-2022-0847 | `pass`（root-shell indicator） |
 | CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered`（与 Docker 同步） |
@@ -115,7 +115,9 @@
 
 - 新增 `scripts/runtime_version_switch.sh`（`status/use/restore`）。
 - `CVE-2021-30465`：`runc 1.0.0-rc94` 可命中，`1.1.8` 负对照阻断。
+- `CVE-2021-30465`：iSulad 同步竞态复测在 Docker20 + `runc 1.0.0-rc94` 也命中 `VULNERABLE_OR_PARTIALLY_VULNERABLE`（`victim_2`）。
 - `CVE-2019-5736`：`runc 1.0.0-rc5` 在 high-trigger 参数下命中宿主机 proof；默认 `1.1.8` 仍在 trap re-exec 依赖阶段阻断。
+- `CVE-2019-5736`：iSulad + `runc 1.0.0-rc5` 补测无法进入利用链，容器创建阶段报 `namespace {"cgroup" ""} does not exist`。
 - `CVE-2024-21626`：direct-runc 链路下 `1.1.7` 可命中、`1.1.8` 阻断，形成清晰版本对照。
 - `CVE-2024-21626`：Docker `20.10.24` + `runc 1.1.5` 攻击链复测中，Attack-1 命中 host marker（`fd=9`）；iSulad 同步探针命中 `fd=8`。
 - `CVE-2024-21626`：探针脚本改为“输出包含 token 即命中”，消除 `getcwd` 警告噪声导致的误判。

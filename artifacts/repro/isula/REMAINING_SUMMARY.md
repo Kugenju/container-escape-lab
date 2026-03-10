@@ -14,9 +14,9 @@
 | CVE-2018-18955 | 0 | `pass` | Root markers detected in `subuid_shell/subshell` logs. |
 | CVE-2019-13139 | 1 | `BLOCKED_STAGE=parse_remote_refspec` | `isula-build` treats crafted URL as local path and rejects before git exec path. |
 | CVE-2019-14271 | 0 | `BLOCKED_STAGE=post_trigger_no_escape_artifact` | NSS replacement completed, but `/host_fs` escape artifact not observed. |
-| CVE-2019-5736 | 0 | `BLOCKED_STAGE=runc_exe_handle_not_observed` | build/exec variants ended in `proof_absent` (no host proof chain). |
+| CVE-2019-5736 | 1 | `BLOCKED_STAGE=runtime_cgroup_namespace_incompatible` | when `runc=1.0.0-rc5`, iSula container start failed with `namespace {"cgroup" ""} does not exist`; vulnerable chain cannot be entered. |
 | CVE-2020-14386 | 1 | `BLOCKED_STAGE=cap_net_raw_unavailable` | AF_PACKET vnet probe blocked by missing `CAP_NET_RAW`. |
-| CVE-2021-30465 | 1 | `BLOCKED_STAGE=runtime_version_not_vulnerable_range_or_race_miss` | Race process started, no host artifact observed. |
+| CVE-2021-30465 | 0 | `VULNERABLE_OR_PARTIALLY_VULNERABLE` | Docker20 + `runc=1.0.0-rc94` sync rerun hit host-root-like listing under `/test1/zzz` (`victim_2`). |
 | CVE-2021-3493 | 0 | `pass` | `uid=0/root` markers observed in run output. |
 | CVE-2022-0847 | 0 | `pass` | `uid=0` + `popping root shell` markers observed. |
 | CVE-2022-0995 | 1 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` | Notification pipe creation failed; exploit chain did not start. |
@@ -52,8 +52,10 @@
 - `artifacts/repro/isula/CVE-2019-13139/`
 - `artifacts/repro/isula/CVE-2019-14271/`
 - `artifacts/repro/isula/CVE-2019-5736/`
+- `artifacts/repro/isula/CVE-2019-5736/runc-1.0.0-rc5-high-trigger-rerun3/`
 - `artifacts/repro/isula/CVE-2020-14386/`
 - `artifacts/repro/isula/CVE-2021-30465/`
+- `artifacts/repro/isula/CVE-2021-30465/docker20-runc1.0.0-rc94-rerun/`
 - `artifacts/repro/isula/CVE-2021-3493/`
 - `artifacts/repro/isula/CVE-2022-0847/`
 - `artifacts/repro/isula/CVE-2022-0995/`

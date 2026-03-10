@@ -193,6 +193,20 @@ scripts/env_labctl.sh status
 - 在 exploit 中把“发现 runc 进程”和“打开 `/proc/<pid>/exe`”尽量并行/紧邻执行，减少短生命周期进程窗口丢失。
 - 若长期无法拿到稳定句柄，统一记录：`BLOCKED_STAGE=runc_exe_handle_not_observed`。
 
+### 5.12 iSulad + 旧 runc 兼容性阻断（cgroup namespace）
+
+现象：切到很旧 `runc`（如 `1.0.0-rc5`）后，`isula run` 在容器创建阶段直接失败。  
+典型日志：
+
+- `runtime-log: {"level":"error","msg":"namespace {\"cgroup\" \"\"} does not exist"...}`
+- `Runtime start container failed`
+
+修复：
+
+- 先判定为 runtime 兼容性阻断，不要误判为 exploit 参数问题。
+- 结论统一记录：`BLOCKED_STAGE=runtime_cgroup_namespace_incompatible`。
+- 若目标 CVE 依赖该旧版本窗口，需在文档中明确“Docker 可触发、iSulad 受 runtime 兼容性限制无法进入利用链”。
+
 ## 6. 阻断阶段命名建议
 
 建议统一格式：`BLOCKED_STAGE=<snake_case>`
@@ -209,6 +223,7 @@ scripts/env_labctl.sh status
 - `k8s_exec_cgroup_path_missing`
 - `k8s_log_probe_missing`
 - `runtime_binary_fetch_unstable_network`
+- `runtime_cgroup_namespace_incompatible`
 
 ## 7. 证据规范
 
