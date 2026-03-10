@@ -2,7 +2,7 @@
 
 | Script | Exit | Category | Note |
 | --- | --- | --- | --- |
-| cves/CVE-2016-5195/run_poc.sh | 0 | placeholder | script is scaffold/manual guidance |
+| cves/CVE-2016-5195/run_poc.sh | 1 | blocked-stage | upgraded non-interactive run returned `BLOCKED_STAGE=kernel_not_vulnerable_or_patched` |
 | cves/CVE-2016-8655/run_poc.sh | 0 | placeholder | script is scaffold/manual guidance |
 | cves/CVE-2016-9962/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
 | cves/CVE-2017-1000112/run_poc.sh | 1 | blocked-stage | upgraded non-interactive run returned `BLOCKED_STAGE=smap_mitigation_detected` |
@@ -38,3 +38,5 @@
 - `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt2/docker_journal.log`
 - `artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc5-20260310/run.log`
 - `artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc5-20260310/docker_journal.log`
+- `artifacts/repro/docker/CVE-2016-5195/auto-run-20260310/run.log`
+- `artifacts/repro/docker/CVE-2016-5195/auto-run-20260310/kernel_journal.log`

@@ -137,6 +137,16 @@ scripts/env_labctl.sh status
 - 在结论中明确记录阻断：`BLOCKED_STAGE=runtime_binary_fetch_unstable_network`。
 - 先完成可执行的版本验证项（如已下载版本），再补跑缺失版本。
 
+### 5.7 Placeholder PoC 补齐
+
+现象：目录只有说明文档，`run_poc.sh` 仅提示手工步骤。  
+修复：
+
+- 用“安全化探测 PoC”替代高破坏 exploit（如只对临时只读文件做竞态写检测）。
+- 统一改为非交互执行，并输出明确 `BLOCKED_STAGE`。
+- 网络补齐至少两类来源：官方 CVE 记录（受影响版本）+ 官方/社区主仓 PoC 来源。
+- 复跑后按规范补齐证据目录与汇总文档，确保 placeholder 退出批跑列表。
+
 ## 6. 阻断阶段命名建议
 
 建议统一格式：`BLOCKED_STAGE=<snake_case>`

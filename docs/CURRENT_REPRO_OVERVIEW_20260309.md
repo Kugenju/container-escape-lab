@@ -23,6 +23,7 @@
 | CVE-2021-30465 | `BLOCKED_STAGE=runtime_version_not_vulnerable_range` |
 | CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` |
 | CVE-2017-1000112 | `BLOCKED_STAGE=smap_mitigation_detected` |
+| CVE-2016-5195 | `BLOCKED_STAGE=kernel_not_vulnerable_or_patched` |
 
 ### 2.2 有成功标记（脚本层面）
 
@@ -105,6 +106,9 @@
 - `CVE-2017-1000112` 已从“仅输出手工步骤”改为“自动编译 + 特权容器触发 + 阶段化结论 + Docker 日志采集”。  
 - 2026-03-10 实跑结果：`BLOCKED_STAGE=smap_mitigation_detected`。  
   证据：`artifacts/repro/docker/CVE-2017-1000112/auto-run-20260310/`
+- `CVE-2016-5195` 已从“仅版本提示脚手架”改为“安全化 Dirty-COW 自动探测（临时只读文件）+ 非交互执行 + 阶段化结论 + 内核日志采集”。  
+- 2026-03-10 实跑结果：`BLOCKED_STAGE=kernel_not_vulnerable_or_patched`。  
+  证据：`artifacts/repro/docker/CVE-2016-5195/auto-run-20260310/`
 
 ### 7.4 版本信息来源（网络补充）
 
@@ -114,3 +118,5 @@
 - CVE-2016-9962（runc `<1.0.0-rc2`）：https://nvd.nist.gov/vuln/detail/CVE-2016-9962  
 - CVE-2021-30465（runc `<=1.0.0-rc94`）：https://github.com/opencontainers/runc/security/advisories/GHSA-c3xm-pvg7-gh7r  
 - CVE-2024-21626（runc `<1.1.12`）：https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv  
+- CVE-2016-5195（Linux kernel `2.x/3.x/4.x before 4.8.3`）：https://cveawg.mitre.org/api/cve/CVE-2016-5195  
+- CVE-2016-5195 官方 PoC 索引与源码：https://dirtycow.ninja/ 、https://raw.githubusercontent.com/dirtycow/dirtycow.github.io/master/dirtyc0w.c  
