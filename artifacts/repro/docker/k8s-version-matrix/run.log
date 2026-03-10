@@ -1,0 +1,103 @@
+===== MATRIX CASE v1.30.0 =====
+UTC 2026-03-10 13:26:35
+[step] kind-down
+[*] kind cluster not found: escape-lab
+[step] kind-up image=kindest/node:v1.30.0
+[*] switch profile -> docker
+[*] docker=active, isulad=inactive
+[*] kubectl already installed: Client Version: v1.35.2
+[*] kind already installed: kind v0.23.0 go1.21.10 linux/amd64
+[*] pre-pull kind node image: kindest/node:v1.30.0
+v1.30.0: Pulling from kindest/node
+Digest: sha256:047357ac0cfea04663786a612ba1eaba9702bef25227a794b52890dd8bcd692e
+Status: Image is up to date for kindest/node:v1.30.0
+[*] create kind cluster: escape-lab
+[*] kind cluster ready, namespace=metarget
+[result] kind_up=ok
+[step] run scenario cves/config-cap_dac_read_search-container/run_poc.sh
+pod/cap-dac-read-search-container created
+Name:             cap-dac-read-search-container
+Namespace:        metarget
+Priority:         0
+Service Account:  default
+Node:             escape-lab-control-plane/172.18.0.2
+Start Time:       Tue, 10 Mar 2026 21:27:17 +0800
+Labels:           <none>
+Annotations:      <none>
+Status:           Pending
+IP:               10.244.0.5
+IPs:
+  IP:  10.244.0.5
+Containers:
+  ubuntu:
+    Container ID:  
+    Image:         ubuntu:latest
+    Image ID:      
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/bash
+      -c
+      --
+    Args:
+      while true; do sleep 30; done;
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6px5j (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-6px5j:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                 From               Message
+  ----     ------     ----                ----               -------
+  Normal   Scheduled  2m1s                default-scheduler  Successfully assigned metarget/cap-dac-read-search-container to escape-lab-control-plane
+  Warning  Failed     119s                kubelet            spec.containers{ubuntu}: Failed to pull image "ubuntu:latest": failed to pull and unpack image "docker.io/library/ubuntu:latest": failed to resolve reference "docker.io/library/ubuntu:latest": failed to do request: Head "https://registry-1.docker.io/v2/library/ubuntu/manifests/latest": read tcp 172.18.0.2:60994->100.50.179.47:443: read: connection reset by peer
+  Warning  Failed     106s                kubelet            spec.containers{ubuntu}: Failed to pull image "ubuntu:latest": failed to pull and unpack image "docker.io/library/ubuntu:latest": failed to resolve reference "docker.io/library/ubuntu:latest": failed to do request: Head "https://registry-1.docker.io/v2/library/ubuntu/manifests/latest": read tcp 172.18.0.2:44808->52.201.24.38:443: read: connection reset by peer
+  Warning  Failed     58s                 kubelet            spec.containers{ubuntu}: Failed to pull image "ubuntu:latest": failed to pull and unpack image "docker.io/library/ubuntu:latest": failed to resolve reference "docker.io/library/ubuntu:latest": failed to do request: Head "https://registry-1.docker.io/v2/library/ubuntu/manifests/latest": dial tcp 202.160.130.117:443: connect: connection refused
+  Normal   BackOff    20s (x5 over 119s)  kubelet            spec.containers{ubuntu}: Back-off pulling image "ubuntu:latest"
+  Warning  Failed     20s (x5 over 119s)  kubelet            spec.containers{ubuntu}: Error: ImagePullBackOff
+  Normal   Pulling    8s (x4 over 2m)     kubelet            spec.containers{ubuntu}: Pulling image "ubuntu:latest"
+  Warning  Failed     7s (x4 over 119s)   kubelet            spec.containers{ubuntu}: Error: ErrImagePull
+  Warning  Failed     7s                  kubelet            spec.containers{ubuntu}: Failed to pull image "ubuntu:latest": failed to pull and unpack image "docker.io/library/ubuntu:latest": failed to resolve reference "docker.io/library/ubuntu:latest": failed to do request: Head "https://registry-1.docker.io/v2/library/ubuntu/manifests/latest": read tcp 172.18.0.2:34176->3.85.156.103:443: read: connection reset by peer
+[*] Verdict: BLOCKED_STAGE=k8s_pod_not_ready
+[result] scenario_exit=1
+[extract] scenario verdict lines
+3:error: Internal error occurred: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "72a0a7fc20734fb1dfe9512fbc4f348f1ab5205050b922146fcda9177968892f": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 2538 to cgroups: failed to write 2538: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod5a9451c1_9b7e_47e3_9235_050c6b5ce3e0.slice/cri-containerd-6f9991fec7343f6bb2104acd524677840216295647bfcccbafad1d6e878ba2d6.scope/cgroup.procs: no such file or directory: unknown
+4:[*] Verdict: BLOCKED_STAGE=k8s_exec_cgroup_path_missing
+===== END CASE v1.30.0 =====
+
+===== MATRIX CASE v1.29.2 =====
+UTC 2026-03-10 13:29:18
+[step] kind-down
+[*] delete kind cluster: escape-lab
+[step] kind-up image=kindest/node:v1.29.2
+[*] switch profile -> docker
+[*] docker=active, isulad=inactive
+[*] kubectl already installed: Client Version: v1.35.2
+[*] kind already installed: kind v0.23.0 go1.21.10 linux/amd64
+[*] pre-pull kind node image: kindest/node:v1.29.2
+v1.29.2: Pulling from kindest/node
+e2d942cf87b3: Pulling fs layer
+50a2480bae42: Pulling fs layer
+v1.29.2: Pulling from kindest/node
+e2d942cf87b3: Pulling fs layer
+50a2480bae42: Pulling fs layer

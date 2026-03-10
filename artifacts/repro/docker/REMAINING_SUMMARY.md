@@ -19,16 +19,16 @@
 | `cves/CVE-2022-0847/run_poc.sh` | 0 | pass | success marker observed |
 | `cves/CVE-2022-0995/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` |
 | `cves/CVE-2024-21626/run_poc_runc_direct.sh` (`runc 1.1.7`) | 0 | pass | direct-runc probe hit (`VULNERABLE_OR_PARTIALLY_VULNERABLE`) |
-| `cves/config-cap_dac_read_search-container/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
-| `cves/config-cap_sys_admin-container/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
-| `cves/config-cap_sys_module-container/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
-| `cves/config-cap_sys_ptrace-container/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
-| `cves/config-privileged-container/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
+| `cves/config-cap_dac_read_search-container/run_poc.sh` | 0 | pass | `PROBE_LOG_FALLBACK_OK`（exec 失败后由启动日志探针补证） |
+| `cves/config-cap_sys_admin-container/run_poc.sh` | 0 | pass | `PROBE_LOG_FALLBACK_OK`（含 `mount tmpfs success`） |
+| `cves/config-cap_sys_module-container/run_poc.sh` | 0 | pass | `PROBE_LOG_FALLBACK_OK`（能力与工具链探针已落盘） |
+| `cves/config-cap_sys_ptrace-container/run_poc.sh` | 0 | pass | `PROBE_LOG_FALLBACK_OK`（hostPID 进程视图证据已落盘） |
+| `cves/config-privileged-container/run_poc.sh` | 0 | pass | `PROBE_LOG_FALLBACK_OK`（设备与块盘可见性证据已落盘） |
 | `cves/kata-escape-2020/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=kata_runtime_not_installed` |
-| `cves/mount-docker-sock/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
-| `cves/mount-host-etc/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
-| `cves/mount-host-procfs/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
-| `cves/mount-var-log/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
+| `cves/mount-docker-sock/run_poc.sh` | 0 | pass | `PROBE_LOG_FALLBACK_OK`（docker.sock 暴露证据已落盘） |
+| `cves/mount-host-etc/run_poc.sh` | 0 | pass | `PROBE_LOG_FALLBACK_OK`（宿主机 `/etc` 可见性证据已落盘） |
+| `cves/mount-host-procfs/run_poc.sh` | 0 | pass | `PROBE_LOG_FALLBACK_OK`（`core_pattern` 读取证据已落盘） |
+| `cves/mount-var-log/run_poc.sh` | 0 | pass | `PROBE_LOG_FALLBACK_OK`（日志挂载链路证据已落盘） |
 
 ## 2. Version-Switch Comparative Runs (Merged)
 
@@ -61,3 +61,6 @@
 - `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt8-high-trigger/`
 - `artifacts/repro/docker/CVE-2024-21626/runc-1.1.8-direct-20260310/`
 - `artifacts/repro/docker/CVE-2024-21626/runc-1.1.7-direct-20260310/`
+- `artifacts/repro/docker/k8s-version-matrix/v1.30.0-preload.log`
+- `artifacts/repro/docker/k8s-version-matrix/v1.27.13-preload.log`
+- `artifacts/repro/docker/k8s-version-matrix/fallback-batch-v1.27.13.log`

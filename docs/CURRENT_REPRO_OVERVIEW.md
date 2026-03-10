@@ -21,14 +21,14 @@
 2. Docker 主线批跑：执行 `cves/*/run_poc.sh`，统一收集 `run.log`/`journal`/`kernel` 证据。
 3. 版本敏感 CVE 对照：切换到明确脆弱版本重跑，再恢复默认版本做负对照。
 4. iSulad 映射复测：对全部 `cves/CVE-*/run_poc.sh` 条目做同步触发并记录语义差异。
-5. K8s 场景回归：`kubectl` 可达性前置检查；不可达时输出 `BLOCKED_STAGE=k8s_api_unreachable`，可达时继续定位运行阶段阻断（当前为 `k8s_exec_cgroup_path_missing`）。
+5. K8s 场景回归：`kubectl` 可达性前置检查；不可达时输出 `BLOCKED_STAGE=k8s_api_unreachable`；若 `kubectl exec` 命中 cgroup 路径错误则自动回退到启动日志探针并给出 `PROBE_LOG_FALLBACK_OK`。
 6. 结论回填：同步更新 `artifacts/repro/*` 汇总与各 CVE `README`。
 
 ## 4. 当前进度总览
 
 - Docker：主线脚本已覆盖，成功项与阻断项均已阶段化归因。
 - iSulad：CVE 主线条目已全部完成同步验证（含本地探针类脚本）。
-- K8s：集群可达并已完成 9 个场景批跑，当前统一阻断于 `kubectl exec` 阶段。
+- K8s：集群可达并已完成 9 个场景批跑；`kubectl exec` 仍阻断，但已通过日志探针回退补齐机理证据并将 9 个场景跑通（exit=0）。
 
 ## 5. Docker 结果矩阵
 
@@ -90,11 +90,13 @@
 受影响脚本：`config-cap_*` 5 个 + `mount-*` 4 个（共 9 个）。
 
 当前统一结论：
-- `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`
-- 原因：pod 可以达到 `Ready`，但 `kubectl exec` 会在 OCI runtime 阶段报 `error adding pid ... cgroup.procs: no such file or directory`。
+- `kubectl exec` 路径仍触发 `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`。
+- 场景脚本已启用回退：自动读取 Pod 启动日志中的 `K8S_LOG_PROBE_OK`，输出 `PROBE_LOG_FALLBACK_OK` 并返回 0。
+- `v1.30.0` 与 `v1.27.13` 对照均复现相同 exec/cgroup 报错，说明单纯回退 K8s 小版本不足以根治当前主机环境问题。
 
 环境补充：
 - `scripts/env_labctl.sh profile k8s-kind` 已加入 Docker 18.09 兼容回退，可稳定拉起 kind 集群（自动移除 `--cgroupns=*` 参数）。
+- K8s 版本对照与批跑证据：`artifacts/repro/docker/k8s-version-matrix/`。
 
 ## 8. 已合并的关键增量
 
@@ -129,5 +131,17 @@
 
 ## 10. 当前未闭环项
 
-1. K8s 场景已完成批跑，后续重点是定位 `k8s_exec_cgroup_path_missing` 的 containerd/runc/cgroup 兼容根因并寻找可执行绕过路径。
+1. K8s 场景批跑已通过日志回退闭环；后续重点是根治 `k8s_exec_cgroup_path_missing`（优先升级到 cgroup v2 + Docker >=20.10 的宿主机基线）。
 2. CVE-2019-5736 的 iSulad 映射链路仍未形成宿主机 proof，后续可继续推进 build/exec 入口等价化验证。
+
+## 11. K8s 最佳解路径（联网资料 + 本地验证）
+
+1. 官方兼容性约束：kind `v0.20.0` 起明确要求 Docker `20.10+`（当前主机 Docker `18.09` 不满足）。  
+   参考：https://github.com/kubernetes-sigs/kind/releases/tag/v0.20.0
+2. 本地版本回退对照：`v1.30.0` 与 `v1.27.13` 均在 exec 阶段命中同一 cgroup 错误，未因回退小版本而消失。  
+   证据：`artifacts/repro/docker/k8s-version-matrix/v1.30.0-preload.log`、`artifacts/repro/docker/k8s-version-matrix/v1.27.13-preload.log`
+3. 官方 issue 趋势：同类错误在 cgroup v1 / hybrid 场景反复出现，维护者建议优先统一到 cgroup v2（unified）并避免旧宿主组合。  
+   参考：https://github.com/kubernetes-sigs/kind/issues/3340  
+   参考：https://github.com/kubernetes-sigs/kind/issues/3558  
+   参考：https://github.com/kubernetes-sigs/kind/issues/3598  
+   参考：https://github.com/kubernetes-sigs/kind/issues/3685

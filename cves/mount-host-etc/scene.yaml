@@ -8,9 +8,15 @@ spec:
   - name: ubuntu
     image: ubuntu:latest
     imagePullPolicy: IfNotPresent
-    # Just spin & wait forever
     command: [ "/bin/bash", "-c", "--" ]
-    args: [ "while true; do sleep 30; done;" ]
+    args:
+    - |
+      echo "K8S_LOG_PROBE_BEGIN"
+      id
+      ls /host-etc | head || true
+      cat /host-etc/hostname || true
+      echo "K8S_LOG_PROBE_OK"
+      while true; do sleep 30; done
     volumeMounts:
     - name: host-etc
       mountPath: /host-etc

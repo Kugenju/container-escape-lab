@@ -10,6 +10,12 @@ spec:
     imagePullPolicy: IfNotPresent
     securityContext:
       privileged: true
-    # Just spin & wait forever
     command: [ "/bin/bash", "-c", "--" ]
-    args: [ "while true; do sleep 30; done;" ]
+    args:
+    - |
+      echo "K8S_LOG_PROBE_BEGIN"
+      id
+      ls /dev | head
+      lsblk || true
+      echo "K8S_LOG_PROBE_OK"
+      while true; do sleep 30; done

@@ -1,0 +1,17 @@
+===== CASE v1.27.13 preload =====
+UTC 2026-03-10 14:00:47
+[*] delete kind cluster: escape-lab
+[*] switch profile -> docker
+[*] docker=active, isulad=inactive
+[*] kubectl already installed: Client Version: v1.35.2
+[*] kind already installed: kind v0.23.0 go1.21.10 linux/amd64
+[*] pre-pull kind node image: docker.m.daocloud.io/kindest/node:v1.27.13
+v1.27.13: Pulling from kindest/node
+Digest: sha256:17439fa5b32290e3ead39ead1250dca1d822d94a10d26f1981756cd51b24b9d8
+Status: Image is up to date for docker.m.daocloud.io/kindest/node:v1.27.13
+[*] create kind cluster: escape-lab
+[*] kind cluster ready, namespace=metarget
+pod/cap-dac-read-search-container created
+pod/cap-dac-read-search-container condition met
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "7424190d077c05b1aa1842a5b7f11b5f006dbf8d303aa74975fad45999b2c3bb": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 2287 to cgroups: failed to write 2287: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod3de3f631_9fd5_4961_a37c_d4ea48306959.slice/cri-containerd-5ba0f1f9bd045b964523bf9620c1af24f4b0c14e22cb35b43477baf9ef7e7f9d.scope/cgroup.procs: no such file or directory: unknown
+[*] Verdict: BLOCKED_STAGE=k8s_exec_cgroup_path_missing

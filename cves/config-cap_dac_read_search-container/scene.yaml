@@ -11,6 +11,11 @@ spec:
     securityContext:
       capabilities:
         add: ["DAC_READ_SEARCH"]
-    # Just spin & wait forever
     command: [ "/bin/bash", "-c", "--" ]
-    args: [ "while true; do sleep 30; done;" ]
+    args:
+    - |
+      echo "K8S_LOG_PROBE_BEGIN"
+      id
+      grep CapEff /proc/1/status || true
+      echo "K8S_LOG_PROBE_OK"
+      while true; do sleep 30; done

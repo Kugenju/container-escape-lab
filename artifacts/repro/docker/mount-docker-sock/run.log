@@ -1,4 +1,13 @@
+===== mount-docker-sock =====
+UTC 2026-03-10 14:21:50
 pod/mount-docker-sock created
 pod/mount-docker-sock condition met
-error: Internal error occurred: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "89e0cffd9227bde0ecf152c88dd18bad14079cc4f71942deb129252eccae593b": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3128 to cgroups: failed to write 3128: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod3c5597db_892e_478e_9d41_9291eb485fc5.slice/cri-containerd-f0eae9d5e0d55f2bd62440bb6a31c26c3af7f5c62d1e46e20fdd63b0f045892d.scope/cgroup.procs: no such file or directory: unknown
-[*] Verdict: BLOCKED_STAGE=k8s_exec_cgroup_path_missing
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "15c34ccd9d0b58fd73601e71807df9e8199b92de8bf15d57c4e1d193ad5456e0": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3629 to cgroups: failed to write 3629: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-podd0fe3892_5971_49f0_bb3e_823c199fbdea.slice/cri-containerd-442e7d89af90a2cd0990802dba386d17ab17c582fbcbd82b21e1b5e11edf714e.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+total 0
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 可在容器内安装 docker 客户端，通过该 socket 启动挂载 / 的特权容器。
+[result] exit_code=0

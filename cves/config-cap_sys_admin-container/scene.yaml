@@ -13,6 +13,18 @@ spec:
     securityContext:
       capabilities:
         add: ["SYS_ADMIN"]
-    # Just spin & wait forever
     command: [ "/bin/bash", "-c", "--" ]
-    args: [ "while true; do sleep 30; done;" ]
+    args:
+    - |
+      echo "K8S_LOG_PROBE_BEGIN"
+      id
+      grep CapEff /proc/1/status || true
+      mkdir -p /tmp/mt_test
+      if mount -t tmpfs tmpfs /tmp/mt_test; then
+        echo "[+] mount tmpfs success"
+        umount /tmp/mt_test || true
+      else
+        echo "[-] mount tmpfs failed"
+      fi
+      echo "K8S_LOG_PROBE_OK"
+      while true; do sleep 30; done

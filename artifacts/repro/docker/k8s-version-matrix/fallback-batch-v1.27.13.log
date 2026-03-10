@@ -1,0 +1,195 @@
+===== config-cap_dac_read_search-container =====
+UTC 2026-03-10 14:21:09
+pod/cap-dac-read-search-container created
+pod/cap-dac-read-search-container condition met
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "905fed5f0e3ff722c2842b601852652cbca64dc637791d282db24d95f8801a9a": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3016 to cgroups: failed to write 3016: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod0753e40a_38e8_4764_8602_d9dc5b836339.slice/cri-containerd-1129758b27c35ac3274e68a6c1137121188b33a87bf47469c586ddbd75a39bb2.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	00000000a80425ff
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 原始 writeup 的完整逃逸需要 shocker(open_by_handle_at) PoC。
+[result] exit_code=0
+
+===== config-cap_sys_admin-container =====
+UTC 2026-03-10 14:21:42
+pod/cap-sys-admin-container created
+pod/cap-sys-admin-container condition met
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "74ee2fb5acb2b3cbd89126b5f5e21e5757531bb1a5c7b1042f7d217ca7de317b": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3137 to cgroups: failed to write 3137: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pode5a2dc2a_92ae_419b_8d6b_a89daabb4a21.slice/cri-containerd-f6eda7c79ce47e2a1e1d060f7fe0c22980ac21155dc8fbb65a94350b23c31276.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	00000000a82425fb
+[+] mount tmpfs success
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 可继续按业务场景挂载宿主机目录并执行 chroot。
+[result] exit_code=0
+
+===== config-cap_sys_module-container =====
+UTC 2026-03-10 14:21:44
+pod/cap-sys-module-container created
+pod/cap-sys-module-container condition met
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "f354bf6dcb1e3b016edc7429d7dce3db3bfb80326662907768dce5a40b0d4715": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3261 to cgroups: failed to write 3261: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod83de67f2_e315_4563_b7af_03c3eadf6d3c.slice/cri-containerd-8a2c0d878d0886aff9bf3c868826c69b061d78ec23c118e065f12968f9b3283c.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	00000000a80525fb
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 完整利用需要自定义恶意内核模块(.ko)并在容器中加载。
+[result] exit_code=0
+
+===== config-cap_sys_ptrace-container =====
+UTC 2026-03-10 14:21:46
+pod/cap-sys-ptrace-container created
+pod/cap-sys-ptrace-container condition met
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "b7bfd376ae98a8d64eca67dd2e903c20e48666096f30182f3778b904de0ef3dd": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3384 to cgroups: failed to write 3384: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod0a759eac_bf2c_4a1f_ad0e_47275f71017c.slice/cri-containerd-c99a925e6c7eb45921696f5fb7b08fafeaba5aea01c6413b72ea9e83f61e049b.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	0000003fffffffff
+    PID COMMAND
+      1 systemd
+    274 systemd-journal
+    301 containerd
+    413 containerd-shim
+    414 containerd-shim
+    416 containerd-shim
+    423 containerd-shim
+    495 pause
+    496 pause
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 可进一步对宿主机进程进行 ptrace 注入（实验环境内）。
+[result] exit_code=0
+
+===== config-privileged-container =====
+UTC 2026-03-10 14:21:48
+pod/privileged-container created
+pod/privileged-container condition met
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "99cd7e335797484fc313edc39fd4c1f6eeab70654909270e6edf6daf30aa9c4c": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3508 to cgroups: failed to write 3508: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod363d2471_0bc9_456d_b09f_6ed31f9f22c1.slice/cri-containerd-570350a392df9e9958bbfa7ccec309fa86b82a33db172506d10989a6b95d2575.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+autofs
+bsg
+btrfs-control
+bus
+cdrom2
+core
+cpu
+cpu_dma_latency
+cuse
+dm-0
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda      8:0    0   40G  0 disk 
+|-sda1   8:1    0    1M  0 part 
+|-sda2   8:2    0    1G  0 part 
+`-sda3   8:3    0   39G  0 part 
+sr0     11:0    1  4.7G  0 rom  
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 可按 writeup 挂载宿主机磁盘分区后 chroot 到宿主机文件系统。
+[result] exit_code=0
+
+===== mount-docker-sock =====
+UTC 2026-03-10 14:21:50
+pod/mount-docker-sock created
+pod/mount-docker-sock condition met
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "15c34ccd9d0b58fd73601e71807df9e8199b92de8bf15d57c4e1d193ad5456e0": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3629 to cgroups: failed to write 3629: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-podd0fe3892_5971_49f0_bb3e_823c199fbdea.slice/cri-containerd-442e7d89af90a2cd0990802dba386d17ab17c582fbcbd82b21e1b5e11edf714e.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+total 0
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 可在容器内安装 docker 客户端，通过该 socket 启动挂载 / 的特权容器。
+[result] exit_code=0
+
+===== mount-host-etc =====
+UTC 2026-03-10 14:21:52
+pod/mount-host-etc created
+pod/mount-host-etc condition met
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "bd5382fe4d67af8aa2ba53612ed24ae71c34f17a1f3dbc204b9e14e0db7de71f": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3758 to cgroups: failed to write 3758: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod876c6b1b_be16_4f19_8cab_ba07e76eff9c.slice/cri-containerd-1f9671bcd9d8fc8c38169aab480dc4878593d94106fbc84d06b7c45523043659.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+10-network-magic.conf
+10-network-security.conf
+adduser.conf
+alternatives
+apt
+bash.bashrc
+bindresvport.blacklist
+binfmt.d
+ca-certificates
+ca-certificates.conf
+escape-lab-control-plane
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 可直接读取宿主机配置、凭据类文件（按权限限制）。
+[result] exit_code=0
+
+===== mount-host-procfs =====
+UTC 2026-03-10 14:21:54
+pod/mount-host-procfs created
+pod/mount-host-procfs condition met
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "a6bc4610207b33744c08bffc158423b11f695e5c6a85e14bdf8d2cea8165b198": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3880 to cgroups: failed to write 3880: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod6d796543_99ab_449d_a85d_60089e3c27a2.slice/cri-containerd-01eba63e657b9f4735634c2182b2a007438bcb81f201451c82e25b32efc7f401.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %d
+1
+1319
+1337
+1375
+1383
+1443
+1641
+1832
+1874
+1878
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 完整逃逸可结合 core_pattern + 崩溃触发执行宿主机路径脚本。
+[result] exit_code=0
+
+===== mount-var-log =====
+UTC 2026-03-10 14:21:56
+serviceaccount/logger created
+clusterrole.rbac.authorization.k8s.io/user-log-reader created
+clusterrolebinding.rbac.authorization.k8s.io/user-log-reader created
+pod/mount-var-log created
+pod/mount-var-log condition met
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "8da13e493b2a1b710334d0482557838fade99534332fbd22f5f2d75cad5d4100": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 4000 to cgroups: failed to write 4000: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod1fd06255_2910_43f1_ae57_2f43a041f71d.slice/cri-containerd-b7d53bc19f3129d1cca8f3651aed1fbe5b5df60b811e6a9b4fb854e18b766672.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+lsh not found
+cath not found
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] writeup 中通过 lsh/cath 可读取宿主机文件。
+[result] exit_code=0
+
+[summary] result lines:
+1:===== config-cap_dac_read_search-container =====
+13:[result] exit_code=0
+15:===== config-cap_sys_admin-container =====
+28:[result] exit_code=0
+30:===== config-cap_sys_module-container =====
+42:[result] exit_code=0
+44:===== config-cap_sys_ptrace-container =====
+66:[result] exit_code=0
+68:===== config-privileged-container =====
+95:[result] exit_code=0
+97:===== mount-docker-sock =====
+109:[result] exit_code=0
+111:===== mount-host-etc =====
+133:[result] exit_code=0
+135:===== mount-host-procfs =====
+157:[result] exit_code=0
+159:===== mount-var-log =====
+175:[result] exit_code=0

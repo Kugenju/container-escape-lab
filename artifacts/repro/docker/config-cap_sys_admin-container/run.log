@@ -1,5 +1,14 @@
-Warning: metadata.annotations[container.apparmor.security.beta.kubernetes.io/ubuntu]: deprecated since v1.30; use the "appArmorProfile" field instead
+===== config-cap_sys_admin-container =====
+UTC 2026-03-10 14:21:42
 pod/cap-sys-admin-container created
 pod/cap-sys-admin-container condition met
-error: Internal error occurred: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "2bbb270a8cae9e82f9c9c1e18633487b6efea107ecf9105dbe00a4c1094cbb04": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 2656 to cgroups: failed to write 2656: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-podbdd8c8c1_4f5e_4822_a853_a7f781b5f75c.slice/cri-containerd-c69a90d1ed5aed070c2d0e9abe3c9d6a7946b8efb17f0296c11d9d6d38314739.scope/cgroup.procs: no such file or directory: unknown
-[*] Verdict: BLOCKED_STAGE=k8s_exec_cgroup_path_missing
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "74ee2fb5acb2b3cbd89126b5f5e21e5757531bb1a5c7b1042f7d217ca7de317b": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3137 to cgroups: failed to write 3137: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pode5a2dc2a_92ae_419b_8d6b_a89daabb4a21.slice/cri-containerd-f6eda7c79ce47e2a1e1d060f7fe0c22980ac21155dc8fbb65a94350b23c31276.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	00000000a82425fb
+[+] mount tmpfs success
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 可继续按业务场景挂载宿主机目录并执行 chroot。
+[result] exit_code=0

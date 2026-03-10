@@ -93,8 +93,11 @@ scripts/env_labctl.sh status
 2. 若 API 不可达，脚本应返回：
    - `BLOCKED_STAGE=k8s_api_unreachable`
 3. 保证 `run.log` 内有可操作提示（如 `Hint: run scripts/env_labctl.sh profile k8s-kind`）。
-4. 若 Pod 已 `Ready` 但 `kubectl exec` 报 `error adding pid ... cgroup.procs: no such file or directory`，统一记为：
-   - `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`
+4. 若 Pod 已 `Ready` 但 `kubectl exec` 报 `error adding pid ... cgroup.procs: no such file or directory`：
+   - 先保留阻断证据：`BLOCKED_STAGE=k8s_exec_cgroup_path_missing`
+   - 再自动回退到 `kubectl logs` 启动探针（`K8S_LOG_PROBE_OK`），命中时输出：
+   - `PROBE_LOG_FALLBACK_OK`
+5. 批跑 K8s 场景前优先执行 `kind load docker-image ubuntu:latest --name escape-lab`，避免把镜像仓库波动误判为漏洞链路阻断。
 
 ## 5. 常见失败类型与修复套路
 
@@ -138,8 +141,9 @@ scripts/env_labctl.sh status
 修复：
 
 - 保留 `kubectl wait` 与 `kubectl exec` 分段日志，确认阻断位置在 exec 而非调度阶段。
-- 脚本统一输出 `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`。
+- 脚本统一先输出 `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`，随后自动执行日志探针回退并尝试输出 `PROBE_LOG_FALLBACK_OK`。
 - 若主机 Docker 版本较旧（如 18.09）导致 kind 参数不兼容，优先通过 `env_labctl` 的兼容回退拉起集群后再复测。
+- 若需要根治而非回退探针，优先升级宿主到 cgroup v2（unified）并使用 Docker 20.10+；仅回退 K8s 小版本通常不足以消除该类问题。
 
 ### 5.7 版本切换下载不稳定
 
@@ -202,6 +206,7 @@ scripts/env_labctl.sh status
 - `runtime_version_not_vulnerable_range`
 - `k8s_api_unreachable`
 - `k8s_exec_cgroup_path_missing`
+- `k8s_log_probe_missing`
 - `runtime_binary_fetch_unstable_network`
 
 ## 7. 证据规范
@@ -236,4 +241,5 @@ README 回填要求：
 1. Docker 18.09 与较新 kind 组合会因 `--cgroupns` 参数不兼容失败。  
 2. 只要脚本能稳定输出 `BLOCKED_STAGE`，即使未“成功逃逸”也具备检测策略价值。  
 3. iSulad 与 Docker 对安全参数和错误语义不同（如 `apparmor=unconfined` 支持差异），必须单独记录。  
-4. 网络不稳定是主要噪音源，脚本必须有重试、超时和明确失败归因。  
+4. 网络不稳定是主要噪音源，脚本必须有重试、超时和明确失败归因。
+5. 对 K8s 场景，优先保证“证据链完整性”：`exec` 阻断 + 启动日志探针回退，两者都要落盘。

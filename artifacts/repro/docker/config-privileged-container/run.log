@@ -1,4 +1,28 @@
+===== config-privileged-container =====
+UTC 2026-03-10 14:21:48
 pod/privileged-container created
 pod/privileged-container condition met
-error: Internal error occurred: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "e69bc8dbb2595e74c15459f3f87fffd720ac0f8c08376d13428fb1ef3c8c5c88": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3012 to cgroups: failed to write 3012: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-podba24ee15_6de0_4ff5_b914_7d36caaeee64.slice/cri-containerd-d78b9e6721f86226c5ae3886a1e22ccbf4a8d80dd985154c12b9c31dfa395796.scope/cgroup.procs: no such file or directory: unknown
-[*] Verdict: BLOCKED_STAGE=k8s_exec_cgroup_path_missing
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "99cd7e335797484fc313edc39fd4c1f6eeab70654909270e6edf6daf30aa9c4c": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3508 to cgroups: failed to write 3508: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod363d2471_0bc9_456d_b09f_6ed31f9f22c1.slice/cri-containerd-570350a392df9e9958bbfa7ccec309fa86b82a33db172506d10989a6b95d2575.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+autofs
+bsg
+btrfs-control
+bus
+cdrom2
+core
+cpu
+cpu_dma_latency
+cuse
+dm-0
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda      8:0    0   40G  0 disk 
+|-sda1   8:1    0    1M  0 part 
+|-sda2   8:2    0    1G  0 part 
+`-sda3   8:3    0   39G  0 part 
+sr0     11:0    1  4.7G  0 rom  
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 可按 writeup 挂载宿主机磁盘分区后 chroot 到宿主机文件系统。
+[result] exit_code=0

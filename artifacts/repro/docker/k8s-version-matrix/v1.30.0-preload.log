@@ -1,0 +1,17 @@
+===== CASE v1.30.0 preload =====
+UTC 2026-03-10 13:44:16
+[*] kind cluster not found: escape-lab
+[*] switch profile -> docker
+[*] docker=active, isulad=inactive
+[*] kubectl already installed: Client Version: v1.35.2
+[*] kind already installed: kind v0.23.0 go1.21.10 linux/amd64
+[*] pre-pull kind node image: kindest/node:v1.30.0
+v1.30.0: Pulling from kindest/node
+Digest: sha256:047357ac0cfea04663786a612ba1eaba9702bef25227a794b52890dd8bcd692e
+Status: Image is up to date for kindest/node:v1.30.0
+[*] create kind cluster: escape-lab
+[*] kind cluster ready, namespace=metarget
+pod/cap-dac-read-search-container created
+pod/cap-dac-read-search-container condition met
+error: Internal error occurred: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "1fb17e12238467006db75359d821d7daa2c00adc309f0d8afa546c175e96e2b9": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 2460 to cgroups: failed to write 2460: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-poda2adb5ec_ce4a_4911_a243_757756257a0b.slice/cri-containerd-d8621a70e322863b203520f5cb3de3a370c2b79fed64e9dd469b4c9d1f7c77b2.scope/cgroup.procs: no such file or directory: unknown
+[*] Verdict: BLOCKED_STAGE=k8s_exec_cgroup_path_missing

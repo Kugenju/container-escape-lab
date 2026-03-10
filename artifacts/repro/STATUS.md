@@ -14,7 +14,7 @@
 
 - Docker：主线 CVE 脚本已覆盖，结论分为 `pass` 或 `BLOCKED_STAGE=*` 两类。
 - iSulad：全部 `cves/CVE-*/run_poc.sh` 条目已完成同步验证（含 runtime 无关本地探针）；非 CVE 场景仍在增补中。
-- K8s：`k8s-kind` 已可达并可批跑；9 个场景统一阻断在 `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`。
+- K8s：`k8s-kind` 已可达并可批跑；`kubectl exec` 仍会触发 `k8s_exec_cgroup_path_missing`，但 9 个场景已通过启动日志探针回退形成 `PROBE_LOG_FALLBACK_OK` 结论并返回 0。
 
 ## 3. CVE Matrix
 
@@ -48,7 +48,8 @@
 
 - `scripts/env_labctl.sh` supports `docker/isula/k8s-kind` profile switching.
 - `scripts/env_labctl.sh profile k8s-kind` 已增加 Docker 18.09 兼容回退（移除 `--cgroupns=*` 参数）并验证可成功起集群。
-- K8s 场景脚本当前主要阻断于 `kubectl exec` 进入容器阶段：`BLOCKED_STAGE=k8s_exec_cgroup_path_missing`（pod 可 Ready，但 exec 时 cgroup 路径不存在）。
+- K8s 场景脚本已增加 `kubectl exec` 失败回退：当命中 `k8s_exec_cgroup_path_missing` 时自动读取启动日志中的 `K8S_LOG_PROBE_OK` 标记并返回 `PROBE_LOG_FALLBACK_OK`。
+- 回退镜像验证：`kindest/node:v1.30.0` 与 `v1.27.13` 在当前主机上都可复现同一 exec/cgroup 报错（见 `artifacts/repro/docker/k8s-version-matrix/*.log`）。
 - `scripts/runtime_version_switch.sh` verified switch/restore flows:
   - switched to `runc 1.0.0-rc94` for CVE-2021-30465 vulnerable-path validation.
   - switched to `runc 1.0.0-rc5` for CVE-2019-5736 and CVE-2021-30465 comparative reruns.

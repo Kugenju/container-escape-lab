@@ -8,9 +8,14 @@ spec:
   - name: ubuntu
     image: ubuntu:latest
     imagePullPolicy: IfNotPresent
-    # Just spin & wait forever
     command: [ "/bin/bash", "-c", "--" ]
-    args: [ "while true; do sleep 30; done;" ]
+    args:
+    - |
+      echo "K8S_LOG_PROBE_BEGIN"
+      id
+      ls -l /var/run/docker.sock || true
+      echo "K8S_LOG_PROBE_OK"
+      while true; do sleep 30; done
     volumeMounts:
     - name: docker-sock
       mountPath: /var/run/docker.sock

@@ -24,6 +24,7 @@ if ! kubectl cluster-info >/dev/null 2>&1; then
 fi
 
 kubectl get ns "$NAMESPACE" >/dev/null 2>&1 || kubectl create ns "$NAMESPACE" >/dev/null
+kubectl delete pod "$POD_NAME" -n "$NAMESPACE" --ignore-not-found --wait=true --timeout=120s >/dev/null 2>&1 || true
 kubectl apply -f "$MANIFEST"
 
 if ! kubectl wait --for=condition=Ready "pod/$POD_NAME" -n "$NAMESPACE" --timeout=120s; then

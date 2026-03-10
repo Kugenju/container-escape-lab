@@ -1,4 +1,13 @@
+===== config-cap_dac_read_search-container =====
+UTC 2026-03-10 14:21:09
 pod/cap-dac-read-search-container created
 pod/cap-dac-read-search-container condition met
-error: Internal error occurred: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "72a0a7fc20734fb1dfe9512fbc4f348f1ab5205050b922146fcda9177968892f": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 2538 to cgroups: failed to write 2538: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod5a9451c1_9b7e_47e3_9235_050c6b5ce3e0.slice/cri-containerd-6f9991fec7343f6bb2104acd524677840216295647bfcccbafad1d6e878ba2d6.scope/cgroup.procs: no such file or directory: unknown
-[*] Verdict: BLOCKED_STAGE=k8s_exec_cgroup_path_missing
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "905fed5f0e3ff722c2842b601852652cbca64dc637791d282db24d95f8801a9a": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3016 to cgroups: failed to write 3016: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod0753e40a_38e8_4764_8602_d9dc5b836339.slice/cri-containerd-1129758b27c35ac3274e68a6c1137121188b33a87bf47469c586ddbd75a39bb2.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	00000000a80425ff
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 原始 writeup 的完整逃逸需要 shocker(open_by_handle_at) PoC。
+[result] exit_code=0

@@ -8,9 +8,15 @@ spec:
   - name: ubuntu
     image: ubuntu:latest
     imagePullPolicy: IfNotPresent
-    # Just spin & wait forever
     command: [ "/bin/bash", "-c", "--" ]
-    args: [ "while true; do sleep 30; done;" ]
+    args:
+    - |
+      echo "K8S_LOG_PROBE_BEGIN"
+      id
+      cat /host-proc/sys/kernel/core_pattern || true
+      ls /host-proc | head || true
+      echo "K8S_LOG_PROBE_OK"
+      while true; do sleep 30; done
     volumeMounts:
     - name: host-procfs
       mountPath: /host-proc

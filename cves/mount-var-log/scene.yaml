@@ -41,7 +41,22 @@ spec:
     image: ubuntu:latest
     imagePullPolicy: IfNotPresent
     command: ["/bin/bash", "-c", "--"]
-    args: ["while true; do sleep 30; done;"]
+    args:
+    - |
+      echo "K8S_LOG_PROBE_BEGIN"
+      id
+      if command -v lsh >/dev/null 2>&1; then
+        lsh / | head
+      else
+        echo "lsh not found"
+      fi
+      if command -v cath >/dev/null 2>&1; then
+        cath /etc/hostname
+      else
+        echo "cath not found"
+      fi
+      echo "K8S_LOG_PROBE_OK"
+      while true; do sleep 30; done
     volumeMounts:
     - name: logs
       mountPath: /var/log/host

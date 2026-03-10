@@ -1,4 +1,23 @@
+===== mount-host-etc =====
+UTC 2026-03-10 14:21:52
 pod/mount-host-etc created
 pod/mount-host-etc condition met
-error: Internal error occurred: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "19b6b73c95b3f27565c7fe67da09892fc9b7865f3f955d37988bbc1d2b061251": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3247 to cgroups: failed to write 3247: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pode3eb6556_0f49_445e_ac9b_d7e8d3db0be5.slice/cri-containerd-1920d143e79d603861456cd7ed72d3091743f08ff020f62704bfb9cc64599e7c.scope/cgroup.procs: no such file or directory: unknown
-[*] Verdict: BLOCKED_STAGE=k8s_exec_cgroup_path_missing
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "bd5382fe4d67af8aa2ba53612ed24ae71c34f17a1f3dbc204b9e14e0db7de71f": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3758 to cgroups: failed to write 3758: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod876c6b1b_be16_4f19_8cab_ba07e76eff9c.slice/cri-containerd-1f9671bcd9d8fc8c38169aab480dc4878593d94106fbc84d06b7c45523043659.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+10-network-magic.conf
+10-network-security.conf
+adduser.conf
+alternatives
+apt
+bash.bashrc
+bindresvport.blacklist
+binfmt.d
+ca-certificates
+ca-certificates.conf
+escape-lab-control-plane
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 可直接读取宿主机配置、凭据类文件（按权限限制）。
+[result] exit_code=0

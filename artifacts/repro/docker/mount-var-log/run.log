@@ -1,7 +1,17 @@
+===== mount-var-log =====
+UTC 2026-03-10 14:21:56
 serviceaccount/logger created
 clusterrole.rbac.authorization.k8s.io/user-log-reader created
 clusterrolebinding.rbac.authorization.k8s.io/user-log-reader created
 pod/mount-var-log created
 pod/mount-var-log condition met
-error: Internal error occurred: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "ca5989ad917d6384e3a1ab7110d9e552467cbe04e0463c0a20d69f55e848ceb5": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3490 to cgroups: failed to write 3490: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod7c44bbb2_d312_4309_99a7_f523b390f5e7.slice/cri-containerd-1f375982d83e86e7f7867062bb91c1777ae878818e60d47eccbd9cbff13aaa68.scope/cgroup.procs: no such file or directory: unknown
-[*] Verdict: BLOCKED_STAGE=k8s_exec_cgroup_path_missing
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "8da13e493b2a1b710334d0482557838fade99534332fbd22f5f2d75cad5d4100": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 4000 to cgroups: failed to write 4000: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pod1fd06255_2910_43f1_ae57_2f43a041f71d.slice/cri-containerd-b7d53bc19f3129d1cca8f3651aed1fbe5b5df60b811e6a9b4fb854e18b766672.scope/cgroup.procs: no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+lsh not found
+cath not found
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] writeup 中通过 lsh/cath 可读取宿主机文件。
+[result] exit_code=0

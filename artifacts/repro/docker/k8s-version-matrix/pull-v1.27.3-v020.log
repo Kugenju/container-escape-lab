@@ -1,0 +1,7 @@
+[step] pull docker.m.daocloud.io/kindest/node@sha256:3966ac761ae0136263ffdb6cfd4db23ef8a83cba8a463690e98317add2c9ba72
+sha256:3966ac761ae0136263ffdb6cfd4db23ef8a83cba8a463690e98317add2c9ba72: Pulling from kindest/node
+f86a56ded609: Pulling fs layer
+4a5fe1bb00cb: Pulling fs layer
+f86a56ded609: Verifying Checksum
+f86a56ded609: Download complete
+f86a56ded609: Pull complete
