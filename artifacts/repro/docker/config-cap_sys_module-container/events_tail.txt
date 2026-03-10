@@ -1,0 +1,18 @@
+LAST SEEN   TYPE      REASON      OBJECT                              MESSAGE
+87s         Normal    Scheduled   pod/cap-dac-read-search-container   Successfully assigned metarget/cap-dac-read-search-container to escape-lab-control-plane
+52s         Normal    Pulling     pod/cap-dac-read-search-container   Pulling image "ubuntu:latest"
+31s         Warning   Failed      pod/cap-dac-read-search-container   Failed to pull image "ubuntu:latest": failed to pull and unpack image "docker.io/library/ubuntu:latest": failed to resolve reference "docker.io/library/ubuntu:latest": failed to do request: Head "https://registry-1.docker.io/v2/library/ubuntu/manifests/latest": dial tcp 74.86.151.167:443: connect: connection refused
+31s         Warning   Failed      pod/cap-dac-read-search-container   Error: ErrImagePull
+18s         Normal    BackOff     pod/cap-dac-read-search-container   Back-off pulling image "ubuntu:latest"
+18s         Warning   Failed      pod/cap-dac-read-search-container   Error: ImagePullBackOff
+5s          Normal    Pulled      pod/cap-dac-read-search-container   Container image "ubuntu:latest" already present on machine
+5s          Normal    Created     pod/cap-dac-read-search-container   Created container ubuntu
+5s          Normal    Started     pod/cap-dac-read-search-container   Started container ubuntu
+4s          Normal    Scheduled   pod/cap-sys-admin-container         Successfully assigned metarget/cap-sys-admin-container to escape-lab-control-plane
+3s          Normal    Pulled      pod/cap-sys-admin-container         Container image "ubuntu:latest" already present on machine
+3s          Normal    Created     pod/cap-sys-admin-container         Created container ubuntu
+3s          Normal    Started     pod/cap-sys-admin-container         Started container ubuntu
+2s          Normal    Scheduled   pod/cap-sys-module-container        Successfully assigned metarget/cap-sys-module-container to escape-lab-control-plane
+2s          Normal    Pulled      pod/cap-sys-module-container        Container image "ubuntu:latest" already present on machine
+2s          Normal    Created     pod/cap-sys-module-container        Created container ubuntu
+1s          Normal    Started     pod/cap-sys-module-container        Started container ubuntu

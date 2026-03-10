@@ -1,1 +1,14 @@
--- No entries --
+Mar 10 21:08:52 mypc kernel: vethc42cedd: renamed from eth0
+Mar 10 21:08:52 mypc kernel: br-60c64e8bd088: port 1(veth8b9f4bf) entered disabled state
+Mar 10 21:08:52 mypc kernel: br-60c64e8bd088: port 1(veth8b9f4bf) entered disabled state
+Mar 10 21:08:52 mypc kernel: veth8b9f4bf (unregistering): left allmulticast mode
+Mar 10 21:08:52 mypc kernel: veth8b9f4bf (unregistering): left promiscuous mode
+Mar 10 21:08:52 mypc kernel: br-60c64e8bd088: port 1(veth8b9f4bf) entered disabled state
+Mar 10 21:09:01 mypc kernel: br-60c64e8bd088: port 1(vethf00a9c6) entered blocking state
+Mar 10 21:09:01 mypc kernel: br-60c64e8bd088: port 1(vethf00a9c6) entered disabled state
+Mar 10 21:09:01 mypc kernel: vethf00a9c6: entered allmulticast mode
+Mar 10 21:09:01 mypc kernel: vethf00a9c6: entered promiscuous mode
+Mar 10 21:09:02 mypc kernel: eth0: renamed from vetha741bdd
+Mar 10 21:09:02 mypc kernel: br-60c64e8bd088: port 1(vethf00a9c6) entered blocking state
+Mar 10 21:09:02 mypc kernel: br-60c64e8bd088: port 1(vethf00a9c6) entered forwarding state
+Mar 10 21:09:03 mypc systemd-journald[274]: Received client request to flush runtime journal.

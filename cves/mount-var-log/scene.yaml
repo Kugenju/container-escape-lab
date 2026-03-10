@@ -40,6 +40,8 @@ spec:
   - name: escaper
     image: ubuntu:latest
     imagePullPolicy: IfNotPresent
+    command: ["/bin/bash", "-c", "--"]
+    args: ["while true; do sleep 30; done;"]
     volumeMounts:
     - name: logs
       mountPath: /var/log/host

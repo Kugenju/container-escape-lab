@@ -1,0 +1,10 @@
+NAME                            READY   STATUS    RESTARTS   AGE   IP            NODE                       NOMINATED NODE   READINESS GATES
+cap-dac-read-search-container   1/1     Running   0          98s   10.244.0.5    escape-lab-control-plane   <none>           <none>
+cap-sys-admin-container         1/1     Running   0          15s   10.244.0.6    escape-lab-control-plane   <none>           <none>
+cap-sys-module-container        1/1     Running   0          13s   10.244.0.7    escape-lab-control-plane   <none>           <none>
+cap-sys-ptrace-container        1/1     Running   0          11s   10.244.0.8    escape-lab-control-plane   <none>           <none>
+mount-docker-sock               1/1     Running   0          7s    10.244.0.10   escape-lab-control-plane   <none>           <none>
+mount-host-etc                  1/1     Running   0          5s    10.244.0.11   escape-lab-control-plane   <none>           <none>
+mount-host-procfs               1/1     Running   0          3s    10.244.0.12   escape-lab-control-plane   <none>           <none>
+mount-var-log                   1/1     Running   0          1s    10.244.0.13   escape-lab-control-plane   <none>           <none>
+privileged-container            1/1     Running   0          9s    10.244.0.9    escape-lab-control-plane   <none>           <none>

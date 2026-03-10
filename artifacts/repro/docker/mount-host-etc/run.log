@@ -1,3 +1,4 @@
-[-] Kubernetes API unreachable.
-[*] Hint: run scripts/env_labctl.sh profile k8s-kind
-[*] Verdict: BLOCKED_STAGE=k8s_api_unreachable
+pod/mount-host-etc created
+pod/mount-host-etc condition met
+error: Internal error occurred: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "19b6b73c95b3f27565c7fe67da09892fc9b7865f3f955d37988bbc1d2b061251": OCI runtime exec failed: exec failed: unable to start container process: error adding pid 3247 to cgroups: failed to write 3247: openat2 /sys/fs/cgroup/unified/kubelet.slice/kubelet-kubepods.slice/kubelet-kubepods-besteffort.slice/kubelet-kubepods-besteffort-pode3eb6556_0f49_445e_ac9b_d7e8d3db0be5.slice/cri-containerd-1920d143e79d603861456cd7ed72d3091743f08ff020f62704bfb9cc64599e7c.scope/cgroup.procs: no such file or directory: unknown
+[*] Verdict: BLOCKED_STAGE=k8s_exec_cgroup_path_missing

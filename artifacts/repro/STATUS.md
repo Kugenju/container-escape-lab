@@ -14,7 +14,7 @@
 
 - Docker：主线 CVE 脚本已覆盖，结论分为 `pass` 或 `BLOCKED_STAGE=*` 两类。
 - iSulad：全部 `cves/CVE-*/run_poc.sh` 条目已完成同步验证（含 runtime 无关本地探针）；非 CVE 场景仍在增补中。
-- K8s：当前统一阻断 `BLOCKED_STAGE=k8s_api_unreachable`。
+- K8s：`k8s-kind` 已可达并可批跑；9 个场景统一阻断在 `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`。
 
 ## 3. CVE Matrix
 
@@ -47,7 +47,8 @@
 ## 5. Environment and Runtime Switching Notes
 
 - `scripts/env_labctl.sh` supports `docker/isula/k8s-kind` profile switching.
-- `k8s-kind` currently unstable on this host (`kindest/node:v1.30.0` pull reset/timeout + Docker 18.09 compatibility constraints), so K8s scene scripts return `BLOCKED_STAGE=k8s_api_unreachable` with actionable hint.
+- `scripts/env_labctl.sh profile k8s-kind` 已增加 Docker 18.09 兼容回退（移除 `--cgroupns=*` 参数）并验证可成功起集群。
+- K8s 场景脚本当前主要阻断于 `kubectl exec` 进入容器阶段：`BLOCKED_STAGE=k8s_exec_cgroup_path_missing`（pod 可 Ready，但 exec 时 cgroup 路径不存在）。
 - `scripts/runtime_version_switch.sh` verified switch/restore flows:
   - switched to `runc 1.0.0-rc94` for CVE-2021-30465 vulnerable-path validation.
   - switched to `runc 1.0.0-rc5` for CVE-2019-5736 and CVE-2021-30465 comparative reruns.

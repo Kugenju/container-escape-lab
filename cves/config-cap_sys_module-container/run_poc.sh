@@ -4,6 +4,8 @@ set -Eeuo pipefail
 POC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MANIFEST="$POC_DIR/scene.yaml"
 NAMESPACE="${NAMESPACE:-metarget}"
+POD_NAME="cap-sys-module-container"
+HELPER="$POC_DIR/../../scripts/probes/k8s_exec_probe.sh"
 
 if [[ "${1:-}" == "--cleanup" ]]; then
   kubectl delete -f "$MANIFEST" --ignore-not-found
@@ -12,6 +14,7 @@ if [[ "${1:-}" == "--cleanup" ]]; then
 fi
 
 command -v kubectl >/dev/null 2>&1 || { echo "[-] Missing dependency: kubectl"; exit 1; }
+[[ -x "$HELPER" ]] || { echo "[-] Missing helper: $HELPER"; exit 1; }
 
 if ! kubectl cluster-info >/dev/null 2>&1; then
   echo "[-] Kubernetes API unreachable."
@@ -20,8 +23,15 @@ if ! kubectl cluster-info >/dev/null 2>&1; then
   exit 1
 fi
 
+kubectl get ns "$NAMESPACE" >/dev/null 2>&1 || kubectl create ns "$NAMESPACE" >/dev/null
 kubectl apply -f "$MANIFEST"
-kubectl wait --for=condition=Ready "pod/cap-sys-module-container" -n "$NAMESPACE" --timeout=120s || true
-kubectl exec -n "$NAMESPACE" "cap-sys-module-container" -- sh -lc 'id; grep CapEff /proc/1/status; (command -v insmod || true); (command -v modprobe || true)'
+
+if ! kubectl wait --for=condition=Ready "pod/$POD_NAME" -n "$NAMESPACE" --timeout=120s; then
+  kubectl describe pod "$POD_NAME" -n "$NAMESPACE" || true
+  echo "[*] Verdict: BLOCKED_STAGE=k8s_pod_not_ready"
+  exit 1
+fi
+
+"$HELPER" "$NAMESPACE" "$POD_NAME" 'id; grep CapEff /proc/1/status; (command -v insmod || true); (command -v modprobe || true)'
 
 echo "[*] 完整利用需要自定义恶意内核模块(.ko)并在容器中加载。"

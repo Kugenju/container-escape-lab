@@ -19,16 +19,16 @@
 | `cves/CVE-2022-0847/run_poc.sh` | 0 | pass | success marker observed |
 | `cves/CVE-2022-0995/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` |
 | `cves/CVE-2024-21626/run_poc_runc_direct.sh` (`runc 1.1.7`) | 0 | pass | direct-runc probe hit (`VULNERABLE_OR_PARTIALLY_VULNERABLE`) |
-| `cves/config-cap_dac_read_search-container/run_poc.sh` | 1 | blocked-stage | explicit blocked stage recorded |
-| `cves/config-cap_sys_admin-container/run_poc.sh` | 1 | blocked-stage | explicit blocked stage recorded |
-| `cves/config-cap_sys_module-container/run_poc.sh` | 1 | blocked-stage | explicit blocked stage recorded |
-| `cves/config-cap_sys_ptrace-container/run_poc.sh` | 1 | blocked-stage | explicit blocked stage recorded |
-| `cves/config-privileged-container/run_poc.sh` | 1 | blocked-stage | explicit blocked stage recorded |
+| `cves/config-cap_dac_read_search-container/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
+| `cves/config-cap_sys_admin-container/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
+| `cves/config-cap_sys_module-container/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
+| `cves/config-cap_sys_ptrace-container/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
+| `cves/config-privileged-container/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
 | `cves/kata-escape-2020/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=kata_runtime_not_installed` |
-| `cves/mount-docker-sock/run_poc.sh` | 1 | blocked-stage | explicit blocked stage recorded |
-| `cves/mount-host-etc/run_poc.sh` | 1 | blocked-stage | explicit blocked stage recorded |
-| `cves/mount-host-procfs/run_poc.sh` | 1 | blocked-stage | explicit blocked stage recorded |
-| `cves/mount-var-log/run_poc.sh` | 1 | blocked-stage | explicit blocked stage recorded |
+| `cves/mount-docker-sock/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
+| `cves/mount-host-etc/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
+| `cves/mount-host-procfs/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
+| `cves/mount-var-log/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=k8s_exec_cgroup_path_missing` |
 
 ## 2. Version-Switch Comparative Runs (Merged)
 

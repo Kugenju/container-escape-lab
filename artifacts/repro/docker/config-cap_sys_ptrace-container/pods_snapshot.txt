@@ -1,0 +1,5 @@
+NAME                            READY   STATUS    RESTARTS   AGE   IP           NODE                       NOMINATED NODE   READINESS GATES
+cap-dac-read-search-container   1/1     Running   0          88s   10.244.0.5   escape-lab-control-plane   <none>           <none>
+cap-sys-admin-container         1/1     Running   0          5s    10.244.0.6   escape-lab-control-plane   <none>           <none>
+cap-sys-module-container        1/1     Running   0          3s    10.244.0.7   escape-lab-control-plane   <none>           <none>
+cap-sys-ptrace-container        1/1     Running   0          1s    10.244.0.8   escape-lab-control-plane   <none>           <none>

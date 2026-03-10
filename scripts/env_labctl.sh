@@ -43,6 +43,37 @@ stop_svc() {
   systemctl stop "$svc" || true
 }
 
+docker_supports_cgroupns() {
+  docker run --help 2>/dev/null | grep -q -- '--cgroupns'
+}
+
+kind_create_with_legacy_docker() {
+  local name="$1"
+  local node_image="$2"
+  local wait_sec="$3"
+  local wrapper_dir
+  wrapper_dir="$(mktemp -d /tmp/kind_docker_compat.XXXXXX)"
+  cat >"$wrapper_dir/docker" <<'EOF'
+#!/usr/bin/env bash
+set -Eeuo pipefail
+real_docker="${REAL_DOCKER_PATH:-/usr/bin/docker}"
+args=()
+for a in "$@"; do
+  if [[ "$a" == --cgroupns=* ]]; then
+    continue
+  fi
+  args+=("$a")
+done
+exec "$real_docker" "${args[@]}"
+EOF
+  chmod +x "$wrapper_dir/docker"
+  REAL_DOCKER_PATH="$(command -v docker)" PATH="$wrapper_dir:$PATH" \
+    kind create cluster --name "$name" --image "$node_image" --wait "${wait_sec}s"
+  local rc=$?
+  rm -rf "$wrapper_dir"
+  return "$rc"
+}
+
 profile_status() {
   cat <<EOF
 Runtime services:
@@ -156,7 +187,13 @@ kind_up() {
     log "kind cluster already exists: $CLUSTER_NAME"
   else
     log "create kind cluster: $CLUSTER_NAME"
-    kind create cluster --name "$CLUSTER_NAME" --image "$node_image" --wait 180s
+    if docker_supports_cgroupns; then
+      kind create cluster --name "$CLUSTER_NAME" --image "$node_image" --wait 180s
+    else
+      warn "docker does not support --cgroupns (legacy Docker detected); applying kind compatibility wrapper"
+      kind_create_with_legacy_docker "$CLUSTER_NAME" "$node_image" 180 || \
+        die "kind cluster create failed with legacy Docker compatibility mode"
+    fi
   fi
   kubectl get nodes >/dev/null 2>&1 || die "kubectl cannot reach kind cluster"
   kubectl get ns "$K8S_NAMESPACE" >/dev/null 2>&1 || kubectl create ns "$K8S_NAMESPACE" >/dev/null

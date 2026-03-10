@@ -1,0 +1,10 @@
+LAST SEEN   TYPE      REASON      OBJECT                              MESSAGE
+83s         Normal    Scheduled   pod/cap-dac-read-search-container   Successfully assigned metarget/cap-dac-read-search-container to escape-lab-control-plane
+48s         Normal    Pulling     pod/cap-dac-read-search-container   Pulling image "ubuntu:latest"
+27s         Warning   Failed      pod/cap-dac-read-search-container   Failed to pull image "ubuntu:latest": failed to pull and unpack image "docker.io/library/ubuntu:latest": failed to resolve reference "docker.io/library/ubuntu:latest": failed to do request: Head "https://registry-1.docker.io/v2/library/ubuntu/manifests/latest": dial tcp 74.86.151.167:443: connect: connection refused
+27s         Warning   Failed      pod/cap-dac-read-search-container   Error: ErrImagePull
+14s         Normal    BackOff     pod/cap-dac-read-search-container   Back-off pulling image "ubuntu:latest"
+14s         Warning   Failed      pod/cap-dac-read-search-container   Error: ImagePullBackOff
+1s          Normal    Pulled      pod/cap-dac-read-search-container   Container image "ubuntu:latest" already present on machine
+1s          Normal    Created     pod/cap-dac-read-search-container   Created container ubuntu
+1s          Normal    Started     pod/cap-dac-read-search-container   Started container ubuntu

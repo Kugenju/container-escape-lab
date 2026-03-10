@@ -21,14 +21,14 @@
 2. Docker 主线批跑：执行 `cves/*/run_poc.sh`，统一收集 `run.log`/`journal`/`kernel` 证据。
 3. 版本敏感 CVE 对照：切换到明确脆弱版本重跑，再恢复默认版本做负对照。
 4. iSulad 映射复测：对全部 `cves/CVE-*/run_poc.sh` 条目做同步触发并记录语义差异。
-5. K8s 场景回归：`kubectl` 可达性前置检查，不可达时统一输出 `BLOCKED_STAGE=k8s_api_unreachable`。
+5. K8s 场景回归：`kubectl` 可达性前置检查；不可达时输出 `BLOCKED_STAGE=k8s_api_unreachable`，可达时继续定位运行阶段阻断（当前为 `k8s_exec_cgroup_path_missing`）。
 6. 结论回填：同步更新 `artifacts/repro/*` 汇总与各 CVE `README`。
 
 ## 4. 当前进度总览
 
 - Docker：主线脚本已覆盖，成功项与阻断项均已阶段化归因。
 - iSulad：CVE 主线条目已全部完成同步验证（含本地探针类脚本）。
-- K8s：场景脚本可执行，但当前受集群可达性阻断。
+- K8s：集群可达并已完成 9 个场景批跑，当前统一阻断于 `kubectl exec` 阶段。
 
 ## 5. Docker 结果矩阵
 
@@ -90,8 +90,11 @@
 受影响脚本：`config-cap_*` 5 个 + `mount-*` 4 个（共 9 个）。
 
 当前统一结论：
-- `BLOCKED_STAGE=k8s_api_unreachable`
-- 原因：`k8s-kind` 在该主机未稳定可用（镜像拉取不稳定 + Docker 18.09 与 kind 参数兼容限制）
+- `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`
+- 原因：pod 可以达到 `Ready`，但 `kubectl exec` 会在 OCI runtime 阶段报 `error adding pid ... cgroup.procs: no such file or directory`。
+
+环境补充：
+- `scripts/env_labctl.sh profile k8s-kind` 已加入 Docker 18.09 兼容回退，可稳定拉起 kind 集群（自动移除 `--cgroupns=*` 参数）。
 
 ## 8. 已合并的关键增量
 
@@ -126,5 +129,5 @@
 
 ## 10. 当前未闭环项
 
-1. K8s 场景依赖集群可达性，待 `k8s-kind` 稳定后统一复跑 9 个脚本。
+1. K8s 场景已完成批跑，后续重点是定位 `k8s_exec_cgroup_path_missing` 的 containerd/runc/cgroup 兼容根因并寻找可执行绕过路径。
 2. CVE-2019-5736 的 iSulad 映射链路仍未形成宿主机 proof，后续可继续推进 build/exec 入口等价化验证。

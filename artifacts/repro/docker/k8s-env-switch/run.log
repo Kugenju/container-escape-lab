@@ -1,15 +1,36 @@
+[*] delete kind cluster: escape-lab
+Deleting cluster "escape-lab" ...
+Deleted nodes: ["escape-lab-control-plane"]
 [*] switch profile -> docker
 [*] docker=active, isulad=inactive
 [*] kubectl already installed: Client Version: v1.35.2
 [*] kind already installed: kind v0.23.0 go1.21.10 linux/amd64
 [*] pre-pull kind node image: kindest/node:v1.30.0
 v1.30.0: Pulling from kindest/node
-11fdf21a1da7: Pulling fs layer
-ed30103f792f: Pulling fs layer
-11fdf21a1da7: Download complete
-11fdf21a1da7: Pull complete
-ed30103f792f: Verifying Checksum
-ed30103f792f: Download complete
-ed30103f792f: Pull complete
 Digest: sha256:047357ac0cfea04663786a612ba1eaba9702bef25227a794b52890dd8bcd692e
-Status: Downloaded newer image for kindest/node:v1.30.0
+Status: Image is up to date for kindest/node:v1.30.0
+[*] create kind cluster: escape-lab
+[!] docker does not support --cgroupns (legacy Docker detected); applying kind compatibility wrapper
+Creating cluster "escape-lab" ...
+ • Ensuring node image (kindest/node:v1.30.0) 🖼  ...
+ ✓ Ensuring node image (kindest/node:v1.30.0) 🖼
+ • Preparing nodes 📦   ...
+ ✓ Preparing nodes 📦 
+ • Writing configuration 📜  ...
+ ✓ Writing configuration 📜
+ • Starting control-plane 🕹️  ...
+ ✓ Starting control-plane 🕹️
+ • Installing CNI 🔌  ...
+ ✓ Installing CNI 🔌
+ • Installing StorageClass 💾  ...
+ ✓ Installing StorageClass 💾
+ • Waiting ≤ 3m0s for control-plane = Ready ⏳  ...
+ ✓ Waiting ≤ 3m0s for control-plane = Ready ⏳
+ • Ready after 15s 💚
+Set kubectl context to "kind-escape-lab"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-escape-lab
+
+Have a question, bug, or feature request? Let us know! https://kind.sigs.k8s.io/#community 🙂
+[*] kind cluster ready, namespace=metarget

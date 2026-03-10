@@ -1,0 +1,30 @@
+LAST SEEN   TYPE      REASON      OBJECT                              MESSAGE
+93s         Normal    Scheduled   pod/cap-dac-read-search-container   Successfully assigned metarget/cap-dac-read-search-container to escape-lab-control-plane
+58s         Normal    Pulling     pod/cap-dac-read-search-container   Pulling image "ubuntu:latest"
+37s         Warning   Failed      pod/cap-dac-read-search-container   Failed to pull image "ubuntu:latest": failed to pull and unpack image "docker.io/library/ubuntu:latest": failed to resolve reference "docker.io/library/ubuntu:latest": failed to do request: Head "https://registry-1.docker.io/v2/library/ubuntu/manifests/latest": dial tcp 74.86.151.167:443: connect: connection refused
+37s         Warning   Failed      pod/cap-dac-read-search-container   Error: ErrImagePull
+24s         Normal    BackOff     pod/cap-dac-read-search-container   Back-off pulling image "ubuntu:latest"
+24s         Warning   Failed      pod/cap-dac-read-search-container   Error: ImagePullBackOff
+11s         Normal    Pulled      pod/cap-dac-read-search-container   Container image "ubuntu:latest" already present on machine
+11s         Normal    Created     pod/cap-dac-read-search-container   Created container ubuntu
+11s         Normal    Started     pod/cap-dac-read-search-container   Started container ubuntu
+10s         Normal    Scheduled   pod/cap-sys-admin-container         Successfully assigned metarget/cap-sys-admin-container to escape-lab-control-plane
+9s          Normal    Pulled      pod/cap-sys-admin-container         Container image "ubuntu:latest" already present on machine
+9s          Normal    Created     pod/cap-sys-admin-container         Created container ubuntu
+9s          Normal    Started     pod/cap-sys-admin-container         Started container ubuntu
+8s          Normal    Pulled      pod/cap-sys-module-container        Container image "ubuntu:latest" already present on machine
+8s          Normal    Scheduled   pod/cap-sys-module-container        Successfully assigned metarget/cap-sys-module-container to escape-lab-control-plane
+8s          Normal    Created     pod/cap-sys-module-container        Created container ubuntu
+7s          Normal    Started     pod/cap-sys-module-container        Started container ubuntu
+6s          Normal    Started     pod/cap-sys-ptrace-container        Started container ubuntu
+6s          Normal    Pulled      pod/cap-sys-ptrace-container        Container image "ubuntu:latest" already present on machine
+6s          Normal    Created     pod/cap-sys-ptrace-container        Created container ubuntu
+6s          Normal    Scheduled   pod/cap-sys-ptrace-container        Successfully assigned metarget/cap-sys-ptrace-container to escape-lab-control-plane
+4s          Normal    Scheduled   pod/privileged-container            Successfully assigned metarget/privileged-container to escape-lab-control-plane
+4s          Normal    Pulled      pod/privileged-container            Container image "ubuntu:latest" already present on machine
+4s          Normal    Created     pod/privileged-container            Created container ubuntu
+4s          Normal    Started     pod/privileged-container            Started container ubuntu
+2s          Normal    Scheduled   pod/mount-docker-sock               Successfully assigned metarget/mount-docker-sock to escape-lab-control-plane
+2s          Normal    Pulled      pod/mount-docker-sock               Container image "ubuntu:latest" already present on machine
+2s          Normal    Created     pod/mount-docker-sock               Created container ubuntu
+1s          Normal    Started     pod/mount-docker-sock               Started container ubuntu

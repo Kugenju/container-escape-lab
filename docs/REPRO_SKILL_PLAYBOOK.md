@@ -54,6 +54,7 @@ scripts/runtime_version_switch.sh restore
 - 已支持自动安装 `kubectl` / `kind`。
 - 已支持镜像互导：`scripts/env_labctl.sh sync-image <image> docker-to-isula`
 - 已支持 `runc` 版本切换（含备份恢复）：`scripts/runtime_version_switch.sh`
+- 对 Docker 18.09 等不支持 `--cgroupns` 的环境，`profile k8s-kind` 已内置兼容回退（kind create 自动移除该参数）。
 
 ## 4. 推荐执行流程（下次会话直接照做）
 
@@ -92,6 +93,8 @@ scripts/env_labctl.sh status
 2. 若 API 不可达，脚本应返回：
    - `BLOCKED_STAGE=k8s_api_unreachable`
 3. 保证 `run.log` 内有可操作提示（如 `Hint: run scripts/env_labctl.sh profile k8s-kind`）。
+4. 若 Pod 已 `Ready` 但 `kubectl exec` 报 `error adding pid ... cgroup.procs: no such file or directory`，统一记为：
+   - `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`
 
 ## 5. 常见失败类型与修复套路
 
@@ -129,7 +132,16 @@ scripts/env_labctl.sh status
 - 场景脚本前置 `kubectl cluster-info` 检查。
 - 返回 `BLOCKED_STAGE=k8s_api_unreachable`，不要仅“command not found”。
 
-### 5.6 版本切换下载不稳定
+### 5.6 K8s 可达但 Exec 阶段失败
+
+现象：Pod 已 `Ready`，但 `kubectl exec` 返回 OCI runtime cgroup 路径错误（`cgroup.procs: no such file or directory`）。  
+修复：
+
+- 保留 `kubectl wait` 与 `kubectl exec` 分段日志，确认阻断位置在 exec 而非调度阶段。
+- 脚本统一输出 `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`。
+- 若主机 Docker 版本较旧（如 18.09）导致 kind 参数不兼容，优先通过 `env_labctl` 的兼容回退拉起集群后再复测。
+
+### 5.7 版本切换下载不稳定
 
 现象：`runc` 旧版本下载时出现 `connection reset/timeout`。  
 修复：
@@ -139,7 +151,7 @@ scripts/env_labctl.sh status
 - 在结论中明确记录阻断：`BLOCKED_STAGE=runtime_binary_fetch_unstable_network`。
 - 先完成可执行的版本验证项（如已下载版本），再补跑缺失版本。
 
-### 5.7 Placeholder PoC 补齐
+### 5.8 Placeholder PoC 补齐
 
 现象：目录只有说明文档，`run_poc.sh` 仅提示手工步骤。  
 修复：
@@ -149,7 +161,7 @@ scripts/env_labctl.sh status
 - 网络补齐至少两类来源：官方 CVE 记录（受影响版本）+ 官方/社区主仓 PoC 来源。
 - 复跑后按规范补齐证据目录与汇总文档，确保 placeholder 退出批跑列表。
 
-### 5.8 `su nobody` 执行返回 126
+### 5.9 `su nobody` 执行返回 126
 
 现象：`probe exit code=126`，日志无 PoC marker。  
 修复：
@@ -157,7 +169,7 @@ scripts/env_labctl.sh status
 - 不要直接执行位于 `/root/...` 的二进制（`nobody` 无法遍历该路径）。
 - 先把编译产物复制到 `/tmp` 并 `chmod 0755`，再用 `su nobody` 执行。
 
-### 5.9 Docker 路径阻断但 runc 直跑可复现
+### 5.10 Docker 路径阻断但 runc 直跑可复现
 
 现象：`docker run -w /proc/self/fd/N` 路径持续报 `mkdir ... not a directory`，难以命中 `CVE-2024-21626`。  
 修复：
@@ -166,7 +178,7 @@ scripts/env_labctl.sh status
 - 在版本切换到明确脆弱版本（例如 `runc 1.1.7`）后执行 direct 探测，优先确认是否能命中 `fd`。
 - 同步保留当前默认版本（如 `runc 1.1.8`）对照证据，避免把“版本切换成功”误判为“默认环境可复现”。
 
-### 5.10 CVE-2019-5736 trap 链路提前清理/句柄竞争
+### 5.11 CVE-2019-5736 trap 链路提前清理/句柄竞争
 
 现象：`docker exec` 已持续出现 `No help topic for '/bin/sh'` 或 `'/bin/bash'`，但无 host proof。  
 修复：
@@ -189,6 +201,7 @@ scripts/env_labctl.sh status
 - `cgroup_v1_controller_unavailable`
 - `runtime_version_not_vulnerable_range`
 - `k8s_api_unreachable`
+- `k8s_exec_cgroup_path_missing`
 - `runtime_binary_fetch_unstable_network`
 
 ## 7. 证据规范
