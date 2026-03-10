@@ -15,7 +15,8 @@ Baseline:
 | CVE-2024-21626 | Attack-1/Attack-2 probes completed; no host marker exposure; `BLOCKED_STAGE=workdir_fd_path_validation` with `chdir ... not a directory` | `apparmor=unconfined` unsupported by isula CLI; fd probe likewise blocked at runc init (`mkdir /proc/self/fd/N`) | `artifacts/repro/docker/CVE-2024-21626/`, `artifacts/repro/isula/CVE-2024-21626/` |
 | CVE-2016-9962 | rewritten non-interactive `release_agent` probe finished; host marker absent; `BLOCKED_STAGE=no_host_marker` | privileged run reached cgroup mount, but writing `release_agent` was denied; no host marker | `artifacts/repro/docker/CVE-2016-9962/`, `artifacts/repro/isula/CVE-2016-9962/` |
 | CVE-2017-7308 | rebuilt script and image to remove apt dependency; probe completed and returned `BLOCKED_STAGE=no_success_marker` | privileged probe reached early exploit stages but no `got r00t` marker | `artifacts/repro/docker/CVE-2017-7308/`, `artifacts/repro/isula/CVE-2017-7308/` |
-| CVE-2021-30465 | rewritten non-interactive race probe completed; with `runc 1.1.8` no host artifact, `BLOCKED_STAGE=runtime_version_not_vulnerable_range` | race process started, no host artifact in target dir (`BLOCKED_STAGE=runtime_version_not_vulnerable_range_or_race_miss`) | `artifacts/repro/docker/CVE-2021-30465/`, `artifacts/repro/isula/CVE-2021-30465/` |
+| CVE-2021-30465 | rewritten non-interactive race probe completed; with `runc 1.1.8` no host artifact (`BLOCKED_STAGE=runtime_version_not_vulnerable_range`); rerun on `runc 1.0.0-rc94` still未命中竞态（`BLOCKED_STAGE=race_not_hit_or_env_incompatible`） | race process started, no host artifact in target dir (`BLOCKED_STAGE=runtime_version_not_vulnerable_range_or_race_miss`) | `artifacts/repro/docker/CVE-2021-30465/`, `artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc94-20260310/`, `artifacts/repro/isula/CVE-2021-30465/` |
+| CVE-2022-0995 | upgraded to non-interactive local PoC run; `nobody` execution failed to enter exploit path (`BLOCKED_STAGE=notification_pipe_unavailable_or_filtered`) | not started | `artifacts/repro/docker/CVE-2022-0995/auto-run-20260310/` |
 
 Additional batch summaries:
 
@@ -26,3 +27,9 @@ Environment switching note (2026-03-09):
 
 - Added `scripts/env_labctl.sh` to switch `docker/isula/k8s-kind` profiles.
 - `k8s-kind` profile currently blocked by unstable pull of `kindest/node:v1.30.0` (network reset/timeout to upstream registry), so kubectl scene scripts now consistently return `BLOCKED_STAGE=k8s_api_unreachable` with explicit hint.
+
+Runtime version switching note (2026-03-10):
+
+- Added `scripts/runtime_version_switch.sh` to switch/restore host `runc` with local backup.
+- `runc 1.0.0-rc94` switch succeeded and was used to rerun CVE-2021-30465.
+- `runc 1.0.0-rc5` download remained unstable (GitHub connection timeout/reset), pending retry in next session.

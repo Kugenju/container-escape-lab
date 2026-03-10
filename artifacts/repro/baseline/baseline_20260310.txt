@@ -1,0 +1,35 @@
+date=2026-03-10T12:02:16+08:00
+Linux mypc 6.6.0-132.0.0.111.oe2403sp3.x86_64 #1 SMP Mon Dec 29 23:07:38 CST 2025 x86_64 x86_64 x86_64 GNU/Linux
+---
+Docker version 18.09.0, build 270f890
+Client:
+  Version:	2.1.6
+  Git commit:	fef0df3dc9b74f80f78c705e0924c99e942c9bdd
+  Built:	2026-02-05T00:42:36.636639251+08:00
+
+Server:
+  Version:	2.1.6
+  Git commit:	fef0df3dc9b74f80f78c705e0924c99e942c9bdd
+  Built:	2026-02-05T00:42:36.636639251+08:00
+
+OCI config:
+  Version:	1.0.1
+  Default file:	/etc/default/isulad/config.json
+
+runc version 1.1.8
+commit: 190b021aadc69227970c3991538bf459baa57a16
+spec: 1.0.2-dev
+go: go1.21.4
+libseccomp: 2.5.4
+---
+Runtime services:
+  docker.service:    active
+  isulad.service:    active
+  containerd.service:inactive
+Binary checks:
+  docker:  yes
+  isula:   yes
+  kubectl: yes
+  kind:    yes
+Kind clusters: none
+kubectl cluster access: unavailable

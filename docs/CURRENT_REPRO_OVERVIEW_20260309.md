@@ -30,18 +30,8 @@
 | CVE-2021-3493 | `pass`（脚本报告 success marker） |
 | CVE-2022-0847 | `pass`（脚本报告 success marker） |
 
-### 2.3 占位/手工引导型脚本（非完整自动PoC）
 
-| CVE/场景 |
-| --- |
-| CVE-2016-5195 |
-| CVE-2016-8655 |
-| CVE-2017-1000112 |
-| CVE-2017-16995 |
-| CVE-2017-6074 |
-| CVE-2020-14386 |
-| CVE-2022-0995 |
-| kata-escape-2020 |
+
 
 ## 3. iSulad 复现结果概览
 
@@ -81,3 +71,38 @@
 1. Docker / iSulad 主线 PoC 已基本覆盖，失败项都已转为“可解释的阶段化阻断”。  
 2. 目前最大未闭环项是 K8s 场景（不是脚本缺失，而是集群可达性未满足）。  
 3. 新会话复用时，优先用 `docs/REPRO_SKILL_PLAYBOOK.md` 作为执行手册。  
+
+## 7. 2026-03-10 增量进展
+
+### 7.1 Docker/runc 版本可复现性核查
+
+| CVE | 上游受影响范围（简写） | 2026-03-09 环境匹配性（Docker 18.09.0 / runc 1.1.8） | 2026-03-10 动作 |
+| --- | --- | --- | --- |
+| CVE-2019-13139 | Docker `< 18.09.4` | 匹配（潜在可复现） | 保持原结论 |
+| CVE-2019-14271 | Docker `19.03.x < 19.03.1` | 不匹配（18.09.x 不在该范围） | 结论补充为“版本路径不匹配” |
+| CVE-2019-5736 | runc `< 1.0.0-rc6` | 不匹配 | 已尝试切 `rc5`，受网络下载阻断待补跑 |
+| CVE-2016-9962 | runc `< 1.0.0-rc2` | 不匹配 | 结论补充为“当前 runc 不在脆弱范围” |
+| CVE-2021-30465 | runc `<= 1.0.0-rc94` | 不匹配 | 已切到 `runc 1.0.0-rc94` 并重跑 |
+| CVE-2024-21626 | runc `< 1.1.12` | 匹配（1.1.8） | 保持原结论 |
+
+### 7.2 版本切换重跑结果
+
+- 新增 `scripts/runtime_version_switch.sh`（`status/use/restore`）用于 runc 版本切换验证。  
+- `CVE-2021-30465` 在 `runc 1.0.0-rc94` 下复测：`BLOCKED_STAGE=race_not_hit_or_env_incompatible`。  
+  证据：`artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc94-20260310/`
+- `CVE-2019-5736` 目标 `runc 1.0.0-rc5` 下载多次超时/重置，尚未完成该版本重跑。  
+
+### 7.3 缺少可落地 PoC 的补齐进展
+
+- `CVE-2022-0995` 已从“仅编译 + 手工提示”改为“自动编译 + 非交互执行 + 阶段化结论 + 内核日志采集”。  
+- 2026-03-10 实跑结果：`BLOCKED_STAGE=notification_pipe_unavailable_or_filtered`。  
+  证据：`artifacts/repro/docker/CVE-2022-0995/auto-run-20260310/`
+
+### 7.4 版本信息来源（网络补充）
+
+- CVE-2019-13139（Docker `<18.09.4`）：https://docs.docker.com/engine/release-notes/18.09/  
+- CVE-2019-14271（Docker `19.03.x <19.03.1`）：https://nvd.nist.gov/vuln/detail/CVE-2019-14271  
+- CVE-2019-5736（runc `<1.0.0-rc6`）：https://nvd.nist.gov/vuln/detail/CVE-2019-5736  
+- CVE-2016-9962（runc `<1.0.0-rc2`）：https://nvd.nist.gov/vuln/detail/CVE-2016-9962  
+- CVE-2021-30465（runc `<=1.0.0-rc94`）：https://github.com/opencontainers/runc/security/advisories/GHSA-c3xm-pvg7-gh7r  
+- CVE-2024-21626（runc `<1.1.12`）：https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv  

@@ -14,7 +14,7 @@
 | cves/CVE-2021-30465/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
 | cves/CVE-2021-3493/run_poc.sh | 0 | pass | script reported success marker |
 | cves/CVE-2022-0847/run_poc.sh | 0 | pass | script reported success marker |
-| cves/CVE-2022-0995/run_poc.sh | 0 | placeholder | script is scaffold/manual guidance |
+| cves/CVE-2022-0995/run_poc.sh | 1 | blocked-stage | upgraded non-interactive run returned `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` |
 | cves/config-cap_dac_read_search-container/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
 | cves/config-cap_sys_admin-container/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
 | cves/config-cap_sys_module-container/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
@@ -25,3 +25,10 @@
 | cves/mount-host-etc/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
 | cves/mount-host-procfs/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
 | cves/mount-var-log/run_poc.sh | 1 | blocked-stage | script completed with explicit block stage |
+
+## 2026-03-10 Incremental Evidence
+
+- `artifacts/repro/docker/CVE-2022-0995/auto-run-20260310/run.log`
+- `artifacts/repro/docker/CVE-2022-0995/auto-run-20260310/kernel_journal.log`
+- `artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc94-20260310/run.log`
+- `artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc94-20260310/docker_journal.log`

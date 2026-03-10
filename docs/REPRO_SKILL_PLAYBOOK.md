@@ -19,7 +19,7 @@
 
 ## 3. 环境切换工具
 
-使用脚本：`scripts/env_labctl.sh`
+使用脚本：`scripts/env_labctl.sh`、`scripts/runtime_version_switch.sh`
 
 常用命令：
 
@@ -41,12 +41,18 @@ scripts/env_labctl.sh profile k8s-kind
 
 # 删除 kind 集群
 scripts/env_labctl.sh kind-down
+
+# 查看/切换/恢复 runc 版本
+scripts/runtime_version_switch.sh status
+scripts/runtime_version_switch.sh use 1.0.0-rc94
+scripts/runtime_version_switch.sh restore
 ```
 
 补充：
 
 - 已支持自动安装 `kubectl` / `kind`。
 - 已支持镜像互导：`scripts/env_labctl.sh sync-image <image> docker-to-isula`
+- 已支持 `runc` 版本切换（含备份恢复）：`scripts/runtime_version_switch.sh`
 
 ## 4. 推荐执行流程（下次会话直接照做）
 
@@ -59,6 +65,8 @@ isula version || true
 runc --version || true
 scripts/env_labctl.sh status
 ```
+
+补充：先做“版本可复现性判定”，确认目标 CVE 所需 Docker/runc 版本范围；不在范围内先切版本再跑。
 
 ### Step B: Docker 复现批跑
 
@@ -119,6 +127,15 @@ scripts/env_labctl.sh status
 - 场景脚本前置 `kubectl cluster-info` 检查。
 - 返回 `BLOCKED_STAGE=k8s_api_unreachable`，不要仅“command not found”。
 
+### 5.6 版本切换下载不稳定
+
+现象：`runc` 旧版本下载时出现 `connection reset/timeout`。  
+修复：
+
+- 优先复用 `/tmp/runtime-version-switch/<tag>/runc.amd64` 本地缓存。
+- 在结论中明确记录阻断：`BLOCKED_STAGE=runtime_binary_fetch_unstable_network`。
+- 先完成可执行的版本验证项（如已下载版本），再补跑缺失版本。
+
 ## 6. 阻断阶段命名建议
 
 建议统一格式：`BLOCKED_STAGE=<snake_case>`
@@ -131,6 +148,7 @@ scripts/env_labctl.sh status
 - `cgroup_v1_controller_unavailable`
 - `runtime_version_not_vulnerable_range`
 - `k8s_api_unreachable`
+- `runtime_binary_fetch_unstable_network`
 
 ## 7. 证据规范
 
