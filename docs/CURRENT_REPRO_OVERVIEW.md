@@ -8,7 +8,10 @@
 
 - Host OS: openEuler 24.03 (LTS-SP3)
 - Kernel: `6.6.0-132.0.0.111.oe2403sp3.x86_64`
-- Docker: `18.09.0` (`EulerVersion 18.09.0.346`)
+- Docker (historical baseline): `18.09.0` (`EulerVersion 18.09.0.346`)
+- Docker (latest K8s validation): `20.10.24`
+- containerd (latest K8s validation): `1.6.20`
+- runc (latest K8s validation): `1.1.5`
 - iSulad: `2.1.6`
 - Default `runc`: `1.1.8`
 
@@ -28,7 +31,8 @@
 
 - Docker：主线脚本已覆盖，成功项与阻断项均已阶段化归因。
 - iSulad：CVE 主线条目已全部完成同步验证（含本地探针类脚本）。
-- K8s：集群可达并已完成 9 个场景批跑；`kubectl exec` 仍阻断，但已通过日志探针回退补齐机理证据并将 9 个场景跑通（exit=0）。
+- K8s（Docker 18.09 基线）：`kubectl exec` 阻断，已通过日志探针回退补齐 9 个场景证据并跑通（exit=0）。
+- K8s（Docker 20.10.24 复测）：首轮严格模式可直接 `PROBE_EXECUTED`，9 场景批跑全部 `PROBE_EXECUTED` + `exit=0`；但后续重复 `kind-up` 仍出现 kubelet 健康检查超时。
 
 ## 5. Docker 结果矩阵
 
@@ -93,10 +97,15 @@
 - `kubectl exec` 路径仍触发 `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`。
 - 场景脚本已启用回退：自动读取 Pod 启动日志中的 `K8S_LOG_PROBE_OK`，输出 `PROBE_LOG_FALLBACK_OK` 并返回 0。
 - `v1.30.0` 与 `v1.27.13` 对照均复现相同 exec/cgroup 报错，说明单纯回退 K8s 小版本不足以根治当前主机环境问题。
+- Docker 20.10.24 首轮复测中，`kubectl exec` 已直接恢复 `PROBE_EXECUTED`（无需回退）；但同机后续重复 `kind-up` 仍可出现 kubelet 不健康超时，稳定性待继续收敛。
 
 环境补充：
 - `scripts/env_labctl.sh profile k8s-kind` 已加入 Docker 18.09 兼容回退，可稳定拉起 kind 集群（自动移除 `--cgroupns=*` 参数）。
 - K8s 版本对照与批跑证据：`artifacts/repro/docker/k8s-version-matrix/`。
+- Docker 20.10 复测证据：
+  - `artifacts/repro/docker/k8s-version-matrix/docker20-v1.30.0.log`
+  - `artifacts/repro/docker/k8s-version-matrix/docker20-batch-v1.30.0.log`
+  - `artifacts/repro/docker/k8s-version-matrix/docker20-retry-kindup-full.log`
 
 ## 8. 已合并的关键增量
 
@@ -131,7 +140,7 @@
 
 ## 10. 当前未闭环项
 
-1. K8s 场景批跑已通过日志回退闭环；后续重点是根治 `k8s_exec_cgroup_path_missing`（优先升级到 cgroup v2 + Docker >=20.10 的宿主机基线）。
+1. K8s 场景批跑已通过日志回退闭环；Docker 20.10 首轮可直接 `PROBE_EXECUTED`，但重复 `kind-up` 仍有稳定性问题，后续重点是收敛 kubelet 超时根因（优先 cgroup v2 基线）。
 2. CVE-2019-5736 的 iSulad 映射链路仍未形成宿主机 proof，后续可继续推进 build/exec 入口等价化验证。
 
 ## 11. K8s 最佳解路径（联网资料 + 本地验证）
@@ -145,3 +154,6 @@
    参考：https://github.com/kubernetes-sigs/kind/issues/3558  
    参考：https://github.com/kubernetes-sigs/kind/issues/3598  
    参考：https://github.com/kubernetes-sigs/kind/issues/3685
+4. 本地 Docker 20.10 复测结论：  
+   - 首轮验证中 `kubectl exec` 已恢复，9 个场景全部 `PROBE_EXECUTED`（通过数量提升）。  
+   - 但重复建集群仍可能触发 `kubelet healthz timeout`，当前判定为“能力恢复但稳定性未完全收敛”。

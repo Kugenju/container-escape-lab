@@ -1,0 +1,168 @@
+===== config-cap_dac_read_search-container =====
+UTC 2026-03-10 14:44:51
+pod/cap-dac-read-search-container created
+pod/cap-dac-read-search-container condition met
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	00000000a80425ff
+[*] Verdict: PROBE_EXECUTED
+[*] 原始 writeup 的完整逃逸需要 shocker(open_by_handle_at) PoC。
+[result] exit_code=0
+
+===== config-cap_sys_admin-container =====
+UTC 2026-03-10 14:45:23
+pod/cap-sys-admin-container created
+pod/cap-sys-admin-container condition met
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	00000000a82425fb
+[+] mount tmpfs success
+[*] Verdict: PROBE_EXECUTED
+[*] 可继续按业务场景挂载宿主机目录并执行 chroot。
+[result] exit_code=0
+
+===== config-cap_sys_module-container =====
+UTC 2026-03-10 14:45:25
+pod/cap-sys-module-container created
+pod/cap-sys-module-container condition met
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	00000000a80525fb
+[*] Verdict: PROBE_EXECUTED
+[*] 完整利用需要自定义恶意内核模块(.ko)并在容器中加载。
+[result] exit_code=0
+
+===== config-cap_sys_ptrace-container =====
+UTC 2026-03-10 14:45:27
+pod/cap-sys-ptrace-container created
+pod/cap-sys-ptrace-container condition met
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	0000003fffffffff
+    PID COMMAND
+      1 systemd
+    190 systemd-journal
+    206 containerd
+    303 containerd-shim
+    316 containerd-shim
+    318 containerd-shim
+    345 containerd-shim
+    391 pause
+    401 pause
+[*] Verdict: PROBE_EXECUTED
+[*] 可进一步对宿主机进程进行 ptrace 注入（实验环境内）。
+[result] exit_code=0
+
+===== config-privileged-container =====
+UTC 2026-03-10 14:45:29
+pod/privileged-container created
+pod/privileged-container condition met
+uid=0(root) gid=0(root) groups=0(root)
+autofs
+bsg
+btrfs-control
+bus
+cdrom2
+core
+cpu
+cpu_dma_latency
+cuse
+dm-0
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda      8:0    0   40G  0 disk 
+|-sda1   8:1    0    1M  0 part 
+|-sda2   8:2    0    1G  0 part 
+`-sda3   8:3    0   39G  0 part 
+sr0     11:0    1  4.7G  0 rom  
+[*] Verdict: PROBE_EXECUTED
+[*] 可按 writeup 挂载宿主机磁盘分区后 chroot 到宿主机文件系统。
+[result] exit_code=0
+
+===== mount-docker-sock =====
+UTC 2026-03-10 14:45:31
+pod/mount-docker-sock created
+pod/mount-docker-sock condition met
+uid=0(root) gid=0(root) groups=0(root)
+total 0
+[*] Verdict: PROBE_EXECUTED
+[*] 可在容器内安装 docker 客户端，通过该 socket 启动挂载 / 的特权容器。
+[result] exit_code=0
+
+===== mount-host-etc =====
+UTC 2026-03-10 14:45:33
+pod/mount-host-etc created
+pod/mount-host-etc condition met
+uid=0(root) gid=0(root) groups=0(root)
+10-network-magic.conf
+10-network-security.conf
+adduser.conf
+alternatives
+apt
+bash.bashrc
+bindresvport.blacklist
+binfmt.d
+ca-certificates
+ca-certificates.conf
+escape-lab-control-plane
+[*] Verdict: PROBE_EXECUTED
+[*] 可直接读取宿主机配置、凭据类文件（按权限限制）。
+[result] exit_code=0
+
+===== mount-host-procfs =====
+UTC 2026-03-10 14:45:35
+pod/mount-host-procfs created
+pod/mount-host-procfs condition met
+uid=0(root) gid=0(root) groups=0(root)
+|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %d
+1
+190
+1986
+2003
+2043
+2051
+206
+2124
+2344
+2606
+[*] Verdict: PROBE_EXECUTED
+[*] 完整逃逸可结合 core_pattern + 崩溃触发执行宿主机路径脚本。
+[result] exit_code=0
+
+===== mount-var-log =====
+UTC 2026-03-10 14:45:37
+serviceaccount/logger created
+clusterrole.rbac.authorization.k8s.io/user-log-reader created
+clusterrolebinding.rbac.authorization.k8s.io/user-log-reader created
+pod/mount-var-log created
+pod/mount-var-log condition met
+uid=0(root) gid=0(root) groups=0(root)
+lsh not found
+cath not found
+[*] Verdict: PROBE_EXECUTED
+[*] writeup 中通过 lsh/cath 可读取宿主机文件。
+[result] exit_code=0
+
+[summary] result lines:
+1:===== config-cap_dac_read_search-container =====
+7:[*] Verdict: PROBE_EXECUTED
+9:[result] exit_code=0
+11:===== config-cap_sys_admin-container =====
+18:[*] Verdict: PROBE_EXECUTED
+20:[result] exit_code=0
+22:===== config-cap_sys_module-container =====
+28:[*] Verdict: PROBE_EXECUTED
+30:[result] exit_code=0
+32:===== config-cap_sys_ptrace-container =====
+48:[*] Verdict: PROBE_EXECUTED
+50:[result] exit_code=0
+52:===== config-privileged-container =====
+73:[*] Verdict: PROBE_EXECUTED
+75:[result] exit_code=0
+77:===== mount-docker-sock =====
+83:[*] Verdict: PROBE_EXECUTED
+85:[result] exit_code=0
+87:===== mount-host-etc =====
+103:[*] Verdict: PROBE_EXECUTED
+105:[result] exit_code=0
+107:===== mount-host-procfs =====
+123:[*] Verdict: PROBE_EXECUTED
+125:[result] exit_code=0
+127:===== mount-var-log =====
+137:[*] Verdict: PROBE_EXECUTED
+139:[result] exit_code=0

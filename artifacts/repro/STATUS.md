@@ -3,7 +3,10 @@
 ## 1. Baseline
 
 - Host: openEuler 24.03 (LTS-SP3), kernel `6.6.0-132.0.0.111.oe2403sp3.x86_64`
-- Docker: `18.09.0` (`EulerVersion 18.09.0.346`)
+- Docker (historical baseline): `18.09.0` (`EulerVersion 18.09.0.346`)
+- Docker (latest K8s validation): `20.10.24` (static binary)
+- containerd (latest K8s validation): `1.6.20`
+- runc (latest K8s validation): `1.1.5`
 - iSulad: `2.1.6`
 - Default `runc`: `1.1.8`
 
@@ -14,7 +17,8 @@
 
 - Docker：主线 CVE 脚本已覆盖，结论分为 `pass` 或 `BLOCKED_STAGE=*` 两类。
 - iSulad：全部 `cves/CVE-*/run_poc.sh` 条目已完成同步验证（含 runtime 无关本地探针）；非 CVE 场景仍在增补中。
-- K8s：`k8s-kind` 已可达并可批跑；`kubectl exec` 仍会触发 `k8s_exec_cgroup_path_missing`，但 9 个场景已通过启动日志探针回退形成 `PROBE_LOG_FALLBACK_OK` 结论并返回 0。
+- K8s（Docker 18.09 基线）：`kubectl exec` 会触发 `k8s_exec_cgroup_path_missing`，9 个场景通过日志探针回退形成 `PROBE_LOG_FALLBACK_OK`。
+- K8s（Docker 20.10.24 复测）：首轮复测中 `kubectl exec` 已恢复为 `PROBE_EXECUTED`，且 9 个场景批跑均 `exit_code=0`；但重复 `kind-up` 仍出现 kubelet 健康检查超时，当前稳定性未完全收敛。
 
 ## 3. CVE Matrix
 
@@ -50,6 +54,10 @@
 - `scripts/env_labctl.sh profile k8s-kind` 已增加 Docker 18.09 兼容回退（移除 `--cgroupns=*` 参数）并验证可成功起集群。
 - K8s 场景脚本已增加 `kubectl exec` 失败回退：当命中 `k8s_exec_cgroup_path_missing` 时自动读取启动日志中的 `K8S_LOG_PROBE_OK` 标记并返回 `PROBE_LOG_FALLBACK_OK`。
 - 回退镜像验证：`kindest/node:v1.30.0` 与 `v1.27.13` 在当前主机上都可复现同一 exec/cgroup 报错（见 `artifacts/repro/docker/k8s-version-matrix/*.log`）。
+- Docker 20.10 复测（`2026-03-10`）：
+  - 首轮严格模式（禁用日志回退）与默认模式均直接命中 `PROBE_EXECUTED`（`docker20-v1.30.0.log`）。
+  - 9 个 K8s 场景批跑均 `PROBE_EXECUTED` 且 `exit_code=0`（`docker20-batch-v1.30.0.log`）。
+  - 后续重复 `kind-up` 出现 `kubelet is not healthy` / `context deadline exceeded`（`docker20-retry-kindup-full.log`），需作为“可用但不稳定”状态记录。
 - `scripts/runtime_version_switch.sh` verified switch/restore flows:
   - switched to `runc 1.0.0-rc94` for CVE-2021-30465 vulnerable-path validation.
   - switched to `runc 1.0.0-rc5` for CVE-2019-5736 and CVE-2021-30465 comparative reruns.

@@ -64,3 +64,16 @@
 - `artifacts/repro/docker/k8s-version-matrix/v1.30.0-preload.log`
 - `artifacts/repro/docker/k8s-version-matrix/v1.27.13-preload.log`
 - `artifacts/repro/docker/k8s-version-matrix/fallback-batch-v1.27.13.log`
+
+## 4. K8s Docker 20.10 Validation (Latest)
+
+- Validation stack: Docker `20.10.24` + containerd `1.6.20` + runc `1.1.5`
+- First strict check (`K8S_EXEC_FALLBACK_TO_LOGS=0`) reached `PROBE_EXECUTED`
+- 9 scenario batch all `exit_code=0` with `PROBE_EXECUTED`
+- Repeated `kind-up` on same host can still hit kubelet health timeout (`localhost:10248/healthz`), so stability is currently marked as partial
+
+Evidence:
+
+- `artifacts/repro/docker/k8s-version-matrix/docker20-v1.30.0.log`
+- `artifacts/repro/docker/k8s-version-matrix/docker20-batch-v1.30.0.log`
+- `artifacts/repro/docker/k8s-version-matrix/docker20-retry-kindup-full.log`

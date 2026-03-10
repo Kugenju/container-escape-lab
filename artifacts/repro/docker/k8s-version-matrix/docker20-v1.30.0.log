@@ -1,0 +1,30 @@
+===== CASE docker20.10.24 + kind v1.30.0 =====
+UTC 2026-03-10 14:42:46
+[*] kind cluster not found: escape-lab
+[*] switch profile -> docker
+[*] docker=active, isulad=inactive
+[*] kubectl already installed: Client Version: v1.35.2
+[*] kind already installed: kind v0.23.0 go1.21.10 linux/amd64
+[*] pre-pull kind node image: kindest/node:v1.30.0
+v1.30.0: Pulling from kindest/node
+Digest: sha256:047357ac0cfea04663786a612ba1eaba9702bef25227a794b52890dd8bcd692e
+Status: Image is up to date for kindest/node:v1.30.0
+docker.io/kindest/node:v1.30.0
+[*] create kind cluster: escape-lab
+[*] kind cluster ready, namespace=metarget
+[test] strict exec path (fallback disabled)
+pod/cap-dac-read-search-container created
+pod/cap-dac-read-search-container condition met
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	00000000a80425ff
+[*] Verdict: PROBE_EXECUTED
+[*] 原始 writeup 的完整逃逸需要 shocker(open_by_handle_at) PoC。
+[result] strict_exit=0
+[test] default path (fallback enabled)
+pod/cap-dac-read-search-container created
+pod/cap-dac-read-search-container condition met
+uid=0(root) gid=0(root) groups=0(root)
+CapEff:	00000000a80425ff
+[*] Verdict: PROBE_EXECUTED
+[*] 原始 writeup 的完整逃逸需要 shocker(open_by_handle_at) PoC。
+[result] normal_exit=0
