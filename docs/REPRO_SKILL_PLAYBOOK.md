@@ -204,14 +204,17 @@ scripts/env_labctl.sh status
 统一汇总：
 
 - `artifacts/repro/STATUS.md`
-- `artifacts/repro/docker/REMAINING_SUMMARY_20260309.md`
-- `artifacts/repro/isula/REMAINING_SUMMARY_20260309.md`
+- `artifacts/repro/docker/REMAINING_SUMMARY.md`
+- `artifacts/repro/isula/REMAINING_SUMMARY.md`
 
 README 回填要求：
 
-- 在 `cves/<CVE>/README.md` 或 `readme.md` 新增“本轮新增结论”小节。
-- 至少包含两组对照证据：脆弱版本命中日志、修复版本阻断日志。
-- 对照日志应包含可检索关键词（如 `SUCCESS` / `BLOCKED_STAGE` / 关键报错）。
+- 不再按日期堆叠“复现记录”小节，统一改为单一的 `统一复现记录（已整合）` 段落。
+- 统一模板固定为 5 个小节：`复现范围与环境`、`结果摘要`、`关键运行输出（机理印证）`、`机理补充说明`、`证据索引`。
+- `关键运行输出（机理印证）` 必须引用真实运行日志原文，使用 fenced code block（` ```text `）粘贴关键行。
+- 每个 README 至少包含 2 组“结论级”日志证据：命中证据（如 `SUCCESS` / `VULNERABLE_OR_PARTIALLY_VULNERABLE`）或阻断证据（`BLOCKED_STAGE=*` + 关键报错）。
+- 若同一 CVE 有版本对照（脆弱版本与修复版本），必须同时给出两侧日志片段并说明机理差异。
+- `证据索引` 至少列出 `run.log` 与对应 runtime 日志路径（`docker_journal.log` / `isulad_journal.log` / `kernel_journal.log`）。
 
 ## 8. 已验证的关键经验
 
