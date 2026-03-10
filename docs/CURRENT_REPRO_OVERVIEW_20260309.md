@@ -16,7 +16,7 @@
 | --- | --- |
 | CVE-2019-13139 | `BLOCKED_STAGE=parse_remote_refspec` |
 | CVE-2019-14271 | `BLOCKED_STAGE=post_trigger_no_escape_artifact` |
-| CVE-2019-5736 | `BLOCKED_STAGE=trap_reexec_loader_dependency` |
+| CVE-2019-5736 | `BLOCKED_STAGE=runc_exe_handle_not_observed`（`runc 1.0.0-rc5` 最新复测） |
 | CVE-2024-21626 | `BLOCKED_STAGE=workdir_fd_path_validation` |
 | CVE-2016-9962 | `BLOCKED_STAGE=no_host_marker` |
 | CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` |
@@ -102,6 +102,14 @@
   证据：`artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc94-20260310/`
 - `CVE-2019-5736` 在 `runc 1.0.0-rc5` 下复测：触发链路进入 re-exec 阶段，但未生成宿主机 proof（`BLOCKED_STAGE=post_trigger_no_host_proof`）。  
   证据：`artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt2/`
+- `CVE-2019-5736` 按网络 PoC 细节继续增强并复测（`attempt3/4`）：  
+  - `attempt3`：新增“等待 exploit 退出 + post-trigger”后，阻断收敛为 `BLOCKED_STAGE=trap_container_wait_timeout`。  
+  - `attempt4`：新增 runc pid 重新探测后，阻断收敛为 `BLOCKED_STAGE=post_trigger_no_host_proof`（可见多次 pid 切换但仍无稳定句柄）。  
+  证据：`artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt3/`、`artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt4/`
+- `CVE-2019-5736` 继续对齐网络 PoC（即时句柄获取 + `/bin/bash` 触发，`attempt5/6`）：  
+  - `attempt5`：`BLOCKED_STAGE=runc_exe_handle_not_observed`  
+  - `attempt6-bash-trigger`：`BLOCKED_STAGE=runc_exe_handle_not_observed`  
+  证据：`artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt5/`、`artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt6-bash-trigger/`
 - `CVE-2021-30465` 在 `runc 1.0.0-rc5` 下复测：`BLOCKED_STAGE=race_not_hit_or_env_incompatible`。  
   证据：`artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc5-20260310/`
 - `CVE-2024-21626` 新增 `runc-direct` 复现链路：  
@@ -142,6 +150,8 @@
 - CVE-2019-13139（Docker `<18.09.4`）：https://docs.docker.com/engine/release-notes/18.09/  
 - CVE-2019-14271（Docker `19.03.x <19.03.1`）：https://nvd.nist.gov/vuln/detail/CVE-2019-14271  
 - CVE-2019-5736（runc `<1.0.0-rc6`）：https://nvd.nist.gov/vuln/detail/CVE-2019-5736  
+- CVE-2019-5736 复现实现参考（Frichetten）：https://raw.githubusercontent.com/Frichetten/CVE-2019-5736-PoC/master/main.go  
+- CVE-2019-5736 复现实现参考（Twistlock exec/malicious image）：https://github.com/twistlock/RunC-CVE-2019-5736  
 - CVE-2016-9962（runc `<1.0.0-rc2`）：https://nvd.nist.gov/vuln/detail/CVE-2016-9962  
 - CVE-2021-30465（runc `<=1.0.0-rc94`）：https://github.com/opencontainers/runc/security/advisories/GHSA-c3xm-pvg7-gh7r  
 - CVE-2024-21626（runc `<1.1.12`）：https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv  

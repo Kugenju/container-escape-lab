@@ -37,6 +37,14 @@
 - `artifacts/repro/docker/CVE-2017-1000112/auto-run-20260310/docker_journal.log`
 - `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt2/run.log`
 - `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt2/docker_journal.log`
+- `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt3/run.log`
+- `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt3/docker_journal.log`
+- `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt4/run.log`
+- `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt4/docker_journal.log`
+- `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt5/run.log`
+- `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt5/docker_journal.log`
+- `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt6-bash-trigger/run.log`
+- `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt6-bash-trigger/docker_journal.log`
 - `artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc5-20260310/run.log`
 - `artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc5-20260310/docker_journal.log`
 - `artifacts/repro/docker/CVE-2016-5195/auto-run-20260310/run.log`

@@ -164,6 +164,16 @@ scripts/env_labctl.sh status
 - 在版本切换到明确脆弱版本（例如 `runc 1.1.7`）后执行 direct 探测，优先确认是否能命中 `fd`。
 - 同步保留当前默认版本（如 `runc 1.1.8`）对照证据，避免把“版本切换成功”误判为“默认环境可复现”。
 
+### 5.10 CVE-2019-5736 trap 链路提前清理/句柄竞争
+
+现象：`docker exec` 已持续出现 `No help topic for '/bin/sh'` 或 `'/bin/bash'`，但无 host proof。  
+修复：
+
+- `run_poc.sh` 不要在 trigger 后立即清理，先 `docker wait` 并设置明确超时窗口。
+- 若日志出现 overwrite marker 但尚未落地 proof，补做 post-trigger `docker run` 轮次验证“下一次 runc 调用”。
+- 在 exploit 中把“发现 runc 进程”和“打开 `/proc/<pid>/exe`”尽量并行/紧邻执行，减少短生命周期进程窗口丢失。
+- 若长期无法拿到稳定句柄，统一记录：`BLOCKED_STAGE=runc_exe_handle_not_observed`。
+
 ## 6. 阻断阶段命名建议
 
 建议统一格式：`BLOCKED_STAGE=<snake_case>`
@@ -173,6 +183,7 @@ scripts/env_labctl.sh status
 - `parse_remote_refspec`
 - `workdir_fd_path_validation`
 - `trap_reexec_loader_dependency`
+- `runc_exe_handle_not_observed`
 - `cgroup_v1_controller_unavailable`
 - `runtime_version_not_vulnerable_range`
 - `k8s_api_unreachable`
