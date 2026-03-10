@@ -34,6 +34,7 @@
 - iSulad：CVE 主线条目已全部完成同步验证（含本地探针类脚本）。
 - K8s（Docker 18.09 基线）：`kubectl exec` 阻断，已通过日志探针回退补齐 9 个场景证据并跑通（exit=0）。
 - K8s（Docker 20.10.24 复测）：首轮严格模式可直接 `PROBE_EXECUTED`，9 场景批跑全部 `PROBE_EXECUTED` + `exit=0`；但后续重复 `kind-up` 仍出现 kubelet 健康检查超时。
+- 最新 CVE 补录：`CVE-2025-31133` 已完成 Docker+iSulad 同步复现并形成统一 README；`CVE-2025-52881` 与 `CVE-2025-52565` 尚未检索到可直接复用的公开 runnable PoC。
 
 ## 5. Docker 结果矩阵
 
@@ -46,6 +47,7 @@
 | CVE-2022-0847 | `pass`（success marker） |
 | CVE-2021-30465（`runc 1.0.0-rc94`） | `pass`（`VULNERABLE_OR_PARTIALLY_VULNERABLE`） |
 | CVE-2024-21626（Docker `20.10.24` + `runc 1.1.5`，Attack-1） | `pass`（host marker 命中 `fd=9`） |
+| CVE-2025-31133（Docker `20.10.24` + `runc 1.1.5`） | `pass`（host `core_pattern` token 命中） |
 | CVE-2024-21626（`runc 1.1.7` direct-runc） | `pass`（命中 `fd=7`） |
 | CVE-2019-5736（`runc 1.0.0-rc5` high-trigger） | `pass`（落地宿主机 proof `/tmp/CVE-2019-5736-PWNED`） |
 
@@ -84,6 +86,7 @@
 | CVE-2019-5736 | 未生成宿主机 proof；`runc 1.0.0-rc5` 在 iSulad 下额外命中 runtime 兼容性阻断（cgroup namespace） |
 | CVE-2020-14386 | `BLOCKED_STAGE=cap_net_raw_unavailable`（与 Docker 同步） |
 | CVE-2024-21626 | `pass`（同步 `workdir/fd` 探针命中 `fd=8`） |
+| CVE-2025-31133 | `pass`（iSulad profile 下 attempt2 命中 host `core_pattern` token） |
 | CVE-2016-9962 | `BLOCKED_STAGE=no_host_marker`（`release_agent` 写入被拒） |
 | CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` |
 | CVE-2021-30465 | `pass`（Docker20 + `runc 1.0.0-rc94` 同步复测命中 host-root-like listing） |
@@ -113,7 +116,7 @@
 
 ### 8.1 版本对照复测
 
-- 新增 `scripts/runtime_version_switch.sh`（`status/use/restore`）。
+- 新增 `scripts/runtime_version_switch.sh`（`runc`: `status/use/restore`，`docker`: `docker-prefetch/docker-use-local/docker-restore`）。
 - `CVE-2021-30465`：`runc 1.0.0-rc94` 可命中，`1.1.8` 负对照阻断。
 - `CVE-2021-30465`：iSulad 同步竞态复测在 Docker20 + `runc 1.0.0-rc94` 也命中 `VULNERABLE_OR_PARTIALLY_VULNERABLE`（`victim_2`）。
 - `CVE-2019-5736`：`runc 1.0.0-rc5` 在 high-trigger 参数下命中宿主机 proof；默认 `1.1.8` 仍在 trap re-exec 依赖阶段阻断。
@@ -122,6 +125,9 @@
 - `CVE-2024-21626`：Docker `20.10.24` + `runc 1.1.5` 攻击链复测中，Attack-1 命中 host marker（`fd=9`）；iSulad 同步探针命中 `fd=8`。
 - `CVE-2024-21626`：探针脚本改为“输出包含 token 即命中”，消除 `getcwd` 警告噪声导致的误判。
 - `CVE-2019-14271`：依据公开受影响区间补测 Docker `19.03.0` 后，仍为 `post_trigger_no_escape_artifact`（未观察到 `/host_fs`）。
+- `CVE-2025-31133`：在 `runc 1.1.5` 下复现 symlink-race，Docker 与 iSulad profile 均命中 host `core_pattern` token。
+- `scripts/runtime_version_switch.sh`：已从仅 `runc` 切换扩展到 `runc + docker` 双通道，支持 `docker-prefetch/docker-use-local/docker-restore` 的同工具多版本快切。
+- 联网检索 `2025-11-05` 同批 runc 高危公告（`CVE-2025-31133/52881/52565`）后，当前仅 `CVE-2025-31133` 检索到可直接复用的公开 runnable PoC；其余两项先记录为“待公开 PoC/需自行构造”。
 
 ### 8.2 Placeholder 脚本补齐
 

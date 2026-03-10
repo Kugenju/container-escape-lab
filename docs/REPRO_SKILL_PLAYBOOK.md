@@ -43,17 +43,28 @@ scripts/env_labctl.sh profile k8s-kind
 # 删除 kind 集群
 scripts/env_labctl.sh kind-down
 
-# 查看/切换/恢复 runc 版本
+# 查看缓存/预取/切换/恢复 runc 版本
 scripts/runtime_version_switch.sh status
-scripts/runtime_version_switch.sh use 1.0.0-rc94
-scripts/runtime_version_switch.sh restore
+scripts/runtime_version_switch.sh list-cache
+scripts/runtime_version_switch.sh prefetch 1.0.0-rc94
+scripts/runtime_version_switch.sh use-local 1.0.0-rc94 --scope docker
+scripts/runtime_version_switch.sh use 1.1.5 --scope dual
+scripts/runtime_version_switch.sh restore --scope isula
+
+# 查看缓存/预取/切换/恢复 Docker 静态二进制版本
+scripts/runtime_version_switch.sh docker-status
+scripts/runtime_version_switch.sh docker-list-cache
+scripts/runtime_version_switch.sh docker-prefetch 20.10.24
+scripts/runtime_version_switch.sh docker-use-local 20.10.24 --scope docker
+scripts/runtime_version_switch.sh docker-restore --scope docker
 ```
 
 补充：
 
 - 已支持自动安装 `kubectl` / `kind`。
 - 已支持镜像互导：`scripts/env_labctl.sh sync-image <image> docker-to-isula`
-- 已支持 `runc` 版本切换（含备份恢复）：`scripts/runtime_version_switch.sh`
+- 已支持 `runc` 版本预取与缓存快切（`prefetch/use-local/list-cache`），并可按 `--scope docker|isula|dual|none` 自动重启对应运行时服务。
+- 已支持 Docker 静态二进制版本预取与缓存快切（`docker-prefetch/docker-use-local/docker-list-cache`），可在同一工具不同版本间快速切换。
 - 对 Docker 18.09 等不支持 `--cgroupns` 的环境，`profile k8s-kind` 已内置兼容回退（kind create 自动移除该参数）。
 
 ## 4. 推荐执行流程（下次会话直接照做）
