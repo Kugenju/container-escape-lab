@@ -147,6 +147,14 @@ scripts/env_labctl.sh status
 - 网络补齐至少两类来源：官方 CVE 记录（受影响版本）+ 官方/社区主仓 PoC 来源。
 - 复跑后按规范补齐证据目录与汇总文档，确保 placeholder 退出批跑列表。
 
+### 5.8 `su nobody` 执行返回 126
+
+现象：`probe exit code=126`，日志无 PoC marker。  
+修复：
+
+- 不要直接执行位于 `/root/...` 的二进制（`nobody` 无法遍历该路径）。
+- 先把编译产物复制到 `/tmp` 并 `chmod 0755`，再用 `su nobody` 执行。
+
 ## 6. 阻断阶段命名建议
 
 建议统一格式：`BLOCKED_STAGE=<snake_case>`

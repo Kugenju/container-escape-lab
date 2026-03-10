@@ -1,0 +1,4 @@
+docker: Docker version 18.09.0, build 270f890
+runc: runc version 1.1.8
+kernel: 6.6.0-132.0.0.111.oe2403sp3.x86_64
+kata-runtime: NOT_FOUND

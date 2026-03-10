@@ -1,0 +1,4 @@
+[*] kata-escape-2020 probe start: 2026-03-10T14:49:55+08:00
+[*] Kernel: 6.6.0-132.0.0.111.oe2403sp3.x86_64
+[-] kata-runtime not found in PATH.
+[*] Verdict: BLOCKED_STAGE=kata_runtime_not_installed

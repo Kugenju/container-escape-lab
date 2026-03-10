@@ -24,6 +24,11 @@
 | CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` |
 | CVE-2017-1000112 | `BLOCKED_STAGE=smap_mitigation_detected` |
 | CVE-2016-5195 | `BLOCKED_STAGE=kernel_not_vulnerable_or_patched` |
+| CVE-2016-8655 | `BLOCKED_STAGE=cap_net_raw_unavailable` |
+| CVE-2017-16995 | `BLOCKED_STAGE=trigger_only_no_priv_esc_chain` |
+| CVE-2017-6074 | `BLOCKED_STAGE=dccp_module_unavailable` |
+| CVE-2020-14386 | `BLOCKED_STAGE=cap_net_raw_unavailable` |
+| kata-escape-2020 | `BLOCKED_STAGE=kata_runtime_not_installed` |
 
 ### 2.2 有成功标记（脚本层面）
 
@@ -72,8 +77,9 @@
 ## 6. 本次结论
 
 1. Docker / iSulad 主线 PoC 已基本覆盖，失败项都已转为“可解释的阶段化阻断”。  
-2. 目前最大未闭环项是 K8s 场景（不是脚本缺失，而是集群可达性未满足）。  
-3. 新会话复用时，优先用 `docs/REPRO_SKILL_PLAYBOOK.md` 作为执行手册。  
+2. 2026-03-10 已完成剩余 placeholder（`CVE-2016-8655 / CVE-2017-16995 / CVE-2017-6074 / CVE-2020-14386 / kata-escape-2020`）自动化补齐。  
+3. 目前最大未闭环项是 K8s 场景（不是脚本缺失，而是集群可达性未满足）。  
+4. 新会话复用时，优先用 `docs/REPRO_SKILL_PLAYBOOK.md` 作为执行手册。  
 
 ## 7. 2026-03-10 增量进展
 
@@ -109,6 +115,21 @@
 - `CVE-2016-5195` 已从“仅版本提示脚手架”改为“安全化 Dirty-COW 自动探测（临时只读文件）+ 非交互执行 + 阶段化结论 + 内核日志采集”。  
 - 2026-03-10 实跑结果：`BLOCKED_STAGE=kernel_not_vulnerable_or_patched`。  
   证据：`artifacts/repro/docker/CVE-2016-5195/auto-run-20260310/`
+- `CVE-2016-8655` 已从“仅版本提示脚手架”改为“安全化 AF_PACKET 探测 + 非交互执行 + 阶段化结论 + 内核日志采集”。  
+- 2026-03-10 实跑结果：`BLOCKED_STAGE=cap_net_raw_unavailable`。  
+  证据：`artifacts/repro/docker/CVE-2016-8655/auto-run-20260310/`
+- `CVE-2017-16995` 已从“仅版本提示脚手架”改为“安全化 eBPF 探测 + 非交互执行 + 阶段化结论 + 内核日志采集”。  
+- 2026-03-10 实跑结果：`BLOCKED_STAGE=trigger_only_no_priv_esc_chain`。  
+  证据：`artifacts/repro/docker/CVE-2017-16995/auto-run-20260310/`
+- `CVE-2017-6074` 已从“仅版本提示脚手架”改为“安全化 DCCP 探测 + 非交互执行 + 阶段化结论 + 内核日志采集”。  
+- 2026-03-10 实跑结果：`BLOCKED_STAGE=dccp_module_unavailable`。  
+  证据：`artifacts/repro/docker/CVE-2017-6074/auto-run-20260310/`
+- `CVE-2020-14386` 已从“仅版本提示脚手架”改为“安全化 AF_PACKET vnet 探测 + 非交互执行 + 阶段化结论 + 内核日志采集”。  
+- 2026-03-10 实跑结果：`BLOCKED_STAGE=cap_net_raw_unavailable`。  
+  证据：`artifacts/repro/docker/CVE-2020-14386/auto-run-20260310/`
+- `kata-escape-2020` 已从“手工提示脚手架”改为“kata-runtime 版本/环境自动探测 + 非交互执行 + 阶段化结论 + runtime 日志采集”。  
+- 2026-03-10 实跑结果：`BLOCKED_STAGE=kata_runtime_not_installed`。  
+  证据：`artifacts/repro/docker/kata-escape-2020/auto-run-20260310/`
 
 ### 7.4 版本信息来源（网络补充）
 
@@ -120,3 +141,12 @@
 - CVE-2024-21626（runc `<1.1.12`）：https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv  
 - CVE-2016-5195（Linux kernel `2.x/3.x/4.x before 4.8.3`）：https://cveawg.mitre.org/api/cve/CVE-2016-5195  
 - CVE-2016-5195 官方 PoC 索引与源码：https://dirtycow.ninja/ 、https://raw.githubusercontent.com/dirtycow/dirtycow.github.io/master/dirtyc0w.c  
+- CVE-2016-8655（Linux kernel `through 4.8.12`）：https://cveawg.mitre.org/api/cve/CVE-2016-8655  
+- CVE-2016-8655 PoC 参考（EDB-47170）：https://www.exploit-db.com/download/47170  
+- CVE-2017-16995（Linux kernel `through 4.4`）：https://cveawg.mitre.org/api/cve/CVE-2017-16995  
+- CVE-2017-16995 PoC 参考（EDB-44298）：https://www.exploit-db.com/download/44298  
+- CVE-2017-6074（Linux kernel `through 4.9.11`）：https://cveawg.mitre.org/api/cve/CVE-2017-6074  
+- CVE-2017-6074 触发 PoC（EDB-41457）：https://www.exploit-db.com/download/41457  
+- CVE-2020-14386（Linux kernel `before 5.9-rc4`）：https://cveawg.mitre.org/api/cve/CVE-2020-14386  
+- CVE-2020-14386 漏洞分析：https://unit42.paloaltonetworks.com/cve-2020-14386/  
+- kata-escape-2020 相关 CVE：https://cveawg.mitre.org/api/cve/CVE-2020-2024 、https://cveawg.mitre.org/api/cve/CVE-2020-2026 、https://cveawg.mitre.org/api/cve/CVE-2020-28914  

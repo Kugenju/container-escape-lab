@@ -1,2 +1,4 @@
-﻿kata-runtime
+kata-runtime
+journalctl
+uname
 

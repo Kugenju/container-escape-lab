@@ -1,0 +1,8 @@
+[*] kata-escape-2020 probe start: 2026-03-10T14:49:55+08:00
+[*] Kernel: 6.6.0-132.0.0.111.oe2403sp3.x86_64
+[*] Reference vulnerable ranges:
+    - CVE-2020-2024: Kata Containers < 1.11.0
+    - CVE-2020-2026: Kata 1.11 < 1.11.1 / 1.10 < 1.10.5 / 1.9 and earlier
+    - CVE-2020-28914: Kata Containers < 1.11.5
+[-] kata-runtime not found in PATH.
+[*] Verdict: BLOCKED_STAGE=kata_runtime_not_installed
