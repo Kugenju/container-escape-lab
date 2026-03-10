@@ -16,6 +16,7 @@
 2. 每次失败都要输出明确阻断阶段（`BLOCKED_STAGE=...`）。  
 3. 每次复跑都要落盘证据（run log + journal + kernel log）。  
 4. 不依赖交互输入；脚本优先改成非交互可重复执行。  
+5. 每个 CVE 在形成“初步结论”后，必须回填该 CVE `README`：补充更细机理分析 + 成功/阻断对照日志。  
 
 ## 3. 环境切换工具
 
@@ -205,6 +206,12 @@ scripts/env_labctl.sh status
 - `artifacts/repro/STATUS.md`
 - `artifacts/repro/docker/REMAINING_SUMMARY_20260309.md`
 - `artifacts/repro/isula/REMAINING_SUMMARY_20260309.md`
+
+README 回填要求：
+
+- 在 `cves/<CVE>/README.md` 或 `readme.md` 新增“本轮新增结论”小节。
+- 至少包含两组对照证据：脆弱版本命中日志、修复版本阻断日志。
+- 对照日志应包含可检索关键词（如 `SUCCESS` / `BLOCKED_STAGE` / 关键报错）。
 
 ## 8. 已验证的关键经验
 

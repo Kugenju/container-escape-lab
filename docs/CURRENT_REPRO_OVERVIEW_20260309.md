@@ -20,7 +20,7 @@
 | CVE-2024-21626 | `BLOCKED_STAGE=workdir_fd_path_validation` |
 | CVE-2016-9962 | `BLOCKED_STAGE=no_host_marker` |
 | CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` |
-| CVE-2021-30465 | `BLOCKED_STAGE=runtime_version_not_vulnerable_range` |
+| CVE-2021-30465 | 基线 `runc 1.1.8`：`BLOCKED_STAGE=mount_path_or_permission_validation` |
 | CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` |
 | CVE-2017-1000112 | `BLOCKED_STAGE=smap_mitigation_detected` |
 | CVE-2016-5195 | `BLOCKED_STAGE=kernel_not_vulnerable_or_patched` |
@@ -37,6 +37,7 @@
 | CVE-2018-18955 | `pass`（脚本报告 success marker） |
 | CVE-2021-3493 | `pass`（脚本报告 success marker） |
 | CVE-2022-0847 | `pass`（脚本报告 success marker） |
+| CVE-2021-30465（`runc 1.0.0-rc94`） | `pass`（命中 `VULNERABLE_OR_PARTIALLY_VULNERABLE`，容器内出现 host-root-like entries） |
 | CVE-2024-21626（`run_poc_runc_direct.sh`） | `pass`（在切换 `runc 1.1.7` 后命中 `fd=7`） |
 
 
@@ -92,14 +93,16 @@
 | CVE-2019-14271 | Docker `19.03.x < 19.03.1` | 不匹配（18.09.x 不在该范围） | 结论补充为“版本路径不匹配” |
 | CVE-2019-5736 | runc `< 1.0.0-rc6` | 不匹配 | 已切到 `runc 1.0.0-rc5` 并重跑 |
 | CVE-2016-9962 | runc `< 1.0.0-rc2` | 不匹配 | 结论补充为“当前 runc 不在脆弱范围” |
-| CVE-2021-30465 | runc `<= 1.0.0-rc94` | 不匹配 | 已切到 `runc 1.0.0-rc94` 并重跑 |
+| CVE-2021-30465 | runc `<= 1.0.0-rc94` | 不匹配 | 已切到 `runc 1.0.0-rc94` 命中，并在 `1.1.8` 做负对照 |
 | CVE-2024-21626 | runc `< 1.1.12` | 匹配（1.1.8） | 新增 direct-runc 链路：1.1.8 阻断、1.1.7 命中 |
 
 ### 7.2 版本切换重跑结果
 
 - 新增 `scripts/runtime_version_switch.sh`（`status/use/restore`）用于 runc 版本切换验证。  
-- `CVE-2021-30465` 在 `runc 1.0.0-rc94` 下复测：`BLOCKED_STAGE=race_not_hit_or_env_incompatible`。  
-  证据：`artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc94-20260310/`
+- `CVE-2021-30465` 在 `runc 1.0.0-rc94` 下按 `renameat2` 交换竞态模型复测：命中 `VULNERABLE_OR_PARTIALLY_VULNERABLE`，容器 `/test1/zzz` 观测到 `bin/etc/proc/usr/var`。  
+  证据：`artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc94-20260310-attempt2-race-create/`
+- `CVE-2021-30465` 在 `runc 1.1.8` 同脚本对照复测：被路径校验拦截（`BLOCKED_STAGE=mount_path_or_permission_validation`，含 `possibly malicious path detected`）。  
+  证据：`artifacts/repro/docker/CVE-2021-30465/runc-1.1.8-20260310-attempt2-race-create/`
 - `CVE-2019-5736` 在 `runc 1.0.0-rc5` 下复测：触发链路进入 re-exec 阶段，但未生成宿主机 proof（`BLOCKED_STAGE=post_trigger_no_host_proof`）。  
   证据：`artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt2/`
 - `CVE-2019-5736` 按网络 PoC 细节继续增强并复测（`attempt3/4`）：  
@@ -110,7 +113,7 @@
   - `attempt5`：`BLOCKED_STAGE=runc_exe_handle_not_observed`  
   - `attempt6-bash-trigger`：`BLOCKED_STAGE=runc_exe_handle_not_observed`  
   证据：`artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt5/`、`artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt6-bash-trigger/`
-- `CVE-2021-30465` 在 `runc 1.0.0-rc5` 下复测：`BLOCKED_STAGE=race_not_hit_or_env_incompatible`。  
+- `CVE-2021-30465` 在 `runc 1.0.0-rc5` 的旧链路复测仍未命中（`BLOCKED_STAGE=race_not_hit_or_env_incompatible`），已由新竞态模型（attempt2）补齐可落地路径。  
   证据：`artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc5-20260310/`
 - `CVE-2024-21626` 新增 `runc-direct` 复现链路：  
   - `runc 1.1.8`：`BLOCKED_STAGE=direct_runc_fd_probe_no_hit`  
