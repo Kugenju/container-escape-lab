@@ -8,3 +8,8 @@ v1.30.0: Pulling from kindest/node
 ed30103f792f: Pulling fs layer
 11fdf21a1da7: Download complete
 11fdf21a1da7: Pull complete
+ed30103f792f: Verifying Checksum
+ed30103f792f: Download complete
+ed30103f792f: Pull complete
+Digest: sha256:047357ac0cfea04663786a612ba1eaba9702bef25227a794b52890dd8bcd692e
+Status: Downloaded newer image for kindest/node:v1.30.0
