@@ -13,7 +13,8 @@
 - containerd (latest K8s validation): `1.6.20`
 - runc (latest K8s validation): `1.1.5`
 - iSulad: `2.1.6`
-- Default `runc`: `1.1.8`
+- Active `runc` (current Docker20 stack): `1.1.5`
+- Historical default/negative-control `runc`: `1.1.8`
 
 补充说明：
 - 对版本敏感 CVE，已通过 `scripts/runtime_version_switch.sh` 做“脆弱版本命中 + 默认版本负对照”验证。
@@ -44,6 +45,7 @@
 | CVE-2021-3493 | `pass`（success marker） |
 | CVE-2022-0847 | `pass`（success marker） |
 | CVE-2021-30465（`runc 1.0.0-rc94`） | `pass`（`VULNERABLE_OR_PARTIALLY_VULNERABLE`） |
+| CVE-2024-21626（Docker `20.10.24` + `runc 1.1.5`，Attack-1） | `pass`（host marker 命中 `fd=9`） |
 | CVE-2024-21626（`runc 1.1.7` direct-runc） | `pass`（命中 `fd=7`） |
 | CVE-2019-5736（`runc 1.0.0-rc5` high-trigger） | `pass`（落地宿主机 proof `/tmp/CVE-2019-5736-PWNED`） |
 
@@ -52,7 +54,7 @@
 | CVE | 结果 |
 | --- | --- |
 | CVE-2019-13139 | `BLOCKED_STAGE=parse_remote_refspec` |
-| CVE-2019-14271 | `BLOCKED_STAGE=post_trigger_no_escape_artifact` |
+| CVE-2019-14271 | `BLOCKED_STAGE=post_trigger_no_escape_artifact`（`18.09.0` 与 `19.03.0` 补测一致） |
 | CVE-2019-5736（`runc 1.1.8`） | `BLOCKED_STAGE=trap_reexec_loader_dependency`（修复版本负对照） |
 | CVE-2024-21626（`runc 1.1.8` direct-runc） | `BLOCKED_STAGE=direct_runc_fd_probe_no_hit` |
 | CVE-2016-9962 | `BLOCKED_STAGE=no_host_marker` |
@@ -81,7 +83,7 @@
 | CVE-2019-14271 | 恶意 NSS 替换后未出现 `/host_fs` |
 | CVE-2019-5736 | 未生成宿主机 proof，链路未闭环 |
 | CVE-2020-14386 | `BLOCKED_STAGE=cap_net_raw_unavailable`（与 Docker 同步） |
-| CVE-2024-21626 | `workdir/fd` 初始化阶段阻断 |
+| CVE-2024-21626 | `pass`（同步 `workdir/fd` 探针命中 `fd=8`） |
 | CVE-2016-9962 | `BLOCKED_STAGE=no_host_marker`（`release_agent` 写入被拒） |
 | CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` |
 | CVE-2021-30465 | `BLOCKED_STAGE=runtime_version_not_vulnerable_range_or_race_miss` |
@@ -115,6 +117,9 @@
 - `CVE-2021-30465`：`runc 1.0.0-rc94` 可命中，`1.1.8` 负对照阻断。
 - `CVE-2019-5736`：`runc 1.0.0-rc5` 在 high-trigger 参数下命中宿主机 proof；默认 `1.1.8` 仍在 trap re-exec 依赖阶段阻断。
 - `CVE-2024-21626`：direct-runc 链路下 `1.1.7` 可命中、`1.1.8` 阻断，形成清晰版本对照。
+- `CVE-2024-21626`：Docker `20.10.24` + `runc 1.1.5` 攻击链复测中，Attack-1 命中 host marker（`fd=9`）；iSulad 同步探针命中 `fd=8`。
+- `CVE-2024-21626`：探针脚本改为“输出包含 token 即命中”，消除 `getcwd` 警告噪声导致的误判。
+- `CVE-2019-14271`：依据公开受影响区间补测 Docker `19.03.0` 后，仍为 `post_trigger_no_escape_artifact`（未观察到 `/host_fs`）。
 
 ### 8.2 Placeholder 脚本补齐
 

@@ -1,0 +1,6 @@
+[runner] start=2026-03-10T23:23:35+08:00
+[runner] restore from /opt/docker-bin-backup-before-19.03-20260310-232052
+Server=20.10.24 Client=20.10.24
+runc version 1.1.5
+containerd github.com/containerd/containerd v1.6.20 2806fc1057397dbaeefbea0e4e17bddfbd388f38
+[runner] done

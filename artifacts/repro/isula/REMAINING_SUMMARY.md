@@ -20,7 +20,7 @@
 | CVE-2021-3493 | 0 | `pass` | `uid=0/root` markers observed in run output. |
 | CVE-2022-0847 | 0 | `pass` | `uid=0` + `popping root shell` markers observed. |
 | CVE-2022-0995 | 1 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` | Notification pipe creation failed; exploit chain did not start. |
-| CVE-2024-21626 | 0 | `BLOCKED_STAGE=workdir_fd_path_validation` | `apparmor=unconfined` unsupported and fd probe missed. |
+| CVE-2024-21626 | 0 | `VULNERABLE_OR_PARTIALLY_VULNERABLE` | Docker20 同步探针命中 host marker（`fd=8`），`workdir/fd` 泄露链路可触达。 |
 
 ## 2. Backfilled This Round
 
@@ -58,3 +58,4 @@
 - `artifacts/repro/isula/CVE-2022-0847/`
 - `artifacts/repro/isula/CVE-2022-0995/`
 - `artifacts/repro/isula/CVE-2024-21626/`
+- `artifacts/repro/isula/CVE-2024-21626/docker20-runc1.1.5-sync-20260310-attempt2/`

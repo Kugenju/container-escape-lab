@@ -18,6 +18,7 @@
 | `cves/CVE-2021-3493/run_poc.sh` | 0 | pass | success marker observed |
 | `cves/CVE-2022-0847/run_poc.sh` | 0 | pass | success marker observed |
 | `cves/CVE-2022-0995/run_poc.sh` | 1 | blocked-stage | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` |
+| `cves/CVE-2024-21626/run_poc.sh` (`docker 20.10.24 + runc 1.1.5`) | 0 | pass | Attack-1 probe hit host marker (`fd=9`, `VULNERABLE_OR_PARTIALLY_VULNERABLE`) |
 | `cves/CVE-2024-21626/run_poc_runc_direct.sh` (`runc 1.1.7`) | 0 | pass | direct-runc probe hit (`VULNERABLE_OR_PARTIALLY_VULNERABLE`) |
 | `cves/config-cap_dac_read_search-container/run_poc.sh` | 0 | pass | `PROBE_LOG_FALLBACK_OK`（exec 失败后由启动日志探针补证） |
 | `cves/config-cap_sys_admin-container/run_poc.sh` | 0 | pass | `PROBE_LOG_FALLBACK_OK`（含 `mount tmpfs success`） |
@@ -36,7 +37,8 @@
 | --- | --- | --- |
 | CVE-2021-30465 | vulnerable `runc 1.0.0-rc94` can hit; default `1.1.8` blocked | `artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc94-20260310-attempt2-race-create/`, `artifacts/repro/docker/CVE-2021-30465/runc-1.1.8-20260310-attempt2-race-create/` |
 | CVE-2019-5736 | vulnerable `runc 1.0.0-rc5` in high-trigger rerun hit host proof (`/tmp/CVE-2019-5736-PWNED`); default `1.1.8` remains blocked | `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt2/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt3/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt4/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt5/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt6-bash-trigger/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt8-high-trigger/` |
-| CVE-2024-21626 | direct-runc: `runc 1.1.7` hit, `1.1.8` blocked | `artifacts/repro/docker/CVE-2024-21626/runc-1.1.7-direct-20260310/`, `artifacts/repro/docker/CVE-2024-21626/runc-1.1.8-direct-20260310/` |
+| CVE-2024-21626 | Docker Attack-1 on `20.10.24 + runc 1.1.5` hit (`fd=9`); direct-runc keeps `1.1.7` hit / `1.1.8` blocked | `artifacts/repro/docker/CVE-2024-21626/docker20-runc1.1.5-20260310-attack-path/`, `artifacts/repro/docker/CVE-2024-21626/runc-1.1.7-direct-20260310/`, `artifacts/repro/docker/CVE-2024-21626/runc-1.1.8-direct-20260310/` |
+| CVE-2019-14271 | vulnerable-window retest on Docker `19.03.0` remained blocked (`post_trigger_no_escape_artifact`) | `artifacts/repro/docker/CVE-2019-14271/docker-19.03.0-20260310-attempt1/` |
 
 ## 3. Evidence Index
 
@@ -61,6 +63,11 @@
 - `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt8-high-trigger/`
 - `artifacts/repro/docker/CVE-2024-21626/runc-1.1.8-direct-20260310/`
 - `artifacts/repro/docker/CVE-2024-21626/runc-1.1.7-direct-20260310/`
+- `artifacts/repro/docker/CVE-2024-21626/docker20-runc1.1.5-20260310-attack-path/`
+- `artifacts/repro/docker/CVE-2024-21626/docker20-runc115-fdscan-20260310.log`
+- `artifacts/repro/docker/CVE-2019-14271/docker-19.03.0-20260310-attempt1/`
+- `artifacts/repro/docker/version-matrix/docker19-switch.log`
+- `artifacts/repro/docker/version-matrix/docker-restore-20.10-from-backup.log`
 - `artifacts/repro/docker/k8s-version-matrix/v1.30.0-preload.log`
 - `artifacts/repro/docker/k8s-version-matrix/v1.27.13-preload.log`
 - `artifacts/repro/docker/k8s-version-matrix/fallback-batch-v1.27.13.log`

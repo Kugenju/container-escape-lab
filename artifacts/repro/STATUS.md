@@ -8,7 +8,8 @@
 - containerd (latest K8s validation): `1.6.20`
 - runc (latest K8s validation): `1.1.5`
 - iSulad: `2.1.6`
-- Default `runc`: `1.1.8`
+- Active `runc` (current Docker20 stack): `1.1.5`
+- Historical default/negative-control `runc`: `1.1.8`
 
 说明：
 - 本状态表已合并多轮复测结论（含后续的 `runc` 版本切换对照），不再拆分“基线记录/增量记录”。
@@ -25,9 +26,9 @@
 | CVE | Docker | iSulad | Evidence |
 | --- | --- | --- | --- |
 | CVE-2019-13139 | `run_poc.sh` completed; `BLOCKED_STAGE=parse_remote_refspec` (`invalid refspec` before host command exec) | blocked at input stage: `isula-build` treats crafted URL as local path and rejects before git exec | `artifacts/repro/docker/CVE-2019-13139/`, `artifacts/repro/isula/CVE-2019-13139/` |
-| CVE-2019-14271 | reached `docker cp` trigger and malicious NSS replacement, but `/host_fs` absent; `BLOCKED_STAGE=post_trigger_no_escape_artifact` | mapped with `isula run/cp/exec/cp`; malicious NSS replacement succeeded, but `/host_fs` absent | `artifacts/repro/docker/CVE-2019-14271/`, `artifacts/repro/isula/CVE-2019-14271/` |
+| CVE-2019-14271 | baseline `18.09.0` and vulnerable-window retest `19.03.0` both reached `docker cp` trigger + malicious NSS replacement but no `/host_fs`; `BLOCKED_STAGE=post_trigger_no_escape_artifact` | mapped with `isula run/cp/exec/cp`; malicious NSS replacement succeeded, but `/host_fs` absent | `artifacts/repro/docker/CVE-2019-14271/`, `artifacts/repro/docker/CVE-2019-14271/docker-19.03.0-20260310-attempt1/`, `artifacts/repro/isula/CVE-2019-14271/` |
 | CVE-2019-5736 | default `runc 1.1.8` still blocked (`BLOCKED_STAGE=trap_reexec_loader_dependency`); on vulnerable `runc 1.0.0-rc5` high-trigger rerun hit host proof `/tmp/CVE-2019-5736-PWNED` (`VULNERABLE_OR_PARTIALLY_VULNERABLE`) | `isula-build` path incompatible for local base image; volume-injection fallback still stuck at `Waiting for runc to exec`, no proof | `artifacts/repro/docker/CVE-2019-5736/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt2/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt3/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt4/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt5/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt6-bash-trigger/`, `artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt8-high-trigger/`, `artifacts/repro/isula/CVE-2019-5736/` |
-| CVE-2024-21626 | Docker Attack-1/2 on `runc 1.1.8`: `BLOCKED_STAGE=workdir_fd_path_validation`; direct-runc probe: `1.1.8` blocked (`direct_runc_fd_probe_no_hit`), `1.1.7` hit `fd=7` (`VULNERABLE_OR_PARTIALLY_VULNERABLE`) | `apparmor=unconfined` unsupported by isula CLI; fd probe likewise blocked at runc init (`mkdir /proc/self/fd/N`) | `artifacts/repro/docker/CVE-2024-21626/`, `artifacts/repro/docker/CVE-2024-21626/runc-1.1.8-direct-20260310/`, `artifacts/repro/docker/CVE-2024-21626/runc-1.1.7-direct-20260310/`, `artifacts/repro/isula/CVE-2024-21626/` |
+| CVE-2024-21626 | Docker Attack-1/2: on `runc 1.1.8` blocked (`workdir_fd_path_validation`), on Docker `20.10.24` + `runc 1.1.5` Attack-1 hit host marker (`fd=9`, `VULNERABLE_OR_PARTIALLY_VULNERABLE`); direct-runc contrast still `1.1.7` hit / `1.1.8` block | synchronized isula `--workdir /proc/self/fd/N` scan on `runc 1.1.5` hit host marker (`fd=8`, `VULNERABLE_OR_PARTIALLY_VULNERABLE`) | `artifacts/repro/docker/CVE-2024-21626/`, `artifacts/repro/docker/CVE-2024-21626/docker20-runc1.1.5-20260310-attack-path/`, `artifacts/repro/docker/CVE-2024-21626/runc-1.1.8-direct-20260310/`, `artifacts/repro/docker/CVE-2024-21626/runc-1.1.7-direct-20260310/`, `artifacts/repro/isula/CVE-2024-21626/`, `artifacts/repro/isula/CVE-2024-21626/docker20-runc1.1.5-sync-20260310-attempt2/` |
 | CVE-2016-5195 | non-interactive safe Dirty-COW probe; read-only test file unchanged (`BLOCKED_STAGE=kernel_not_vulnerable_or_patched`) | sync rerun under isula profile reached same blocked stage (`BLOCKED_STAGE=kernel_not_vulnerable_or_patched`) | `artifacts/repro/docker/CVE-2016-5195/auto-run-20260310/`, `artifacts/repro/isula/CVE-2016-5195/` |
 | CVE-2016-8655 | non-interactive safe AF_PACKET probe; unprivileged run lacked `CAP_NET_RAW` (`BLOCKED_STAGE=cap_net_raw_unavailable`) | sync rerun under isula profile reached same blocked stage (`BLOCKED_STAGE=cap_net_raw_unavailable`) | `artifacts/repro/docker/CVE-2016-8655/auto-run-20260310/`, `artifacts/repro/isula/CVE-2016-8655/` |
 | CVE-2016-9962 | non-interactive `release_agent` probe finished; host marker absent (`BLOCKED_STAGE=no_host_marker`) | privileged run reached cgroup mount, but writing `release_agent` was denied; no host marker | `artifacts/repro/docker/CVE-2016-9962/`, `artifacts/repro/isula/CVE-2016-9962/` |
@@ -58,6 +59,10 @@
   - 首轮严格模式（禁用日志回退）与默认模式均直接命中 `PROBE_EXECUTED`（`docker20-v1.30.0.log`）。
   - 9 个 K8s 场景批跑均 `PROBE_EXECUTED` 且 `exit_code=0`（`docker20-batch-v1.30.0.log`）。
   - 后续重复 `kind-up` 出现 `kubelet is not healthy` / `context deadline exceeded`（`docker20-retry-kindup-full.log`），需作为“可用但不稳定”状态记录。
+- Docker 漏洞窗口补测（`2026-03-10`）：
+  - `CVE-2019-14271` 按公开受影响窗口切到 Docker `19.03.0`（Go `1.12.5` build）后仍未出现 `/host_fs`（`docker-19.03.0-20260310-attempt1/run.log`）。
+  - `CVE-2024-21626` 在 Docker `20.10.24` + `runc 1.1.5` 命中 Attack-1 host marker（`fd=9`），同机 iSulad 同步验证命中 `fd=8`。
+  - `CVE-2024-21626` 脚本判定已从“输出完全相等”调整为“输出包含 token”，避免 `getcwd` 噪声导致的假阴性。
 - `scripts/runtime_version_switch.sh` verified switch/restore flows:
   - switched to `runc 1.0.0-rc94` for CVE-2021-30465 vulnerable-path validation.
   - switched to `runc 1.0.0-rc5` for CVE-2019-5736 and CVE-2021-30465 comparative reruns.

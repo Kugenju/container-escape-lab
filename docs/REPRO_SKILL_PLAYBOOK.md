@@ -173,14 +173,15 @@ scripts/env_labctl.sh status
 - 不要直接执行位于 `/root/...` 的二进制（`nobody` 无法遍历该路径）。
 - 先把编译产物复制到 `/tmp` 并 `chmod 0755`，再用 `su nobody` 执行。
 
-### 5.10 Docker 路径阻断但 runc 直跑可复现
+### 5.10 CVE-2024-21626 的 `workdir/fd` 判定与对照
 
-现象：`docker run -w /proc/self/fd/N` 路径持续报 `mkdir ... not a directory`，难以命中 `CVE-2024-21626`。  
+现象：`docker run -w /proc/self/fd/N` 输出中出现大量 `getcwd` 噪声，脚本若使用“完全相等”匹配可能误判未命中。  
 修复：
 
-- 增加 `runc` direct 链路复现（导出 rootfs + `runc spec` + `process.cwd=/proc/self/fd/N` 枚举）。
-- 在版本切换到明确脆弱版本（例如 `runc 1.1.7`）后执行 direct 探测，优先确认是否能命中 `fd`。
-- 同步保留当前默认版本（如 `runc 1.1.8`）对照证据，避免把“版本切换成功”误判为“默认环境可复现”。
+- 命中判定统一用“输出包含 token”（`grep -Fq "$token"`），不要要求输出仅等于 token。
+- 先跑 Docker Attack-1 扫描（`fd` 枚举），再补 Attack-2/exec 路径；两条链路分开记录。
+- 同步保留 direct-runc 对照（如 `1.1.7` 命中、`1.1.8` 阻断），用于证明“版本窗口”而非脚本偶然命中。
+- iSulad 侧等价复测优先使用 `--workdir /proc/self/fd/N`，不要强依赖 `apparmor=unconfined` 参数。
 
 ### 5.11 CVE-2019-5736 trap 链路提前清理/句柄竞争
 

@@ -1,0 +1,7 @@
+[runner] start=2026-03-10T23:20:52+08:00
+[runner] switching Docker binaries to 19.03.0
+[runner] backup_dir=/opt/docker-bin-backup-before-19.03-20260310-232052
+Server=19.03.0 Client=19.03.0
+runc version 1.0.0-rc8
+containerd github.com/containerd/containerd v1.2.6 894b81a4b802e4eb2a91d1ce216b8817763c29fb
+[runner] done
