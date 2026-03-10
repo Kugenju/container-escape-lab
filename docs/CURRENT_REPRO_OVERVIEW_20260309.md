@@ -21,6 +21,8 @@
 | CVE-2016-9962 | `BLOCKED_STAGE=no_host_marker` |
 | CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` |
 | CVE-2021-30465 | `BLOCKED_STAGE=runtime_version_not_vulnerable_range` |
+| CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` |
+| CVE-2017-1000112 | `BLOCKED_STAGE=smap_mitigation_detected` |
 
 ### 2.2 有成功标记（脚本层面）
 
@@ -80,7 +82,7 @@
 | --- | --- | --- | --- |
 | CVE-2019-13139 | Docker `< 18.09.4` | 匹配（潜在可复现） | 保持原结论 |
 | CVE-2019-14271 | Docker `19.03.x < 19.03.1` | 不匹配（18.09.x 不在该范围） | 结论补充为“版本路径不匹配” |
-| CVE-2019-5736 | runc `< 1.0.0-rc6` | 不匹配 | 已尝试切 `rc5`，受网络下载阻断待补跑 |
+| CVE-2019-5736 | runc `< 1.0.0-rc6` | 不匹配 | 已切到 `runc 1.0.0-rc5` 并重跑 |
 | CVE-2016-9962 | runc `< 1.0.0-rc2` | 不匹配 | 结论补充为“当前 runc 不在脆弱范围” |
 | CVE-2021-30465 | runc `<= 1.0.0-rc94` | 不匹配 | 已切到 `runc 1.0.0-rc94` 并重跑 |
 | CVE-2024-21626 | runc `< 1.1.12` | 匹配（1.1.8） | 保持原结论 |
@@ -90,13 +92,19 @@
 - 新增 `scripts/runtime_version_switch.sh`（`status/use/restore`）用于 runc 版本切换验证。  
 - `CVE-2021-30465` 在 `runc 1.0.0-rc94` 下复测：`BLOCKED_STAGE=race_not_hit_or_env_incompatible`。  
   证据：`artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc94-20260310/`
-- `CVE-2019-5736` 目标 `runc 1.0.0-rc5` 下载多次超时/重置，尚未完成该版本重跑。  
+- `CVE-2019-5736` 在 `runc 1.0.0-rc5` 下复测：触发链路进入 re-exec 阶段，但未生成宿主机 proof（`BLOCKED_STAGE=post_trigger_no_host_proof`）。  
+  证据：`artifacts/repro/docker/CVE-2019-5736/runc-1.0.0-rc5-20260310-attempt2/`
+- `CVE-2021-30465` 在 `runc 1.0.0-rc5` 下复测：`BLOCKED_STAGE=race_not_hit_or_env_incompatible`。  
+  证据：`artifacts/repro/docker/CVE-2021-30465/runc-1.0.0-rc5-20260310/`
 
 ### 7.3 缺少可落地 PoC 的补齐进展
 
 - `CVE-2022-0995` 已从“仅编译 + 手工提示”改为“自动编译 + 非交互执行 + 阶段化结论 + 内核日志采集”。  
 - 2026-03-10 实跑结果：`BLOCKED_STAGE=notification_pipe_unavailable_or_filtered`。  
   证据：`artifacts/repro/docker/CVE-2022-0995/auto-run-20260310/`
+- `CVE-2017-1000112` 已从“仅输出手工步骤”改为“自动编译 + 特权容器触发 + 阶段化结论 + Docker 日志采集”。  
+- 2026-03-10 实跑结果：`BLOCKED_STAGE=smap_mitigation_detected`。  
+  证据：`artifacts/repro/docker/CVE-2017-1000112/auto-run-20260310/`
 
 ### 7.4 版本信息来源（网络补充）
 

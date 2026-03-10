@@ -29,7 +29,7 @@ bash scripts/runtime_version_switch.sh restore
 ## Runtime Version Switching
 
 - `status`: show current `runc` version and switch metadata.
-- `use <tag-or-version>`: download `runc.amd64` from `opencontainers/runc` release, verify `sha256`, and switch `/usr/bin/runc`.
+- `use <tag-or-version>`: download `runc.amd64` from `opencontainers/runc` release (with proxy fallback), verify `sha256` when available, and switch `/usr/bin/runc`.
 - `restore`: restore original `runc` from local backup.
 
 ## Notes

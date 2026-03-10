@@ -133,6 +133,7 @@ scripts/env_labctl.sh status
 修复：
 
 - 优先复用 `/tmp/runtime-version-switch/<tag>/runc.amd64` 本地缓存。
+- 使用代理回退链路（如 `gh-proxy.com`、`ghproxy.net`）重试下载。
 - 在结论中明确记录阻断：`BLOCKED_STAGE=runtime_binary_fetch_unstable_network`。
 - 先完成可执行的版本验证项（如已下载版本），再补跑缺失版本。
 

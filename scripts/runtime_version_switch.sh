@@ -74,21 +74,44 @@ backup_current_runc() {
 
 download_and_verify() {
   local tag="$1"
-  local bin_url="https://github.com/opencontainers/runc/releases/download/${tag}/runc.amd64"
-  local sha_url="https://github.com/opencontainers/runc/releases/download/${tag}/runc.sha256sum"
+  local base_url="https://github.com/opencontainers/runc/releases/download/${tag}"
+  local bin_url="${base_url}/runc.amd64"
+  local sha_url="${base_url}/runc.sha256sum"
   local work="${TMP_DIR}/${tag}"
   local bin_file="${work}/runc.amd64"
   local sha_file="${work}/runc.sha256sum"
+  local -a proxy_prefixes=(
+    ""
+    "https://gh-proxy.com/"
+    "https://ghproxy.net/"
+    "https://github.moeyy.xyz/"
+  )
   mkdir -p "${work}"
   if [[ ! -s "${bin_file}" ]]; then
-    curl -fL --connect-timeout 8 --max-time 240 --retry 5 --retry-delay 2 --retry-all-errors -o "${bin_file}" "${bin_url}"
+    local ok=0
+    for prefix in "${proxy_prefixes[@]}"; do
+      local candidate="${prefix}${bin_url}"
+      if curl -fL --connect-timeout 8 --max-time 240 --retry 3 --retry-delay 2 --retry-all-errors -o "${bin_file}" "${candidate}"; then
+        ok=1
+        break
+      fi
+    done
+    [[ "${ok}" -eq 1 ]] || die "failed to download runc binary for ${tag}"
   else
     printf '[*] %s\n' "reuse cached binary: ${bin_file}" >&2
   fi
-  if curl -fL --connect-timeout 8 --max-time 120 --retry 2 --retry-delay 2 --retry-all-errors -o "${sha_file}" "${sha_url}"; then
+  local sha_ok=0
+  for prefix in "${proxy_prefixes[@]}"; do
+    local sha_candidate="${prefix}${sha_url}"
+    if curl -fL --connect-timeout 8 --max-time 120 --retry 2 --retry-delay 2 --retry-all-errors -o "${sha_file}" "${sha_candidate}"; then
+      sha_ok=1
+      break
+    fi
+  done
+  if [[ "${sha_ok}" -eq 1 ]]; then
     local expected
     expected="$(awk '/[[:space:]]+runc\.amd64$/{print $1}' "${sha_file}" | head -n1)"
-    [[ -n "${expected}" ]] || die "failed to parse checksum from ${sha_url}"
+    [[ -n "${expected}" ]] || die "failed to parse checksum for ${tag}"
     local actual
     actual="$(sha256sum "${bin_file}" | awk '{print $1}')"
     [[ "${actual}" == "${expected}" ]] || die "checksum mismatch for ${tag}"
