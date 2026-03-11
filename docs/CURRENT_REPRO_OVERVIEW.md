@@ -35,7 +35,7 @@
 - K8s（Docker 18.09 基线）：`kubectl exec` 阻断，已通过日志探针回退补齐 9 个场景证据并跑通（exit=0）。
 - K8s（Docker 20.10.24 复测）：首轮严格模式可直接 `PROBE_EXECUTED`，9 场景批跑全部 `PROBE_EXECUTED` + `exit=0`；但后续重复 `kind-up` 仍出现 kubelet 健康检查超时。
 - 最新 CVE 补录：`CVE-2025-31133` 已完成 Docker+iSulad 同步复现并形成统一 README；`CVE-2025-52881` 与 `CVE-2025-52565` 尚未检索到可直接复用的公开 runnable PoC。
-- 联网补录：`CVE-2025-23266` 已找到公开 PoC（`jpts/cve-2025-23266-poc`）并完成 Docker+iSulad 实测，当前主机阻断于 `nvidia` runtime 前置条件缺失。
+- 联网补录：`CVE-2025-23266` 已找到公开 PoC（`jpts/cve-2025-23266-poc`）并完成 Docker+iSulad 实测；Docker 侧已启用 `nvidia` runtime 并推进到 hook 执行阶段，但阻断于宿主缺失 `libnvidia-ml.so.1`，iSulad 侧仍不支持 `runtime nvidia`。
 
 ## 5. Docker 结果矩阵
 
@@ -64,7 +64,7 @@
 | CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` |
 | CVE-2021-30465（`runc 1.1.8`） | `BLOCKED_STAGE=mount_path_or_permission_validation` |
 | CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` |
-| CVE-2025-23266 | `BLOCKED_STAGE=nvidia_runtime_unavailable`（公开 PoC 已引入并实测） |
+| CVE-2025-23266 | `BLOCKED_STAGE=nvidia_driver_library_unavailable`（`nvidia` runtime 已启用，阻断于宿主缺失 `libnvidia-ml.so.1`） |
 | CVE-2017-1000112 | `BLOCKED_STAGE=smap_mitigation_detected` |
 | CVE-2016-5195 | `BLOCKED_STAGE=kernel_not_vulnerable_or_patched` |
 | CVE-2016-8655 | `BLOCKED_STAGE=cap_net_raw_unavailable` |
@@ -95,7 +95,7 @@
 | CVE-2021-3493 | `pass`（`uid=0/root` marker） |
 | CVE-2022-0847 | `pass`（root-shell indicator） |
 | CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered`（与 Docker 同步） |
-| CVE-2025-23266 | `BLOCKED_STAGE=isula_nvidia_runtime_unavailable`（公开 PoC 已同步实测） |
+| CVE-2025-23266 | `BLOCKED_STAGE=isula_nvidia_runtime_unavailable`（补装 toolkit 后仍为 `runtime nvidia is not supported`） |
 
 ## 7. K8s 场景结果
 
@@ -131,7 +131,7 @@
 - `CVE-2025-31133`：在 `runc 1.1.5` 下复现 symlink-race，Docker 与 iSulad profile 均命中 host `core_pattern` token。
 - `scripts/runtime_version_switch.sh`：已从仅 `runc` 切换扩展到 `runc + docker` 双通道，支持 `docker-prefetch/docker-use-local/docker-restore` 的同工具多版本快切。
 - 联网检索 `2025-11-05` 同批 runc 高危公告（`CVE-2025-31133/52881/52565`）后，当前仅 `CVE-2025-31133` 检索到可直接复用的公开 runnable PoC；其余两项先记录为“待公开 PoC/需自行构造”。
-- `CVE-2025-23266`：已引入公开 PoC 并完成实验，Docker 与 iSulad 均因缺失 `nvidia` runtime 前置条件阻断。
+- `CVE-2025-23266`：已引入公开 PoC 并完成补测；Docker 在 `nvidia` runtime 可用后进入 hook 阶段，但因宿主缺失 `libnvidia-ml.so.1` 阻断，iSulad 仍阻断于 `runtime nvidia` 不支持。
 
 ### 8.2 Placeholder 脚本补齐
 
