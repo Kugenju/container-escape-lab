@@ -37,6 +37,18 @@
 - 最新 CVE 补录：`CVE-2025-31133` 已完成 Docker+iSulad 同步复现并形成统一 README；`CVE-2025-52565` 与 `CVE-2025-52881` 已补录官方 Buildx 公开模板并完成 Docker+iSulad 复测，当前阻断点已阶段化归因。
 - 联网补录：`CVE-2025-23266` 已找到公开 PoC（`jpts/cve-2025-23266-poc`）并完成 Docker+iSulad 实测；Docker 侧已启用 `nvidia` runtime 并推进到 hook 执行阶段，但阻断于宿主缺失 `libnvidia-ml.so.1`，iSulad 侧仍不支持 `runtime nvidia`。
 
+### 4.1 已验证逃逸方式分类
+
+| 逃逸方式 | 简短介绍 | 已验证代表（示例） |
+| --- | --- | --- |
+| Runtime 初始化竞态/路径穿透 | 利用 `runc` 初始化窗口的竞态、`workdir/fd` 或挂载路径处理缺陷，导致容器读写穿透到宿主机 | CVE-2024-21626、CVE-2025-31133、CVE-2021-30465、CVE-2019-5736 |
+| 内核提权型逃逸 | 先在容器内触发内核漏洞，再获得宿主级权限/能力 | CVE-2018-18955、CVE-2021-3493、CVE-2022-0847 |
+| Build/上下文供应链触发链 | 借助 Buildx named-context、Dockerfile frontend 等构建链路触发运行时缺陷 | CVE-2025-52565、CVE-2025-52881 |
+| Runtime Hook 注入链 | 利用容器运行时 hook（如 GPU toolkit）加载路径触发越界执行 | CVE-2025-23266 |
+| 容器能力配置误用 | 利用 `privileged`、高危 capability 或 hostPID 等配置实现越权访问 | `config-privileged-container`、`config-cap_*` 场景 |
+| 主机资源挂载暴露 | 挂载 `docker.sock`、`/etc`、`/proc`、`/var/log` 等主机敏感资源导致边界弱化 | `mount-docker-sock`、`mount-host-*`、`mount-var-log` |
+| K8s 工作负载面越权 | 通过 K8s 不安全配置与挂载组合复现越权能力链 | 9 个 K8s 场景（`config-cap_*` + `mount-*`） |
+
 ## 5. Docker 结果矩阵
 
 ### 5.1 已命中（含版本对照）
@@ -54,70 +66,89 @@
 
 ### 5.2 阻断（已形成可解释结论）
 
-| CVE | 结果 |
-| --- | --- |
-| CVE-2019-13139 | `BLOCKED_STAGE=parse_remote_refspec` |
-| CVE-2019-14271 | `BLOCKED_STAGE=post_trigger_no_escape_artifact`（`18.09.0` 与 `19.03.0` 补测一致） |
-| CVE-2019-5736（`runc 1.1.8`） | `BLOCKED_STAGE=trap_reexec_loader_dependency`（修复版本负对照） |
-| CVE-2024-21626（`runc 1.1.8` direct-runc） | `BLOCKED_STAGE=direct_runc_fd_probe_no_hit` |
-| CVE-2016-9962 | `BLOCKED_STAGE=no_host_marker` |
-| CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` |
-| CVE-2021-30465（`runc 1.1.8`） | `BLOCKED_STAGE=mount_path_or_permission_validation` |
-| CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` |
-| CVE-2025-52565 | `BLOCKED_STAGE=exploit_context_image_unreachable`（官方 Buildx `procfs` 模板已进入 named-context 解析，阻断于 `cyphar/procfs-trap-in-docker-buildx` 镜像元数据拉取） |
-| CVE-2025-52881 | `BLOCKED_STAGE=dockerfile_frontend_image_unreachable`（官方 Buildx `sysfs` 模板阻断于 Dockerfile frontend 镜像 `docker/dockerfile:1.20.0-rc.1` 拉取） |
-| CVE-2025-23266 | `BLOCKED_STAGE=nvidia_driver_library_unavailable`（`nvidia` runtime 已启用，阻断于宿主缺失 `libnvidia-ml.so.1`） |
-| CVE-2017-1000112 | `BLOCKED_STAGE=smap_mitigation_detected` |
-| CVE-2016-5195 | `BLOCKED_STAGE=kernel_not_vulnerable_or_patched` |
-| CVE-2016-8655 | `BLOCKED_STAGE=cap_net_raw_unavailable` |
-| CVE-2017-16995 | `BLOCKED_STAGE=trigger_only_no_priv_esc_chain` |
-| CVE-2017-6074 | `BLOCKED_STAGE=dccp_module_unavailable` |
-| CVE-2020-14386 | `BLOCKED_STAGE=cap_net_raw_unavailable` |
-| kata-escape-2020 | `BLOCKED_STAGE=kata_runtime_not_installed` |
+| CVE | 结果 | 阻断原因类型 |
+| --- | --- | --- |
+| CVE-2019-13139 | `BLOCKED_STAGE=parse_remote_refspec` | 输入构造/PoC 入口不兼容 |
+| CVE-2019-14271 | `BLOCKED_STAGE=post_trigger_no_escape_artifact`（`18.09.0` 与 `19.03.0` 补测一致） | 利用链未形成宿主证据 |
+| CVE-2019-5736（`runc 1.1.8`） | `BLOCKED_STAGE=trap_reexec_loader_dependency`（修复版本负对照） | 版本窗口不匹配（修复版本） |
+| CVE-2024-21626（`runc 1.1.8` direct-runc） | `BLOCKED_STAGE=direct_runc_fd_probe_no_hit` | 版本窗口不匹配（修复版本） |
+| CVE-2016-9962 | `BLOCKED_STAGE=no_host_marker` | 利用链未形成宿主证据 |
+| CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` | 利用链未形成成功标记 |
+| CVE-2021-30465（`runc 1.1.8`） | `BLOCKED_STAGE=mount_path_or_permission_validation` | 版本窗口不匹配/路径校验阻断 |
+| CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` | 内核特性受限/过滤 |
+| CVE-2025-52565 | `BLOCKED_STAGE=exploit_context_image_unreachable` | 外部依赖不可达（恶意 context 镜像） |
+| CVE-2025-52881 | `BLOCKED_STAGE=dockerfile_frontend_image_unreachable` | 外部依赖不可达（Dockerfile frontend 镜像） |
+| CVE-2025-23266 | `BLOCKED_STAGE=nvidia_driver_library_unavailable`（`nvidia` runtime 已启用，阻断于宿主缺失 `libnvidia-ml.so.1`） | 宿主依赖缺失（GPU 驱动 userspace） |
+| CVE-2017-1000112 | `BLOCKED_STAGE=smap_mitigation_detected` | 内核缓解机制生效 |
+| CVE-2016-5195 | `BLOCKED_STAGE=kernel_not_vulnerable_or_patched` | 内核已修复/不在漏洞窗口 |
+| CVE-2016-8655 | `BLOCKED_STAGE=cap_net_raw_unavailable` | 权限能力缺失 |
+| CVE-2017-16995 | `BLOCKED_STAGE=trigger_only_no_priv_esc_chain` | 仅触发原语，未形成提权链 |
+| CVE-2017-6074 | `BLOCKED_STAGE=dccp_module_unavailable` | 内核模块/协议缺失 |
+| CVE-2020-14386 | `BLOCKED_STAGE=cap_net_raw_unavailable` | 权限能力缺失 |
+| kata-escape-2020 | `BLOCKED_STAGE=kata_runtime_not_installed` | 运行时组件缺失 |
 
 ## 6. iSulad 结果矩阵
 
-| CVE | 结果 |
-| --- | --- |
-| CVE-2016-5195 | `BLOCKED_STAGE=kernel_not_vulnerable_or_patched`（与 Docker 同步） |
-| CVE-2016-8655 | `BLOCKED_STAGE=cap_net_raw_unavailable`（与 Docker 同步） |
-| CVE-2017-1000112 | `BLOCKED_STAGE=smap_mitigation_detected`（isula `run/cp/exec` 等价链路） |
-| CVE-2017-16995 | `BLOCKED_STAGE=trigger_only_no_priv_esc_chain`（与 Docker 同步） |
-| CVE-2017-6074 | `BLOCKED_STAGE=dccp_module_unavailable`（与 Docker 同步） |
-| CVE-2018-18955 | `pass`（root marker） |
-| CVE-2019-13139 | 输入构造阶段即被阻断（构建入口不匹配） |
-| CVE-2019-14271 | 恶意 NSS 替换后未出现 `/host_fs` |
-| CVE-2019-5736 | 未生成宿主机 proof；`runc 1.0.0-rc5` 在 iSulad 下额外命中 runtime 兼容性阻断（cgroup namespace） |
-| CVE-2020-14386 | `BLOCKED_STAGE=cap_net_raw_unavailable`（与 Docker 同步） |
-| CVE-2024-21626 | `pass`（同步 `workdir/fd` 探针命中 `fd=8`） |
-| CVE-2025-31133 | `pass`（iSulad profile 下 attempt2 命中 host `core_pattern` token） |
-| CVE-2016-9962 | `BLOCKED_STAGE=no_host_marker`（`release_agent` 写入被拒） |
-| CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` |
-| CVE-2021-30465 | `pass`（Docker20 + `runc 1.0.0-rc94` 同步复测命中 host-root-like listing） |
-| CVE-2021-3493 | `pass`（`uid=0/root` marker） |
-| CVE-2022-0847 | `pass`（root-shell indicator） |
-| CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered`（与 Docker 同步） |
-| CVE-2025-52565 | `BLOCKED_STAGE=isula_buildx_named_context_unsupported`（iSulad 无 buildx/bake/named-context 等价入口） |
-| CVE-2025-52881 | `BLOCKED_STAGE=isula_buildx_named_context_unsupported`（iSulad 无 buildx/bake/named-context 等价入口） |
-| CVE-2025-23266 | `BLOCKED_STAGE=isula_nvidia_runtime_unavailable`（补装 toolkit 后仍为 `runtime nvidia is not supported`） |
+| CVE | 结果 | 阻断原因类型（阻断项） |
+| --- | --- | --- |
+| CVE-2016-5195 | `BLOCKED_STAGE=kernel_not_vulnerable_or_patched`（与 Docker 同步） | 内核已修复/不在漏洞窗口 |
+| CVE-2016-8655 | `BLOCKED_STAGE=cap_net_raw_unavailable`（与 Docker 同步） | 权限能力缺失 |
+| CVE-2017-1000112 | `BLOCKED_STAGE=smap_mitigation_detected`（isula `run/cp/exec` 等价链路） | 内核缓解机制生效 |
+| CVE-2017-16995 | `BLOCKED_STAGE=trigger_only_no_priv_esc_chain`（与 Docker 同步） | 仅触发原语，未形成提权链 |
+| CVE-2017-6074 | `BLOCKED_STAGE=dccp_module_unavailable`（与 Docker 同步） | 内核模块/协议缺失 |
+| CVE-2018-18955 | `pass`（root marker） | - |
+| CVE-2019-13139 | 输入构造阶段即被阻断（构建入口不匹配） | 输入构造/PoC 入口不兼容 |
+| CVE-2019-14271 | 恶意 NSS 替换后未出现 `/host_fs` | 利用链未形成宿主证据 |
+| CVE-2019-5736 | 未生成宿主机 proof；`runc 1.0.0-rc5` 在 iSulad 下额外命中 runtime 兼容性阻断（cgroup namespace） | runtime 兼容性限制 |
+| CVE-2020-14386 | `BLOCKED_STAGE=cap_net_raw_unavailable`（与 Docker 同步） | 权限能力缺失 |
+| CVE-2024-21626 | `pass`（同步 `workdir/fd` 探针命中 `fd=8`） | - |
+| CVE-2025-31133 | `pass`（iSulad profile 下 attempt2 命中 host `core_pattern` token） | - |
+| CVE-2016-9962 | `BLOCKED_STAGE=no_host_marker`（`release_agent` 写入被拒） | 利用链未形成宿主证据 |
+| CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` | 利用链未形成成功标记 |
+| CVE-2021-30465 | `pass`（Docker20 + `runc 1.0.0-rc94` 同步复测命中 host-root-like listing） | - |
+| CVE-2021-3493 | `pass`（`uid=0/root` marker） | - |
+| CVE-2022-0847 | `pass`（root-shell indicator） | - |
+| CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered`（与 Docker 同步） | 内核特性受限/过滤 |
+| CVE-2025-52565 | `BLOCKED_STAGE=isula_buildx_named_context_unsupported`（iSulad 无 buildx/bake/named-context 等价入口） | 工具链能力缺失（无等价入口） |
+| CVE-2025-52881 | `BLOCKED_STAGE=isula_buildx_named_context_unsupported`（iSulad 无 buildx/bake/named-context 等价入口） | 工具链能力缺失（无等价入口） |
+| CVE-2025-23266 | `BLOCKED_STAGE=isula_nvidia_runtime_unavailable`（补装 toolkit 后仍为 `runtime nvidia is not supported`） | runtime 组件缺失/不支持 |
 
 ## 7. K8s 场景结果
 
 受影响脚本：`config-cap_*` 5 个 + `mount-*` 4 个（共 9 个）。
 
-当前统一结论：
-- `kubectl exec` 路径仍触发 `BLOCKED_STAGE=k8s_exec_cgroup_path_missing`。
-- 场景脚本已启用回退：自动读取 Pod 启动日志中的 `K8S_LOG_PROBE_OK`，输出 `PROBE_LOG_FALLBACK_OK` 并返回 0。
-- `v1.30.0` 与 `v1.27.13` 对照均复现相同 exec/cgroup 报错，说明单纯回退 K8s 小版本不足以根治当前主机环境问题。
-- Docker 20.10.24 首轮复测中，`kubectl exec` 已直接恢复 `PROBE_EXECUTED`（无需回退）；但同机后续重复 `kind-up` 仍可出现 kubelet 不健康超时，稳定性待继续收敛。
+### 7.1 K8s 总体结果矩阵
 
-环境补充：
-- `scripts/env_labctl.sh profile k8s-kind` 已加入 Docker 18.09 兼容回退，可稳定拉起 kind 集群（自动移除 `--cgroupns=*` 参数）。
-- K8s 版本对照与批跑证据：`artifacts/repro/docker/k8s-version-matrix/`。
-- Docker 20.10 复测证据：
-  - `artifacts/repro/docker/k8s-version-matrix/docker20-v1.30.0.log`
-  - `artifacts/repro/docker/k8s-version-matrix/docker20-batch-v1.30.0.log`
-  - `artifacts/repro/docker/k8s-version-matrix/docker20-retry-kindup-full.log`
+| 维度 | 结果 | 结论 |
+| --- | --- | --- |
+| Docker 18.09 基线（9 场景批跑） | `kubectl exec` 阶段命中 `k8s_exec_cgroup_path_missing`；日志探针回退后统一 `PROBE_LOG_FALLBACK_OK`，`exit_code=0` | 可形成“可检测”证据链，但不是直接 exec 命中 |
+| Docker 20.10.24 首轮复测（9 场景批跑） | 9 场景均 `PROBE_EXECUTED`，`exit_code=0` | 能力恢复，pass 数量提升 |
+| Docker 20.10.24 重复 `kind-up` | 可出现 `kubelet is not healthy` / `context deadline exceeded` | 稳定性未完全收敛 |
+| K8s 版本对照（`v1.30.0` vs `v1.27.13`） | 两个版本都可出现相同 exec/cgroup 报错 | 单纯回退 K8s 小版本不足以根治 |
+
+### 7.2 9 个 K8s 场景批跑明细（表格化）
+
+| 场景脚本 | Docker 18.09 基线 | Docker 20.10.24 首轮 | 当前判定 |
+| --- | --- | --- | --- |
+| `config-cap_dac_read_search-container/run_poc.sh` | `PROBE_LOG_FALLBACK_OK` | `PROBE_EXECUTED` | 已覆盖 |
+| `config-cap_sys_admin-container/run_poc.sh` | `PROBE_LOG_FALLBACK_OK` | `PROBE_EXECUTED` | 已覆盖 |
+| `config-cap_sys_module-container/run_poc.sh` | `PROBE_LOG_FALLBACK_OK` | `PROBE_EXECUTED` | 已覆盖 |
+| `config-cap_sys_ptrace-container/run_poc.sh` | `PROBE_LOG_FALLBACK_OK` | `PROBE_EXECUTED` | 已覆盖 |
+| `config-privileged-container/run_poc.sh` | `PROBE_LOG_FALLBACK_OK` | `PROBE_EXECUTED` | 已覆盖 |
+| `mount-docker-sock/run_poc.sh` | `PROBE_LOG_FALLBACK_OK` | `PROBE_EXECUTED` | 已覆盖 |
+| `mount-host-etc/run_poc.sh` | `PROBE_LOG_FALLBACK_OK` | `PROBE_EXECUTED` | 已覆盖 |
+| `mount-host-procfs/run_poc.sh` | `PROBE_LOG_FALLBACK_OK` | `PROBE_EXECUTED` | 已覆盖 |
+| `mount-var-log/run_poc.sh` | `PROBE_LOG_FALLBACK_OK` | `PROBE_EXECUTED` | 已覆盖 |
+
+### 7.3 K8s 证据索引
+
+| 证据 | 路径 |
+| --- | --- |
+| Docker 20.10 单场景验证 | `artifacts/repro/docker/k8s-version-matrix/docker20-v1.30.0.log` |
+| Docker 20.10 9 场景批跑 | `artifacts/repro/docker/k8s-version-matrix/docker20-batch-v1.30.0.log` |
+| Docker 20.10 重复建群异常 | `artifacts/repro/docker/k8s-version-matrix/docker20-retry-kindup-full.log` |
+| 版本对照（`v1.30.0`） | `artifacts/repro/docker/k8s-version-matrix/v1.30.0-preload.log` |
+| 版本对照（`v1.27.13`） | `artifacts/repro/docker/k8s-version-matrix/v1.27.13-preload.log` |
 
 ## 8. 已合并的关键增量
 
