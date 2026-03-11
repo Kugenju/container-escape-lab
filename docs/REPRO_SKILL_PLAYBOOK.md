@@ -17,6 +17,7 @@
 3. 每次复跑都要落盘证据（run log + journal + kernel log）。  
 4. 不依赖交互输入；脚本优先改成非交互可重复执行。  
 5. 每个 CVE 在形成“初步结论”后，必须回填该 CVE `README`：补充更细机理分析 + 成功/阻断对照日志。  
+6. 每轮新增验证完成后，必须回头审计既有 README（重点是已 `pass`/`VULNERABLE_OR_PARTIALLY_VULNERABLE` 的 CVE）：确认可按文档直接复现成功，且包含网络/版本/竞态等复杂问题的排障指引；缺失项必须当轮补齐。  
 
 ## 3. 环境切换工具
 
@@ -232,6 +233,8 @@ scripts/env_labctl.sh status
 - 默认 `docker` driver 经常缺少 `frontend.contexts` 能力，先切到 `docker-container` builder（`docker buildx create --driver docker-container`）并 `--bootstrap`。
 - Docker 20.10 场景通常需显式设置 `DOCKER_API_VERSION=1.41`，避免高版本 Buildx 与旧 Docker API 不兼容。
 - 含 `# syntax=docker/dockerfile:1.20.0-rc.1` 的模板需先保证 frontend 镜像可达；否则先记录前端阻断，不要误判模板逻辑错误。
+- 对 `CVE-2025-52565` 一类 `COPY --from` 模板，可用“本地 registry 重放模板镜像 + buildkit insecure-registry 配置”绕过远端拉取噪声，若链路可执行应记录 `PROBE_EXECUTED`。
+- 对 `CVE-2025-52881` 一类 `ADD --from` 模板，若 frontend 镜像可达后仍报 `unknown flag: --from`，应记录 `BLOCKED_STAGE=dockerfile_add_from_not_supported`，归因为 frontend 语义不匹配而非网络问题。
 - iSulad 侧若无 buildx/named-context 等价入口，统一记录不可迁移阻断而不是“未验证”。
 
 建议阻断命名：
@@ -239,6 +242,7 @@ scripts/env_labctl.sh status
 - `buildkit_frontend_contexts_unsupported`
 - `exploit_context_image_unreachable`
 - `dockerfile_frontend_image_unreachable`
+- `dockerfile_add_from_not_supported`
 - `isula_buildx_named_context_unsupported`
 
 ## 6. 阻断阶段命名建议
@@ -285,6 +289,7 @@ README 回填要求：
 - 若同一 CVE 有版本对照（脆弱版本与修复版本），必须同时给出两侧日志片段并说明机理差异。
 - `证据索引` 至少列出 `run.log` 与对应 runtime 日志路径（`docker_journal.log` / `isulad_journal.log` / `kernel_journal.log`）。
 - 对“Docker 已跑但 iSulad 未跑”的 CVE，README 不可留空；需补齐 iSulad 同步验证（或明确给出不可等价迁移的阻断证据和判定）。
+- 对已命中条目（`pass`/`VULNERABLE_OR_PARTIALLY_VULNERABLE`），README 必须额外包含“可直接复现步骤与故障排查”小节：至少覆盖版本切换命令、关键环境变量、网络失败回退（如镜像源/本地重放）与常见误判修正。
 
 ## 8. 已验证的关键经验
 
