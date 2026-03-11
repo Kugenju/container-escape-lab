@@ -22,6 +22,7 @@
 | CVE-2022-0995 | 1 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` | Notification pipe creation failed; exploit chain did not start. |
 | CVE-2024-21626 | 0 | `VULNERABLE_OR_PARTIALLY_VULNERABLE` | Docker20 同步探针命中 host marker（`fd=8`），`workdir/fd` 泄露链路可触达。 |
 | CVE-2025-31133 | 0 | `VULNERABLE_OR_PARTIALLY_VULNERABLE` | iSulad profile 下（`ROOTFS_RUNTIME=isula`）symlink-race 在 attempt2 命中 host `core_pattern` token。 |
+| CVE-2025-23266 | 1 | `BLOCKED_STAGE=isula_nvidia_runtime_unavailable` | 引入公开 PoC 后同步复测，iSulad 侧缺失 `nvidia` runtime 前置能力。 |
 
 ## 2. Backfilled This Round
 
@@ -63,3 +64,4 @@
 - `artifacts/repro/isula/CVE-2024-21626/`
 - `artifacts/repro/isula/CVE-2024-21626/docker20-runc1.1.5-sync-20260310-attempt2/`
 - `artifacts/repro/isula/CVE-2025-31133/isula2.1.6-runc1.1.5-20260311-attempt2/`
+- `artifacts/repro/isula/CVE-2025-23266/isula2.1.6-runc1.1.5-20260311-attempt1/`
