@@ -22,6 +22,8 @@
 | CVE-2022-0995 | 1 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` | Notification pipe creation failed; exploit chain did not start. |
 | CVE-2024-21626 | 0 | `VULNERABLE_OR_PARTIALLY_VULNERABLE` | Docker20 同步探针命中 host marker（`fd=8`），`workdir/fd` 泄露链路可触达。 |
 | CVE-2025-31133 | 0 | `VULNERABLE_OR_PARTIALLY_VULNERABLE` | iSulad profile 下（`ROOTFS_RUNTIME=isula`）symlink-race 在 attempt2 命中 host `core_pattern` token。 |
+| CVE-2025-52565 | 1 | `BLOCKED_STAGE=isula_buildx_named_context_unsupported` | iSulad 侧无 buildx/bake/named-context 等价入口，无法迁移官方 Buildx 模板。 |
+| CVE-2025-52881 | 1 | `BLOCKED_STAGE=isula_buildx_named_context_unsupported` | iSulad 侧无 buildx/bake/named-context 等价入口，无法迁移官方 Buildx 模板。 |
 | CVE-2025-23266 | 1 | `BLOCKED_STAGE=isula_nvidia_runtime_unavailable` | 补装 `nvidia-container-toolkit 1.17.7` 后复测仍阻断；isulad 明确报错 `runtime nvidia is not supported`。 |
 
 ## 2. Backfilled This Round
@@ -38,6 +40,8 @@
 - CVE-2021-3493
 - CVE-2022-0847
 - CVE-2022-0995
+- CVE-2025-52565（Buildx 链路同步判定）
+- CVE-2025-52881（Buildx 链路同步判定）
 
 ## 3. Evidence Index
 
@@ -64,5 +68,7 @@
 - `artifacts/repro/isula/CVE-2024-21626/`
 - `artifacts/repro/isula/CVE-2024-21626/docker20-runc1.1.5-sync-20260310-attempt2/`
 - `artifacts/repro/isula/CVE-2025-31133/isula2.1.6-runc1.1.5-20260311-attempt2/`
+- `artifacts/repro/isula/CVE-2025-52565/isula2.1.6-sync-20260311-attempt1/`
+- `artifacts/repro/isula/CVE-2025-52881/isula2.1.6-sync-20260311-attempt1/`
 - `artifacts/repro/isula/CVE-2025-23266/isula2.1.6-runc1.1.5-20260311-attempt1/`
 - `artifacts/repro/isula/CVE-2025-23266/isula2.1.6-runc1.1.5-nct1.17.7-20260311-attempt2/`

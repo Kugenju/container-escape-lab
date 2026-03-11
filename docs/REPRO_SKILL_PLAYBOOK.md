@@ -218,6 +218,29 @@ scripts/env_labctl.sh status
 - 结论统一记录：`BLOCKED_STAGE=runtime_cgroup_namespace_incompatible`。
 - 若目标 CVE 依赖该旧版本窗口，需在文档中明确“Docker 可触发、iSulad 受 runtime 兼容性限制无法进入利用链”。
 
+### 5.13 Buildx 官方模板链路（named context / Dockerfile frontend）
+
+现象：官方 GHSA 给出的 `docker buildx bake --set '*.contexts.vuln-container=...'` 模板无法直接跑通。  
+常见阻断：
+
+- `unsupported frontend capability moby.buildkit.frontend.contexts`
+- `failed to resolve source metadata for docker.io/cyphar/*`
+- `failed to resolve source metadata for docker.io/docker/dockerfile:*`
+
+修复：
+
+- 默认 `docker` driver 经常缺少 `frontend.contexts` 能力，先切到 `docker-container` builder（`docker buildx create --driver docker-container`）并 `--bootstrap`。
+- Docker 20.10 场景通常需显式设置 `DOCKER_API_VERSION=1.41`，避免高版本 Buildx 与旧 Docker API 不兼容。
+- 含 `# syntax=docker/dockerfile:1.20.0-rc.1` 的模板需先保证 frontend 镜像可达；否则先记录前端阻断，不要误判模板逻辑错误。
+- iSulad 侧若无 buildx/named-context 等价入口，统一记录不可迁移阻断而不是“未验证”。
+
+建议阻断命名：
+
+- `buildkit_frontend_contexts_unsupported`
+- `exploit_context_image_unreachable`
+- `dockerfile_frontend_image_unreachable`
+- `isula_buildx_named_context_unsupported`
+
 ## 6. 阻断阶段命名建议
 
 建议统一格式：`BLOCKED_STAGE=<snake_case>`

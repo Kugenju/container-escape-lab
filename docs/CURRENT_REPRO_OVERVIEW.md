@@ -34,7 +34,7 @@
 - iSulad：CVE 主线条目已全部完成同步验证（含本地探针类脚本）。
 - K8s（Docker 18.09 基线）：`kubectl exec` 阻断，已通过日志探针回退补齐 9 个场景证据并跑通（exit=0）。
 - K8s（Docker 20.10.24 复测）：首轮严格模式可直接 `PROBE_EXECUTED`，9 场景批跑全部 `PROBE_EXECUTED` + `exit=0`；但后续重复 `kind-up` 仍出现 kubelet 健康检查超时。
-- 最新 CVE 补录：`CVE-2025-31133` 已完成 Docker+iSulad 同步复现并形成统一 README；`CVE-2025-52881` 与 `CVE-2025-52565` 尚未检索到可直接复用的公开 runnable PoC。
+- 最新 CVE 补录：`CVE-2025-31133` 已完成 Docker+iSulad 同步复现并形成统一 README；`CVE-2025-52565` 与 `CVE-2025-52881` 已补录官方 Buildx 公开模板并完成 Docker+iSulad 复测，当前阻断点已阶段化归因。
 - 联网补录：`CVE-2025-23266` 已找到公开 PoC（`jpts/cve-2025-23266-poc`）并完成 Docker+iSulad 实测；Docker 侧已启用 `nvidia` runtime 并推进到 hook 执行阶段，但阻断于宿主缺失 `libnvidia-ml.so.1`，iSulad 侧仍不支持 `runtime nvidia`。
 
 ## 5. Docker 结果矩阵
@@ -64,6 +64,8 @@
 | CVE-2017-7308 | `BLOCKED_STAGE=no_success_marker` |
 | CVE-2021-30465（`runc 1.1.8`） | `BLOCKED_STAGE=mount_path_or_permission_validation` |
 | CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered` |
+| CVE-2025-52565 | `BLOCKED_STAGE=exploit_context_image_unreachable`（官方 Buildx `procfs` 模板已进入 named-context 解析，阻断于 `cyphar/procfs-trap-in-docker-buildx` 镜像元数据拉取） |
+| CVE-2025-52881 | `BLOCKED_STAGE=dockerfile_frontend_image_unreachable`（官方 Buildx `sysfs` 模板阻断于 Dockerfile frontend 镜像 `docker/dockerfile:1.20.0-rc.1` 拉取） |
 | CVE-2025-23266 | `BLOCKED_STAGE=nvidia_driver_library_unavailable`（`nvidia` runtime 已启用，阻断于宿主缺失 `libnvidia-ml.so.1`） |
 | CVE-2017-1000112 | `BLOCKED_STAGE=smap_mitigation_detected` |
 | CVE-2016-5195 | `BLOCKED_STAGE=kernel_not_vulnerable_or_patched` |
@@ -95,6 +97,8 @@
 | CVE-2021-3493 | `pass`（`uid=0/root` marker） |
 | CVE-2022-0847 | `pass`（root-shell indicator） |
 | CVE-2022-0995 | `BLOCKED_STAGE=notification_pipe_unavailable_or_filtered`（与 Docker 同步） |
+| CVE-2025-52565 | `BLOCKED_STAGE=isula_buildx_named_context_unsupported`（iSulad 无 buildx/bake/named-context 等价入口） |
+| CVE-2025-52881 | `BLOCKED_STAGE=isula_buildx_named_context_unsupported`（iSulad 无 buildx/bake/named-context 等价入口） |
 | CVE-2025-23266 | `BLOCKED_STAGE=isula_nvidia_runtime_unavailable`（补装 toolkit 后仍为 `runtime nvidia is not supported`） |
 
 ## 7. K8s 场景结果
@@ -130,8 +134,9 @@
 - `CVE-2019-14271`：依据公开受影响区间补测 Docker `19.03.0` 后，仍为 `post_trigger_no_escape_artifact`（未观察到 `/host_fs`）。
 - `CVE-2025-31133`：在 `runc 1.1.5` 下复现 symlink-race，Docker 与 iSulad profile 均命中 host `core_pattern` token。
 - `scripts/runtime_version_switch.sh`：已从仅 `runc` 切换扩展到 `runc + docker` 双通道，支持 `docker-prefetch/docker-use-local/docker-restore` 的同工具多版本快切。
-- 联网检索 `2025-11-05` 同批 runc 高危公告（`CVE-2025-31133/52881/52565`）后，当前仅 `CVE-2025-31133` 检索到可直接复用的公开 runnable PoC；其余两项先记录为“待公开 PoC/需自行构造”。
+- 联网补录 Buildx 官方 GHSA 模板后，`CVE-2025-52565`（procfs 模板）与 `CVE-2025-52881`（sysfs 模板）均已形成可执行脚本与证据目录；当前主要阻断来自 `registry-1.docker.io` 远端镜像可达性，而非本地脚本缺失。
 - `CVE-2025-23266`：已引入公开 PoC 并完成补测；Docker 在 `nvidia` runtime 可用后进入 hook 阶段，但因宿主缺失 `libnvidia-ml.so.1` 阻断，iSulad 仍阻断于 `runtime nvidia` 不支持。
+- Buildx 执行环境补齐：已本地安装 `buildx v0.31.0`，并切换 `docker-container` builder（buildkit `v0.27.1`）以满足 official template 的 `frontend.contexts` 依赖。
 
 ### 8.2 Placeholder 脚本补齐
 
