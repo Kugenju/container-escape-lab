@@ -1,60 +1,134 @@
-﻿# 滥用 CAP_SYS_ADMIN 导致容器逃逸
+# 滥用 CAP_SYS_ADMIN 导致容器逃逸
 
-## 1. 场景简介
+## 1. 简介
 
-该场景是典型高危能力配置问题：容器被授予 `CAP_SYS_ADMIN`。
-该 capability 覆盖大量挂载、命名空间和系统管理相关操作，常被称为“近似 root 的万能能力”。
+`CAP_SYS_ADMIN` 常被称为“最接近万能钥匙的 capability”。
 
-本目录基于 `cves/metarget/writeups_cnv/config-cap_sys_admin-container/` 场景定义（对应 README 为空）重组，并与脚本行为对齐。
+原因很简单：它覆盖了大量和挂载、命名空间、系统管理相关的操作。很多本来只有宿主机高权限进程才能做的事，只要容器被授予了 `CAP_SYS_ADMIN`，就可能突然变得可以做。
 
-## 2. 复现该场景的价值
+当前目录里的脚本没有直接自动挂载宿主机根分区并 `chroot` 进去，但它已经验证了一个非常关键的前提：带着 `CAP_SYS_ADMIN` 的容器，能否在容器内完成实际的 `mount` 操作。
 
-- 验证平台是否错误放行 `CAP_SYS_ADMIN` 到业务容器。
-- 验证容器侧 mount/chroot 等关键操作是否可被滥用。
-- 验证准入与运行时策略对高危 capability 的阻断能力。
+## 2. 价值
 
-## 3. 作用机理（分阶段）
+- 验证平台是否错误地下发了 `CAP_SYS_ADMIN`。
+- 帮助初学者理解“为什么能 mount”本身就已经是高度危险信号。
+- 为后续 hostPath、块设备挂载、`chroot` 等完整逃逸链提供前置证据。
 
-这一节按“前提 -> 触发 -> 越权 -> 证据”讲清楚漏洞链路，并和脚本关键命令一一对应。
+## 3. 作用机理
 
-### 先看关键代码链（按执行顺序）
-- `run_poc.sh:L16`: `command -v kubectl >/dev/null 2>&1 || { echo "[-] Missing dependency: kubectl"; exit 1; }`
-- `run_poc.sh:L22`: `echo "[*] Verdict: BLOCKED_STAGE=k8s_api_unreachable"`
-- `run_poc.sh:L28`: `kubectl apply -f "$MANIFEST"`
-- `run_poc.sh:L32`: `echo "[*] Verdict: BLOCKED_STAGE=k8s_pod_not_ready"`
-- `run_poc.sh:L36`: `"$HELPER" "$NAMESPACE" "$POD_NAME" 'id; grep CapEff /proc/1/status; mkdir -p /tmp/mt_test && mount -t tmpfs tmpfs /tmp/mt_test && echo "[+] mount t...`
-- `run_poc.sh:L38`: `echo "[*] 可继续按业务场景挂载宿主机目录并执行 chroot。"`
+理解这个场景，可以先抓住一句话：很多容器逃逸并不是“靠内核 0day 突破”，而是“平台先把门钥匙递给了容器”。
 
-### 阶段 1：前提条件
-- 先确认依赖、运行时版本和实验目标是否可达。否则脚本会在最外层提前退出。
-- 对应代码：`run_poc.sh:L16` -> `command -v kubectl >/dev/null 2>&1 || { echo "[-] Missing dependency: kubectl"; exit 1; }`。
+`CAP_SYS_ADMIN` 就是这样一把门钥匙。
 
-### 阶段 2：触发漏洞
-- 利用链真正开始于“把目标进程拉起并喂入特定参数/路径/时序”，让程序走进有缺陷的分支。
-- 对应代码：`run_poc.sh:L28` -> `kubectl apply -f "$MANIFEST"`。
+### 第一步：危险配置写在 `scene.yaml` 里
 
-### 阶段 3：越权动作
-- 这一阶段的目标是把容器内可控行为转换成宿主机影响（文件、进程、运行时执行链）。
-- 对应代码：`run_poc.sh:L36` -> `"$HELPER" "$NAMESPACE" "$POD_NAME" 'id; grep CapEff /proc/1/status; mkdir -p /tmp/mt_test && mount -t tmpfs tmpfs /tmp/mt_test && echo "[+] mount t...`。
-- 对应代码：`run_poc.sh:L38` -> `echo "[*] 可继续按业务场景挂载宿主机目录并执行 chroot。"`。
+风险的根源是 Pod 定义中的这段内容：
 
-### 阶段 4：结果落地与证据
-- 成功不是“脚本跑完”，而是日志出现强语义判定，并且有可复核文件证据。
-- 对应代码：`run_poc.sh:L22` -> `echo "[*] Verdict: BLOCKED_STAGE=k8s_api_unreachable"`。
-- 对应代码：`run_poc.sh:L32` -> `echo "[*] Verdict: BLOCKED_STAGE=k8s_pod_not_ready"`。
+```yaml
+# scene.yaml
+spec:
+  containers:
+  - name: ubuntu
+    securityContext:
+      capabilities:
+        add: ["SYS_ADMIN"]
 
-### artifacts 对应证据（示例）
-- `artifacts/repro/docker/config-cap_sys_admin-container/run.log`: `[+] mount tmpfs success`
-- `artifacts/repro/docker/config-cap_sys_admin-container/run.log`: `[*] Verdict: PROBE_LOG_FALLBACK_OK`
-- `artifacts/repro/docker/config-cap_sys_admin-container/events_tail.txt`: `85s Normal Scheduled pod/cap-dac-read-search-container Successfully assigned metarget/cap-dac-read-search-container to escape-lab-control-plane`
-- `artifacts/repro/docker/config-cap_sys_admin-container/events_tail.txt`: `2s Normal Scheduled pod/cap-sys-admin-container Successfully assigned metarget/cap-sys-admin-container to escape-lab-control-plane`
+# 注释：这里把 SYS_ADMIN 加给了容器
+# 它不是一个小能力，而是一大批系统管理类操作的入口
+```
 
-## 4. 容器逃逸关键节点分析
+一旦这把 capability 生效，容器就可能具备挂载文件系统、配合宿主机资源入口进一步突破边界的能力。
 
-1. `CAP_SYS_ADMIN` 是核心风险前提。
-2. 需要存在可用的宿主机资源入口（挂载点、设备、hostPath 等）。
-3. 一旦可挂载并切换到宿主机文件系统，上层容器隔离机制会被绕过。
-4. 该类问题根因是配置错误，通常不依赖复杂内核漏洞。
+### 第二步：脚本先把场景部署起来，再确认容器真的运行了
+
+`run_poc.sh` 的主流程很直接：
+
+```bash
+# run_poc.sh
+kubectl apply -f "$MANIFEST"
+
+if ! kubectl wait --for=condition=Ready "pod/$POD_NAME" -n "$NAMESPACE" --timeout=120s; then
+  echo "[*] Verdict: BLOCKED_STAGE=k8s_pod_not_ready"
+  exit 1
+fi
+```
+
+这一步是在确认：
+
+- 带 `SYS_ADMIN` 的 Pod 不是停留在 YAML 里，而是已经变成了真实运行中的容器。
+
+### 第三步：真正的关键探针，是在容器内尝试一次 `mount tmpfs`
+
+这是这份脚本里最值得看的代码：
+
+```bash
+# run_poc.sh
+"$HELPER" "$NAMESPACE" "$POD_NAME" \
+  'id; grep CapEff /proc/1/status; mkdir -p /tmp/mt_test && mount -t tmpfs tmpfs /tmp/mt_test && echo "[+] mount tmpfs success" && umount /tmp/mt_test'
+
+# 注释 1：先看身份和能力位
+# 注释 2：再实际尝试 mount tmpfs
+# 注释 3：如果 mount 成功，就说明这个容器确实具备了高危的挂载能力，而不是只在配置文件里“看起来有权限”
+```
+
+为什么这里选 `tmpfs`？
+
+因为它足够简单：
+
+- 不需要额外块设备。
+- 能直接验证挂载操作是否被允许。
+- 对教学来说很直观，成功与失败一眼就能看出来。
+
+### 第四步：为什么“能 mount”就已经很危险
+
+因为挂载能力本身就是后续很多逃逸动作的跳板。
+
+典型思路包括：
+
+1. 挂载宿主机目录或设备。
+2. 访问宿主机文件系统中的敏感内容。
+3. 进一步 `chroot` 到宿主机根目录。
+4. 把“容器里的高权限”转化成“宿主机文件系统视角下的高权限”。
+
+所以当前脚本虽然只演示了一个 `mount tmpfs`，但它要说明的是：这把能力钥匙已经能转动锁芯了。
+
+### artifacts 运行证据
+
+当前 artifacts 给出的证据非常清楚：
+
+```text
+# artifacts/repro/docker/config-cap_sys_admin-container/run.log
+pod/cap-sys-admin-container created
+pod/cap-sys-admin-container condition met
+[*] Exec probe failed, attempting startup-log fallback...
+K8S_LOG_PROBE_BEGIN
+uid=0(root) gid=0(root) groups=0(root)
+CapEff: 00000000a82425fb
+[+] mount tmpfs success
+K8S_LOG_PROBE_OK
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+[*] 可继续按业务场景挂载宿主机目录并执行 chroot。
+
+# 注释 1：CapEff 说明高危 capability 已经生效
+# 注释 2：[+] mount tmpfs success 是当前脚本最关键的“机理印证”
+# 注释 3：这说明容器不是“理论上可能有权限”，而是真的已经能执行挂载动作
+```
+
+这次运行同样是在线 `exec` 探针失败后，转用启动日志回退取证：
+
+```text
+error: Internal error occurred: error executing command in container: ... no such file or directory: unknown
+[*] Exec probe failed, attempting startup-log fallback...
+```
+
+但只要后面拿到了 `mount tmpfs success`，证据仍然成立。
+
+## 4. 关键节点分析
+
+1. 风险根源是 `SYS_ADMIN` 被下发给容器。
+2. 当前脚本的核心证据不是 `CapEff`，而是“实际 mount 成功”。
+3. 只要能稳定 mount，后续就可以沿着 hostPath、设备挂载、`chroot` 等方向继续扩展。
+4. 这类问题往往是配置错误，不需要复杂漏洞链也可能打穿边界。
 
 ## 5. 目录结构
 
@@ -66,53 +140,126 @@ config-cap_sys_admin-container/
 `- README.md
 ```
 
-## 6. 依赖与前置条件
+## 6. 可直接复现步骤与故障排查
 
-见 `requirements.txt`。脚本层面需要：
-
-- `kubectl`
-- 可访问的 Kubernetes 集群
-
-说明：`run_poc.sh` 会验证 capability 与基础挂载能力；完整逃逸步骤需在实验环境手工延伸。
-
-## 7. 一键复现场景
+先准备可访问的 Kubernetes 集群：
 
 ```bash
-bash run_poc.sh
+scripts/env_labctl.sh profile k8s-kind
+bash cves/config-cap_sys_admin-container/run_poc.sh
 ```
 
-
-## 成功判定（结合 run_poc.sh 与 artifacts）
-
-建议用“可复核”的口径判定，避免只看单行输出。
-
-### 成功判定（建议同时满足）
-1. 脚本进入判定分支，没有在依赖检查阶段退出。
-2. 日志中出现 `SUCCESS` / `VULNERABLE` / `pass` 等强语义词。
-3. 有落地证据文件或宿主机侧状态变化可复查。
-
-### 阻断/失败判定
-1. 出现 `BLOCKED_STAGE=...`：说明链路被明确阻断，可据此定位阶段。
-2. 只出现环境类错误（API 不可达、依赖缺失）：属于前置失败，不能据此判漏洞不存在。
-3. 有触发动作但没有证据落地：记为“未稳定命中”，需调参重试。
-
-### 与脚本代码对应的判定点
-- `run_poc.sh:L22`: `echo "[*] Verdict: BLOCKED_STAGE=k8s_api_unreachable"`
-- `run_poc.sh:L32`: `echo "[*] Verdict: BLOCKED_STAGE=k8s_pod_not_ready"`
-
-### artifacts 运行证据
-- `artifacts/repro/docker/config-cap_sys_admin-container/run.log`: `[+] mount tmpfs success`
-- `artifacts/repro/docker/config-cap_sys_admin-container/run.log`: `[*] Verdict: PROBE_LOG_FALLBACK_OK`
-- `artifacts/repro/docker/config-cap_sys_admin-container/events_tail.txt`: `85s Normal Scheduled pod/cap-dac-read-search-container Successfully assigned metarget/cap-dac-read-search-container to escape-lab-control-plane`
-- `artifacts/repro/docker/config-cap_sys_admin-container/events_tail.txt`: `2s Normal Scheduled pod/cap-sys-admin-container Successfully assigned metarget/cap-sys-admin-container to escape-lab-control-plane`
-
-## 8. 清理
+清理：
 
 ```bash
-bash run_poc.sh --cleanup
+bash cves/config-cap_sys_admin-container/run_poc.sh --cleanup
 ```
 
-## 9. 参考
+常见故障：
+
+```text
+情况 1：出现 BLOCKED_STAGE=k8s_api_unreachable
+# 集群 API 不可达，场景还没部署成功
+
+情况 2：出现 BLOCKED_STAGE=k8s_pod_not_ready
+# Pod 没 ready，危险 capability 还没真正生效在运行容器里
+
+情况 3：exec probe failed, attempting startup-log fallback
+# 在线 exec 失败，不等于验证失败
+# 只要回退日志里仍然出现 [+] mount tmpfs success，就说明关键证据已经拿到
+```
+
+## 7. 成功判定（结合 run_poc.sh 与 artifacts）
+
+这里同样要区分“当前脚本验证成功”与“最终挂载宿主机并 chroot 成功”。
+
+当前 `run_poc.sh` 负责的是前者。
+
+### 真正命中当前脚本要验证的目标
+
+下面这些条件同时出现，就说明当前脚本的目标已经命中：
+
+1. Pod 创建并 Ready。
+2. 日志里出现 `CapEff:`。
+3. 日志里出现：
+
+```text
+[+] mount tmpfs success
+```
+
+4. 最终 verdict 为：
+
+```text
+[*] Verdict: PROBE_LOG_FALLBACK_OK
+```
+
+这代表：
+
+- 容器确实拿到了高危 capability。
+- 更重要的是，容器已经真的完成了一个挂载动作。
+
+### 只到中间阶段 / 部分命中
+
+如果出现：
+
+```text
+K8S_LOG_PROBE_BEGIN
+CapEff: ...
+[-] mount tmpfs failed
+```
+
+那么说明 capability 可能已下发，但当前运行环境仍然把实际挂载动作挡住了。这可以算“碰到关键前提，但没拿到完整机理证据”。
+
+当前仓库里的现成日志不是这种情况，而是更强的 `mount tmpfs success`。
+
+### 前置失败 / 明确阻断
+
+以下情况属于前置失败：
+
+- `BLOCKED_STAGE=k8s_api_unreachable`
+- `BLOCKED_STAGE=k8s_pod_not_ready`
+- 缺少 `kubectl`
+
+它们只能说明环境没准备好，不能说明 `CAP_SYS_ADMIN` 是安全的。
+
+### 如果要算“最终逃逸成功”，还差什么
+
+至少还要补：
+
+1. 可被容器挂载的宿主机目录或设备入口。
+2. 成功挂载宿主机资源。
+3. 最终 `chroot` 到宿主机文件系统并观察到宿主机视角结果。
+
+当前仓库日志还没有这些后续证据，所以不能直接写成“已经自动完成宿主机逃逸”。
+
+## 8. 参考
 
 - https://man7.org/linux/man-pages/man7/capabilities.7.html
-- cves/metarget/writeups_cnv/config-cap_sys_admin-container/
+- `cves/metarget/writeups_cnv/config-cap_sys_admin-container/`
+
+## 9. 统一复现记录
+
+### 9.1 复现范围
+
+- Kubernetes 场景：部署带 `SYS_ADMIN` 的 Pod。
+- 当前仓库已有证据来自 Docker/Kubernetes 组合环境。
+- 统一判定口径：Pod Ready + `mount tmpfs success` + `PROBE_LOG_FALLBACK_OK`。
+
+### 9.2 当前结果摘要
+
+| 观察项 | 结果 |
+| --- | --- |
+| Pod 创建 | 成功 |
+| Pod Ready | 成功 |
+| 在线 exec 探针 | 失败，随后切换日志回退 |
+| 回退日志取证 | 成功 |
+| `mount tmpfs` | 成功 |
+| 最终 verdict | `PROBE_LOG_FALLBACK_OK` |
+
+### 9.3 结论
+
+当前样本已经证明：
+
+- `CAP_SYS_ADMIN` 确实进入了容器。
+- 容器已经具备真实挂载能力。
+- 这足以说明该配置具备继续向宿主机文件系统逃逸延伸的高风险。
