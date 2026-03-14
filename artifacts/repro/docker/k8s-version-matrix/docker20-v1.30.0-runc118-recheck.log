@@ -1,0 +1,13 @@
+===== RECHECK docker20 + runc1.1.8 =====
+UTC 2026-03-10 14:46:53
+[*] delete kind cluster: escape-lab
+[*] switch profile -> docker
+[*] docker=active, isulad=inactive
+[*] kubectl already installed: Client Version: v1.35.2
+[*] kind already installed: kind v0.23.0 go1.21.10 linux/amd64
+[*] pre-pull kind node image: kindest/node:v1.30.0
+v1.30.0: Pulling from kindest/node
+Digest: sha256:047357ac0cfea04663786a612ba1eaba9702bef25227a794b52890dd8bcd692e
+Status: Image is up to date for kindest/node:v1.30.0
+docker.io/kindest/node:v1.30.0
+[*] create kind cluster: escape-lab

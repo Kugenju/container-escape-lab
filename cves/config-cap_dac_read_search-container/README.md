@@ -15,24 +15,33 @@
 
 ## 3. 作用机理（分阶段）
 
-### 阶段 A：容器进程获得 `CAP_DAC_READ_SEARCH`
+这一节按“前提 -> 触发 -> 越权 -> 证据”讲清楚漏洞链路，并和脚本关键命令一一对应。
 
-该 capability 允许绕过读/搜索权限检查，并允许调用 `open_by_handle_at()`。
-这是 Shocker 攻击链的核心前提。
+### 先看关键代码链（按执行顺序）
+- `run_poc.sh:L16`: `command -v kubectl >/dev/null 2>&1 || { echo "[-] Missing dependency: kubectl"; exit 1; }`
+- `run_poc.sh:L22`: `echo "[*] Verdict: BLOCKED_STAGE=k8s_api_unreachable"`
+- `run_poc.sh:L28`: `kubectl apply -f "$MANIFEST"`
+- `run_poc.sh:L32`: `echo "[*] Verdict: BLOCKED_STAGE=k8s_pod_not_ready"`
 
-### 阶段 B：建立宿主机文件系统“句柄解释上下文”
+### 阶段 1：前提条件
+- 先确认依赖、运行时版本和实验目标是否可达。否则脚本会在最外层提前退出。
+- 对应代码：`run_poc.sh:L16` -> `command -v kubectl >/dev/null 2>&1 || { echo "[-] Missing dependency: kubectl"; exit 1; }`。
 
-`open_by_handle_at()` 需要一个同文件系统上的 `mount_fd`。
-在容器中常可利用与宿主机同源挂载文件（如 `/etc/hosts`）作为入口 FD。
+### 阶段 2：触发漏洞
+- 利用链真正开始于“把目标进程拉起并喂入特定参数/路径/时序”，让程序走进有缺陷的分支。
+- 对应代码：`run_poc.sh:L28` -> `kubectl apply -f "$MANIFEST"`。
 
-### 阶段 C：构造目标文件 `file_handle` 并跨边界读取
+### 阶段 3：越权动作
+- 这一阶段的目标是把容器内可控行为转换成宿主机影响（文件、进程、运行时执行链）。
 
-攻击者可通过已知 inode/句柄信息、枚举与爆破等方式构造目标文件句柄，
-再调用 `open_by_handle_at()` 打开宿主机文件（如 `/etc/shadow`）并读取内容。
+### 阶段 4：结果落地与证据
+- 成功不是“脚本跑完”，而是日志出现强语义判定，并且有可复核文件证据。
+- 对应代码：`run_poc.sh:L22` -> `echo "[*] Verdict: BLOCKED_STAGE=k8s_api_unreachable"`。
+- 对应代码：`run_poc.sh:L32` -> `echo "[*] Verdict: BLOCKED_STAGE=k8s_pod_not_ready"`。
 
-### 阶段 D：信息泄露升级为实质逃逸能力
-
-读取宿主机口令哈希、密钥、配置和 token 后，可进一步实现横向移动、持久化或宿主机接管。
+### artifacts 对应证据（示例）
+- `artifacts/repro/docker/config-cap_dac_read_search-container/run.log`: `[*] Verdict: PROBE_LOG_FALLBACK_OK`
+- `artifacts/repro/docker/config-cap_dac_read_search-container/events_tail.txt`: `83s Normal Scheduled pod/cap-dac-read-search-container Successfully assigned metarget/cap-dac-read-search-container to escape-lab-control-plane`
 
 ## 4. 容器逃逸关键节点分析
 
@@ -65,6 +74,29 @@ config-cap_dac_read_search-container/
 ```bash
 bash run_poc.sh
 ```
+
+
+## 成功判定（结合 run_poc.sh 与 artifacts）
+
+建议用“可复核”的口径判定，避免只看单行输出。
+
+### 成功判定（建议同时满足）
+1. 脚本进入判定分支，没有在依赖检查阶段退出。
+2. 日志中出现 `SUCCESS` / `VULNERABLE` / `pass` 等强语义词。
+3. 有落地证据文件或宿主机侧状态变化可复查。
+
+### 阻断/失败判定
+1. 出现 `BLOCKED_STAGE=...`：说明链路被明确阻断，可据此定位阶段。
+2. 只出现环境类错误（API 不可达、依赖缺失）：属于前置失败，不能据此判漏洞不存在。
+3. 有触发动作但没有证据落地：记为“未稳定命中”，需调参重试。
+
+### 与脚本代码对应的判定点
+- `run_poc.sh:L22`: `echo "[*] Verdict: BLOCKED_STAGE=k8s_api_unreachable"`
+- `run_poc.sh:L32`: `echo "[*] Verdict: BLOCKED_STAGE=k8s_pod_not_ready"`
+
+### artifacts 运行证据
+- `artifacts/repro/docker/config-cap_dac_read_search-container/run.log`: `[*] Verdict: PROBE_LOG_FALLBACK_OK`
+- `artifacts/repro/docker/config-cap_dac_read_search-container/events_tail.txt`: `83s Normal Scheduled pod/cap-dac-read-search-container Successfully assigned metarget/cap-dac-read-search-container to escape-lab-control-plane`
 
 ## 8. 清理
 

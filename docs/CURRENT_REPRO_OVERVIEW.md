@@ -2,7 +2,7 @@
 
 ## 1. 文档目的
 
-本文件用于统一记录当前仓库的容器逃逸复现状态，已将不同批次（含 2026-03-09 与 2026-03-10）的结果整合为一套连续结论，避免“基线记录”和“增量记录”分裂。
+本文件用于统一记录当前仓库的容器逃逸复现状态，梳理归纳逃逸触发机理，总结漏洞复现经验。
 
 ## 2. 环境与执行基线
 
@@ -39,15 +39,19 @@
 
 ### 4.1 已验证逃逸方式分类
 
-| 逃逸方式 | 简短介绍 | 已验证代表（示例） |
+| 逃逸方式 | 案例 | 机理解析 |
 | --- | --- | --- |
-| Runtime 初始化竞态/路径穿透 | 利用 `runc` 初始化窗口的竞态、`workdir/fd` 或挂载路径处理缺陷，导致容器读写穿透到宿主机 | CVE-2024-21626、CVE-2025-31133、CVE-2021-30465、CVE-2019-5736 |
-| 内核提权型逃逸 | 先在容器内触发内核漏洞，再获得宿主级权限/能力 | CVE-2018-18955、CVE-2021-3493、CVE-2022-0847 |
-| Build/上下文供应链触发链 | 借助 Buildx named-context、Dockerfile frontend 等构建链路触发运行时缺陷 | CVE-2025-52565、CVE-2025-52881 |
-| Runtime Hook 注入链 | 利用容器运行时 hook（如 GPU toolkit）加载路径触发越界执行 | CVE-2025-23266 |
-| 容器能力配置误用 | 利用 `privileged`、高危 capability 或 hostPID 等配置实现越权访问 | `config-privileged-container`、`config-cap_*` 场景 |
-| 主机资源挂载暴露 | 挂载 `docker.sock`、`/etc`、`/proc`、`/var/log` 等主机敏感资源导致边界弱化 | `mount-docker-sock`、`mount-host-*`、`mount-var-log` |
-| K8s 工作负载面越权 | 通过 K8s 不安全配置与挂载组合复现越权能力链 | 9 个 K8s 场景（`config-cap_*` + `mount-*`） |
+| Runtime 初始化竞态/路径穿透 | CVE-2021-30465、CVE-2024-21626、CVE-2025-31133 | 利用 `runc` 初始化窗口、`workdir/fd` 与路径解析竞态，将容器内路径操作导向宿主侧文件系统。 |
+| Runtime 二进制覆盖/重执行劫持 | CVE-2019-5736 | 通过覆盖/劫持运行时重执行链路（`/proc/self/exe` 等），在运行时重入时执行攻击者代码。 |
+| Cgroup/边界控制面写入链 | CVE-2016-9962 | 试图借助 cgroup 控制面（如 `release_agent`）写入宿主控制路径，形成容器到宿主的命令执行桥接。 |
+| Build 输入解析与上下文供应链触发链 | CVE-2019-13139、CVE-2025-52565、CVE-2025-52881 | 利用构建入口解析（refspec/context）和 Buildx named-context/Dockerfile frontend 语义，将恶意上下文引入构建-运行链。 |
+| 用户态库加载/配置注入链 | CVE-2019-14271 | 通过用户态库解析与加载路径（如 NSS）替换或注入，尝试把容器执行路径延伸到宿主可见目录。 |
+| Runtime Hook 注入链 | CVE-2025-23266 | 借助容器运行时 hook（GPU toolkit/nvidia runtime）装载流程，在 hook 执行点触发越界执行。 |
+| 内核提权型逃逸 | CVE-2016-5195、CVE-2016-8655、CVE-2017-6074、CVE-2017-7308、CVE-2017-1000112、CVE-2017-16995、CVE-2018-18955、CVE-2020-14386、CVE-2021-3493、CVE-2022-0847、CVE-2022-0995 | 在容器内触发内核漏洞原语（越界写、UAF、脏写、pipe/watch_queue 等），若条件满足则升级到宿主权限上下文。 |
+| 沙箱运行时实现差异/组件缺失 | kata-escape-2020 | 依赖特定沙箱运行时（Kata）与组件栈；当运行时/组件缺失时在环境前置阶段被阻断。 |
+| 容器能力配置误用 | `config-privileged-container`、`config-cap_dac_read_search-container`、`config-cap_sys_admin-container`、`config-cap_sys_module-container`、`config-cap_sys_ptrace-container` | 通过 `privileged` 或高危 capability 直接放大容器权限边界，形成对宿主资源的越权访问能力。 |
+| 主机资源挂载暴露 | `mount-docker-sock`、`mount-host-etc`、`mount-host-procfs`、`mount-var-log` | 将宿主敏感资源直接映射进容器，绕过隔离边界并获得控制平面或敏感数据访问路径。 |
+| K8s 工作负载面越权（组合场景） | `config-cap_dac_read_search-container`、`config-cap_sys_admin-container`、`config-cap_sys_module-container`、`config-cap_sys_ptrace-container`、`config-privileged-container`、`mount-docker-sock`、`mount-host-etc`、`mount-host-procfs`、`mount-var-log` | 在编排层把高危 capability、特权运行与主机挂载组合，放大单点配置风险并形成可批量复现的越权链。 |
 
 ## 5. Docker 结果矩阵
 
